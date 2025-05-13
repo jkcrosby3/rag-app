@@ -366,29 +366,7 @@ pip install pytest pytest-cov black flake8
 pre-commit install
 ```
 
-### 2. Project Structure
-```
-rag/
-├── src/
-│   ├── document_processing/
-│   │   ├── __init__.py
-│   │   ├── reader.py      # Document reading
-│   │   └── chunker.py     # Text chunking
-│   ├── vector_store/
-│   │   ├── __init__.py
-│   │   └── elasticsearch_store.py
-│   └── rag/
-│       ├── __init__.py
-│       └── chain.py       # RAG implementation
-├── tests/
-│   ├── __init__.py
-│   ├── test_document_processing.py
-│   ├── test_vector_store.py
-│   └── test_rag.py
-├── notebooks/            # Example notebooks
-│   ├── 01_document_processing.ipynb
-│   ├── 02_vector_store.ipynb
-│   └── 03_rag_chain.ipynb
+### 2. Configuration Files
 └── config/
     └── elasticsearch.yml
 ```
