@@ -9,6 +9,7 @@ A Retrieval Augmented Generation (RAG) system that enables users to efficiently 
 - Streamline document management and search
 - Make information retrieval more efficient
 - Add support (separate from the chat across all documents) to search for all documents in the collection meeting the user's query.
+- Start with a CLI tool proof of concept MVP, then add a web app proof of concept if time permits.
 
 ### Success Metrics
 - Search response time < 2 seconds
@@ -250,7 +251,7 @@ Below are possible personas that will need to be confirmed:
 - **Objective**: Demonstrate core RAG functionality and validate approach
 - **Timeline**: 60 days
 - **Features**:
-  * Basic document processing (PDF, TXT)
+  * Basic document processing (PDF, TXT, MD)
   * Simple vector search
   * Basic Q&A interface
   * Local deployment only
@@ -262,18 +263,24 @@ Below are possible personas that will need to be confirmed:
 ### Phase 2: Production Release (Out of Scope)
 - **Objective**: Production-grade application for enterprise use
 - **Features**:
-  * Advanced document processing (more formats)
-  * Enhanced search capabilities
+  * Enhanced document processing
+  * Advanced search capabilities
+  * Production deployment
   * Multi-user support
-  * Authentication & authorization
+  * Authentication
   * Robust error handling
   * Comprehensive logging
+  * Document lifecycle management:
+    - Document deletion with vector cleanup
+    - Document updates and re-indexing
+    - Version tracking
+    - Bulk operations support
+    - Deletion audit trail
   * High availability
   * Performance optimization
   * Security hardening
   * Monitoring & alerts
   * Backup & recovery
-  * Load balancing
   * API rate limiting
   * User management
   * Document versioning
@@ -289,3 +296,10 @@ Below are possible personas that will need to be confirmed:
   * Custom model training
   * Data retention policies
   * Audit trails
+
+- **Out of Scope**:
+  * Semantic cloud visualization for large document sets
+    - Interactive 3D visualization of document embeddings
+    - Clustering and topic analysis visualization
+    - Real-time exploration of semantic relationships
+    - Document similarity heat maps

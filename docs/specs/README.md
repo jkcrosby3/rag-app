@@ -9,7 +9,7 @@
    - Project phases
 
 2. Technical Design
-   - [Phase 1 (MVP)](02-technical-design.md)
+   - [Phase 1 (MVP)](02-technical-design-phase1.md)
      - System architecture
      - Component design
      - Development plan
@@ -45,7 +45,7 @@ docs/
 └── specs/
     ├── README.md                 # This file
     ├── 01-product-requirements.md
-    ├── 02-technical-design.md
+    ├── 02-technical-design-phase1.md
     ├── 02-technical-design-phase2.md
     ├── 03-setup-guide.md
     ├── 04-code-examples.md

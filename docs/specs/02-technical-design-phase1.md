@@ -4,7 +4,9 @@
 ## 1. Overview
 
 ### Purpose
-This document outlines the technical implementation for Phase 1 (MVP) of the RAG system. This is a proof-of-concept implementation focused on core functionality. For production features, see [`02-technical-design-phase2.md`](02-technical-design-phase2.md).
+This document outlines the technical implementation for Phase 1 (MVP) of the RAG system. This is a proof-of-concept implementation focused on core functionality of first a CLI tool, then a web app if time permits.
+
+For production features, see [`02-technical-design-phase2.md`](02-technical-design-phase2.md).
 
 ### Goals
 1. Demonstrate core RAG functionality
@@ -12,12 +14,312 @@ This document outlines the technical implementation for Phase 1 (MVP) of the RAG
 3. Gather feedback for Phase 2
 
 ### Success Criteria
-- Successfully process PDF and TXT documents
+- Successfully process PDF, TXT, and MD documents
 - Generate relevant answers from documents
 - Complete basic operations within reasonable time
 - Demonstrate extensibility for Phase 2
 
-## 2. System Architecture
+## 2. Resources & References
+
+### Core Dependencies
+1. **Document Processing**
+   - PyPDF2 (PDF processing): https://pypdf2.readthedocs.io/
+   - python-magic (File type detection): https://github.com/ahupp/python-magic
+   - markdown-it-py (Markdown processing): https://markdown-it-py.readthedocs.io/
+
+2. **Vector Embeddings**
+   - sentence-transformers: https://www.sbert.net/
+   - HuggingFace Transformers: https://huggingface.co/docs/transformers/
+
+3. **Vector Storage**
+   - FAISS: https://github.com/facebookresearch/faiss
+   - Chroma: https://www.trychroma.com/
+   - Elasticsearch Vector Search:
+     * Official Guide: https://www.elastic.co/guide/en/elasticsearch/reference/current/dense-vector.html
+     * Text Embeddings Tutorial: https://www.elastic.co/docs/explore-analyze/machine-learning/nlp/ml-nlp-text-emb-vector-search-example
+     * Semantic Search Implementation: https://www.elastic.co/blog/semantic-search-with-elasticsearch
+     * RAG with Elasticsearch: https://www.elastic.co/blog/building-generative-ai-applications-elasticsearch
+
+4. **LLM Integration**
+   - LangChain: https://python.langchain.com/
+   - OpenAI API: https://platform.openai.com/docs/api-reference
+
+### Test Documents
+
+1. **Technical Documentation**
+   - Python Documentation (PDF): https://docs.python.org/3/download.html
+   - Git Book (PDF, MD): https://git-scm.com/book/en/v2
+   - Elasticsearch Guide (PDF): https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-reference.pdf
+   - Docker Overview (MD): https://github.com/docker/docs/tree/main/content
+
+2. **Research Papers**
+   - arXiv ML Papers (PDF): https://arxiv.org/list/cs.LG/recent
+   - Attention Is All You Need (PDF): https://arxiv.org/pdf/1706.03762.pdf
+   - LangChain Papers (PDF): https://arxiv.org/abs/2310.03722
+
+3. **General Knowledge**
+   - Wikipedia Articles (TXT): https://dumps.wikimedia.org/
+   - Project Gutenberg Books (TXT): https://www.gutenberg.org/browse/scores/top
+   - CommonCrawl News (TXT): https://commoncrawl.org/
+
+4. **Sample Repositories**
+   - Awesome-README Collection (MD): https://github.com/matiassingers/awesome-readme
+   - OpenAI Cookbook (MD): https://github.com/openai/openai-cookbook
+   - Google Style Guides (MD): https://github.com/google/styleguide
+
+> Note: When using these documents for testing:
+> - Ensure compliance with usage terms
+> - Keep test datasets small (< 100MB total)
+> - Include a mix of document types and content
+> - Document any preprocessing steps
+
+### RAG Implementation Guides
+1. **Document Processing & Embeddings**
+   - LangChain RAG Tutorial: https://python.langchain.com/docs/tutorials/rag/
+   - Advanced RAG with HuggingFace: https://huggingface.co/learn/cookbook/advanced_rag
+   - Semantic Search Implementation: https://www.sbert.net/examples/applications/semantic-search/README.html
+
+2. **Vector Search & Retrieval**
+   - FAISS Getting Started: https://github.com/facebookresearch/faiss/wiki/Getting-started
+   - Chroma Quickstart: https://docs.trychroma.com/getting-started
+   - Elasticsearch Semantic Search:
+     * Vector Search Setup: https://www.elastic.co/guide/en/elasticsearch/reference/current/vector-search-setup.html
+     * Hybrid Search Tutorial: https://www.elastic.co/blog/hybrid-search-elasticsearch-vector-text
+     * Performance Tuning: https://www.elastic.co/blog/how-to-tune-elastic-vector-search-for-accuracy-speed-and-cost
+
+3. **LLM Integration**
+   - LangChain Agents: https://python.langchain.com/docs/modules/agents/
+   - RAG Best Practices: https://www.pinecone.io/learn/rag-patterns/
+
+4. **Prompt Engineering**
+   - Kaggle Guide: https://www.kaggle.com/whitepaper-prompt-engineering
+   - OpenAI Best Practices: https://platform.openai.com/docs/guides/prompt-engineering
+   - Anthropic Prompt Design: https://docs.anthropic.com/claude/docs/prompt-engineering
+   - LangChain Prompting Guide: https://python.langchain.com/docs/modules/model_io/prompts/prompt_templates
+   - Microsoft Learn: https://learn.microsoft.com/en-us/semantic-kernel/prompt-engineering/
+   - Brex's Prompt Engineering Guide: https://github.com/brexhq/prompt-engineering
+
+### CLI Development
+1. **Framework Options**
+   - Click Tutorial: https://click.palletsprojects.com/en/8.1.x/quickstart/
+   - Typer (Click-based): https://typer.tiangolo.com/
+   - Rich (Terminal UI): https://rich.readthedocs.io/
+   - Textual (TUI Framework): https://textual.textualize.io/
+
+2. **Example Projects**
+   - Click CLI Tutorial: https://realpython.com/python-click/
+   - Typer CLI App Guide: https://realpython.com/python-typer-cli/
+
+### Web App Development (if time permits)
+1. **Streamlit**
+   - Official Tutorial: https://docs.streamlit.io/get-started/tutorials
+   - Best Practices: https://docs.streamlit.io/library/advanced-features/best-practices
+   - Component Gallery: https://streamlit.io/components
+
+2. **Example Projects**
+   - Streamlit Chat Interface: https://docs.streamlit.io/knowledge-base/tutorials/build-conversational-apps
+   - RAG with Streamlit: https://blog.streamlit.io/build-a-chatbot-with-custom-data-sources/
+
+### Sample Code Repositories
+1. **End-to-End RAG Examples**
+   - LangChain RAG Template: https://github.com/langchain-ai/langchain/tree/master/templates/rag-conversation
+   - HuggingFace RAG Pipeline: https://huggingface.co/spaces/Xenova/rag-pipeline
+
+2. **CLI Examples**
+   - Click Examples: https://github.com/pallets/click/tree/main/examples
+   - Typer CLI Examples: https://github.com/tiangolo/typer/tree/master/examples
+
+3. **Streamlit Examples**
+   - Official Gallery: https://streamlit.io/gallery
+   - Example Apps: https://github.com/streamlit/demo-self-driving
+
+## 3. Code Organization
+
+### Technical Design Document Code
+The TDD contains essential interfaces and critical implementation details:
+
+1. **Core Interfaces**: Basic class and method signatures that define the public API
+2. **Key Data Structures**: Important configuration and data models
+3. **Critical Algorithms**: Core processing logic and strategies
+
+### Implementation Details
+
+#### 1. Core Interfaces
+
+##### Interface Overview
+```python
+class DocumentReader:
+    def read_file(self, file_path: Path) -> Dict[str, Any]: pass
+
+class ElasticsearchStore:
+    def add_documents(self, documents: List[Dict]): pass
+    def similarity_search(self, query: str, k: int = 5) -> List[Dict]: pass
+    
+    # Phase 2: Document Lifecycle Management
+    # def delete_documents(self, doc_ids: List[str]): pass
+    # def update_document(self, doc_id: str, document: Dict): pass
+    # def bulk_delete(self, query: Dict): pass
+    # def bulk_update(self, documents: List[Dict]): pass
+
+class RAGChain:
+    def generate_answer(self, question: str) -> Dict: pass
+    def chat(self, message: str, history: List[Dict] = None) -> Dict: pass
+```
+
+##### Detailed API Reference
+
+**DocumentReader**
+```python
+def read_file(self, file_path: Path) -> Dict[str, Any]:
+    """Read and process a document file.
+    
+    Args:
+        file_path: Path to the document (PDF, TXT, or MD)
+        
+    Returns:
+        Dict containing:
+        - content: Extracted text content
+        - metadata: File metadata (type, size, etc.)
+    """
+```
+
+**ElasticsearchStore**
+```python
+def add_documents(self, documents: List[Dict]):
+    """Index documents in Elasticsearch with vector embeddings.
+    
+    Args:
+        documents: List of documents with content and metadata
+    """
+
+def similarity_search(self, query: str, k: int = 5) -> List[Dict]:
+    """Perform semantic search using vector embeddings.
+    
+    Args:
+        query: Search query
+        k: Number of results to return
+        
+    Returns:
+        List of matching documents with scores
+    """
+```
+
+**RAGChain**
+```python
+def generate_answer(self, question: str) -> str:
+    """Generate answer using RAG pipeline (Phase 1).
+    
+    Args:
+        question: User's question
+        
+    Returns:
+        str: Generated response without sources
+    """
+
+def generate_answer_with_sources(self, question: str) -> Dict:
+    """Generate answer using RAG pipeline with source tracking (Phase 2).
+    
+    Args:
+        question: User's question
+        
+    Returns:
+        Dict containing:
+        - answer: Generated response
+        - sources: Supporting document snippets
+        - metadata: Response metadata
+    """
+
+def chat(self, message: str) -> str:
+    """Simple chat without context management (Phase 1).
+    
+    Args:
+        message: User's message
+        
+    Returns:
+        str: Generated response
+    """
+
+def chat_with_history(self, message: str, history: List[Dict] = None) -> Dict:
+    """Interactive chat with context management (Phase 2).
+    
+    Args:
+        message: User's message
+        history: Previous conversation turns
+        
+    Returns:
+        Dict containing response and context
+    """
+```
+
+#### 2. Critical Configurations
+
+1. **Vector Search Settings**
+```python
+ELASTICSEARCH_CONFIG = {
+    "index": {
+        "mappings": {
+            "properties": {
+                "content": {"type": "text"},
+                "embedding": {
+                    "type": "dense_vector",
+                    "dims": 768,
+                    "index": True,
+                    "similarity": "cosine"
+                }
+            }
+        }
+    }
+}
+```
+
+2. **RAG Prompt Template**
+```python
+BASE_PROMPT = """
+Answer the question based on the provided context.
+
+Context:
+{context}
+
+Question: {question}
+
+Answer in a helpful and informative way. If the context doesn't contain
+enough information to answer the question fully, acknowledge this and
+provide the best possible answer with the available information.
+
+Answer:"""
+```
+
+#### 3. Implementation Examples
+
+Detailed implementation examples are provided in the following notebooks:
+
+1. **Document Processing** (`notebooks/01_document_processing.ipynb`):
+   - File type handling (PDF, TXT, MD)
+   - Text extraction and cleaning
+   - Chunking strategies
+   - Error handling
+
+2. **Vector Store** (`notebooks/02_vector_store.ipynb`):
+   - Elasticsearch setup
+   - Document indexing
+   - Vector search examples
+   - Performance optimization
+
+3. **RAG Implementation** (`notebooks/03_rag_chain.ipynb`):
+   - End-to-end pipeline
+   - Chat examples
+   - Prompt engineering
+   - LLM integration
+
+4. **Semantic Search** (`notebooks/04_semantic_search.ipynb`):
+   - Text embeddings generation
+   - Similarity metrics comparison
+   - Search optimization techniques
+   - Performance benchmarking
+
+Refer to these notebooks for complete implementation details and working examples.
+
+## 4. System Architecture
 
 ### High-Level Design
 ```mermaid
@@ -48,12 +350,27 @@ graph TD
 ### MVP Scope
 
 #### Must Have
-- Basic document processing
-- Vector search capability
-- Simple Q&A interface
+- Basic document processing (PDF, TXT)
+- Vector search capability using Elasticsearch
+- Command Line Interface (CLI)
+  * Document upload and processing
+  * Basic Q&A mode (answers only)
+  * Basic search commands
 - Local deployment
 
 #### Nice to Have
+- Markdown (MD) file support
+- Source tracking in answers
+  * Reference documents
+  * Relevant snippets
+  * Confidence scores
+- Interactive chat mode
+  * Chat history
+  * Context management
+- Streamlit Web Application
+  * Document upload interface
+  * Chat-like Q&A interface
+  * Search results visualization
 - Basic error handling
 - Simple logging
 - Input validation
@@ -67,6 +384,109 @@ graph TD
 - Advanced monitoring
 - Backup/recovery
 
+### Phased Development Approach
+
+> Note: This approach breaks down the MVP into smaller, manageable pieces that build upon each other.
+> Each phase should be completed, tested, and reviewed before moving to the next.
+
+#### Phase 1: Basic Document Processing (3-4 days)
+1. **TXT File Processing** (1-2 days)
+   - [ ] Implement basic file reading
+   - [ ] Simple text extraction
+   - [ ] Fixed-size text chunking
+   - [ ] Basic validation (file exists, not empty)
+   - [ ] Unit tests for happy path
+
+2. **PDF Support** (2 days)
+   - [ ] Add PDF text extraction using PyMuPDF
+   - [ ] Handle basic PDF errors (file not found, corrupt file)
+   - [ ] Test with sample PDFs
+   - [ ] Extract context-enhancing metadata:
+     * Document hierarchy (headings/sections)
+     * Local context (previous/next paragraph)
+     * Text type (title, body, list, table)
+     * Page boundaries for coherent chunks
+
+#### Phase 2: Vector Store Basics (4-5 days)
+1. **Basic Storage** (2 days)
+   - [ ] Elasticsearch connection
+   - [ ] Simple document schema
+   - [ ] Basic document indexing
+   - [ ] Verify storage works
+
+2. **Simple Search** (2-3 days)
+   - [ ] Implement exact-match search
+   - [ ] Basic vector similarity
+   - [ ] Single document queries
+   - [ ] Basic result format
+
+#### Phase 3: Initial CLI (3-4 days)
+1. **Core Commands** (2 days)
+   - [ ] Document upload command
+   - [ ] Simple search command
+   - [ ] Basic help text
+   - [ ] Error messages
+
+2. **Basic Q&A** (1-2 days)
+   - [ ] Implement question input
+   - [ ] Simple answer generation
+   - [ ] Plain text output
+   - [ ] Basic input validation
+
+#### Phase 4: RAG Integration (4-5 days)
+1. **Basic RAG Chain** (2-3 days)
+   - [ ] Connect vector search
+   - [ ] Simple prompt template
+   - [ ] Basic answer generation
+   - [ ] Error handling
+
+2. **Query Processing** (2 days)
+   - [ ] Question preprocessing
+   - [ ] Context assembly
+   - [ ] Response formatting
+   - [ ] Basic testing
+
+#### Phase 5: Testing & Polish (3-4 days)
+1. **Core Testing** (2 days)
+   - [ ] Unit test coverage
+   - [ ] Integration tests
+   - [ ] Test data setup
+   - [ ] Bug fixes
+
+2. **Documentation** (1-2 days)
+   - [ ] Usage examples
+   - [ ] Setup guide
+   - [ ] Code comments
+   - [ ] README update
+
+#### Optional Enhancement Phases
+
+1. **Source Tracking**
+   - Add document references
+   - Include relevant snippets
+   - Add confidence scores
+
+2. **Interactive Mode**
+   - Chat history management
+   - Context preservation
+   - Enhanced CLI interface
+
+3. **Enhanced Search**
+   - Multi-document queries
+   - Ranking improvements
+   - Search filters
+
+4. **Web Interface**
+   - Basic Streamlit app
+   - Document upload UI
+   - Chat interface
+
+> Note: Each task should be:
+> - Small enough to complete in 1-2 days
+> - Have clear acceptance criteria
+> - Be independently testable
+> - Build towards the next phase
+
 ## 3. Development Guidelines
 
 ### Code Standards
@@ -77,31 +497,78 @@ graph TD
 
 ## 4. Development Plan
 
-### Timeline Overview
-- Week 1: Core Components (Setup, Document Processing, Vector Store)
-- Week 2: Integration (RAG Chain, CLI, Web UI)
-- Week 3: Testing & Documentation
+### Timeline Overview (Junior Data Scientist)
 
-### Task Breakdown
+#### Week 1-2: Setup & Core Components
+- Environment setup and dependencies (2-3 days)
+  * Python environment
+  * Elasticsearch installation and configuration
+  * Package dependencies
+  * Learning curve for new tools
 
-#### Phase 1: Core Components (5 days)
-1. **Setup (1 day)**
-   - Development environment
-   - Dependencies
-   - Elasticsearch
+- Document processing (3-4 days)
+  * Learning document processing libraries
+  * Implementing PDF/TXT/MD readers
+  * Text chunking and validation
+  * Basic error handling
 
-2. **Document Processing (2 days)**
-   - PDF/TXT reader
-   - Text chunking
-   - Unit tests
+- Vector store setup (3-4 days)
+  * Understanding vector embeddings
+  * Elasticsearch vector search setup
+  * Basic CRUD operations
+  * Testing with sample documents
 
-3. **Vector Store (2 days)**
-   - Index setup
-   - Vector operations
-   - Integration tests
+#### Week 3-4: RAG Implementation
+- Core RAG chain (5-6 days)
+  * Learning LangChain basics
+  * Implementing retrieval logic
+  * Setting up answer generation
+  * Tuning prompt templates
+  * Basic error handling
 
-#### Phase 2: Integration (4 days)
-4. **RAG Chain (2 days)**
+- CLI Development (3-4 days)
+  * Learning Click/Typer
+  * Basic command implementation
+  * Input validation
+  * Error messages
+
+#### Week 5: Testing & Documentation
+- Unit tests (2-3 days)
+  * Test setup
+  * Core functionality tests
+  * Basic error cases
+
+- Integration tests (2-3 days)
+  * End-to-end flow tests
+  * CLI command tests
+
+- Documentation (2-3 days)
+  * Code documentation
+  * Usage examples
+  * Setup guide
+
+### Time Allocation Notes
+
+1. **Learning Curve (40% of time)**
+   - New technologies (Elasticsearch, LangChain)
+   - Vector embeddings concepts
+   - Testing frameworks
+   - Best practices
+
+2. **Development (40% of time)**
+   - Core implementation
+   - Debugging
+   - Basic error handling
+
+3. **Testing & Documentation (20% of time)**
+   - Essential test coverage
+   - Basic documentation
+
+> Note: Timeline assumes:
+> - Full-time dedication
+> - Regular access to senior guidance
+> - No major infrastructure issues
+> - Focus on MVP features only
    - LLM integration
    - Context retrieval
    - Answer generation
@@ -128,41 +595,112 @@ graph TD
 ```
 rag/
 ├── src/
-│   ├── document_processing/
-│   │   ├── __init__.py
-│   │   ├── reader.py      # Document reading
-│   │   └── chunker.py     # Text chunking
-│   ├── vector_store/
-│   │   ├── __init__.py
-│   │   └── elasticsearch_store.py
-│   └── rag/
-│       ├── __init__.py
-│       └── chain.py       # RAG implementation
+│   ├── __init__.py
+│   ├── document_processing.py
+│   ├── vector_store.py
+│   └── rag.py
 ├── tests/
 │   ├── __init__.py
 │   ├── test_document_processing.py
 │   ├── test_vector_store.py
 │   └── test_rag.py
-├── notebooks/            # Example notebooks
-│   ├── 01_document_processing.ipynb
-│   ├── 02_vector_store.ipynb
-│   └── 03_rag_chain.ipynb
-├── cli/
-│   └── rag_cli.py        # Command line interface
+├── docs/
+│   ├── specs/
+│   │   ├── 01-product-requirements.md
+│   │   ├── 02-technical-design-phase1.md
+│   │   ├── 02-technical-design-phase2.md
+│   │   ├── 04-code-examples.md
+│   │   ├── 06-notebook-guide.md
+│   │   └── 07-notebook-conversion.md
+│   └── notebooks/
+│       ├── README.md
+│       ├── 01_document_processing.md
+│       ├── 02_vector_store.md
+│       ├── 03_rag_chain.md
+│       └── 04_semantic_search.md
+├── tools/
+│   └── convert_notebooks.py
 ├── web/
 │   └── app.py            # Streamlit web interface
-└── config/
-    └── elasticsearch.yml  # ES configuration
+├── config/
+│   └── elasticsearch.yml  # ES configuration
+└── requirements.txt
 ```
 
 ### Development Environment
 
 #### 1. Prerequisites
 - Python 3.11+
-- Docker for Elasticsearch
 - 4GB+ RAM for development
+- Elasticsearch (see deployment options below)
+- Jupyter (for running notebooks)
 
-#### 2. Setup Steps
+#### 2. Development Setup
+
+1. **Virtual Environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+2. **Jupyter Setup**
+   ```bash
+   pip install jupytext jupyter
+   python tools/convert_notebooks.py docs/notebooks/*.md --to notebook
+   jupyter notebook
+   ```
+
+3. **Elasticsearch Setup**
+   Choose between:
+
+   a. **Self-hosted (Docker)**
+      ```bash
+      docker-compose up -d elasticsearch
+      ```
+      - Free, open-source version
+      - Good for development
+      - Resources:
+        * [Official Docker Image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)
+        * [Security Setup](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-minimal-setup.html)
+
+   b. **Managed Service**
+      - [Elastic Cloud](https://www.elastic.co/cloud/)
+      - [AWS Elasticsearch](https://aws.amazon.com/opensearch-service/)
+      - Better for production
+      - Automatic updates and maintenance
+
+     * [Official Docker Image](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html)
+     * [Docker Compose Setup](https://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html#docker-compose-file)
+     * [Security Configuration](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-minimal-setup.html)
+
+2. **Managed Service**
+   - Recommended for production deployments
+   - Options:
+     * [Elastic Cloud](https://www.elastic.co/cloud/) (Official service)
+     * [AWS Elasticsearch Service](https://aws.amazon.com/opensearch-service/)
+     * [Bonsai](https://bonsai.io/) (Smaller deployments)
+   - Resources:
+     * [Elastic Cloud Setup Guide](https://www.elastic.co/guide/en/cloud/current/ec-getting-started.html)
+     * [AWS OpenSearch Migration](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/migration.html)
+     * [Connection Security](https://www.elastic.co/guide/en/cloud/current/ec-security.html)
+
+**Configuration**: Update `config/elasticsearch.yml` based on your chosen deployment:
+```yaml
+# Self-hosted
+hosts: ['localhost:9200']
+ssl: false
+auth: false
+
+# Managed service
+hosts: ['your-cluster-url']
+ssl: true
+auth:
+  username: 'elastic'
+  password: '${ES_PASSWORD}'  # Use environment variable
+```
+
+#### 3. Setup Steps
 ```bash
 # 1. Clone repository
 git clone <repository-url>
@@ -303,27 +841,116 @@ For installation and configuration, see [`setup-guide.md`](setup-guide.md):
 - Development tools
 - Troubleshooting
 
-## Quick Start for Junior Developers
+## System Architecture
 
-### Key Concepts
-1. **RAG (Retrieval Augmented Generation)**
-   - Combines search and AI to answer questions
-   - Uses document content as context
-   - Provides source-backed answers
-
-2. **Vector Embeddings**
-   - Convert text to numbers (vectors)
-   - Enable semantic search
-   - Similar meanings have similar vectors
-
-3. **Document Processing Pipeline**
+### High-Level Overview
 
 ```mermaid
-graph LR;
-    A[Upload File]-->B[Extract Text];
-    B-->C[Split into Chunks];
-    C-->D[Create Embeddings];
-    D-->E[Store in Elasticsearch];
+graph TB
+    subgraph Client Layer
+        CLI[CLI Interface]
+        Web[Web UI]
+        API[REST API]
+    end
+
+    subgraph Core Services
+        DP[Document Processor]
+        VS[Vector Store]
+        RAG[RAG Engine]
+        LLM[LLM Service]
+    end
+
+    subgraph Storage
+        ES[(Elasticsearch)]
+        FS[(File Storage)]
+    end
+
+    CLI --> DP
+    Web --> DP
+    API --> DP
+    
+    DP --> VS
+    VS --> ES
+    DP --> FS
+    
+    VS --> RAG
+    RAG --> LLM
+```
+
+### Data Processing Flow
+
+```mermaid
+graph LR
+    subgraph Input
+        F[File Upload]
+        T[Raw Text]
+    end
+
+    subgraph Processing
+        R[Reader]
+        C[Chunker]
+        E[Embedder]
+    end
+
+    subgraph Storage
+        V[(Vector Store)]
+        M[(Metadata Store)]
+    end
+
+    F --> R
+    T --> R
+    R --> C
+    C --> E
+    E --> V
+    R --> M
+```
+
+### Query Flow
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant R as RAG Chain
+    participant V as Vector Store
+    participant L as LLM
+
+    U->>R: Ask Question
+    R->>V: Search Similar Docs
+    V-->>R: Return Matches
+    R->>L: Generate Answer
+    L-->>R: Return Response
+    R->>U: Formatted Answer
+```
+
+### Semantic Search Flow
+
+```mermaid
+graph TB
+    subgraph Document Indexing
+        D[Document] --> T[Text Extraction]
+        T --> C[Chunking]
+        C --> E1[Embedding Generation]
+        E1 --> I[Index Storage]
+    end
+
+    subgraph Search Process
+        Q[Query] --> E2[Query Embedding]
+        E2 --> S[Similarity Search]
+        I --> S
+        S --> R1[Top K Results]
+        R1 --> R2[Ranked Results]
+    end
+
+    subgraph Optimization
+        direction LR
+        R2 --> F[Filtering]
+        F --> Re[Reranking]
+        Re --> P[Post-processing]
+    end
+
+    style Document Indexing fill:#f5f5f5,stroke:#333,stroke-width:2px
+    style Search Process fill:#f0f8ff,stroke:#333,stroke-width:2px
+    style Optimization fill:#fff0f5,stroke:#333,stroke-width:2px
 ```
 
 ### Development Tips
@@ -595,14 +1222,189 @@ black>=23.7.0
 flake8>=6.0.0
 ```
 
-## Step-by-Step Implementation Guide
+## Implementation Guide and Examples
 
-### Step 1: Document Reader Implementation
+> This guide provides production-ready implementations that correspond to the interactive examples in the notebooks.
+> Each section includes references to relevant notebook examples and production code.
+
+### 1. Document Processing
+
+#### 1.1 Document Reader Implementation
+
+**Production Code** (`src/document_processing/reader.py`):
 ```python
-# src/document_processing/reader.py
-
 from pathlib import Path
 from typing import Dict, Any
+import fitz  # PyMuPDF
+
+class DocumentReader:
+    """Document reader with production-ready error handling and metadata extraction.
+    See notebooks/01_document_processing.ipynb for interactive examples."""
+    
+    def read_file(self, file_path: Path) -> Dict[str, Any]:
+        """Read and extract text from a document.
+        
+        Implements features demonstrated in notebook section 1.1 (Basic File Reading)
+        and 1.2 (Error Handling).
+        """
+        if not file_path.exists():
+            raise FileNotFoundError(f"File not found: {file_path}")
+            
+        text = ""
+        metadata = {}
+        
+        if file_path.suffix.lower() == '.pdf':
+            with fitz.open(file_path) as doc:
+                # Extract context-enhancing metadata
+                metadata = {
+                    "hierarchy": self._extract_document_hierarchy(doc),
+                    "text_types": self._extract_text_types(doc),
+                    "page_boundaries": self._get_page_boundaries(doc)
+                }
+                text = "\n".join(page.get_text() for page in doc)
+        elif file_path.suffix.lower() == '.txt':
+            with open(file_path, 'r') as f:
+                text = f.read()
+                metadata = {
+                    "hierarchy": {"type": "plain_text"},
+                    "text_types": {"body": True},
+                    "page_boundaries": None
+                }
+                
+        return {
+            "text": text,
+            "metadata": metadata,
+            "source": str(file_path)
+        }
+        
+    def _extract_document_hierarchy(self, doc) -> Dict:
+        """Extract document structure (headings, sections).
+        See notebooks/01_document_processing.ipynb section 1.3."""
+        # Implementation here
+        pass
+        
+    def _extract_text_types(self, doc) -> Dict:
+        """Identify text types (title, body, list, table).
+        See notebooks/01_document_processing.ipynb section 1.4."""
+        # Implementation here
+        pass
+        
+    def _get_page_boundaries(self, doc) -> List[int]:
+        """Get character positions of page boundaries.
+        See notebooks/01_document_processing.ipynb section 1.5."""
+        # Implementation here
+        pass
+```
+
+**Example Usage** (from `notebooks/01_document_processing.ipynb`):
+```python
+# Initialize reader
+reader = DocumentReader()
+
+# Read different file types
+pdf_doc = reader.read_file('sample.pdf')
+txt_doc = reader.read_file('sample.txt')
+
+# Access extracted metadata
+print(f"Document hierarchy: {pdf_doc['metadata']['hierarchy']}")
+print(f"Text types: {pdf_doc['metadata']['text_types']}")
+```
+
+#### 1.2 Text Chunker Implementation
+
+**Production Code** (`src/document_processing/chunker.py`):
+```python
+from typing import List, Dict, Any
+
+class TextChunker:
+    """Text chunker with metadata-aware splitting strategies.
+    See notebooks/01_document_processing.ipynb for interactive examples."""
+    
+    def __init__(self, chunk_size: int = 1000, chunk_overlap: int = 200):
+        self.chunk_size = chunk_size
+        self.chunk_overlap = chunk_overlap
+        
+    def create_chunks(self, text: str, metadata: Dict = None) -> List[Dict[str, Any]]:
+        """Split text into chunks using metadata for better boundaries.
+        
+        Implements features demonstrated in notebook sections 2.1 (Basic Chunking)
+        and 2.2 (Chunking Strategies).
+        """
+        chunks = []
+        start = 0
+        
+        # Use metadata for smart chunking if available
+        if metadata and metadata.get('page_boundaries'):
+            chunks.extend(self._chunk_by_pages(text, metadata['page_boundaries']))
+        else:
+            while start < len(text):
+                end = start + self.chunk_size
+                chunk_text = text[start:end]
+                
+                # Try to end at natural boundaries
+                if metadata and metadata.get('text_types'):
+                    end = self._find_natural_boundary(chunk_text, start, metadata)
+                else:
+                    # Fallback to sentence boundary
+                    last_period = chunk_text.rfind('.')
+                    if last_period != -1:
+                        end = start + last_period + 1
+                
+                chunks.append({
+                    "text": text[start:end],
+                    "start": start,
+                    "end": end,
+                    "metadata": self._get_chunk_metadata(start, end, metadata)
+                })
+                
+                start = end - self.chunk_overlap
+                
+        return chunks
+        
+    def _chunk_by_pages(self, text: str, page_boundaries: List[int]) -> List[Dict]:
+        """Create chunks that respect page boundaries.
+        See notebooks/01_document_processing.ipynb section 2.3."""
+        # Implementation here
+        pass
+        
+    def _find_natural_boundary(self, text: str, start: int, metadata: Dict) -> int:
+        """Find natural chunk boundary using text type information.
+        See notebooks/01_document_processing.ipynb section 2.4."""
+        # Implementation here
+        pass
+        
+    def _get_chunk_metadata(self, start: int, end: int, metadata: Dict) -> Dict:
+        """Extract relevant metadata for the chunk.
+        See notebooks/01_document_processing.ipynb section 2.5."""
+        # Implementation here
+        pass
+```
+
+**Example Usage** (from `notebooks/01_document_processing.ipynb`):
+```python
+# Initialize chunker
+chunker = TextChunker(chunk_size=1000, overlap=200)
+
+# Create chunks with metadata
+chunks = chunker.create_chunks(pdf_doc['text'], pdf_doc['metadata'])
+
+# Examine chunk metadata
+for chunk in chunks[:2]:
+    print(f"Chunk metadata: {chunk['metadata']}")
+```
+
+### Implementation-Notebook Mapping
+
+| Production Code | Notebook Section | Description |
+|-----------------|------------------|-------------|
+| `DocumentReader.read_file()` | 1.1, 1.2 | Basic file reading and error handling |
+| `DocumentReader._extract_document_hierarchy()` | 1.3 | Document structure extraction |
+| `DocumentReader._extract_text_types()` | 1.4 | Text type identification |
+| `DocumentReader._get_page_boundaries()` | 1.5 | Page boundary detection |
+| `TextChunker.create_chunks()` | 2.1, 2.2 | Basic chunking and strategies |
+| `TextChunker._chunk_by_pages()` | 2.3 | Page-aware chunking |
+| `TextChunker._find_natural_boundary()` | 2.4 | Smart boundary detection |
+| `TextChunker._get_chunk_metadata()` | 2.5 | Chunk metadata extraction |
 import PyPDF2
 
 class DocumentReader:
@@ -610,7 +1412,8 @@ class DocumentReader:
         # List of supported file extensions
         self.supported_formats = {
             '.pdf': self._read_pdf,
-            '.txt': self._read_txt
+            '.txt': self._read_txt,
+            '.md': self._read_md
         }
     
     def read_file(self, file_path: str | Path) -> Dict[str, Any]:
@@ -652,6 +1455,28 @@ class DocumentReader:
             raise ValueError(f"Error reading PDF: {e}")
     
     def _read_txt(self, path: Path) -> Dict[str, Any]:
+        """Read and process a text file."""
+        try:
+            with open(path, 'r', encoding='utf-8') as file:
+                content = file.read()
+            return {
+                'content': content,
+                'metadata': {'source': str(path)}
+            }
+        except Exception as e:
+            raise FileProcessingError(f"Error reading text file: {e}")
+
+    def _read_md(self, path: Path) -> Dict[str, Any]:
+        """Read and process a markdown file."""
+        try:
+            with open(path, 'r', encoding='utf-8') as file:
+                content = file.read()
+            return {
+                'content': content,
+                'metadata': {'source': str(path)}
+            }
+        except Exception as e:
+            raise FileProcessingError(f"Error reading markdown file: {e}")
         """Read a text file with encoding handling."""
         try:
             text = path.read_text(encoding='utf-8')
@@ -2950,56 +3775,99 @@ class RAGChain:
 
 ### Test Categories
 
-#### 1. Unit Tests
+#### 1. Must-Have Tests
+
+##### Unit Tests
 ```python
-# test_document_processing.py
-def test_basic_document_reading():
+# Document Processing
+def test_document_reading():
     reader = DocumentReader()
     doc = reader.read_file("test.pdf")
     assert doc["text"]
     assert doc["metadata"]
 
-# test_vector_store.py
-def test_basic_search():
+# Vector Store
+def test_vector_operations():
     store = ElasticsearchStore()
-    results = store.similarity_search("test query")
-    assert len(results) >= 0
-```
-
-#### 2. Integration Tests
-```python
-# test_integration.py
-def test_simple_pipeline():
-    # 1. Read document
-    doc = reader.read_file("test.pdf")
-    
-    # 2. Create chunks
-    chunks = chunker.create_chunks(doc["text"])
-    
-    # 3. Store in Elasticsearch
-    store.add_documents(chunks)
-    
-    # 4. Search and verify
+    # Test document addition
+    store.add_documents([{"text": "test", "metadata": {}}])
+    # Test basic search
     results = store.similarity_search("test")
     assert len(results) > 0
+
+# RAG Chain
+def test_answer_generation():
+    chain = RAGChain()
+    response = chain.generate_answer("test question")
+    assert "answer" in response
+    assert "sources" in response
+
+# CLI
+def test_cli_commands():
+    result = runner.invoke(cli, ["process", "test.pdf"])
+    assert result.exit_code == 0
 ```
 
-### Test Coverage
-- Aim for 80%+ coverage
-- Focus on core functionality
-- Include error cases
-- Test configuration handling
+##### Integration Tests
+```python
+# Core Pipeline
+def test_document_to_vectors():
+    # 1. Read document
+    doc = reader.read_file("test.pdf")
+    # 2. Create chunks
+    chunks = chunker.create_chunks(doc["text"])
+    # 3. Store vectors
+    store.add_documents(chunks)
+    assert store.count() > 0
+
+# End-to-End Flow
+def test_question_answering():
+    # 1. Process document
+    process_document("test.pdf")
+    # 2. Ask question
+    response = generate_answer("What is in the document?")
+    assert response["answer"]
+    assert len(response["sources"]) > 0
+
+# Error Handling
+def test_invalid_inputs():
+    # Test invalid file
+    with pytest.raises(InvalidFileError):
+        reader.read_file("nonexistent.pdf")
+    # Test empty query
+    with pytest.raises(InvalidQueryError):
+        store.similarity_search("")
+```
+
+### Test Coverage Goals
+
+#### Must-Have
+- Core functionality: 80%+ coverage
+- Error handling for common cases
+- CLI command validation
+- Basic integration tests
+
+#### Nice-to-Have
+- Edge cases and rare errors
+- UI component tests (if web app implemented)
+
+#### Out of Scope
+- Performance testing and benchmarks
+  * Document processing speed
+  * Search latency measurements
+  * Response time thresholds
+- Load testing
+  * Concurrent operations
+  * Resource usage monitoring
+  * Scalability testing
 
 ### Running Tests
 ```bash
-# Run all tests
-python -m pytest
+# Run core tests
+python -m pytest tests/core/
 
 # Run with coverage
-python -m pytest --cov=src
-
-# Run specific test file
-python -m pytest tests/test_document_processing.py
+python -m pytest --cov=src tests/core/
 ```
 
 ## Monitoring and Logging

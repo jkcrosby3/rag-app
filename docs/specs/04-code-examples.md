@@ -1,6 +1,35 @@
 # RAG System Code Examples
 
+> This document provides code examples that are used in both the notebooks and production code.
+> For interactive examples, see the corresponding notebooks in the `/notebooks` directory.
+
 ## Document Processing
+
+### Test Data Setup
+```python
+# Common test data setup used in notebooks and tests
+from pathlib import Path
+from reportlab.pdfgen import canvas
+
+def create_test_files(base_dir: Path = Path("test_files")):
+    """Create test files for examples and testing.
+    Used in notebooks/01_document_processing.ipynb"""
+    base_dir.mkdir(exist_ok=True)
+    
+    # Create a test PDF
+    test_pdf = base_dir / "test.pdf"
+    c = canvas.Canvas(str(test_pdf))
+    c.drawString(100, 750, "This is a test PDF document.")
+    c.save()
+    
+    # Create a test text file
+    test_txt = base_dir / "test.txt"
+    test_txt.write_text("This is a test text document.\nIt has multiple lines.")
+    
+    return {
+        "pdf": test_pdf,
+        "txt": test_txt
+    }
 
 ### Document Reader
 ```python
