@@ -129,23 +129,40 @@ graph TD
 rag/
 ├── src/
 │   ├── document_processing/
+│   │   ├── __init__.py
 │   │   ├── reader.py      # Document reading
 │   │   └── chunker.py     # Text chunking
 │   ├── vector_store/
+│   │   ├── __init__.py
 │   │   └── elasticsearch_store.py
 │   └── rag/
+│       ├── __init__.py
 │       └── chain.py       # RAG implementation
 ├── tests/
+│   ├── __init__.py
 │   ├── test_document_processing.py
 │   ├── test_vector_store.py
 │   └── test_rag.py
+├── notebooks/            # Example notebooks
+│   ├── 01_document_processing.ipynb
+│   ├── 02_vector_store.ipynb
+│   └── 03_rag_chain.ipynb
 ├── cli/
-│   └── rag_cli.py
-└── web/
-    └── app.py
+│   └── rag_cli.py        # Command line interface
+├── web/
+│   └── app.py            # Streamlit web interface
+└── config/
+    └── elasticsearch.yml  # ES configuration
 ```
 
-### Setup Instructions
+### Development Environment
+
+#### 1. Prerequisites
+- Python 3.11+
+- Docker for Elasticsearch
+- 4GB+ RAM for development
+
+#### 2. Setup Steps
 ```bash
 # 1. Clone repository
 git clone <repository-url>
@@ -158,11 +175,44 @@ source venv/bin/activate
 # 3. Install dependencies
 pip install -r requirements.txt
 
-# 4. Start Elasticsearch
-docker run -d -p 9200:9200 elasticsearch:8.9.0
+# 4. Install development tools
+pip install pytest pytest-cov black flake8 pre-commit
 
-# 5. Run tests
+# 5. Set up pre-commit hooks
+pre-commit install
+
+# 6. Start Elasticsearch
+docker run -d -p 9200:9200 -e "discovery.type=single-node" elasticsearch:8.9.0
+
+# 7. Set environment variables
+export OPENAI_API_KEY=your_key_here
+
+# 8. Run tests
 python -m pytest
+```
+
+### Configuration
+
+#### 1. Environment Variables
+```bash
+OPENAI_API_KEY=your_key_here
+ELASTICSEARCH_URL=http://localhost:9200
+CHUNK_SIZE=1000
+CHUNK_OVERLAP=200
+```
+
+#### 2. Elasticsearch Settings
+```yaml
+# config/elasticsearch.yml
+cluster.name: rag-dev
+node.name: rag-node-1
+network.host: 0.0.0.0
+discovery.type: single-node
+xpack.security.enabled: false  # Development only
+
+# Index settings
+index.number_of_shards: 1    # Development setting
+index.number_of_replicas: 0  # Development setting
 ```
 
 ## 5. Implementation Details
@@ -2898,7 +2948,9 @@ class RAGChain:
 
 ## Testing Strategy
 
-### Unit Tests
+### Test Categories
+
+#### 1. Unit Tests
 ```python
 # test_document_processing.py
 def test_basic_document_reading():
@@ -2914,7 +2966,7 @@ def test_basic_search():
     assert len(results) >= 0
 ```
 
-### Integration Test
+#### 2. Integration Tests
 ```python
 # test_integration.py
 def test_simple_pipeline():
@@ -2932,7 +2984,25 @@ def test_simple_pipeline():
     assert len(results) > 0
 ```
 
-## Basic Monitoring
+### Test Coverage
+- Aim for 80%+ coverage
+- Focus on core functionality
+- Include error cases
+- Test configuration handling
+
+### Running Tests
+```bash
+# Run all tests
+python -m pytest
+
+# Run with coverage
+python -m pytest --cov=src
+
+# Run specific test file
+python -m pytest tests/test_document_processing.py
+```
+
+## Monitoring and Logging
 
 ### Development Logging
 ```python
@@ -2949,34 +3019,9 @@ logger.info("Processing document: %s", doc_id)
 logger.error("Failed to process: %s", error)
 ```
 
-## Local Development Setup
-
-### Requirements
-- Python 3.11+
-- Elasticsearch 8.x (local or Docker)
-- 4GB+ RAM for development
-
-### Quick Start
-```bash
-# 1. Install dependencies
-pip install -r requirements.txt
-
-# 2. Start Elasticsearch
-docker run -d -p 9200:9200 -e "discovery.type=single-node" elasticsearch:8.9.0
-
-# 3. Set environment variables
-export OPENAI_API_KEY=your_key_here
-
-# 4. Run the application
-python app.py
-```
-
-### Configuration
-```python
-# config.py
-config = {
-    'elasticsearch_url': 'http://localhost:9200',
-    'model_name': 'gpt-3.5-turbo',
-    'chunk_size': 1000
-}
-```
+### Basic Metrics
+- Document processing time
+- Vector store query latency
+- Memory usage
+- Error rates
+- Success/failure counts
