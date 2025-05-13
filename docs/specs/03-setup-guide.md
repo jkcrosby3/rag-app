@@ -10,7 +10,7 @@
 ### Step 1: Clone Repository
 ```bash
 git clone <repository-url>
-cd rag
+cd rag-app
 ```
 
 ### Step 2: Python Environment
@@ -77,8 +77,8 @@ docker-compose logs -f
 ### Elasticsearch Settings
 ```yaml
 # config/elasticsearch.yml
-cluster.name: rag-cluster
-node.name: rag-node
+cluster.name: rag-app-app-cluster
+node.name: rag-app-app-node
 network.host: 0.0.0.0
 discovery.type: single-node
 xpack.security.enabled: false

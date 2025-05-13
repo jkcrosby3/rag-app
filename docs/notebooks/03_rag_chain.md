@@ -7,7 +7,7 @@ This notebook demonstrates the RAG (Retrieval-Augmented Generation) implementati
 First, let's import our components:
 
 ```python
-from src.rag import RAGChain
+from src.rag_core import RAGChain
 from src.vector_store import ElasticsearchStore
 from src.document_processing import DocumentReader, TextChunker
 import os

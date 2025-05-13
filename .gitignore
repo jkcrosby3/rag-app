@@ -37,11 +37,12 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-# IDEs
+# IDEs and OS
 .idea/
 .vscode/
 *.swp
 *.swo
+.DS_Store
 
 # Project specific
 data/processed/

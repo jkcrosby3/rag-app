@@ -1,0 +1,17 @@
+# Python version requirement
+python_version >= "3.13.0"
+
+# Development tools
+jupyter>=1.0.0
+notebook>=7.0.0
+
+# Web framework
+fastapi>=0.100.0
+uvicorn>=0.22.0
+
+# CLI
+typer>=0.9.0
+
+# Core dependencies (to be expanded as needed)
+python-dotenv>=1.0.0
+pydantic>=2.0.0

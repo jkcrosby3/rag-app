@@ -75,7 +75,7 @@ For production features, see [`02-technical-design-phase2.md`](02-technical-desi
 
 ### RAG Implementation Guides
 1. **Document Processing & Embeddings**
-   - LangChain RAG Tutorial: https://python.langchain.com/docs/tutorials/rag/
+   - LangChain RAG Tutorial: https://python.langchain.com/docs/tutorials/rag-app/
    - Advanced RAG with HuggingFace: https://huggingface.co/learn/cookbook/advanced_rag
    - Semantic Search Implementation: https://www.sbert.net/examples/applications/semantic-search/README.html
 
@@ -593,7 +593,7 @@ graph TD
 
 ### Project Structure
 ```
-rag/
+rag-app/
 ├── src/
 │   ├── __init__.py
 │   ├── document_processing.py
@@ -704,7 +704,7 @@ auth:
 ```bash
 # 1. Clone repository
 git clone <repository-url>
-cd rag
+cd rag-app
 
 # 2. Create virtual environment
 python -m venv venv
@@ -742,8 +742,8 @@ CHUNK_OVERLAP=200
 #### 2. Elasticsearch Settings
 ```yaml
 # config/elasticsearch.yml
-cluster.name: rag-dev
-node.name: rag-node-1
+cluster.name: rag-app-app-dev
+node.name: rag-app-app-node-1
 network.host: 0.0.0.0
 discovery.type: single-node
 xpack.security.enabled: false  # Development only
@@ -779,7 +779,7 @@ class ElasticsearchStore:
 class RAGChain:
     def generate_answer(self, question: str) -> Dict:
         """Generate answer using RAG approach."""
-        # Implementation details in src/rag/chain.py
+        # Implementation details in src/rag_core/chain.py
 ```
 
 ## 6. Testing Strategy
@@ -1777,7 +1777,7 @@ class ElasticsearchStore:
 
 ### Step 4: RAG Chain Implementation
 ```python
-# src/rag/chain.py
+# src/rag_core/chain.py
 
 from typing import Dict, Any, List
 from langchain.chat_models import ChatOpenAI
@@ -2077,7 +2077,7 @@ OPENAI_API_KEY=your-api-key
 
 # Elasticsearch settings
 ELASTICSEARCH_HOST=http://localhost:9200
-ELASTICSEARCH_INDEX=rag-documents
+ELASTICSEARCH_INDEX=rag-app-app-documents
 
 # Streamlit settings
 STREAMLIT_SERVER_PORT=8501
@@ -2685,7 +2685,7 @@ serveLocalFiles = true
 
 #### 1. RAG Chain Implementation
 ```python
-# src/rag/chain.py
+# src/rag_core/chain.py
 from typing import Dict, List
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
@@ -2816,8 +2816,8 @@ def test_no_relevant_chunks(mock_vector_store):
 #### 1. Elasticsearch Configuration
 ```yaml
 # config/elasticsearch.yml
-cluster.name: rag-cluster
-node.name: rag-node
+cluster.name: rag-app-app-cluster
+node.name: rag-app-app-node
 
 # Enable security features
 xpack.security.enabled: false  # For development only
