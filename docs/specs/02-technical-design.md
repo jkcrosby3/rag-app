@@ -67,7 +67,15 @@ graph TD
 - Advanced monitoring
 - Backup/recovery
 
-## 3. Development Plan
+## 3. Development Guidelines
+
+### Code Standards
+- All classes and methods must have docstrings following Google Python Style Guide
+- Type hints required for all function parameters and return values
+- Maximum line length of 88 characters (Black formatter)
+- Use f-strings for string formatting
+
+## 4. Development Plan
 
 ### Timeline Overview
 - Week 1: Core Components (Setup, Document Processing, Vector Store)
