@@ -390,78 +390,47 @@ graph TD
 > Each phase should be completed, tested, and reviewed before moving to the next.
 
 #### Phase 1: Basic Document Processing (3-4 days)
-1. **TXT File Processing** (1-2 days)
+1. **TXT File Processing** (1-2 days) - [Issue #1](https://github.com/justinlawyer/rag-app/issues/1), [Issue #2](https://github.com/justinlawyer/rag-app/issues/2)
    - [ ] Implement basic file reading
    - [ ] Simple text extraction
    - [ ] Fixed-size text chunking
    - [ ] Basic validation (file exists, not empty)
    - [ ] Unit tests for happy path
 
-2. **PDF Support** (2 days)
+2. **PDF Support** (2 days) - [Issue #3](https://github.com/justinlawyer/rag-app/issues/3)
    - [ ] Add PDF text extraction using PyMuPDF
    - [ ] Handle basic PDF errors (file not found, corrupt file)
-   - [ ] Test with sample PDFs
-   - [ ] Extract context-enhancing metadata:
-     * Document hierarchy (headings/sections)
-     * Local context (previous/next paragraph)
-     * Text type (title, body, list, table)
-     * Page boundaries for coherent chunks
 
-#### Phase 2: Vector Store Basics (4-5 days)
-1. **Basic Storage** (2 days)
-   - [ ] Elasticsearch connection
-   - [ ] Simple document schema
-   - [ ] Basic document indexing
-   - [ ] Verify storage works
+#### Nice-to-Have Features
 
-2. **Simple Search** (2-3 days)
-   - [ ] Implement exact-match search
-   - [ ] Basic vector similarity
-   - [ ] Single document queries
-   - [ ] Basic result format
+1. **Web Application** - [Issue #4](https://github.com/justinlawyer/rag-app/issues/4), [Issue #5](https://github.com/justinlawyer/rag-app/issues/5)
+   - Basic FastAPI setup
+   - File upload endpoint
+   - Basic error handling
 
-#### Phase 3: Initial CLI (3-4 days)
-1. **Core Commands** (2 days)
-   - [ ] Document upload command
-   - [ ] Simple search command
-   - [ ] Basic help text
-   - [ ] Error messages
+2. **Semantic Search** - [Issue #6](https://github.com/justinlawyer/rag-app/issues/6), [Issue #7](https://github.com/justinlawyer/rag-app/issues/7)
+   - Vector store integration
+   - Text embedding generation
+   - Basic similarity search
 
-2. **Basic Q&A** (1-2 days)
-   - [ ] Implement question input
-   - [ ] Simple answer generation
-   - [ ] Plain text output
-   - [ ] Basic input validation
+3. **Document Viewer** - [Issue #8](https://github.com/justinlawyer/rag-app/issues/8)
+   - Web-based document viewer
+   - Chunk navigation
+   - Search functionality
 
-#### Phase 4: RAG Integration (4-5 days)
-1. **Basic RAG Chain** (2-3 days)
-   - [ ] Connect vector search
-   - [ ] Simple prompt template
-   - [ ] Basic answer generation
-   - [ ] Error handling
+#### Out of Scope Features
 
-2. **Query Processing** (2 days)
-   - [ ] Question preprocessing
-   - [ ] Context assembly
-   - [ ] Response formatting
-   - [ ] Basic testing
+1. **Performance Optimization** - [Issue #9](https://github.com/justinlawyer/rag-app/issues/9)
+   - Advanced monitoring
+   - Performance optimization
+   - Load testing
+   - Distributed processing
 
-#### Phase 5: Testing & Polish (3-4 days)
-1. **Core Testing** (2 days)
-   - [ ] Unit test coverage
-   - [ ] Integration tests
-   - [ ] Test data setup
-   - [ ] Bug fixes
-
-2. **Documentation** (1-2 days)
-   - [ ] Usage examples
-   - [ ] Setup guide
-   - [ ] Code comments
-   - [ ] README update
-
-#### Optional Enhancement Phases
-
-1. **Source Tracking**
+2. **Security Implementation** - [Issue #10](https://github.com/justinlawyer/rag-app/issues/10)
+   - Authentication
+   - Authorization
+   - Advanced security features
+   - Penetration testing
    - Add document references
    - Include relevant snippets
    - Add confidence scores
