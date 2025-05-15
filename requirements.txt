@@ -12,6 +12,10 @@ uvicorn>=0.22.0
 # CLI
 typer>=0.9.0
 
+# Document processing
+PyMuPDF>=1.25.0  # PDF processing
+PyPDF2>=3.0.0   # PDF utilities
+
 # Core dependencies (to be expanded as needed)
 python-dotenv>=1.0.0
 pydantic>=2.0.0

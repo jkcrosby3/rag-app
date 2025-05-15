@@ -1,7 +1,6 @@
 [tool.black]
 line-length = 88
 target-version = ['py39']
-include = '\.pyi?$'
 
 [tool.isort]
 profile = "black"
@@ -23,3 +22,9 @@ max-line-length = 88
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 addopts = "-ra -q"
+filterwarnings = [
+    # Filter PyMuPDF/SWIG deprecation warnings
+    'ignore:builtin type SwigPyPacked has no __module__ attribute',
+    'ignore:builtin type SwigPyObject has no __module__ attribute',
+    'ignore:builtin type swigvarlink has no __module__ attribute',
+]
