@@ -19,21 +19,21 @@ def chunk_text(text: str, chunk_size: int = 1000, overlap: int = 100) -> List[st
     """Split text into overlapping chunks."""
     chunks = []
     start = 0
-    
+
     while start < len(text):
         end = start + chunk_size
         chunk = text[start:end]
-        
+
         # Find natural boundary
         if end < len(text):
             last_period = chunk.rfind('.')
             if last_period > 0:
                 end = start + last_period + 1
                 chunk = text[start:end]
-        
+
         chunks.append(chunk)
         start = end - overlap
-        
+
     return chunks
 ```
 
@@ -49,10 +49,10 @@ def process_pdf(file_path: Path) -> Dict[str, Any]:
             "author": doc.metadata.get("author", ""),
             "page_count": len(doc)
         }
-        
+
         for page in doc:
             text += page.get_text()
-            
+
         return {
             "text": text,
             "metadata": metadata,
@@ -80,7 +80,7 @@ def setup_vector_index(es_client, index_name: str) -> None:
             }
         }
     }
-    
+
     es_client.indices.create(index=index_name, body=settings)
 ```
 
@@ -123,7 +123,7 @@ def get_context(question: str, k: int = 3) -> List[str]:
             "size": k
         }
     )
-    
+
     return [hit["_source"]["text"] for hit in results["hits"]["hits"]]
 ```
 
@@ -136,7 +136,7 @@ def generate_answer(question: str, context: List[str]) -> str:
         context="\n".join(context),
         question=question
     )
-    
+
     response = openai.ChatCompletion.create(
         model="gpt-4",
         messages=[
@@ -144,7 +144,7 @@ def generate_answer(question: str, context: List[str]) -> str:
             {"role": "user", "content": prompt}
         ]
     )
-    
+
     return response.choices[0].message.content
 ```
 
@@ -156,12 +156,12 @@ def main():
     parser = argparse.ArgumentParser(description="RAG System CLI")
     parser.add_argument("--query", type=str, help="Question to ask")
     parser.add_argument("--doc", type=str, help="Document to process")
-    
+
     args = parser.parse_args()
-    
+
     if args.doc:
         process_document(args.doc)
-    
+
     if args.query:
         context = get_context(args.query)
         answer = generate_answer(args.query, context)
@@ -196,11 +196,11 @@ def test_full_pipeline():
     # Process document
     doc_path = Path("test.pdf")
     process_document(doc_path)
-    
+
     # Query system
     question = "What is the main topic?"
     answer = query_system(question)
-    
+
     assert isinstance(answer, str)
     assert len(answer) > 0
 ```

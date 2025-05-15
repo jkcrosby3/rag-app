@@ -1,9 +1,9 @@
 """Unit tests for the text reader module."""
-import pytest
 from pathlib import Path
-from src.document_processing.reader import (
-    TextReader, FileNotFoundError, EmptyFileError
-)
+
+import pytest
+
+from src.document_processing.reader import EmptyFileError, FileNotFoundError, TextReader
 
 
 @pytest.fixture
@@ -32,11 +32,11 @@ def test_read_valid_file(text_reader, sample_text_file):
     """Test reading a valid text file."""
     result = text_reader.read_file(sample_text_file)
 
-    assert 'text' in result
-    assert 'metadata' in result
-    assert result['text'] == "This is a test file.\nIt has multiple lines.\n"
-    assert result['metadata']['file_name'] == "test.txt"
-    assert result['metadata']['file_size'] > 0
+    assert "text" in result
+    assert "metadata" in result
+    assert result["text"] == "This is a test file.\nIt has multiple lines.\n"
+    assert result["metadata"]["file_name"] == "test.txt"
+    assert result["metadata"]["file_size"] > 0
 
 
 def test_read_nonexistent_file(text_reader, tmp_path):

@@ -139,7 +139,7 @@ def analyze_response(question, answer, sources):
     print(f"\nQuestion: {question}")
     print(f"Answer length: {len(answer)} chars")
     print(f"Sources used: {len(sources)}")
-    
+
     # Check source relevance
     source_text = " ".join(s['text'] for s in sources)
     print(f"Total source context: {len(source_text)} chars")

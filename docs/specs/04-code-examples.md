@@ -15,17 +15,17 @@ def create_test_files(base_dir: Path = Path("test_files")):
     """Create test files for examples and testing.
     Used in notebooks/01_document_processing.ipynb"""
     base_dir.mkdir(exist_ok=True)
-    
+
     # Create a test PDF
     test_pdf = base_dir / "test.pdf"
     c = canvas.Canvas(str(test_pdf))
     c.drawString(100, 750, "This is a test PDF document.")
     c.save()
-    
+
     # Create a test text file
     test_txt = base_dir / "test.txt"
     test_txt.write_text("This is a test text document.\nIt has multiple lines.")
-    
+
     return {
         "pdf": test_pdf,
         "txt": test_txt
@@ -42,10 +42,10 @@ class DocumentReader:
         """Read and extract text from a document."""
         if not file_path.exists():
             raise FileNotFoundError(f"File not found: {file_path}")
-            
+
         text = ""
         metadata = {}
-        
+
         if file_path.suffix.lower() == '.pdf':
             with fitz.open(file_path) as doc:
                 metadata = {
@@ -61,7 +61,7 @@ class DocumentReader:
                     "title": file_path.stem,
                     "pages": 1
                 }
-                
+
         return {
             "text": text,
             "metadata": metadata,
@@ -72,31 +72,31 @@ class TextChunker:
     def __init__(self, chunk_size: int = 1000, chunk_overlap: int = 200):
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
-        
+
     def create_chunks(self, text: str) -> List[Dict[str, Any]]:
         """Split text into overlapping chunks."""
         chunks = []
         start = 0
-        
+
         while start < len(text):
             end = start + self.chunk_size
             chunk_text = text[start:end]
-            
+
             # Try to end at sentence boundary
             if end < len(text):
                 last_period = chunk_text.rfind('.')
                 if last_period != -1:
                     end = start + last_period + 1
                     chunk_text = text[start:end]
-            
+
             chunks.append({
                 "text": chunk_text,
                 "start": start,
                 "end": end
             })
-            
+
             start = end - self.chunk_overlap
-            
+
         return chunks
 ```
 
@@ -113,7 +113,7 @@ class ElasticsearchStore:
         self.es = Elasticsearch(es_url)
         self.index_name = index_name
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
-        
+
         # Create index if not exists
         if not self.es.indices.exists(index=index_name):
             self.es.indices.create(
@@ -131,12 +131,12 @@ class ElasticsearchStore:
                     }
                 }
             )
-    
+
     def add_documents(self, documents: List[Dict[str, Any]]):
         """Add document chunks to Elasticsearch."""
         for doc in documents:
             vector = self.model.encode(doc["text"])
-            
+
             self.es.index(
                 index=self.index_name,
                 document={
@@ -145,11 +145,11 @@ class ElasticsearchStore:
                     "metadata": doc.get("metadata", {})
                 }
             )
-            
+
     def similarity_search(self, query: str, k: int = 3) -> List[Dict]:
         """Search for similar documents."""
         query_vector = self.model.encode(query)
-        
+
         response = self.es.search(
             index=self.index_name,
             knn={
@@ -160,7 +160,7 @@ class ElasticsearchStore:
             },
             source=["text", "metadata"]
         )
-        
+
         return [hit["_source"] for hit in response["hits"]["hits"]]
 ```
 
@@ -174,13 +174,13 @@ import openai
 class RAGChain:
     def __init__(self, vector_store: ElasticsearchStore):
         self.vector_store = vector_store
-        
+
     def generate_answer(self, question: str) -> Dict:
         """Generate answer using RAG approach."""
         # Get relevant context
         context_docs = self.vector_store.similarity_search(question)
         context = "\n\n".join(doc["text"] for doc in context_docs)
-        
+
         # Generate answer
         prompt = f"""Answer the question based on the following context:
 
@@ -199,7 +199,7 @@ Answer:"""
             ],
             temperature=0
         )
-        
+
         return {
             "answer": response.choices[0].message.content,
             "sources": context_docs
@@ -298,10 +298,10 @@ class RagWebApp:
         if question:
             with st.spinner("Generating answer..."):
                 response = self.chain.generate_answer(question)
-            
+
             st.write("### Answer")
             st.write(response["answer"])
-            
+
             st.write("### Sources")
             for src in response["sources"]:
                 st.text(f"{src['text'][:200]}...")
@@ -343,7 +343,7 @@ services:
       - "9200:9200"
     volumes:
       - es_data:/usr/share/elasticsearch/data
-  
+
   rag-app:
     build: .
     environment:

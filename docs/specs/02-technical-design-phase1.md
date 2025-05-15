@@ -210,7 +210,7 @@ class DocumentReader:
 class ElasticsearchStore:
     def add_documents(self, documents: List[Dict]): pass
     def similarity_search(self, query: str, k: int = 5) -> List[Dict]: pass
-    
+
     # Phase 2: Document Lifecycle Management
     # def delete_documents(self, doc_ids: List[str]): pass
     # def update_document(self, doc_id: str, document: Dict): pass
@@ -229,10 +229,10 @@ class RAGChain:
 ```python
 def read_file(self, file_path: Path) -> Dict[str, Any]:
     """Read and process a document file.
-    
+
     Args:
         file_path: Path to the document (PDF, TXT, or MD)
-        
+
     Returns:
         Dict containing:
         - content: Extracted text content
@@ -245,18 +245,18 @@ def read_file(self, file_path: Path) -> Dict[str, Any]:
 ```python
 def add_documents(self, documents: List[Dict]):
     """Add document chunks to Elasticsearch with vector embeddings.
-    
+
     Args:
         documents: List of documents with content and metadata
     """
 
 def similarity_search(self, query: str, k: int = 5) -> List[Dict]:
     """Perform semantic search using vector embeddings.
-    
+
     Args:
         query: Search query
         k: Number of results to return
-        
+
     Returns:
         List of matching documents with scores
     """
@@ -267,20 +267,20 @@ def similarity_search(self, query: str, k: int = 5) -> List[Dict]:
 ```python
 def generate_answer(self, question: str) -> str:
     """Generate answer using RAG pipeline (Phase 1).
-    
+
     Args:
         question: User's question
-        
+
     Returns:
         str: Generated response without sources
     """
 
 def generate_answer_with_sources(self, question: str) -> Dict:
     """Generate answer using RAG pipeline with source tracking (Phase 2).
-    
+
     Args:
         question: User's question
-        
+
     Returns:
         Dict containing:
         - answer: Generated response
@@ -290,21 +290,21 @@ def generate_answer_with_sources(self, question: str) -> Dict:
 
 def chat(self, message: str) -> str:
     """Simple chat without context management (Phase 1).
-    
+
     Args:
         message: User's message
-        
+
     Returns:
         str: Generated response
     """
 
 def chat_with_history(self, message: str, history: List[Dict] = None) -> Dict:
     """Interactive chat with context management (Phase 2).
-    
+
     Args:
         message: User's message
         history: Previous conversation turns
-        
+
     Returns:
         Dict containing response and context
     """
@@ -769,11 +769,11 @@ graph TB
     CLI --> DP
     Web --> DP
     API --> DP
-    
+
     DP --> VS
     VS --> ES
     DP --> FS
-    
+
     VS --> RAG
     RAG --> LLM
 ```
@@ -1011,7 +1011,7 @@ For installation and configuration, see [`setup-guide.md`](setup-guide.md)
         }
 ```python
                 text = "\n".join(
-                    page.extract_text() 
+                    page.extract_text()
                     for page in doc
                 )
 

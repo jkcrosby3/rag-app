@@ -21,18 +21,18 @@ First, let's create some test files:
 def create_test_files():
     test_dir = Path("test_files")
     test_dir.mkdir(exist_ok=True)
-    
+
     # Create PDF
     from reportlab.pdfgen import canvas
     test_pdf = test_dir / "test.pdf"
     c = canvas.Canvas(str(test_pdf))
     c.drawString(100, 750, "This is a test PDF document.")
     c.save()
-    
+
     # Create TXT
     test_txt = test_dir / "test.txt"
     test_txt.write_text("This is a test text document.\nIt has multiple lines.")
-    
+
     return {
         "pdf": test_pdf,
         "txt": test_txt
@@ -111,7 +111,7 @@ def show_chunks(chunks):
 
 # With page boundaries
 page_chunks = chunker._chunk_by_pages(
-    pdf_doc['text'], 
+    pdf_doc['text'],
     pdf_doc['metadata']['page_boundaries']
 )
 print("Page-based chunks:")
@@ -121,8 +121,8 @@ show_chunks(page_chunks)
 natural_chunks = []
 for chunk in chunks:
     end = chunker._find_natural_boundary(
-        chunk['text'], 
-        chunk['start'], 
+        chunk['text'],
+        chunk['start'],
         pdf_doc['metadata']
     )
     chunk['end'] = end

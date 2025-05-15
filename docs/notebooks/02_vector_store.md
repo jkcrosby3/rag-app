@@ -63,7 +63,7 @@ print(f"Created {len(pdf_chunks)} chunks from PDF")
 for chunk in pdf_chunks:
     # Generate embedding
     embedding = model.encode(chunk['text'])
-    
+
     # Add to vector store
     store.add_document({
         'text': chunk['text'],

@@ -19,13 +19,13 @@ This document provides detailed API documentation for the RAG system components.
 ```python
 class DocumentReader:
     """Handles reading and processing of various document types."""
-    
+
     def read_file(self, file_path: Path) -> Dict[str, Any]:
         """Read and process a document file.
-        
+
         Args:
             file_path: Path to the document file
-            
+
         Returns:
             Dict containing:
             - text: Extracted text content
@@ -40,11 +40,11 @@ class DocumentReader:
 ```python
 class ElasticsearchStore:
     """Vector store implementation using Elasticsearch."""
-    
+
     def index_document(self, doc_id: str, chunks: List[Dict]) -> None:
         """Index document chunks with their embeddings."""
         pass
-        
+
     def semantic_search(self, query: str, k: int = 3) -> List[Dict]:
         """Perform semantic search using vector similarity."""
         pass
@@ -55,7 +55,7 @@ class ElasticsearchStore:
 ```python
 class RAGChain:
     """Core RAG implementation combining retrieval and generation."""
-    
+
     def generate_answer(self, question: str) -> Dict:
         """Generate answer using retrieved context."""
         pass
@@ -83,7 +83,7 @@ VECTOR_SEARCH_CONFIG = {
 ```python
 PROMPT_TEMPLATES = {
     "qa": """Answer the question based on the context below.
-    
+
 Context: {context}
 Question: {question}
 Answer: Let me help you with that."""

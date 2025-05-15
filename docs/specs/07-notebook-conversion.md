@@ -73,12 +73,12 @@ import pandas as pd
    - Use ```python blocks for code cells
    - Use regular markdown for text cells
    - Add cell metadata with ```{python} #tags
-   
+
 4. **Testing Conversion**
    ```bash
    # Convert
    jupytext --to notebook test.md
-   
+
    # Verify
    jupyter nbconvert --execute --to notebook --inplace test.ipynb
    ```

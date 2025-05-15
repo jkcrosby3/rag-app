@@ -36,10 +36,10 @@ test_files = create_test_files()
 def semantic_search(query, k=3):
     # Generate query embedding
     query_vector = model.encode(query)
-    
+
     # Search
     results = store.similarity_search(query, k=k)
-    
+
     print(f"\nQuery: {query}")
     print(f"Found {len(results)} results:")
     for i, result in enumerate(results, 1):
@@ -66,7 +66,7 @@ def filtered_search(query, metadata_filter, k=3):
         k=k,
         metadata_filter=metadata_filter
     )
-    
+
     print(f"\nQuery: {query}")
     print(f"Filter: {metadata_filter}")
     print(f"Found {len(results)} results:")
@@ -92,13 +92,13 @@ for filter_dict in filters:
 ```python
 def threshold_search(query, min_score=0.5, k=10):
     results = store.similarity_search(query, k=k)
-    
+
     # Filter by score
     good_results = [
-        r for r in results 
+        r for r in results
         if r['score'] >= min_score
     ]
-    
+
     print(f"\nQuery: {query}")
     print(f"Results above {min_score}: {len(good_results)}/{len(results)}")
     for i, result in enumerate(good_results, 1):
@@ -118,39 +118,39 @@ for threshold in thresholds:
 def expand_query(query):
     # Generate related terms
     expanded = [query]
-    
+
     # Add synonyms
     if "document" in query.lower():
         expanded.append(query.lower().replace("document", "file"))
     if "test" in query.lower():
         expanded.append(query.lower().replace("test", "sample"))
-        
+
     return expanded
 
 def expanded_search(query, k=3):
     queries = expand_query(query)
     all_results = []
-    
+
     print(f"Original query: {query}")
     print(f"Expanded to: {queries}")
-    
+
     # Search with all queries
     for q in queries:
         results = store.similarity_search(q, k=k)
         all_results.extend(results)
-    
+
     # Deduplicate and sort by score
     unique_results = {}
     for r in all_results:
         if r['text'] not in unique_results:
             unique_results[r['text']] = r
-    
+
     sorted_results = sorted(
         unique_results.values(),
         key=lambda x: x['score'],
         reverse=True
     )[:k]
-    
+
     print(f"\nFound {len(sorted_results)} unique results:")
     for i, result in enumerate(sorted_results, 1):
         print(f"\nResult {i}:")
@@ -170,22 +170,22 @@ import time
 
 def benchmark_search(query, k_values=[1, 3, 5, 10], runs=5):
     results = {}
-    
+
     for k in k_values:
         times = []
         scores = []
-        
+
         for _ in range(runs):
             start = time.time()
             search_results = store.similarity_search(query, k=k)
             times.append(time.time() - start)
             scores.extend(r['score'] for r in search_results)
-        
+
         results[k] = {
             'avg_time': sum(times) / len(times),
             'avg_score': sum(scores) / len(scores)
         }
-    
+
     print("\nSearch Benchmark:")
     for k, stats in results.items():
         print(f"\nk={k}:")
