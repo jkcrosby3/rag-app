@@ -1,5 +1,32 @@
 # Technical Design Document: RAG System (MVP)
 
+## Executive Summary
+
+This document outlines the technical design for a Retrieval-Augmented Generation (RAG) system MVP. The system will enable users to query their document collection using natural language, receiving contextually relevant answers. Phase 1 focuses on core functionality through a CLI interface, with potential extension to a web app.
+
+**Key Features:**
+
+- Document processing (PDF, TXT, MD)
+- Vector-based semantic search
+- LLM-powered answer generation
+- Basic CLI interface
+
+**Timeline:** 8 weeks total (4 weeks CLI MVP, 4 weeks Web App)
+**Team:** Junior Data Scientist with senior guidance
+**Success Metrics:** Document processing accuracy, answer relevance, response time
+
+## Table of Contents
+
+1. [Overview](#1-overview)
+   - [Purpose](#purpose)
+   - [Goals](#goals)
+   - [Success Criteria](#success-criteria)
+2. [Resources & References](#2-resources--references)
+3. [Code Organization](#3-code-organization)
+4. [System Architecture](#4-system-architecture)
+5. [Development Guidelines](#5-development-guidelines)
+6. [Development Plan](#6-development-plan)
+
 ## 1. Overview
 
 ### Purpose
@@ -162,6 +189,11 @@ For production features, see [`02-technical-design-phase2.md`](02-technical-desi
    - Example Apps: [https://github.com/streamlit/demo-self-driving](https://github.com/streamlit/demo-self-driving)
 
 ## 3. Code Organization
+
+This section provides a high-level overview of the code organization. For detailed implementation specifications, see:
+
+- [Technical Design - Implementation Details](02-technical-design-phase1-impl.md)
+- [Technical Design - API Reference](02-technical-design-phase1-api.md)
 
 ### 3.1 Technical Design Document Code
 
@@ -516,54 +548,61 @@ graph TD
 
 ## 6. Development Plan
 
+For a detailed task breakdown with checkboxes and dependencies, see [02-technical-design-phase1-tasks.md](02-technical-design-phase1-tasks.md).
+
 ### 6.1 Timeline Overview (Junior Data Scientist)
 
-#### 6.1.1 Week 1-2: Setup & Core Components
+#### Phase 1: CLI MVP (Weeks 1-4)
 
-- Environment setup and dependencies (2-3 days)
-  - Python environment
-  - Elasticsearch installation and configuration
-  - Package dependencies
+1. **Week 1: Setup & Document Processing**
+   - Development environment setup
+   - Basic PDF and TXT file reading
+   - Simple text extraction
+   - Basic error handling
 
-  - Learning curve for new tools
+2. **Week 2: Chunking & Storage**
+   - Text chunking implementation
+   - Vector embeddings setup
+   - Basic Elasticsearch integration
+   - Initial unit tests
 
-- Document processing (3-4 days)
-  - Learning document processing libraries
-  - Implementing PDF/TXT/MD readers
-  - Text chunking and validation
-  - Basic error handling
+3. **Week 3: Search & Retrieval**
+   - Vector search implementation
+   - Basic semantic search
+   - Result ranking
+   - Integration tests
 
-- Vector store setup (3-4 days)
-  - Understanding vector embeddings
-  - Elasticsearch vector search setup
-  - Basic CRUD operations
-  - Testing with sample documents
+4. **Week 4: CLI & Core RAG**
+   - CLI interface implementation
+   - Basic Q&A functionality
+   - Error handling
+   - Documentation
 
-#### 6.1.2 Week 3-4: RAG Implementation
+#### Phase 2: Web App & Enhancements (Weeks 5-8)
 
-- Core RAG chain (5-6 days)
-  - Learning LangChain basics
-  - Implementing retrieval logic
-  - Setting up answer generation
-  - Tuning prompt templates
-  - Basic error handling
+1. **Week 5: Web Foundation**
+   - Streamlit setup
+   - Basic page layout
+   - Document upload UI
+   - Simple Q&A interface
 
-- CLI Development (3-4 days)
-  - Learning Click/Typer
-  - Basic command implementation
-  - Input validation
-  - Error messages
+2. **Week 6: Enhanced Features**
+   - Markdown support
+   - Source tracking
+   - Confidence scores
+   - Error messaging
 
-#### 6.1.3 Week 5: Testing & Documentation
+3. **Week 7: Chat Interface**
+   - Chat mode implementation
+   - Context preservation
+   - History tracking
+   - UI polish
 
-- Unit tests (2-3 days)
-  - Test setup
-  - Core functionality tests
-  - Basic error cases
-
-- Integration tests (2-3 days)
-  - End-to-end flow tests
-  - CLI command tests
+4. **Week 8: Testing & Refinement**
+   - End-to-end testing
+   - Performance optimization
+   - Documentation updates
+   - Bug fixes
 
 - Documentation (2-3 days)
   - Code documentation
