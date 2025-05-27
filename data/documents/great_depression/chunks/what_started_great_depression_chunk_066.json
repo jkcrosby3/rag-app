@@ -1,0 +1,10 @@
+{
+  "text": "+ 1;andQis the intertemporal price. Note that rmis given by:\nrmt(i) =pmt(i)(1\u0000\n)hmt\u0012emt(i)\nkmt(i)\u0013\n\n+ (1\u0000\u000e) (12)\n6.5. Parameterization\nSeveral of the model parameters have values that are standard in the busi-\nness cycle literature. This includes the growth rate of technological progress,\nwhich is two percent, the population growth rate, which is one percent, the\nhousehold discount factor ( \f);which is chosen so that the steady state return\nto capital is six percent, the exponent on capital in the production function,\nwhich is 1/3, and the depreciation rate, which is \fve percent annually.\nI choose values for the utility function parameters \u0016;\u00180and\u00181to target\na steady state employment rate of 0.7, a steady state workweek length of\n33",
+  "metadata": {
+    "title": "what_started_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_started_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 65,
+    "total_chunks": 114
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "text": "summarizes the data by presenting numbers of banks failing for different reasons \nduring each year. In the table, row (a) indicates the total number of banks suspending operations \ndue to problems with assets and liabilities. Imbalances often arose on one side of the balance \nsheet, but could arise simultaneously on both sides. Rows (a.1) through (a.5) display the possible \ncombinations: (a.1) slow, doubtful, or worthless assets listed as the primary cause of suspension; \n(a.2) assets listed as the primary cause and heavy withdrawals listed as a contributing cause; (a.3) \nboth withdrawals and assets listed as primary causes; (a.4) heavy withdrawals listed as the \nprimary cause and assets as the contributing cause; and (a.5) withdrawals alone as the primary \ncause of suspension. Row (b) indicates the number of banks suspending due to the closure of a \ncorrespondent.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 59,
+    "total_chunks": 105
+  }
+}

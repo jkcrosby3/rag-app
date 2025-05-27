@@ -1,0 +1,10 @@
+{
+  "text": "as correspondent banks in Chicago expanded their businesses by absorbing responding \ninstitutions. \n Table 5 examines the relationship between clearing systems and bank closure for the \ncontraction as a whole. The table indicates the number of banks that suspended operations \ntemporarily and terminally in three groups: first, banks that cleared checks solely through \ncorrespondents; second, banks that belonged to clearing houses (but not the Federal Reserve \nSystem); and third, banks that belonged to the Federal Reserve System (including those that also \nbelonged to clearing houses). The table shows that the preponderance of banks that suspended \noperations cleared checks via correspondents. About a fifth belonged to the Federal Reserve \nSystem. Only a small fraction belonged to clearing houses. \nAcross these groups, the percentage of banks that suspended operations temporarily or \nterminally varied.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 79,
+    "total_chunks": 105
+  }
+}

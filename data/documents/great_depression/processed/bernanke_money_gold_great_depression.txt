@@ -1,0 +1,436 @@
+Ben S Ber nanke: Money , gold and the Great Depression 
+Rema rks by Mr Ben S Berna nke, Member of the Board of Go verno rs of the US Federa l Rese rve 
+System, at the H Parker Willis Le cture i n Economi c Policy, Washin gton and Lee University, Lexington, 
+Virginia, 2 Ma rch 2 004. 
+The ref erences f or the speech ca n be found o n the Board of  Gover nors of the F ederal Reserve System ’s website. 
+*      *      * 
+I am pleased to be able to present the H. Parker Willis Lecture in Economic Poli cy here at Washi ngton 
+and L ee University. As you  may kno w, Willis was an importa nt figure in th e early history of my current  
+employe r, the Federal Rese rve System. While he  was a profe ssor at Wa shington an d Lee, Willis 
+advise d Sen ator Carter G lass of Vi rginia, one  of th e key legi slators involved  in the fo unding of the  
+Fede ral Rese rve. Willis al so serve d on the Na tional Moneta ry Co mmission, wh ich re comme nded the 
+creation of the Fe deral Reserve, and he went on to become the research directo r at the Fe deral  
+Reserve from  1918 to 1922. At t he Federal Reserve,  Willis pushed for the de velopment of new and 
+better e conomic statistics,  facing th e resistance of those who too k the view tha t too many fa cts o nly 
+confuse the i ssue. Willi s was also the first editor of the Federal Reserve Bulletin , the official p ublication 
+of the Fed, which in Willis's time a s well a s today provide s a wealth of economi c statistics. As an  
+illustration of the intellectual atmosphere in Wash ington at the time he serv ed, Willis reported that  
+when the first copy of the  Bulletin  was pre sented to the Secret ary of the Treasury, the esteem ed 
+Secretary re plied, “Thi s Go vernme nt ain't going into the newsp aper busi ness.” 
+Like Pa rker Willis, I wa s a profe ssor my self befo re coming to the F ederal Re serve Board. On e topic of 
+particular interest to me as a researcher was the performance of the  Fede ral Reserve in its early days , 
+particula rly the part playe d by the youn g U.S. c entra l bank i n the Great Depression of the 1930s.1 In 
+hono r of Willis's imp ortant contri bution  to the d esign and creation of the Federal Reserve, I will spea k 
+today about t he rol e of the  Fede ral Reserve an d of moneta ry fact ors more gen erally in the o rigin a nd 
+propagatio n of the Gre at Depre ssion. L et me offer tw o caveat s befo re I be gin: First, as I me ntioned, H. 
+Parker Willis resigned fro m the Fed in  1922, to ta ke a po st at Colum bia University; thus,  he is n ot 
+implicate d in any of the  mistakes that th e Fe deral Reserve  made in the l ate 1920s an d early 1930 s. 
+Secon d, the views I will  express today are my o wn and are not necessarily th ose of my colleagu es in  
+the Fede ral Rese rve Syste m.  
+The n umber of peopl e wit h personal m emory of th e Great Depression i s fast shrin king with the years,  
+and to most of us the De pression is conveyed by g rainy, black-a nd-white ima ges of men i n hats an d 
+long co ats st andin g in bre ad lines. Ho wever, altho ugh the Dep ression was lo ng ago - O ctober thi s 
+year will mark the seve nty-fifth anniversa ry of the famo us 1929 stock ma rket cra sh - its i nfluen ce is still 
+very mu ch with us. In particula r, the experience of the Depressio n helpe d forge a consensus that the 
+govern ment bears the im portant respo nsibility of trying to stabil ize the e conomy and the  financial  
+system, as well as of assisting people affected by economic do wnturns. Dozen s of ou r most importa nt 
+govern ment a gencies and programs, ranging from social security (t o assi st the elderly an d disabled ) to 
+federal dep osit insura nce (to eliminate ban king panics) to the Se curitie s and Exchang e Co mmission 
+(to regulate financ ial ac tivities ) were created in the 19 30s, ea ch a l egacy of the Dep ression. 
+The imp act that the expe rience of the Depression has had on views about the role of th e governme nt 
+in the econo my is easily unde rstood when we re call the she er magnitud e of that eco nomi c downtu rn. 
+During th e major contraction ph ase of the De pressi on, between  1929 and 1933, re al outp ut in the  
+United  States fell n early 30 percent. During  the same p eriod, accordi ng to retrospe ctive studie s, the 
+unempl oyme nt rate rose from ab out 3  percent to  nearly 25 perce nt, and ma ny of those lu cky enou gh 
+to have a jo b were abl e to work o nly pa rt-time. For compari son, between 1973 and 19 75, in what wa s 
+perhaps the most severe U.S. rece ssion of the Wo rld Wa r II era, real outp ut fell 3.4 percent  and the  
+unempl oyme nt rate ro se from abo ut 4 percent to about 9 pe rcent. Other fe ature s of the  1929-33 
+decline in cluded a sharp deflation - p rices fell at a rate of nearly 1 0 perce nt per year du ring t he ea rly 
+1930 s - as well as a pl ummeting stock market, wid espread bank failure s, an d a rash of def aults a nd 
+bankruptcies by busine sses and ho useholds. The ec onomy improved after Frankli n D. Ro osevelt' s 
+inaug uratio n in March  1933, but u nemployment rema ined in the do uble digits for the rest of the 
+                                                      
+1 My professional articles on the Depre ssion are collected in Bernan ke (2000).  
+BIS Review 14/200 4 1
+ 
+
+decade, full recovery arrivi ng only with  the advent of World Wa r II. Moreover, as I will discuss later, the 
+Depression was inte rnation al in sco pe, a ffecting mo st countries around the world not only th e Unite d 
+States. 
+What caused the De pressi on? T his question i s a diffi cult one, but answe ring it i s important if we a re to 
+draw the rig ht lesso ns fro m the experi ence for e conomic policy.  Solving the puzzle of the Depression 
+is also cru cial to the field of econ omics itself be cause of the light the solutio n would sh ed on our basic 
+unde rstanding of how the economy wo rks. 
+During the Depre ssion ye ars and fo r many de cades afterwa rd, economi sts disagreed sha rply on the  
+sources of th e economic a nd fina ncial collap se of the 1930s. In  contrast, during the p ast twenty years 
+or so economic historians have  come  to a b road consen sus about the causes of th e De pression. A  
+widening of the geog raphic focus of  Depressio n research d eserves m uch of the cre dit for this 
+breakthrough. Before the 1980 s, resea rch on th e causes of th e Depre ssion had considered prima rily 
+the expe rience of the  Unite d States. This attentio n to the U.S. ca se was ap propriate to  some  degree, 
+as th e U.S. economy was th en, a s it is to day, the world's larg est; the  decline in output a nd 
+employme nt in the Unite d States d uring the 1 930s was espe cially severe; and many economists have 
+argued th at, to an im porta nt extent, the wo rldwide Depre ssion began in t he United States, spreadi ng 
+from he re to  other countries (Rome r, 1993 ). Ho wever, in mu ch the sa me way that a  medical 
+resea rcher cannot reliabl y infer the causes of an illness by studying on e patient, diag nosing the  
+causes of th e De pression is ea sier when we have more p atients (i n this ca se, mo re national  
+economies) to study. To explain the current consensus on the causes of the Depressi on, I will first 
+descri be th e debate as it e xisted befo re 1980, a nd th en discuss how the  recent focu s on internation al 
+aspects of the Dep ression and the co mparative an alysis of the experie nces of  different coun tries have  
+helpe d to resolve that deb ate. 
+I have alrea dy mentioned the sha rp deflation of the price level th at occurred during th e contraction  
+phase of the Dep ression, by far the most severe episode of deflation experi enced in the Unit ed States 
+before  or si nce. Deflation,  like i nflation,  tends to  be closely lin ked to ch anges in the n ationa l money 
+supply, defin ed as the sum of currency and  bank deposits outst andin g, and such  was the  case in the 
+Depression. Like real output and p rices, the U. S. mo ney su pply fe ll about o ne-third between 1929 and 
+1933, ri sing i n subsequent years a s output and pri ces rose. 
+While th e fact that money, prices, and output all d eclined rapidly i n the ea rly yea rs of the Depression i s 
+unde niable,  the inte rpretation of that  fact ha s been the  subj ect of  much controve rsy. Indee d, 
+histori cally, much  of the debate on th e causes of the G reat Depression has cente red on the rol e of 
+moneta ry fact ors, i ncluding  both mo netary poli cy and other i nfluen ces o n the national m oney supply, 
+such as the  condition of the banking system. Vi ews have  chang ed ove r time. During the Depression 
+itself, and in several de cades follo wing, most eco nomists a rgued that monetary factors were not an 
+importa nt ca use of the Depre ssion.  For exam ple, many ob servers poi nted t o the fa ct that nomin al 
+intere st rate s were cl ose to ze ro during much  of the Depression, concluding th at moneta ry policy h ad 
+been about as easy as possible yet ha d pro duced no tangibl e benefits to the e conomy. The attempt to 
+use mo netary  policy to extricate an e conomy from a deep dep ression wa s often comp ared to “pu shing 
+on a strin g.”  
+During the first de cades after the Depression, most economi sts looked to  developme nts on  the real 
+side of the economy for explanatio ns, ra ther than to moneta ry factors. Some a rgued, for exa mple, that  
+overinve stme nt and  overbuilding  had taken place during the  ebullient 19 20s, leading  to a crash  when  
+the return s on those investments prove d to be less than expe cted. Another o nce-po pular theory was 
+that a chroni c proble m of “unde r-consumption” - the inability of hous eholds to purchase en ough goo ds 
+and services to utilize the eco nomy' s produ ctive cap acity - had p recipitate d the slump. 
+However, in 1963, Milton Friedm an and Anna J. S chwartz tra nsforme d the d ebate ab out the Great 
+Depression. That year saw the p ublication of their now-cla ssic book, A Mon etary History of t he United 
+States, 1867 -1960 . The Monetary Hi story, the nam e by which the boo k is insta ntly recog nized by any  
+macroe conomist, examin ed in  great detail the relationship between changes in th e national m oney  
+stock - whether determined by conscious policy or by more i mpersonal force s such as changes in the 
+banking system - and cha nges in natio nal in come and pri ces. The bro ader objective of the book was 
+to understan d how mon etary force s had influenced the U.S. econ omy over a nearly a centu ry. In the  
+process of pursuing thi s gene ral objective, howev er, Friedm an and Sch wartz offered im portant ne w 
+eviden ce an d argum ents a bout the rol e of monetary f actors in the Great Depression. In contradictio n 
+to the prevale nt view of the  time, that mo ney and monetary poli cy played at mo st a pu rely pa ssive role 
+2 BIS Review 14/200 4
+ 
+
+in the De pression, Fri edman and S chwartz a rgued that “the [eco nomic] contra ction is i n fact a tragic 
+testimonial to  the importan ce of moneta ry force s” (Friedman a nd Schwartz, 196 3, p. 300). 
+To support t heir view tha t moneta ry forces caused the Great Depre ssion, Friedman  and Schwart z 
+revisited th e histo rical record an d ide ntified a se ries of e rrors - erro rs of both commi ssion and 
+omission - made by the Federal Re serve in the late  1920s a nd early 1930 s. Accordi ng to Friedm an 
+and Schwart z, each of th ese policy mistakes l ed to  an un desirable tighteni ng of moneta ry policy, a s 
+reflecte d in sharp d eclines in the money supply. Dr awing on their hi storical evide nce ab out the  effects 
+of mon ey on  the econom y, Friedm an and S chwartz argued that the d eclines in the mon ey sto ck 
+gene rated by Fed actio ns - or ina ctions - could account for th e dro ps in p rices and ou tput that  
+subsequently occurred.2 
+Friedm an an d Schwart z emphasized at  least four m ajor errors by U.S. monetary policyma kers. Th e 
+Fed's first gra ve mista ke, in their vie w, was the ti ghtening of mon etary poli cy that beg an in the sp ring 
+of 1928 and continue d until  the sto ck market crash of Octob er 192 9 (see Hamilto n, 1987, o r Bernanke, 
+2002 a, for further di scussi on). Thi s tightening of monetary poli cy in 1928 did not seem pa rticula rly 
+justified by th e macro economic e nviron ment: The e conomy was only just eme rging fro m a rece ssion, 
+comm odity price s were  declining sharply, and the re was little hint of i nflation. Why then did th e Federal  
+Reserve  raise interest rates in 1928? The p rincipal reason was the Fe d's o ngoin g con cern about 
+speculation o n Wall Stre et. Fed policy makers drew a sharp distinction b etween “p roductive” (that i s, 
+good ) and “speculative” (b ad) uses of credit, and they were con cerned that ba nk lending to brokers 
+and i nvesto rs was fueling a speculat ive wave  in the sto ck market. When  the F ed's attempts to 
+persua de ba nks not to lend for spe culative purp oses prove d ineffective, Fed official s decided to 
+dissua de len ding directly by raisin g the  policy intere st rate. 
+The ma rket crash of Octo ber 19 29 sho wed, if anyon e doubte d it, that a con certed effort by the Fed 
+can bring down stock prices. But the cost of this “victory” was ver y high. Acc ording to Friedma n and 
+Schwart z, the Fed' s tight-m oney poli cies led to the onset of a recession in A ugust 192 9, acco rding  to 
+the official d ating by the National Bu reau of Eco nomic Research. The slowdo wn in e conomic activity, 
+together with high intere st rates, was i n all likelih ood the most i mporta nt sou rce of the stock m arket 
+crash that followe d in Oct ober. In othe r words, the market cra sh, rather tha n being the cause of th e 
+Depression, as popula r legend has it, wa s in fa ct largely the result of an e conomic slowdown and the 
+inapp ropriate moneta ry pol icies that pre ceded it. Of  course, the stock market  crash only wo rsened th e 
+economi c situation, hu rting con sumer and b usiness confide nce and contributing to a  still deep er 
+downturn in 1 930. 
+The second moneta ry poli cy action i dentified by F riedman  and Schwartz occu rred in Septe mber an d 
+Octob er of 1 931. At the ti me, as I will discu ss in more detail lat er, the Unite d States and  the grea t 
+majority of other n ations were o n the go ld stand ard, a system in which the va lue of ea ch curren cy is 
+expre ssed in terms of oun ces of gol d. Under th e gol d stand ard, central ba nks stood ready to maintain  
+the fixed valu es of thei r curren cies by off ering to  trade gold fo r mon ey at the lega lly determin ed rate of 
+excha nge. 
+The fact that,  unde r the go ld stand ard, the value of e ach currency was fixed in terms of g old implied 
+that the rate of excha nge betwe en any two curren cies within the gold stand ard system was likewi se 
+fixed. As with any system of fi xed exchange rates, the gold sta ndard was subject to spe culative attack 
+if investors d oubted the a bility of a country to maintain  the value of its curre ncy at the legally specified 
+parity. In September 1 931, following a perio d of fina ncial u pheaval in Euro pe that cre ated concerns 
+about British i nvestment s on the Co ntine nt, spe culato rs attacke d the British p ound, pre senting poun ds 
+to the Bank o f England an d deman ding gold in re turn. Face d with  the heavy demand s of sp eculators 
+for gold and a wid espread loss of confi dence in th e poun d, the Bank of Engla nd qui ckly de pleted its 
+gold reserves. Una ble to continue  supp orting th e pound at its official val ue, G reat Britain  was forced to  
+leave the gol d stand ard, al lowin g the po und to float  freely, its value determin ed by market forces. 
+With the  collapse of th e pound, speculators turned  their attention  to the U.S. dollar, whi ch (given the 
+economi c difficultie s the United States was expe riencing in th e fall of 1931) l ooked to m any to be th e 
+next cu rrency in lin e for devaluation.  Central ban ks as well as private investors conve rted a substa ntial 
+quantity of dollar a ssets to gold in Se ptembe r and October of 1 931, red ucing the Fede ral Reserve' s 
+gold reserve s. The speculative attack o n the d ollar also helped to create a  panic in th e U.S.  banking 
+                                                      
+2 Bernanke (20 02b) gives a more d etailed discussio n of the evidence  presented b y Friedman and Sch wartz.  
+BIS Review 14/200 4 3
+ 
+
+system. Fe aring immin ent devaluation  of the dolla r, many forei gn and d omestic depositors withdrew 
+their fu nds from U.S. ban ks in  order to conve rt them into  gold or othe r assets.  The  worsenin g 
+economi c situation al so made d epositors in creasingly distru stful of banks a s a place to keep thei r 
+saving s. Du ring this pe riod, depo sit insuran ce was virtually nonex istent, so that  the failure of a bank 
+might cause depo sitors to  lose all  or most of their savings. Thus, deposito rs who fea red that a ba nk 
+might fail ru shed to wit hdraw thei r funds. Ban king pa nics, i f severe enough, could become 
+self-confi rming proph ecies. Durin g the 193 0s, thousand s of U.S. ban ks experie nced  run s by 
+depo sitors an d sub sequently failed.  
+Long -establi shed central b anking practice requi red that the Fed respond b oth to the sp ecula tive attack 
+on the d ollar and to the  domestic ba nking pani cs. Ho weve r, the Fed decided to i gnore the plight of the  
+banking system and to f ocus only o n stoppin g the loss  of gold  reserve s to prote ct the d ollar. To 
+stabili ze the  dollar, th e Fed on ce again rai sed interest rates sharply, o n the view th at curre ncy 
+specul ators would be less willing to liquidate dollar assets  if they could earn a higher rate of  return on 
+them. The Fe d's strategy worked, in  that the attack o n the dollar subsided and the  U.S. commitment t o 
+the gold standard was successfully d efended, at le ast for the mom ent. Ho wever, once again the Fed  
+had cho sen to tighten mo netary poli cy despite the fa ct that macroeconomi c condition s - in cluding an  
+accele rating decline in out put, price s, and the money  supply - seemed to dema nd poli cy ease. 
+The third poli cy action hig hlighted by Friedm an and Schw artz occurred in 193 2. By the sprin g of that 
+year, the De pressio n was well adva nced, and Co ngress beg an to  place considerabl e pressu re on the 
+Fede ral Reserve to e ase m onetary policy. The Boa rd was quite rel uctant to  com ply, but in respon se to  
+the on going pressure the  Board  cond ucted open-market op erations bet ween April and June of 1932 
+designed to increa se the national m oney supply a nd thus e ase policy. The se policy a ctions reduced 
+intere st rate s on govern ment bond s and corpo rate d ebt and ap peared to a rrest the declin e in prices 
+and e conomic activity. However, Fe d officials rema ined ambival ent about th eir poli cy of moneta ry 
+expan sion. S ome viewed the De pression a s the n ecessary p urging of fina ncial ex cesses built u p 
+durin g the  1920s; i n this view, slowing the economi c collapse by e asing monetary poli cy only  delaye d 
+the inevitable  adju stment. Other official s, noting among other indicators th e very low l evel o f nominal 
+intere st rate s, con cluded that monetary policy wa s in fact alrea dy quite easy and  that no more  shoul d 
+be do ne. Th ese policym akers did not a ppea r to a ppreciate that, even thou gh nominal  interest rate s 
+were very l ow, the o ngoing deflation  meant that the  real cost of b orrowi ng was very hig h because any 
+loans woul d have to be re paid in dolla rs of much g reater value (Meltze r, 2003 ). Thus mo netary policy 
+was not in fa ct ea sy at  all, despite the  very lo w level of n ominal  intere st rates. In a ny event, Fe d 
+officials convince d them selves that the policy e ase advocate d by the Cong ress was not a ppropriate , 
+and so wh en the Con gress adjo urned i n July 193 2, the Fed reversed the policy. By the latter pa rt of 
+the year, the eco nomy had  relap sed dramatically. 
+The fourth and final poli cy mistake e mphasized b y Friedma n and Sch wartz was the Fed 's ong oing 
+negle ct of pro blems i n the U.S. banki ng sector. As I have alre ady d escrib ed, the banking sector faced 
+enormou s pressure duri ng the early 193 0s. As dep ositor fears abo ut the health of banks gre w, runs on 
+banks became increa singly commo n. A seri es of banking p anics spre ad a cross the country, often  
+affecting all the ban ks in a major city or even an ent ire regio n of the cou ntry. Between December 19 30 
+and M arch 1933, when  Presi dent Roosevelt de clared a “banking holid ay” th at sh ut do wn the enti re 
+U.S. ban king system, a bout half of U. S. banks eith er closed or merg ed with other banks. Surviving 
+banks, rathe r than expand ing thei r deposits an d loa ns to replace those of th e banks lo st to panics, 
+retrenched sh arply. 
+The ba nking crisis had hi ghly detriment al effect s on the broader eco nomy. Friedman and Schwart z 
+empha sized the effe cts of bank failu res on th e mo ney supply. Beca use b ank deposits are a form of 
+money, the closin g of ma ny banks g reatly exacerba ted the de cline in the mo ney sup ply. More over, 
+afraid  to le ave thei r fun ds in banks, p eople  hoarded cash, for e xample by burying  their savings in  
+coffee cans in the ba ck yard. Hoarding effectively removed m oney from circul ation, addi ng further to 
+the deflatio nary pressu res. More over, a s I emph asized in early re search of my own (Bernanke, 1983), 
+the virtual  shutting do wn of the U.S. banking system al so deprived th e economy of an  impo rtant 
+source of cre dit and other servi ces normally provide d by banks. 
+The Fe deral Re serve had the power at  least to am eliorate the p roblem s of th e ban ks. F or example,  
+the Fe d could have  been more a ggressive  in lending cash to  banks (taking their l oans and oth er 
+investment s as collateral),  or it could h ave simply put more ca sh in circul ation . Either action woul d 
+have ma de it easier for ba nks to obtain  the cash necessary to pay off dep ositors, which might have  
+stopp ed ba nk run s befo re they re sulted i n bank closings and failu res. Indee d, a central el emen t of the 
+Fede ral Reserve' s origina l mission had bee n to p rovide ju st thi s type of a ssistan ce to th e ban king 
+4 BIS Review 14/200 4
+ 
+
+system. T he Fed's failu re to fulfill its mi ssion was, again, la rgely the re sult of the economi c theori es 
+held by the Fede ral Reserve lea dership. Many Fe d officials appeared to su bscrib e to the infamou s 
+“liquid ationist” the sis of T reasury Secretary And rew Mellon, who argued that  weeding  out “we ak” 
+banks was a harsh b ut necessary prere quisite to t he recovery of th e ban king system. Moreov er, mo st 
+of the failing  banks we re relatively smal l and not members of the  Fede ral Reserve System,  maki ng 
+their fate of less interest t o the poli cymake rs. In the end, Fed offi cials decided not to intervene in the  
+banking crisis, contributin g once agai n to t he pre cipitous fall in the money su pply. 
+Friedm an an d Schwart z discu ss oth er episo des and policy a ctions a s well,  such as the  Federa l 
+Reserve 's misguided tight ening of p olicy in 193 7-38 which contributed to a new recession in those  
+years. However, the fou r episode s I h ave de scrib ed capture the  gist of the F riedm an and Schwart z 
+argument tha t, for a varie ty of reaso ns, moneta ry policy was unnecessarily tight, both before the 
+Depression began a nd du ring its mo st dramatic do wnward pha se. As I have mentioned, Fri edman and  
+Schwart z had produ ced eviden ce fro m other historical pe riods that sugg ested that contractio nary 
+moneta ry poli cies can lead to declini ng prices and out put. Friedma n and Sch wartz con cluded therefo re 
+that they had  found the smokin g gu n, eviden ce that  much of the  seve rity of the G reat Depression 
+could be attri buted to mon etary forces. 
+Friedm an and Sch wartz's argument s were highly i nfluential but n ot universally  acce pted. F or seve ral 
+decade s after the Monetary Hi story  was published, a debate raged about the im portan ce of moneta ry 
+factors in  the Depression. Oppo nents made seve ral objections to the Fri edma n and S chwartz the sis 
+that are wo rth highlighting here. 
+First, critics won dered whether th e tightenin g of moneta ry pol icy duri ng 1 928 an d 192 9, thoug h 
+perhaps ill advised, was l arge enough to have led to such cal amitous consequences.3 If the tightenin g 
+of monetary policy befo re the stock ma rket cra sh wa s not suffi cient to account  for the violence of the 
+economi c downturn, then other, po ssibly nonmoneta ry, factors ma y need to be con sidered as well. 
+A seco nd qu estion is whether the large decli ne in the money sup ply seen durin g the 1930 s wa s 
+primarily a cause or an effect of falling output and prices. As we ha ve seen, F riedman and Schwart z 
+argued th at the d ecline in the mon ey supply was causal. Sup pose, thoug h, for t he sake of argument, 
+that the Depressio n was the result p rimarily of  nonmoneta ry factors, such as oversp ending and  
+overinve stme nt durin g the 1920 s. As i ncomes and  spendin g decline, peopl e need less m oney  to ca rry 
+out daily tran saction s. In this scen ario, critics poi nted out, the Fed would b e justified in all owing the 
+money su pply to fall, beca use it woul d only be ac commodatin g a decline in th e amount of money that  
+peopl e want t o hold. The  decline in th e money supply in this case would be a response to, n ot a cau se 
+of, the de cline in output and prices. To put the  question sim ply, we know that  both th e economy an d 
+the mo ney stock contracted rapidly during the  early 1930 s, but was th e monetary d og wagging th e 
+economi c tail, or vice versa ? 
+The fo cus of Fried man and Schwa rtz on the U.S. experie nce (by design, o f course) rai sed other 
+question s about their m onetary expla nation of th e Dep ression. As I have mentione d, the Great 
+Depression was a wo rldwide p henomenon, n ot confin ed to the United States. Inde ed, som e 
+economie s, such a s that o f Germany, b egan to decline befo re 1929. Although few co untries escape d 
+the Dep ression entirely, the seve rity of the episod e varied wid ely across countrie s. The  timing of 
+recovery al so varied considerably, with some  count ries beginning their recovery as ea rly as 1931 or 
+1932, wh ereas othe rs re mained in th e depths of depressio n as late as 19 35 or 193 6. Ho w doe s 
+Friedm an an d Schwart z's monetary thesi s explai n the wo rldwide n ature of the onset of the 
+Depression, and the differences in seve rity and timing observed in  different cou ntries? 
+That is whe re the debate stood aro und 1980. About that time, however, economic histo rians bega n to 
+broaden th eir focu s, shifting from a heavy empha sis on event s in the Unite d States d uring the 19 30s 
+to an increa sed attention to developm ents aro und th e worl d. Moreover, rath er than studying  countri es 
+individually, this ne w schol arship too k a comp arativ e approa ch, a sking specifically why some countries 
+fared b etter than oth ers in the 193 0s. A s I will expl ain, this research u ncovere d an impo rtant role fo r 
+internatio nal moneta ry force s, as well as domestic moneta ry pol icies, in expl aining the Depre ssion. 
+Specifically, the new rese arch found that a co mplete unde rstanding of the  Depressio n requires 
+                                                      
+3 There was less debate abou t the period 1931 -33, the most precip itous do wnward phase of the Dep ression, for which most 
+economists w ere inclined to ascribe an important  role to monetar y factors.  
+BIS Review 14/200 4 5
+ 
+
+attention to  the o peration  of the i nternational g old standa rd, th e internatio nal moneta ry system of the 
+time.4  
+As I have al ready mentio ned, the g old stand ard i s a moneta ry system in which each pa rticipatin g 
+country defines its moneta ry unit i n terms of a certain amount of gold. The set ting of each curre ncy's 
+value in te rms of g old defines a system  of fixed exch ange rates, in which the relative value of  (say) the  
+U.S. dollar a nd the British  pound a re fixed at a rate  determin ed by the relative gold conte nt of each 
+curre ncy. To maintain the gold sta ndard, central ba nks had to p romise to ex change a ctual gold for 
+their pap er currencies at th e legal rate. 
+The gold sta ndard app eared to be high ly successful from about 1 870 to  the beginnin g of World War I  
+in 19 14. During the  so-cal led “classical” gold standard period, int ernatio nal trade a nd capital flows 
+expand ed m arkedly, an d central banks expe rienced relatively few p roblems e nsurin g that their 
+curre ncies retained thei r legal value. Th e gold st andard wa s suspended d uring World War I, however,  
+becau se of d isruptions to trade a nd int ernatio nal capital flows and because countrie s needed mo re 
+financi al flexibility to finance thei r war efforts. (Th e United State s remaine d tech nically on  the gold 
+stand ard th rougho ut the war, but with m any rest rictio ns.)  
+After 191 8, when th e war ende d, natio ns around th e world made extensive efforts to recon stitute the 
+gold stand ard, believing t hat it woul d be a key ele ment in the return to no rmal functio ning of the 
+internatio nal economi c system. Great Britain was am ong the firs t of the major coun tries to return to the 
+gold sta ndard, in 1925, and  by 1929 the great ma jority of the world' s nations h ad done so. 
+Unlike th e gold standard before World  War I, ho wever, the  gold  standa rd as re constituted i n the 1 920s 
+proved  to be both u nstable and destabili zing. E conomic historians have ide ntified  a number of reasons 
+why the re constituted gol d standa rd was so m uch le ss successful  than its pr ewar co unterp art. First, 
+the war ha d left behin d enormous economic de struction and disl ocation. Majo r financi al problems also 
+remai ned, in cluding b oth large g overnm ent debt s from the wa r and banking system s wh ose solven cy 
+had be en de eply comp romised by the  war an d by the period s of hyperinflat ion that followed in a 
+numbe r of co untrie s. These underlying probl ems cre ated stresses for th e gold stand ard that had not 
+existed to the  same de gree before the war. 
+Secon d, the new system lacked effe ctive internatio nal lead ershi p. Durin g the classi cal pe riod, the  
+Bank of En gland, in op eration si nce 1694, provide d sophisticat ed managem ent of the internatio nal 
+system, with t he coop eratio n of ot her major central b anks. Thi s leadership  help ed the system adjust to 
+imbalan ces and strain s; for example, a  consortium of central ba nks might le nd gold to one of thei r 
+numbe r that was exp eriencing a shortage of reserves. After the war, with Great Britain ec onomic ally 
+and finan cially depleted a nd the Unite d States in asce ndance, le adershi p of the intern ational syste m 
+shifted by d efault to the  Fede ral Reserve.  Unfo rtunately, the fledgling  Fed eral Reserve, with its 
+decentrali zed structure a nd its in experienced a nd domestically focuse d lea dership, did n ot prove up to  
+the task of managi ng the internatio nal gold stan dard, a task that lingering h atreds and di sputes from  
+the wa r would have m ade difficult for e ven the mo st-sop histicated institution. With the lack of effectiv e 
+internatio nal leade rship, m ost ce ntral b anks of the 1920s a nd 19 30s devote d little effort to suppo rting 
+the overall st ability of the  internation al system and focused inst ead on condi tions within t heir o wn 
+countries. 
+Finally, the reconstituted gold stan dard lacked the credibility of its prew ar counterpart. Before the war,  
+the ideol ogy of the gol d standa rd was dominant, to th e point th at finan cial inve stors ha d no doubt that  
+central banks wo uld fin d a way to  maintain the gold value s of their currenci es no matter what th e 
+circum stances. Becau se this convi ction was so firm , speculators had little in centive to attack a m ajor 
+curre ncy. After the wa r, in contrast, both  econ omic views and the p olitical bala nce of powe r had shifted  
+in ways that reduced the i nfluen ce of the gold standard ideology . For exampl e, ne w labor-dominate d 
+political parti es were skeptical abo ut the utility of ma intaining the gold standard if doi ng so i ncreased 
+unempl oyme nt. Ironically, redu ced politi cal an d ideol ogical su pport for the gold stand ard m ade it more 
+difficult for central banks to maintain t he gol d valu es of th eir currencies, as speculators understoo d 
+that the und erlying commitment to adhere to th e gold sta ndard at all co sts had been weakened 
+signifi cantly. Thus, speculative attacks became m uch more likely to su cceed and he nce mo re likely to  
+occur. 
+                                                      
+4 Critical early  research included C houdhri and Koc hin (1980) and E ichengreen and Sachs (1985). Ei chengreen (1992 , 2002) 
+provides the mo st extensive ana lysis of the role of the gold stan dard in causing and prop agating  the Great Depr ession.  
+Temin (1989 ) provides a readable account w ith a slightl y different perspective.  
+6 BIS Review 14/200 4
+ 
+
+With a n international  focu s, an d with particul ar atte ntion to th e role of th e gold sta ndard in the world 
+economy, scholars h ave now be en able to answer th e que stion s regarding th e moneta ry interpretation  
+of the Depression that I rai sed earlier. 
+First, the  existence of the  gold  standard hel ps to ex plain why th e world economic decline was both 
+deep a nd broadly internati onal. Un der the gold standard, the n eed to maintain  a fixed exch ange rate 
+among  curre ncies forces countries to adopt simila r moneta ry poli cies. In p articular, a  central  bank with 
+limited gold rese rves h as no option but  to raise its own inte rest rates when intere st rates are bei ng 
+raised abroad; if it did n ot do so, it would q uickly lo se gold reserves a s financial inve stors t ransferred  
+their fun ds to countries where returns were highe r. Hence, wh en the Fe deral Rese rve raised  intere st 
+rates i n 1928 to fight stock market sp eculation, it  inadvertently forced tighte ning of moneta ry policy in 
+many oth er countrie s as well. Thi s tight ening  abroad weakene d the glo bal econ omy, with effects that 
+fed back to the U.S. econo my and finan cial sy stem. 
+Other countri es' policies also contributed to a global moneta ry tightening  during 1928 and 1929. F or 
+example, after Fra nce returned to the gol d stand ard in  1928, it built up its gold re serve s significantly, at 
+the expe nse of other coun tries. The out flows of gold to Fra nce fo rced othe r countrie s to reduce their 
+money su pplies and to raise intere st rate s. Specul ative attacks on curre ncies al so be came freque nt as 
+the Depressi on worse ned, leadi ng central ba nks to  raise interest rates, mu ch like the Fede ral Reserve 
+did in 193 1. Lead ership  from the Fed eral Re serve might po ssibly have p roduced better int ernatio nal 
+cooperation and a mo re app ropriate set of mo netary policies. Ho wever,  in the absence of that  
+leade rship, th e wo rldwide moneta ry contractio n proceeded apace. The result wa s a gl obal economi c 
+decline that reinforced the effects of tigh t monetary po licies in individual countri es. 
+The tran smission  of mo netary tightenin g thro ugh the gol d stand ard also a ddresse s the questio n of 
+wheth er cha nges in the money su pply helped ca use the Dep ressio n or were simply a passive 
+respon se to t he de clines in incom e and prices. Cou ntries on the gold sta ndard we re often force d to 
+contract th eir money supplies because of poli cy developme nts in othe r countrie s, not becau se of 
+dome stic eve nts. The fact  that these contractio ns in money su pplie s we re invariably foll owed by 
+declines in o utput and p rices suggests that money wa s more a cause tha n an effect of the eco nomi c 
+collapse in those countries. 
+Perha ps the most fascin ating discove ry arisi ng from  research ers' broa der inte rnation al focu s is tha t 
+the extent to whi ch a country adhe red to the gold stand ard and the seve rity of its dep ression were 
+closely linke d. In particul ar, the longe r that a country remain ed committed to gold, the deep er its 
+depressio n and the later its re covery (Choud hri an d Kochin, 19 80; Eicheng reen and Sach s, 1985).  
+The willin gness or abilit y of countri es to re main on the gold stand ard despite the  adverse 
+developm ents of the 1930 s varied quite  a bit. A few countries did not join the gold stand ard system at  
+all; these in cluded  Spain  (whi ch was embroiled in  domesti c political upheaval, eventually le ading  to 
+civil war) a nd China (which  used a silver monet ary standard rathe r than a gold standa rd). A nu mber of 
+countries adopted the  gold stan dard in the 19 20s but left or were fo rced of f gold relatively early, 
+typically in 1 931. Countri es in thi s cate gory in cluded Great B ritain, Japa n, and several Scan dinavian 
+countries. So me co untrie s, such as Italy and the United States, remaine d on t he gold standard i nto 
+1932 o r 193 3. And a few dieh ards, notably the so-called g old bloc, led by  Fran ce an d includi ng 
+Poland, Belgi um, and Swit zerland, rema ined on g old into 1935 o r 1936.  
+If decline s in the money supply indu ced by adhe rence to the gold st anda rd were a prin cipal reason for 
+economi c depression, th en count ries leaving g old earlier shoul d have be en able to avoid th e worst of  
+the Dep ression and be gin an earlie r process of re cove ry. The eviden ce strongly su pport s this 
+implicatio n. For exam ple, Great Brita in and S candinavia, whi ch left the gold sta ndard in 1931 , 
+recovered m uch earlier th an Fran ce and Belgium, which stubbornly remain ed on gol d. As Friedm an 
+and Sch wartz noted in their book, countri es such as China - which use d a silver stand ard rather than a  
+gold standard - avoid ed the Depression almost entirely. The  finding that  the ti me at which a count ry 
+left the gol d stand ard is the key d eterminant of  the seve rity of it s depressio n and  the timi ng of it s 
+recovery ha s been shown to hold for lite rally dozen s of count ries, i ncluding d evelopin g countries. Thi s 
+intriguin g result not only provide s additional evide nce for the imp ortance of m onetary fa ctors in th e 
+Depression, it also explai ns why the timing of reco very from the De pression differe d across countries. 
+The finding t hat leaving the gold standard was the  key to recov ery from the Great Dep ression was 
+certai nly co nfirmed by the  U.S. ex perie nce. O ne of the first a ctions of Pre sident Roo sevelt was to  
+eliminate the  constraint o n U.S. monetary policy cr eated by the gold stand ard, first by allowin g the 
+dollar to float and then by resetting its value at a si gnifica ntly lower level. Th e new Pre sident also  
+addresse d another majo r source of monetary contraction, the  ongoing banking crisi s. Withi n days of 
+BIS Review 14/200 4 7
+ 
+
+8 BIS Review 14/2004
+ his inauguration, Roosevelt declared a “bank holi day,” shutting down all the banks in the country. 
+Banks were allowed to reopen only when certifi ed to be in sound financial condition. Roosevelt 
+pursued other measures to stabiliz e the banking system as well, su ch as the creation of a deposit 
+insurance program. With the gold standard constrai nt removed and the banking system stabilized, the 
+money supply and the price level began to rise. Between Roosevelt's coming to power in 1933 and the 
+recession of 1937-38, the economy grew strongly. 
+I have only scratched the surface of the fascinating literature on the causes of the Great Depression, 
+but it is time that I conclude. Economists have  made a great deal of progress in understanding the 
+Great Depression. Milton Friedman and Anna Schwartz deserve enormous credit for bringing the role 
+of monetary factors to the fore in their Monetary History . However, expanding the research focus to 
+include the experiences of a wide range of countries  has both provided additional support for the role 
+of monetary factors (including the international gold standard) and enriched our understanding of the 
+causes of the Depression. 
+Some important lessons emerge from the story. O ne lesson is that ideas are critical. The gold 
+standard orthodoxy, the adherence of some Federal Reserve policymakers to the liquidationist thesis, 
+and the incorrect view that low nominal interest rates necessarily signaled monetary ease, all led 
+policymakers astray, with disastrous consequences. We should not underestimate the need for careful 
+research and analysis in guiding policy. Another lesson is that central banks and other governmental 
+agencies have an important responsibility to maintain financial stability. The banking crises of the 
+1930s, both in the United States and abroad, were  a significant source of output declines, both 
+through their effects on money supplies and on cred it supplies. Finally, perhaps the most important 
+lesson of all is that price stability should be a key ob jective of monetary policy. By allowing persistent 
+declines in the money supply and in the price level, the Federal Reserve of the late 1920s and 1930s greatly destabilized the U.S. economy and, through the workings of the gold standard, the economies 
+of many other nations as well.  
+

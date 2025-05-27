@@ -1,0 +1,10 @@
+{
+  "text": "ase in the money supply starting in1933 could have had a beneficial effect on the financial system. By reducing the real value of outstanding debts, the inflation may have strengthened thesolvency of banks and hastened the recovery of the financial system.\n\nTABLE IREGRESSION USED TO ESTIMATE EX ANTE REAL INTEREST RATES\nSample Period: 1923:1 to 1942:2Dependent Variable: TheQuarterlyEx Post RealR2 \u20140.52Interest Rate\nExpi anatory Variable Coefficient T\u2014StatisticMonetary Policy VariableLag0Lag1Lag 2Lag3Lag4Nominal Commercial Paper RateLag 0LagILag2Lag 3Lag4Inflation RateLag 0Lag 1Lag2Lag3Lag4\nLag 1Lag 2Lag3Lag4Q2Q3Q4Constant0.044\u20140.4630.182\u20140.1960.352\n0.8340.1911.1810.954\u20141.079\n\u20140.3960.129\u20140.0140.111\u20140.031\n\u20140.0260.04 5\u20140.1200.012\u20140.0361.497\u20146.9615.271\u20141.8040.29\u20143.021.09\u20141.202.30\n0.250.040.220.18\u20140.",
+  "metadata": {
+    "title": "what_ended_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_ended_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 98,
+    "total_chunks": 102
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "text": "[1986).22. The estimates are strikingly robust to variations in the specification ofthe regression. I have tried many variants of the basic regression, such asexcluding contemporaneous values o the explanatory variables, extending thesample period to include 1921, and leaving out the seasonal dummy variables.None of these changes alters the estimates of the ex ante real ratenoticeably.23. These data are from the National Income and Product Accounts [1986, Table1.2, p. 6).\n\n24. The Dodge construction contract series is available in Lipsey and Preston[1966, Series A17, pp. 95\u201496). I use the version that shows the floor space of all types of buildings and is not already seasonally adjusted. The datafor 27 states is spliced on to data for 37 states in 1925. 1 seasonally adjust the series by regressing the logarithm of contracts on a trend, aconstant, and 3 quarterly dummy variables.25.",
+  "metadata": {
+    "title": "what_ended_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_ended_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 96,
+    "total_chunks": 102
+  }
+}

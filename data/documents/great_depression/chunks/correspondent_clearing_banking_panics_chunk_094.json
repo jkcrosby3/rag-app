@@ -1,0 +1,10 @@
+{
+  "text": "ives and Records Administration. See data appendix \nand Richardson (2005) for details of NARA data. \n \nNotes: Columns headed \u201cTerm\u201d indicate the number of terminal \nsuspensions. Columns headed \u201cTemp\u201d indicate the number of temporary \nsuspensions. Figures for 1933 include only banks that failed preceding the \nbanking holiday. The row \u201c# 1929\u201d indicates the number of banks of that \ntype in operation on June 30, 1929. The row \u201c% Failed\u201d indicates the \npercentage of banks of that type in operation at the beginning of the \ndepression that suspended operations terminally before the banking holiday \nin 1933. The row \u201c% Suspended\u201d indicates the percentage of banks of that \ntype suspended operations either temporarily or terminally before the \nbanking holiday.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 93,
+    "total_chunks": 105
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "exact_hits": 5,
+  "misses": 15,
+  "generation_times": [
+    0.0,
+    0.0010056495666503906,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0010004043579101562,
+    0.0,
+    0.0,
+    0.0010006427764892578,
+    0.0,
+    0.0
+  ],
+  "cache_hit_times": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "cache_miss_times": [
+    0.0,
+    0.0010056495666503906,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0010004043579101562,
+    0.0,
+    0.0,
+    0.0010006427764892578,
+    0.0,
+    0.0
+  ],
+  "text_results": [
+    {
+      "text": "The Glass-Steagall Act was a landmark banking legislation that separated commercial and investment banking activities.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The Securities and Exchange Commission (SEC) was created to regulate the securities industry and protect investors.",
+      "generation_time": 0.0010056495666503906,
+      "cache_hit": false
+    },
+    {
+      "text": "The New Deal was a series of programs and projects instituted by President Franklin D. Roosevelt during the Great Depression.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The Federal Deposit Insurance Corporation (FDIC) was established to provide deposit insurance to bank depositors.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The stock market crash of 1929 was a major American stock market crash that occurred in the fall of 1929.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The Glass-Steagall Act was a landmark banking legislation that separated commercial and investment banking activities.",
+      "generation_time": 0.0,
+      "cache_hit": true
+    },
+    {
+      "text": "The Securities and Exchange Commission (SEC) was created to regulate the securities industry and protect investors.",
+      "generation_time": 0.0,
+      "cache_hit": true
+    },
+    {
+      "text": "The New Deal was a series of programs and projects instituted by President Franklin D. Roosevelt during the Great Depression.",
+      "generation_time": 0.0,
+      "cache_hit": true
+    },
+    {
+      "text": "The Federal Deposit Insurance Corporation (FDIC) was established to provide deposit insurance to bank depositors.",
+      "generation_time": 0.0,
+      "cache_hit": true
+    },
+    {
+      "text": "The stock market crash of 1929 was a major American stock market crash that occurred in the fall of 1929.",
+      "generation_time": 0.0,
+      "cache_hit": true
+    },
+    {
+      "text": "The Glass-Steagall Act is considered a landmark banking legislation that separated commercial and investment banking activities.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The Glass-Steagall Act was a landmark banking legislation that separated commercial and investment banking activities in the United States.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The Securities and Exchange Commission (SEC) is considered created to regulate the securities industry and protect investors.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The Securities and Exchange Commission (SEC) was created to regulate the securities industry and protect investors in the United States.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The New Deal is considered a series of programs and projects instituted by President Franklin D. Roosevelt during the Great Depression.",
+      "generation_time": 0.0010004043579101562,
+      "cache_hit": false
+    },
+    {
+      "text": "The New Deal was a series of programs and projects instituted by President Franklin D in the United States. Roosevelt during the Great Depression in the United States.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The Federal Deposit Insurance Corporation (FDIC) is considered established to provide deposit insurance to bank depositors.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The Federal Deposit Insurance Corporation (FDIC) was established to provide deposit insurance to bank depositors in the United States.",
+      "generation_time": 0.0010006427764892578,
+      "cache_hit": false
+    },
+    {
+      "text": "The stock market crash of 1929 is considered a major American stock market crash that occurred in the fall of 1929.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    },
+    {
+      "text": "The stock market crash of 1929 was a major American stock market crash that occurred in the fall of 1929 in the United States.",
+      "generation_time": 0.0,
+      "cache_hit": false
+    }
+  ],
+  "total_texts": 20,
+  "hit_rate": 0.25,
+  "avg_generation_time": 0.00015033483505249022,
+  "avg_cache_hit_time": 0.0,
+  "avg_cache_miss_time": 0.00020044644673665365,
+  "speedup": 0,
+  "cache_stats": {
+    "model_name": "all-MiniLM-L6-v2",
+    "size": 15,
+    "max_size": 1000,
+    "hits": 5,
+    "disk_hits": 15,
+    "misses": 0,
+    "hit_rate": 4.0,
+    "memory_hit_rate": 1.0,
+    "disk_hit_rate": 3.0,
+    "expired_entries": 0,
+    "ttl_hours": 24,
+    "estimated_memory_kb": 45.0,
+    "avg_load_time": 0.00013340314229329426,
+    "avg_save_time": 0.0,
+    "persistent": true
+  }
+}

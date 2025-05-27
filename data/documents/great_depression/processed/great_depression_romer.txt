@@ -1,0 +1,463 @@
+Forthcoming in the Encyclopædia Britannica  
+Christina D. Romer 
+December 20, 2003 
+ 
+ 
+Great  Depression 
+worldwide economic downturn that began in 1929 and lasted until about 1939. It was the longest 
+and most severe depression ever experienced by the industrialized Western world. Although the 
+Depression originated in the United States, it resulted in drastic declines in output, severe unemployment, and acute deflation in almost every country of the globe. But its social and 
+cultural effects were no less staggering, especially in the United States, where the Great 
+Depression ranks second only to the Civil War as the gravest crisis in American history. 
+ 
+Economic history  
+ 
+The timing and severity of the Great Depression varied substantially across countries. 
+The Depression was particularly long and severe in the United States and Europe; it was milder 
+in Japan and much of Latin America. Perhaps not surprisingly, the worst depression ever experienced stemmed from a multitude of causes. Declines in consumer demand, financial 
+panics, and misguided government policies caused economic output to fall in the United States. 
+The gold standard, which linked nearly all the countries of the world in a network of fixed currency exchange rates, played a key role in transmitting the American downturn to other 
+countries. The recovery from the Great Depression was spurred largely by the abandonment of 
+the gold standard and the ensuing monetary expansion. The Great Depression brought about fundamental changes in economic institutions, macroeconomic policy, and economic theory. 
+ 
+Timing and severity  
+In the United States, the Great Depression began in the summer of 1929. The downturn 
+became markedly worse in late 1929 and continued until early 1933. Real output and prices fell precipitously. Between the peak and the trough of the downturn, industrial production in the 
+United States declined 47 percent and real GDP fell 30 percent. The wholesale price index 
+declined 33 percent (such declines in the price level are referred to as “deflation”). Although there is some debate about the reliability of the statistics, it is widely agreed that the 
+unemployment rate exceeded 20 percent at its highest point. The severity of these declines 
+becomes especially clear when they are compared with America’s next worst recession of the 20th century, that of 1981–82, when real GDP declined just 2 percent and the unemployment rate 
+peaked at under 10 percent. Moreover, during the 1981– 82 recession prices continued to rise, 
+although the rate of price increase slowed substantially (a phenomenon known as “disinflation”). 
+The timing and severity of the Great Depression varied substantially across countries. 
+Table 1 shows the dates of the downturn and upturn in economic activity in a number of 
+countries. Table 2 shows the peak-to-trough percentage decline in annual industrial production for countries for which such data are available. Great Britain struggled with low growth and 
+recession during most of the second half of the 1920s, due largely to its decision in 1925 to 
+
+return to the gold standard with an overvalued pound. Britain did not slip into severe depression, 
+however, until early 1930, and the peak-to-trough decline in industrial production was roughly 
+one-third that of the United States. France also experienced a relatively short downturn in the 
+early 1930s. The French recovery in 1932 and 1933, however, was short-lived. French industrial production and prices both fell substantially between 1933 and 1936. Germany’s economy 
+slipped into a downturn early in 1928 and then stabilized before turning down again in the third 
+quarter of 1929. The decline in German industrial production was roughly equal to that in the United States. A number of countries in Latin America slipped into depression in late 1928 and 
+early 1929, slightly before the U.S. decline in output. While some less developed countries 
+experienced severe depressions, others, such as Argentina and Brazil, experienced comparatively mild downturns. The depression in Japan started relatively late (in early 1930) and was, by 
+comparison, mild.  
+The general price deflation evident in the United States was also present in other 
+countries. Virtually every industrialized country endured declines in wholesale prices of 30 
+percent or more between 1929 and 1933. Because of the greater flexibility of the Japanese price 
+structure, deflation in Japan was unusually rapid in 1930 and 1931. This rapid deflation may have helped to keep the decline in Japanese production relatively mild. The prices of primary 
+commodities traded in world markets declined even more dramatically during this period. For 
+example, the prices of coffee, cotton, silk, and rubber were reduced by roughly half just between September 1929 and December 1930. As a result, the terms of trade declined precipitously for 
+producers of primary commodities. 
+The U.S. recovery began in the spring of 1933. Output grew rapidly in the mid-1930s: 
+real GDP rose at an average rate of 9 percent per year between 1933 and 1937. Output had fallen 
+so deeply in the early years of the 1930s, however, that it remained substantially below its long-
+run trend level throughout this period. In 1937–38 the United States suffered another severe downturn, but after mid-1938 the American economy grew even more rapidly than in the mid-
+1930s. U.S. output finally returned to its long-run trend level in 1942. 
+Recovery in the rest of the world varied greatly. The British economy stopped declining 
+soon after Britain’s abandonment of the gold standard in September 1931, though genuine 
+recovery did not begin until the end of 1932. The economies of a number of Latin American 
+countries began to strengthen in late 1931 and early 1932. Germany and Japan both began to recover in the fall of 1932. Canada and many smaller European countries started to revive at 
+about the same time as the United States, early in 1933. On the other hand, France, which 
+experienced severe depression later than most countries, did not firmly enter the recovery phase until 1938. 
+ 
+Causes of the Great Depression  
+The fundamental cause of the Great Depression in the United States was a decline in 
+spending (sometimes referred to as aggregate demand), which led to a decline in production as manufacturers and merchandisers noticed an unintended rise in inventories. The sources of the 
+contraction in spending in the United States varied over the course of the Depression, but they 
+cumulated into a monumental decline in aggregate demand. The American decline was transmitted to the rest of the world largely through the gold standard. However, a variety of other 
+factors also influenced the downturn in various countries. 
+ 
+
+Stock market crash 
+The initial decline in output in the United States in the summer of 1929 is widely 
+believed to have stemmed from tight U.S. monetary policy aimed at limiting stock market 
+speculation. The 1920s had been a prosperous decade, but not an exceptional boom period; 
+wholesale goods prices had remained nearly constant throughout the decade and there had been mild recessions in both 1924 and 1927. The one obvious area of excess was the stock market. 
+Stock prices had risen more than fourfold from the low in 1921 to the peak reached in 1929. In 
+1928 and 1929, the Federal Reserve had raised interest rates in hopes of slowing the rapid rise in stock prices. These higher interest rates depressed interest-sensitive spending in areas such as 
+construction and automobile purchases, which in turn reduced production. Some scholars believe 
+that a boom in housing construction in the mid-1920s led to an excess supply of housing and a particularly large drop in construction in 1928 and 1929. 
+By the fall of 1929, U.S. stock prices had reached levels that could not be justified by 
+reasonable anticipations of future earnings. As a result, when a variety of minor events led to gradual price declines in October 1929, investors lost confidence and the stock market bubble 
+burst. Panic selling began on “Black Thursday,” October 24, 1929. Many stocks had been 
+purchased on margin, that is, using loans secured by only a small fraction of the stocks’ value. As a result, the price declines forced some investors to liquidate their holdings, thus exacerbating 
+the fall in prices. Between their peak in September and their low in November, U.S. stock prices 
+(measured using the Cowles Index) declined 33 percent. Because the decline was so dramatic, this event is often referred to as the Great Crash of 1929. 
+The stock market crash reduced American aggregate demand substantially. Consumer 
+purchases of durable goods and business investment fell sharply after the crash. A likely explanation is that the financial crisis generated considerable uncertainty about future income, 
+which in turn led consumers and firms to put off purchases of durable goods. Although the loss 
+of wealth caused by the decline in stock prices was relatively small, the crash may also have depressed spending by making people feel poorer. As a result of the drastic decline in consumer 
+and firm spending, real output in the United States, which had been declining slowly up to this 
+point, fell rapidly in late 1929 and throughout 1930. Thus, while the Great Crash of the stock market and the Great Depression are two quite separate events, the decline in stock prices was 
+one factor causing the decline in production and employment in the United States. 
+Banking panics and monetary contraction 
+The next blow to aggregate demand occurred in the fall of 1930, when the first of four 
+waves of banking panics gripped the United States. A banking panic arises when many depositors lose confidence in the solvency of banks and simultaneously demand their deposits be 
+paid to them in cash. Banks, which typically hold only a fraction of deposits as cash reserves, 
+must liquidate loans in order to raise the required cash. This process of hasty liquidation can cause even a previously solvent bank to fail. The United States experienced widespread banking 
+panics in the fall of 1930, the spring of 1931, the fall of 1931, and the fall of 1932. The final 
+wave of panics continued through the winter of 1933 and culminated with the national “bank holiday” declared by President Franklin Roosevelt on March 6, 1933. The bank holiday closed 
+all banks, permitting them to reopen only after being deemed solvent by government inspectors. 
+The panics took a severe toll on the American banking system. By 1933, one-fifth of the banks in existence at the start of 1930 had failed. 
+By their nature, banking panics are largely irrational, inexplicable events, but some of the 
+factors contributing to the problem can be explained. Economic historians believe that 
+
+substantial increases in farm debt in the 1920s, together with U.S. policies that encouraged small, 
+undiversified banks, created an environment where such panics could ignite and spread. The 
+heavy farm debt stemmed in part from the response to the high prices of agricultural goods 
+during World War I. American farmers borrowed heavily to purchase and improve land in order to increase production. The decline in farm commodity prices following the war made it difficult 
+for farmers to keep up with their loan payments.  
+The Federal Reserve did little to try to stem the banking panics. Milton Friedman and 
+Anna J. Schwartz, in the classic study, A Monetary History of the United States , argue that the 
+death of Benjamin Strong, the governor of the Federal Reserve Bank of New York, was an 
+important source of this inaction. Strong had been a forceful leader who understood the ability of the central bank to limit panics. His death left a power vacuum at the Federal Reserve and 
+allowed leaders with less sensible views to block effective intervention. The panics caused a 
+dramatic rise in the amount of currency people wished to hold relative to their bank deposits. This rise in the currency-to-deposit ratio was a key reason why the money supply in the United 
+States declined 31 percent between 1929 and 1933. In addition to allowing the panics to reduce 
+the U.S. money supply, the Federal Reserve also deliberately contracted the money supply and raised interest rates in September 1931, when Britain was forced off the gold standard and 
+investors feared that the United States would devalue as well. 
+Scholars believe that such declines in the money supply caused by Federal Reserve 
+decisions had a severe contractionary effect on output. A simple picture provides perhaps the 
+clearest evidence of the key role monetary collapse played in the Great Depression in the United 
+States. Figure 1 shows the money supply and real output over the period 1900 to 1940. In ordinary times, such as the 1920s, both the money supply and output tend to grow steadily. But, 
+in the early 1930s, both plummeted. The decline in the money supply depressed spending in a 
+number of ways. Perhaps most importantly, because of actual price declines and the rapid decline in the money supply, consumers and business people came to expect deflation – that is, they 
+expected wages and prices to be lower in the future. As a result, even though nominal interest 
+rates were very low, people did not want to borrow because they feared that future wages and profits would be inadequate to cover the loan payments. This hesitancy, in turn, led to severe 
+reductions in both consumer spending and business investment spending. The panics surely 
+exacerbated the decline in spending by generating pessimism and a loss of confidence. Furthermore, the failure of so many banks disrupted lending, thereby reducing the funds 
+available to finance investment. 
+The gold standard 
+Some economists believe that the Federal Reserve allowed or caused the huge declines in 
+the American money supply partly to preserve the gold standard. Under the gold standard, each 
+country set a value of its currency in terms of gold and took monetary actions to defend the fixed 
+price. It is possible that had the Federal Reserve expanded greatly in response to the banking panics, foreigners could have lost confidence in the United States’ commitment to the gold 
+standard. This could have led to large gold outflows and the United States could have been 
+forced to devalue. Likewise, had the Federal Reserve not tightened in the fall of 1931, it is possible that there would have been a speculative attack on the dollar and the Unites States 
+would have been forced to abandon the gold standard along with Great Britain. 
+While there is debate about the role the gold standard played in limiting U.S. monetary 
+policy, there is no question that it was a key factor in the transmission of the American decline to 
+the rest of the world. Under the gold standard, imbalances in trade or asset flows gave rise to 
+
+international gold flows. For example, in the mid-1920s intense international demand for 
+American assets such as stocks and bonds brought large inflows of gold to the United States. 
+Likewise, a decision by France after World War I to return to the gold standard with an 
+undervalued franc led to trade surpluses and substantial gold inflows. ( Τ balance of trade.) 
+Britain chose to return to the gold standard after World War I at the prewar parity. 
+Wartime inflation, however, implied that the pound was overvalued, and this overvaluation led to 
+trade deficits and substantial gold outflows after 1925. To stem the gold outflow, the Bank of England raised interest rates substantially. High interest rates depressed British spending and led 
+to high unemployment in Great Britain throughout the second half of the 1920s. 
+Once the U.S. economy began to contract severely, the tendency for gold to flow out of 
+other countries and toward the United States intensified. This took place because deflation in the 
+United States made American goods particularly desirable to foreigners, while low income 
+reduced American demand for foreign products. To counteract the resulting tendency toward an American trade surplus and foreign gold outflows, central banks throughout the world raised 
+interest rates. Maintaining the international gold standard, in essence, required a massive 
+monetary contraction throughout the world to match the one occurring in the United States. The result was a decline in output and prices in countries throughout the world that also nearly 
+matched the downturn in the United States. 
+Financial crises and banking panics occurred in a number of countries besides the United 
+States. In May 1931 payment difficulties at the Creditanstalt, Austria’s largest bank, set off a 
+string of financial crises that enveloped much of Europe and were a key factor forcing Britain to 
+abandon the gold standard. Among the countries hardest hit by bank failures and volatile financial markets were Austria, Germany, and Hungary. These widespread banking crises could 
+have been the result of poor regulation and other local factors, or simple contagion from one 
+country to another. In addition, the gold standard, by forcing countries to deflate along with the United States, reduced the value of banks’ collateral and made them more vulnerable to runs. As 
+in the United States, banking panics and other financial market disruptions further depressed 
+output and prices in a number of countries.  
+International lending and trade 
+Some scholars stress the importance of other international linkages. Foreign lending to 
+Germany and Latin America had expanded greatly in the mid-1920s. U.S. lending abroad then 
+fell in 1928 and 1929 as a result of high interest rates and the booming stock market in the United States. This reduction in foreign lending may have led to further credit contractions and 
+declines in output in borrower countries. In Germany, which experienced extremely rapid 
+inflation (“hyperinflation”) in the early 1920s, monetary authorities may have hesitated to undertake expansionary policy to counteract the economic slowdown because they worried it 
+might re-ignite inflation. The effects of reduced foreign lending may explain why the economies 
+of Germany, Argentina, and Brazil turned down before the Great Depression began in the United States.  
+The 1930 enactment of the Smoot-Hawley tariff in the United States and the worldwide 
+rise in protectionist trade policies created other complications. The Smoot-Hawley tariff was meant to boost farm incomes by reducing foreign competition in agricultural products. But other 
+countries followed suit, both in retaliation and in an attempt to force a correction of trade 
+imbalances. Scholars now believe that these policies may have reduced trade somewhat, but were not a significant cause of the Depression in the large industrial producers. Protectionist 
+policies, however, may have contributed to the extreme decline in the world price of raw 
+
+materials, which caused severe balance-of-payments problems for primary-commodity-
+producing countries in Africa, Asia, and Latin America and led to contractionary policies.  
+ 
+Sources of recovery  
+Given the key roles of monetary contraction and the gold standard in causing the Great 
+Depression, it is not surprising that currency devaluations and monetary expansion became the leading sources of recovery throughout the world. There is a notable correlation between the 
+time countries abandoned the gold standard (or devalued their currencies substantially) and a 
+renewed growth in their output. For example, Britain, which was forced off the gold standard in September 1931, recovered relatively early, while the United States, which did not effectively 
+devalue its currency until 1933, recovered substantially later. Similarly, the Latin American 
+countries of Argentina and Brazil, which began to devalue in 1929, had relatively mild downturns and were largely recovered by 1935. In contrast, the “Gold Bloc” countries of 
+Belgium and France, which were particularly wedded to the gold standard and slow to devalue, 
+still had industrial production in 1935 well below its 1929 level. 
+Devaluation, however, did not increase output directly. Rather, it allowed countries to 
+expand their money supplies without  concern about gold movements and exchange rates. 
+Countries that took greater advantage of this freedom saw greater recovery. The monetary expansion that began in the United States in early 1933 was particularly dramatic. The American 
+money supply increased nearly 42 percent between 1933 and 1937. This monetary expansion 
+stemmed largely from a substantial gold inflow to the United States, caused in part by the rising political tensions in Europe that eventually led to World War II. Worldwide monetary expansion 
+stimulated spending by lowering interest rates and making credit more widely available. It also 
+created expectations of inflation, rather than deflation, and so made potential borrowers more confident that their wages and profits would be sufficient to cover their loan payments if they 
+chose to borrow. One sign that monetary expansion stimulated recovery in the United States by 
+encouraging borrowing was that consumer and business spending on interest-sensitive items such as cars, trucks, and machinery rose well before consumer spending on services. 
+Fiscal policy played a relatively small role in stimulating recovery in the United States. 
+Indeed, the Revenue Act of 1932 increased American tax rates greatly in an attempt to balance the federal budget, and by doing so dealt another contractionary blow to the economy by further 
+discouraging spending. Franklin Roosevelt’s New Deal, initiated in early 1933, did include a 
+number of new federal programs aimed at generating recovery. For example, the Works Progress Administration (WPA) hired the unemployed to work on government building projects, and the 
+Agricultural Adjustment Administration (AAA) gave large payments to farmers. However, the 
+actual increases in government spending and the government budget deficit were small relative to the size of the economy. This is especially apparent when state government budget deficits are 
+included, because those deficits actually declined at the same time that the federal deficit rose. 
+As a result, the new spending programs initiated by the New Deal had little direct expansionary effect on the economy. Whether they may nevertheless have had positive effects on consumer 
+and business sentiment remains an open question. United States military spending related to 
+World War II was not large enough to appreciably affect total spending and output until 1941. 
+The role of fiscal policy in generating recovery varied substantially across other 
+countries. Great Britain, like the United States, did not use fiscal expansion to a noticeable extent 
+early in its recovery. It did, however, increase military spending substantially after 1937. France 
+
+raised taxes in the mid-1930s in an effort to defend the gold standard, but then ran large budget 
+deficits starting in 1936. The expansionary effect of these deficits, however, was counteracted 
+somewhat by a legislated reduction in the French workweek from 46 to 40 hours—a change that 
+raised costs and depressed production. Fiscal policy was used more successfully in Germany and Japan. The German budget deficit as a percent of domestic product increased little early in the 
+recovery, but grew substantially after 1934 as a result of spending on public works and 
+rearmament. In Japan, government expenditures, particularly military spending, rose from 31 to 38 percent of domestic product between 1932 and 1934, resulting in substantial budget deficits. 
+This fiscal stimulus, combined with substantial monetary expansion and an undervalued yen, 
+returned the Japanese economy to full employment relatively quickly. 
+ 
+Economic impact  
+The most obvious economic impact of the Great Depression was human suffering. In a 
+short period of time world output and standards of living dropped precipitously. As much as one-
+fourth of the labour force in industrialized countries was unable to find work in the early 1930s. While conditions began to improve by the mid-1930s, total recovery was not accomplished until 
+the end of the decade. 
+The Depression and the policy response also changed the world economy in crucial ways. 
+The Great Depression hastened, if not caused, the end of the international gold standard. 
+Although a system of fixed currency exchange rates was reinstated after World War II under the 
+Bretton Woods system, the economies of the world never embraced that system with the conviction and fervour they had brought to the gold standard. By 1973, fixed exchange rates 
+were abandoned in favour of floating rates. 
+Both labour unions and the welfare state expanded substantially during the 1930s. In the 
+United States, union membership more than doubled between 1930 and 1940. This trend was 
+stimulated both by the severe unemployment of the 1930s and the passage of the National Labor 
+Relations (Wagner) Act (1935), which encouraged collective bargaining. The United States established unemployment compensation and old age and survivors’ insurance through the 
+Social Security Act (1935), which was passed in response to the hardships of the 1930s. It is 
+uncertain whether these changes would have eventually occurred in the United States without the Depression. Many European countries had experienced significant increases in union 
+membership and had established government pensions before the 1930s. Both of these trends, 
+however, accelerated in Europe during the Depression. 
+In many countries, government regulation of the economy, especially of financial 
+markets, increased substantially during the Great Depression. The United States, for example, 
+established the Securities and Exchange Commission in 1934 to regulate new stock issues and stock market trading practices. The Banking Act of 1933 (also known as the Glass-Steagall Act) 
+established deposit insurance in the United States and prohibited banks from underwriting or 
+dealing in securities. Deposit insurance, which did not become common worldwide until after World War II, effectively eliminated banking panics as an exacerbating factor in recessions in 
+the United States after 1933. 
+The Depression also played a crucial role in the development of macroeconomic policies 
+intended to temper economic downturns and upturns. The central role of reduced spending and 
+monetary contraction in the Depression led British economist John Maynard Keynes to develop 
+the ideas in his General Theory of Employment, Interest, and Money  (1936). Keynes’s theory 
+suggested that increases in government spending, tax cuts, and monetary expansion could be 
+
+used to counteract depressions. This insight, combined with a growing consensus that 
+government should try to stabilize employment, has led to much more activist policy since the 
+1930s. Legislatures and central banks throughout the world now routinely attempt to prevent or 
+moderate recessions. Whether such a change would have occurred without the Depression is again a largely unanswerable question. What is clear is that this change has made it unlikely that 
+a decline in spending will ever be allowed to multiply and spread throughout the world as it did 
+during the Great Depression of the 1930s. 
+
+TABLE 1 
+Dates of the Great Depression in Various Countries 
+(In Quarters) 
+ 
+       Country  Depression Began  Recovery Began  
+   United States 1929:3 1933:2   Great Britain 1930:1 1932:4  Germany 1928:1  1932:3   France 1930:2 1932:3   Canada 1929:2 1933:2   Switzerland 1929:4 1933:1  Czechoslovakia 1929:4 1933:2  Italy  1929:3 1933:1  Belgium 1929:3 1932:4  Netherlands 1929:4 1933:2  Sweden 1930:2 1932:3  Denmark 1930:4 1933:2  Poland 1929:1 1933:2   Argentina 1929:2 1932:1  Brazil  1928:3 1931:4  Japan 1930:1 1932:3  India  1929:4 1931:4  South Africa 1930:1 1933:1
+
+TABLE 2 
+Peak-to-Trough Decline in Industrial Production in Various Countries  
+(Annual Data) 
+ 
+      Country                          Decline  
+     Unites States 46.8 %  Great Britain 16.2 %  Germany 41.8 %  France 31.3 %  Canada 42.4 %  Czechoslovakia 40.4 %  Italy 33.0 %  Belgium 30.6 %  Netherlands 37.4 %  Sweden 10.3 %  Denmark 16.5 %  Poland 46.6 %  Argentina 17.0 %  Brazil 7.0 %  Japan 8.5 % 
+
+Money and Output in the United States
+4.04.55.05.56.06.57.07.5
+1900
+1905
+1910
+19151920
+1925
+19301935
+1940YearsReal GDP in billions of 1982 $ 
+(logarithms)
+1.52.02.53.03.54.04.55.05.5
+Money supply in billions of $ 
+(logarithms)Real GDP
+Money Supply
+ 
+ 
+
+Bibliography 
+ 
+The Great Depression in the United States  
+MILTON FRIEDMAN  and A NNA JACOBSON SCHWARTZ , A Monetary History of the United 
+States, 1867–1960  (1963, reissued 1993), chapter 7, “The Great Contraction,” is the single most 
+important study of the Great Depression in the United States, detailing ways in which banking panics and monetary contraction contributed to the economic downturn.  
+Scholarly studies that analyze the role of particular factors in the American Depression 
+include: B
+EN S. B ERNANKE , “Nonmonetary Effects of the Financial Crisis in the Propagation of 
+the Great Depression,” American Economic Review , 73(3):257–276 (June 1983); S TEPHEN G. 
+CECCHETTI , “Prices During the Great Depression:  Was the Deflation of 1930-1932 Really 
+Unanticipated?” American Economic Review  82(1):141-156 (March 1992); C HRISTINA D. 
+ROMER , “The Great Crash and the Onset of the Great Depression,” Quarterly Journal of 
+Economics , 105(3):597–624 (August 1990); and P ETER TEMIN , Did Monetary Forces Cause the 
+Great Depression?  (1976).  JOHN KENNETH GALBRAITH , The Great Crash, 1929  (1954, reissued 
+1997), is a riveting account of the 1929 stock market crash, one of the events leading up to the Great Depression in the United States. 
+ 
+World Depression  
+BARRY EICHENGREEN , Golden Fetters: The Gold Standard and the Great Depression, 
+1919–1939  (1992, reissued 1995), is a monumental study of the functioning and effects of the 
+international gold standard in the interwar era.  W. A RTHUR LEWIS , Economic Survey, 1919–1939  
+(1949, reissued 1969), while somewhat dated, is an exceedingly useful survey of the nature and causes of the Depression in Great Britain, Germany, Russia, France, Japan, and the United States. 
+Other works analyzing the Depression outside the United States include: H
+AROLD JAMES , 
+The German Slump: Politics and Economics, 1924–1936  (1986); C HARLES P. K INDLEBERGER , 
+The World in Depression, 1929–1939 , rev. and enlarged ed. (1986); and R OSEMARY THORP  (ed.), 
+Latin America in the 1930s: The Role of the Periphery in World Crisis  (1984). 
+ 
+Recovery from the Great Depression  
+LESTER V. C HANDLER , America’s Greatest Depression, 1929–1941  (1970), provides a 
+detailed description of the many programs implemented to deal with the Depression in the United States. B
+ARRY EICHENGREEN  and J EFFREY SACHS , “Exchange Rates and Economic 
+Recovery in the 1930s,” Journal of Economic History , 45(4):925–946 (December 1985), 
+discusses how devaluation and monetary expansion contributed to economic recovery from the Depression in many countries. 
+Two studies that examine the role of policy in ending the American Depression are: E. 
+C
+ARY BROWN , “Fiscal Policy in the ’Thirties: A Reappraisal,” American Economic Review , 
+46(5):857–879 (December 1956); and C HRISTINA D. R OMER , “What Ended the Great 
+Depression?” Journal of Economic History , 52(4):757–784 (December 1992). 
+ 
+Impact of the Depression  
+MICHAEL D. B ORDO , CLAUDIA GOLDIN , and E UGENE N. W HITE (eds.), The Defining 
+Moment: The Great Depression and the American Economy in the Twentieth Century  (1998), 
+
+includes a series of papers by distinguished scholars on the long-run impact of the Great 
+Depression in the United States.  JOHN MAYNARD KEYNES , The General Theory of Employment, 
+Interest, and Money  (1936, reissued 1997), is the pathbreaking work of economic theory that was 
+inspired by the Great Depression and led to the rise of stabilization policy in the postwar era. 
+
+    
+Sources used 
+ 
+Bernanke, Ben S.  “Nonmonetary Effects of the Financial Crisis in the Propagation of the Great 
+Depression.”  American Economic Review  73 (June 1983):  257-276. 
+ Bernanke, Ben, and Harold James.  “The Gold Standard, Deflation, and Financial Crises in the 
+Great Depression:  An International Comparison.”  In Financial Markets and Financial 
+Crises  edited by R. Glenn Hubbard.  Chicago:  University of Chicago Press for NBER, 
+1991, pp. 33-68. 
+ 
+Bordo, Michael D., Claudia Goldin, and Eugene N. White.  “The Defining Moment Hypothesis:  
+The Editors’ Introduction.” In The Defining Moment:  The Great Depression and the 
+American Economy in the Twentieth Century  edited by Michael D. Bordo, Claudia 
+Goldin, and Eugene N. White.  Chicago:  University of Chicago Press for NBER, 1998, pp. 1-22. 
+ Brown, E. Cary.  “Fiscal Policy in the ’Thirties:  A Reappraisal.”  American Economic Review
+ 
+46 (December 1956):  857-879. 
+ Cameron, Rondo.  A Concise Economic History of the World
+.  New York:  Oxford University 
+Press, 1993. 
+ Campa, José Manuel.  “Exchange Rates and Economic Recovery in the 1930s:  An Extension to 
+Latin America.”  Journal of Economic History
+ 50 (September 1990):  677-682. 
+ Cecchetti, Stephen G.  “Prices During the Great Depression:  Was the Deflation of 1930-1932 
+Really Unanticipated?  American Economic Review
+ 82 (March 1992):  141-156. 
+ Chandler, Lester V.  America’s Greatest Depression, 1929-1941
+.  New York:  Harper & Row, 
+Publishers, 1970. 
+ Cowles, Alfred, and Associates.  Common-Stock Indexes
+.  Bloomington, Indiana:  Principia 
+Press, 1939. 
+ della Paolera, Gerardo, and Alan M. Taylor.  “Economic Recovery from the Argentine Great 
+Depression:  Institutions, Expectations, and the Change of Macroeconomic Regime.”  Journal of Economic History
+ 59 (September 1999):  567-599. 
+ Díaz Alejandro, Carlos F.  “Latin America in the 1930s.”  In Latin American in the 1930s:  The 
+Role of the Periphery in World Crisis  edited by Rosemary Thorp.  New York:  St. 
+Martin’s Press, 1984, pp. 17-49. 
+ Eichengreen, Barry, and Jeffrey Sachs.  “Exchange Rates and Economic Recovery in the 1930s.”  
+Journal of Economic History
+ 45 (December 1985):  925-946. 
+ 
+
+    
+Eichengreen, Barry.  Golden Fetters:  The Gold Standard and the Great Depression, 1919-1939 .  
+New York:  Oxford University Press, 1992. 
+ Freeman, Richard.  “Spurts in Union Growth:  Defining Moments and Social Processes.”  In The 
+Defining Moment:  The Great Depression and the American Economy in the Twentieth 
+Century  edited by Michael D. Bordo, Claudia Goldin, and Eugene N. White.  Chicago:  
+University of Chicago Press for NBER, 1998, pp. 265-296. 
+ Friedman, Milton, and Anna Jacobson Schwartz.  A Monetary History of the United States, 
+1867-1960 .  Princeton, NJ:  Princeton University Press for NBER, 1963. 
+ Friedman, Milton, and Anna Jacobson Schwartz.  Monetary Statistics of the United Sates:  
+Estimates, Sources, Methods .  New York:  National Bureau of Economic Research, 1970. 
+ Friedman, Milton, and Anna Jacobson Schwartz.  Monetary Trends in the United States and the 
+United Kingdom:  Their Relation to Income, Prices, and Interest Rates, 1867-1975 .  
+Chicago:  University of Chicago Press for NBER, 1982. 
+ Galbraith, John Kenneth.  The Great Crash, 1929
+.  Boston:  Houghton Mifflin, 1988. 
+ Gordon, Robert J. and James A. Wilcox.  “Monetarist Interpretations of the Great Depression:  
+An Evaluation and Critique.”  In The Great Depression Revisited
+ edited by Karl Brunner.  
+Boston:  Martinus Nijhoff, 1981, pp. 49-107. 
+ Irwin, Douglas A.  “The Smoot-Hawley Tariff:  A Quantitative Assessment.”  Review of 
+Economics and Statistics  80 (May 1998): 326-334. 
+ James, Harold.  The German Slump:  Politics and Economics, 1924-1936
+.  New York:  Oxford 
+University Press, 1986. 
+ Kindleberger, Charles P.  The World in Depression, 1929-1939
+.  Berkeley, CA:  University of 
+California Press, 1986. 
+ League of Nations.  World Economic Survey, 1931-32
+.  Geneva, 1932. 
+ League of Nations.  World Economic Survey, 1932-33
+.  Geneva, 1933. 
+ League of Nations.  World Production and Prices, 1935/36
+.  Geneva, 1936. 
+ Lewis, W. Arthur.  Economic Survey, 1919-1939
+.  London:  George Allen and Unwin Ltd., 
+1949. 
+ Meltzer, Allan H.  A History of the Federal Reserve
+.  Volume 1:  1913-1951.  Chicago:  
+University of Chicago Press, 2003. 
+ 
+
+    
+Richardson, H.W.  Economic Recovery in Britain, 1932-9 .  London:  Weidenfeld and Nicolson, 
+1967. 
+ Romer, Christina D.  “The Prewar Business Cycle Reconsidered:  New Estimates of Gross 
+National Product, 1869-1908.”  Journal of Political Economy
+ 97 (February 1989):  1-37. 
+ Romer, Christina D.  “The Great Crash and the Onset of the Great Depression.”  Quarterly 
+Journal of Economics  105 (August 1990):  597-624. 
+ Romer, Christina D.  “What Ended the Great Depression?”  Journal of Economic History
+ 52 
+(December 1992):  757-784. 
+ Romer, Christina D.  “The Nation in Depression.”  Journal of Economic Perspectives
+ 7 (Spring 
+1993):  19-40. 
+ Schwartz, Anna J.  “Understanding 1929-1933.”  In The Great Depression Revisited
+ edited by 
+Karl Brunner.  Boston:  Martinus Nijhoff, 1981, pp. 5-48. 
+ Temin, Peter.  “The Beginning of the Depression in Germany.”  Economic History Review
+, New 
+Series, 24 (May 1971):  240-248. 
+ Temin, Peter.  Lessons from the Great Depression
+.  The Lionel Robbins Lectures for 1989.  
+Cambridge, MA:  MIT Press, 1989. 
+ U.S. Board of Governors of the Federal Reserve System.  Banking and Monetary Statistics
+.  
+Washington, D.C.:  U.S. Government Printing Office, 1943. 
+ U.S. Bureau of the Census.  Historical Statistics of the United States:  Colonial Times to 1970
+.  
+Washington, D. C.:  U.S. Government Printing Office, 1975. 
+ U.S. Bureau of Economic Analysis.  The National Income and Product Accounts of the United 
+States, 1929-82:  Statistical Tables .  Washington, D.C.:  U.S. Government Printing 
+Office, September 1986. 
+ U.S. President.  Economic Report of the President, 2001
+.  Washington, D.C.:  U.S. Government 
+Printing Office, 2001. 
+ 
+

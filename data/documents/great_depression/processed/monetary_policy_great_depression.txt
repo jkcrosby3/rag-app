@@ -1,0 +1,2230 @@
+David C. Wheelock
+David C. Wheelock, assistant professor of economics at the
+University of Texas-Austin, is a visiting scholar at the Federal
+Reserve Bank of St. Louis. David H. Kelly provided research
+assistance.
+Monetary Policy in the Great
+Depression: What the Fed Did,
+and Why
+SIXTY YEARS AGO the United States—
+indeed; most of the world—was in the midst of
+the Great Depression. Today, interest in the
+Depression's causes and the failure of govern-
+ment policies to prevent it continues, peaking
+whenever the stock market crashes or the econ-
+omy enters a recession. In the 1930s, dissatisfac-
+tion with the failure of monetary policy to pre-
+vent the Depression, or to revive the economy,
+led to sweeping changes in the structure of the
+Federal Reserve System. One of the most impor-
+tant changes was the creation of the Federal
+Open Market Committee (FOMC) to direct open
+market policy. Recently Congress has again con-
+sidered possible changes in the Federal Reserve
+System.1
+This article takes a new look at Federal Reserve
+policy in the Great Depression. Historical analy-
+sis of Fed performance could provide insights
+into the effects of System organization on policy
+making. The article begins with a macroeconomic
+overview of the Depression. It then considers
+both contemporary and modern views of therole of monetary policy in causing the Depression
+and the possibility that different policies might
+have made it less severe.
+Much of the debate centers on whether mone-
+tary conditions were "easy" or "tight" during the
+Depression—that is, whether money and credit
+were plentiful and inexpensive, or scarce and
+expensive. During the 1930s, many Fed officials
+argued that money was abundant and "cheap,"
+even "sloppy," because market interest rates
+were low and few banks borrowed from the dis-
+count window. Modern researchers who agree
+generally believe neither that monetary forces
+were responsible for the Depression nor that
+different policies could have alleviated it. Others
+contend that monetary conditions were tight,
+noting that the supply of money and price level
+fell substantially. They argue that a more aggres-
+sive response would have limited the Depression.
+Among those who conclude that contraction-
+ary monetary policy worsened the Depression,
+there has been considerable debate about why
+1 The Monetary Policy Reform Act of 1991" (S. 1611)
+would have abolished the FOMC and thereby ended the
+voting on open market policy by Federal Reserve Bank
+presidents. Although hearings on the bill were held, it was
+not brought to a vote before Congress adjourned at the
+end of 1991. The Banking Act of 1935 established thepresent form of the FOMC, whose members include the
+Board of Governors of the Federal Reserve System and
+the 12 Reserve Bank presidents. Five of the presidents
+vote on policy on a rotating basis.
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+Federal Reserve officials failed to respond ap-
+propriately. Most explanations fall into two cate-
+gories. One holds that Fed officials, though well-
+intentioned; failed to understand that more ag-
+gressive action was needed. Some researchers,
+like Friedman and Schwartz (1963), argue that
+the Fed's behavior during the Depression con-
+trasted sharply with its behavior during the
+1920s. They contend that the death of Benjamin
+Strong in 1928 led to a redistribution of authori-
+ty within the System that caused a distinct de-
+terioration in Fed performance. Strong, who
+was Governor of the Federal Reserve Bank of
+New York from the System's founding in 1914
+until his death, dominated Federal Reserve policy-
+making in the years before the Depression.2
+These researchers argue that authority was dis-
+persed after his death among the other Reserve
+Banks, whose officials were less knowledgeable
+and failed to recognize the need for aggressive
+policies. Other researchers, like Wicker (1966),
+Brunner and Meltzer (1968), and Temin (1989),
+contend that Strong's death caused no change in
+Fed performance. They argue that Strong had
+not developed a countercyclical policy and that
+he would have failed to recognize the need for
+vigorous action during the Depression. In their
+view, Fed errors were not due to organizational
+flaws or changes, but simply to continued use
+of flawed policies.
+A second category of explanations holds that
+the Fed's contractionary policy was deliberate.
+Epstein and Ferguson (1984) and Anderson,
+Shughart and Tollison (1988) contend that Fed
+officials understood that monetary conditions
+were tight. Epstein and Ferguson assert that the
+Fed believed a contraction was necessary and
+inevitable. When it did act, they argue, it was to
+promote the interests of commercial banks,
+rather than economic recovery. Anderson,
+Shughart and Tollison emphasize even more theFed's interest in aiding its member banks. They
+argue that monetary policy was designed to
+cause the failure of nonmember banks, which
+would enhance the long-run profits of member
+banks and enlarge the System's regulatory
+domain.
+AN OVERVIEW OF THE GREAT
+DEPRESSION
+Analysts generally agree that the economic
+collapse of the 1930s was extremely severe, if
+not the most severe in American history. To
+provide a sense of the Depression, Figures 1-3
+plot GNP, the price level and the unemployment
+rate from 1919 to 1939. As the figures show, af-
+ter eight years of nearly continuous expansion,
+nominal (current dollar) GNP fell 46 percent
+from 1929 to 1933. Real (constant dollar) GNP
+fell 33 percent and the price level declined 25
+percent. The unemployment rate went from un-
+der 4 percent in 1929 to 25 percent in 1933.3
+Real GNP did not recover to its 1929 level until
+1937. The unemployment rate did not fall below
+10 percent until World War II.4
+Few segments of the economy were unscathed.
+Personal and firm bankruptcies rose to unpre-
+cedented highs. In 1932 and 1933, aggregate
+corporate profits in the United States were
+negative. Some 9,000 banks, with $6.8 billion of
+deposits, failed between 1930 and 1933 (see
+figure 4). Since some suspended banks eventually
+reopened and deposits were recovered, these
+figures overstate the extent of the banking dis-
+tress.5 Nevertheless, bank failures were numer-
+ous and their effects severe, even compared
+with the 1920s, when failures were high by
+modern standards.
+Much of the debate about the causes of the
+Great Depression has focused on bank failures.
+2Until changed by the Banking Act of 1935, the chief ex-
+ecutive officers of the Reserve Banks held the title "gover-
+nor." Today these officers are titled "president," while
+members of the Board of Governors, which replaced the
+Federal Reserve Board in 1935, now hold the title
+"governor."
+3The appendix provides a list of sources for the data used
+in this article. The GNP and unemployment series used
+here are standard, but Romer (1986a, 1986b) presents
+new estimates of GNP and unemployment for the 1920s.
+Both new estimates exhibit less variability than those tradi-
+tionally used; Romer's estimate of the unemployment rate
+in 1929 is 4.6 percent, compared with 3.2 percent plotted
+here.4Darby (1976) argues that the unemployment rate series
+considerably overstates the true rate after 1933 because it
+takes persons employed on government relief projects as
+unemployed. Kesselman and Savin (1978) offer an oppos-
+ing view. Regardless of which argument is accepted, un-
+employment during the 1930s was exceptionally severe,
+particularly since there were relatively few multi-income
+households.
+5There was no deposit insurance in these years. The Bank-
+ing Act of 1933 created federal deposit insurance. During
+the 19th and early 20th centuries a number of states ex-
+perimented with insurance plans for their state-chartered
+banks, but none was still in existence by 1930. See
+Calomiris (1989) for a survey of the state systems.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+Figure 1
+Nominal and Real Gross National Product
+Figure 2
+Implicit Price Index
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+Figure 3
+Unemployment Rate
+Were they merely a result of falling national in-
+come and money demand? Or were they an im-
+portant cause of the Depression? Most contempo-
+raries viewed bank failures as unfortunate for
+those who lost deposits, but irrelevant in macro-
+economic significance. Keynesian explanations of
+the Depression agreed, including little role for
+bank failures. Monetarists like Friedman and
+Schwartz (1963), on the other hand, contend
+that banking panics caused the money supply to
+fall which, in turn, caused much of the decline
+in economic activity. Bernanke (1983) notes that
+bank failures also disrupted credit markets,
+which he argues caused an increase in the cost
+of credit intermediation that significantly
+reduced national output. In these explanations,
+the Federal Reserve bears much of the blame
+for the Depression because it failed to preventthe banking panics and money supply con-
+traction.
+THE ROLE OF MONETARY
+POLICY: ALTERNATIVE VIEWS
+Today there is considerable debate about the
+causes of business cycles and whether government
+policies can alleviate them.6 Just as there is no
+consensus now, contemporary observers had
+many different views about the causes of the
+Great Depression and the appropriate response of
+government. A few economists, like Irving Fisher
+(1932), applied the Quantity Theory of Money,
+which holds that changes in the money supply
+cause changes in the price level and can affect the
+level of economic activity for short periods. These
+economists argued that the Fed should prevent
+deflation by increasing the money supply. At the
+6See Belongia and Garfinkel (forthcoming).
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+Figure 4
+Bank Suspensions
+other extreme, proponents of "liquidationist" the-
+ories of the cycle argued that excessively easy
+monetary policy in the 1920s had contributed to
+the Depression, and that "artificial" easing in
+response to it was a mistake. Liquidationists
+thought that overproduction and excessive bor-
+rowing cause resource misallocation, and that
+depressions are the inescapable and necessary
+means of correction:
+In the course of a boom many bad business
+commitments are undertaken. Debts are in-
+curred which it is impossible to repay. Stocks
+are produced and accumulated which it is im-
+possible to sell at a profit. Loans are made
+which it is impossible to recover. Both in the
+sphere of finance and in the sphere of produc-
+tion, when the boom breaks, these bad commit-
+ments are revealed. Now in order thatrevival may commence again, it is essential that
+these positions should be liquidated. . . .7
+One implication of the liquidationist theory is
+that increasing the money supply during a
+recession is likely to be counterproductive. Dur-
+ing a minor recession in 1927, for example, the
+Fed had made substantial open market pur-
+chases and reduced its discount rate. Adolph
+Miller, a member of the Federal Reserve Board,
+who agreed with the liquidationist view, testi-
+fied in 1931 that:
+It [the 1927 action] was the greatest and boldest
+operation ever undertaken by the Federal
+Reserve System, and, in my judgment, resulted
+in one of the most costly errors committed by
+it or any banking system in the last 75 years. I
+am inclined to think that a different policy at
+that time would have left us with a different
+7Lionel Robbins, The Great Depression (1935) [quoted by
+Chandler (1971), p. 118].
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+condition at this time. . . . That was a time of
+business recession. Business could not use and
+was not asking for increased money at that
+time.8
+In Miller's view, because economic activity was
+low, the reserves created by the Fed's actions
+fueled stock market speculation, which led in-
+evitably to the crash and subsequent
+depression.
+During the Depression, proponents of the li-
+quidationist view argued against increasing the
+money supply since doing so might reignite
+speculation without promoting an increase in
+real output. Indeed, many argued that the Fed-
+eral Reserve had interfered with recovery and
+prolonged the Depression by pursuing a policy
+of monetary ease. Hayek (1932), for example,
+wrote:
+It is a fact that the present crisis is marked by
+the first attempt on a large scale to revive the
+economy. . . by a systematic policy of lowering
+the interest rate accompanied by all other possi-
+ble measures for preventing the normal process
+of liquidation, and that as a result the depres-
+sion has assumed more devastating forms and
+lasted longer than ever before (p. 130).
+Several key Fed officials shared Hayek's views.
+For example, the minutes of the June 23, 1930,
+meeting of the Open Market Committee report
+the views of George Norris, Governor of the
+Federal Reserve Bank of Philadelphia:
+He indicated that in his view the current busi-
+ness and price recession was to be ascribed
+largely to overproduction and excess productive
+capacity in a number of lines of business rather
+than to financial causes, and it was his belief
+that easier money and a better bond market
+would not help the situation but on the con-
+trary might lead to further increases in produc-
+tive capacity and further overproduction.9
+While the liquidationist theory of the business
+cycle was commonly believed in the early 1930s,it died out quickly with the Keynesian revolu-
+tion, which dominated macroeconomics for the
+next 30 years. Keynesian explanations of the
+Depression differed sharply from those of the li-
+quidationists. Keynesians tended to dismiss
+monetary forces as a cause of the Depression or
+a useful remedy. Instead they argued that
+declines in business investment or household
+consumption had reduced aggregate demand,
+which had caused the decline in economic ac-
+tivity.10 Both views, however, agreed that mone-
+tary ease prevailed during the Depression.
+Friedman and Schwartz renewed the debate
+about the role of monetary policy by forcefully
+restating the Quantity Theory explanation of the
+Depression:
+The contraction is. . . a tragic testimonial to the
+importance of monetary forces. . . . Different
+and feasible actions by the monetary authorities
+could have prevented the decline in the stock
+of money. . . [This] would have reduced the con-
+traction's severity and almost as certainly its du-
+ration (pp. 300-01).
+Friedman and Schwartz argue that an increase
+in the money stock would have offset, if not
+prevented, banking panics, and would have led
+to increased lending to consumers and business
+that would have revived the economy.
+Many disagree with the Friedman and Schwartz
+explanation, although some recent Keynesian ex-
+planations concede that restrictive monetary
+policy did play a role in the Depression.11 Other
+studies, such as Field (1984), Hamilton (1987),
+and Temin (1989), conclude that contractionary
+monetary policy in 1928 and 1929 contributed
+to the Depression. Bordo (1989) and Wicker
+(1989) provide detailed surveys of the monetarist-
+Keynesian debate about the causes of the Great
+Depression, and interested readers are referred
+to them. Since most recent contributions to this
+literature emphasize the effects of monetary
+policy, a new look at the policies of the Federal
+Reserve during the Great Depression is war-
+ranted.
+8U.S. Senate (1931), p. 134.
+9Quoted by Chandler (1971), pp. 136-37. De Long (1990)
+details the liquidationist cycle theory, and Chandler (1971),
+pp. 116-23, has a general discussion of prevailing busi-
+ness cycle theories and their prescriptions for monetary
+policy.
+10See Temin (1976) for a survey of Keynesian explanations
+of the Great Depression.11 Most criticize the Fed's discount rate increases and failure
+to replace reserve losses suffered by banks in the panic
+following Great Britain's departure from the gold standard
+in late 1931. See Temin (1976), p. 170, and Kindleberger
+(1986), pp. 164-67.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+Figure 5
+Interest Rates
+WERE MONETARY CONDITIONS
+EASY OR TIGHT?
+A fundamental disagreement within the Feder-
+al Reserve System and among outside observers,
+even today, is whether monetary policy during
+the Depression was easy or tight. Most Fed offi-
+cials felt that money and credit were plentiful.
+Short-term market interest rates fell sharply af-
+ter the stock market crash of 1929 and remained
+at extremely low levels throughout the 1930s
+(see figure 5). To most observers, the decline in
+short-term rates implied monetary ease. Long-
+term interest rates declined less sharply,
+however, and yields on risky bonds, such asBaa-rated bonds, rose during the first three
+years of the Depression (see figure 5).12 Never-
+theless, the exceptionally low yields on short-
+term securities has suggested to many observers
+an abundance of liquidity.
+Other variables also have been interpreted as
+indications of easy monetary conditions. Rela-
+tively few banks came to the Fed's discount
+window to borrow reserves, for example, and
+many banks built up substantial excess reserves
+as the Depression progressed (see figure 6).13 To
+most observers, it appeared that there was little
+demand for credit and, since most policymakers
+saw their mission as one of accommodating
+12The short-term rate series through 1933 is the average
+daily yield in June of each year on three- to six-month
+Treasury notes and certificates, and the yield on Treasury
+bills thereafter. The long-term series is the average dailyyield in June of each year on U.S. government bonds.
+13Data on excess reserves before 1929 are not available,
+but they were not likely very large.
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+10
+Figure 6
+Borrowed and Excess Reserves of
+Federal Reserve Member Banks
+ing credit demand, few believed that more
+vigorous expansionary actions were necessary.14
+Low interest rates and an apparent lack of de-
+mand for reserves have led many researchers
+to conclude that tight money did not cause the
+Depression. Temin (1976), for example, writes:
+There is no evidence of any effective deflation-
+ary pressure from the banking system between
+the stock-market crash in October 1929 and the
+British abandonment of the gold standard inSeptember 1931. . . . There was no rise in short-
+term interest rates in this two-year period. . . .
+The relevant record for the purpose of identify-
+ing a monetary restriction is the record of
+short-term interest rates (p. 169).
+Other indicators of monetary conditions,
+however, suggest the opposite conclusion. Defla-
+tion implied that the value of the dollar rose 25
+percent from 1929 to 1933, which Schwartz
+14The Federal Reserve System's founders intended that it
+operate according to the Real Bills Doctrine. Fed credit
+would be extended primarily through the discount window
+as member banks borrowed to finance short-term agricul-
+tural or business loans. A decline in economic activity
+would reduce discount window borrowing, causing Federal
+Reserve credit to decline. By 1924, System policy had
+evolved away from a strict Real Bills interpretation, but itprobably continued to have considerable influence on
+many Fed officials. See West (1977) or Wicker (1966) for
+discussion of the influence of the Real Bills Doctrine on
+policy over time.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+11
+Figure 7
+Money Supply
+Millions of dollars
+(1981) argues reflected exceptionally tight
+money. Another indicator; the money stock, fell
+by one-third from 1929 to 1933 (see figure 7).15
+Friedman and Schwartz contend that:
+It seems paradoxical to describe as 'monetary
+ease' a policy which permitted the stock of
+money to decline. . . by a percentage exceeded
+only four times in the preceding fifty-four years
+and then only during extremely severe
+business-cycle contractions (p. 375).
+And finally, numerous studies point out that the
+real interest rate, that is, the interest rate ad-justed for changes in the price level, rose shar-
+ply during the Depression (see figure 8).16 While
+the nominal yield on short-term government
+securities fell to an exceptionally low level,
+deflation implied that their real yield rose above
+10 percent in 1930 and 1931. Thus, in contrast
+to the apparent signal given by nominal interest
+rates, member bank borrowing and excess
+reserves, the falling money stock and deflation
+suggest that monetary conditions were far from
+easy.17
+Many economists now conclude that the Fed-
+eral Reserve should have responded more
+15M1 is the sum of coin and currency held by the public and
+demand deposits. M2 also includes time deposits at com-
+mercial banks.
+Meltzer (1976) and Hamilton (1987), for example. The
+real interest rate plotted in figure 8 is calculated as the
+prevailing yield on short-term government securities in
+June of each year, less the rate of inflation in the subse-
+quent year. Since actual, rather than anticipated, inflation
+is used to calculate the real rate, it is considered an ex
+post, rather than ex ante, rate.17Yet another indicator is the real money supply, i.e., the
+growth rate of the nominal supply of money less the ex-
+pected rate of inflation. Since the price level fell faster
+than the nominal supply of money (M1 or M2) during the
+first two years of the Depression, Temin (1976) argues that
+monetary conditions were not tight. The increase in real
+money balances was relatively slow, however, which
+Hamilton (1987) argues was contractionary.
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+12
+Figure 8
+Ex Post Real Interest Rate
+vigorously to the Depression. There is little
+agreement, however, about why the Fed did
+not. The next sections examine alternative ex-
+planations for Federal Reserve behavior during
+the Depression.
+THE IMPACT OF STRONG'S
+DEATH: ALTERNATIVE VIEWS
+Irving Fisher testified before Congress in 1935
+that the Depression was severe because "Gover-
+nor Strong had died and his policies died with
+him. ... I have always believed, if he had lived,
+we would have had a different situation."18 Ac-
+cording to Fisher, Benjamin Strong had disco-
+vered how to use monetary policy to maintainprice level stability, "and for seven years he
+maintained a fairly stable price level in this
+country, and only a few of us knew what he
+was doing. His colleagues did not understand
+it."19 In Fisher's view, Strong adjusted the quan-
+tity of money to maintain a stable price level;
+had he lived, Fisher says, he would have
+prevented the deflation of the 1930s by not al-
+lowing the quantity of money to decline.
+Friedman and Schwartz agree with Fisher that
+Strong's death caused monetary policy to
+change significantly. They argue that Strong's
+aggressive open market purchases and discount
+rate reductions in 1924 and 1927 had quickly al-
+leviated recessions, but that his death produced
+a sharply different policy during the Depression:
+18U.S. House of Representatives (1935), p. 534. 19lbid, pp. 517-20.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+13
+If Strong had still been alive and head of the
+New York Bank in the fall of 1930, he would
+very likely have recognized the oncoming li-
+quidity crisis for what it was, would have been
+prepared by experience and conviction to take
+strenuous and appropriate measures to head it
+off, and would have had the standing to carry
+the System with him (pp. 412-13).
+Friedman and Schwartz make a persuasive
+case. Strong was an experienced financial lead-
+er. He had served as an officer of Bankers
+Trust Company, and during the Panic of 1907
+as head of a committee reporting to J. P. Mor-
+gan that determined which financial institutions
+could be rescued.20 He was the first governor of
+the Federal Reserve Bank of New York and
+emerged as leader of the Federal Reserve Sys-
+tem both because of his personality and stature
+in the financial community and because of the
+relative importance of New York member banks
+in the international financial market.21 He chaired
+a committee of Federal Reserve Bank governors
+that coordinated System open market operations
+and represented the System in dealings with
+foreign central banks and Congress.22 It is clear
+that, with his death, the Fed lost an experienced
+and forceful leader.
+Some researchers argue, however, that
+Strong's death had little effect on policy. Temin
+(1989), for example, writes that 'The death of
+Strong was a minor event in the history of the
+Great Depression" (p. 35). And Brunner and
+Meltzer (1968) argue that, "While there is some
+evidence that the death of Benjamin Strong con-
+tributed to a shift in the balance of power wi-
+thin the Federal Reserve. . . we find that a
+special explanation of monetary policy after
+1929 is unnecessary. . ." (p. 341). The disagree-
+ment between these authors and those such as
+Fisher, Friedman and Schwartz rests on their
+views of whether Strong's policies would have
+prevented the monetary collapse and Depression.WHAT WAS STRONGS POLICY?
+Much of Strong's testimony before Congres-
+sional committees, as well as other speeches and
+writings, suggests that he had developed a poli-
+cy of money supply control to limit fluctuations
+in the price level. For example, in an unpub-
+lished article dated April 1923, he wrote: "If, as
+is now universally admitted, prices are in-
+fluenced to advance or to decline by increases
+or decreases in the total of 'money'. . . then the
+task of the System is to maintain a reasonably
+stable volume of money and credit. . . "23 And,
+in a speech to the American Farm Bureau in
+December 1922, he said that monetary policy:
+. . .should insure that there is sufficient money
+and credit available to conduct the business of
+the nation and to finance not only the seasonal
+increases in demand but the annual or normal
+increase in volume. ... I believe that it should
+be the policy of the Federal Reserve System, by
+the employment of the various means at its
+command, to maintain the volume of credit and
+currency in this country at such a level so that,
+to the extent that the volume has any influence
+upon prices, it cannot possibly become the me-
+ans for either promoting speculative advances
+in prices, or of a depression of prices.24
+These statements suggest that Strong would not
+have permitted the money supply collapse or
+deflation that occurred after 1929.
+Other aspects of Strong's testimony, speeches
+and writings give different or ambiguous im-
+pressions of his views, however, making it
+difficult to infer what policies he would have
+advocated during the Depression. In testimony
+before the House Banking Committee in 1926,
+Strong described the relationship between Fed
+policy and the quantity of bank deposits, dis-
+cussing in detail the multiplier relationship be-
+tween bank reserves and deposits.25 But he also
+20Chandler(1958), pp. 27-28.
+21The Federal Reserve Act gave the individual Reserve
+Banks authority to initiate discount rate changes and open
+market operations. The Federal Reserve Board could ap-
+prove or disapprove these actions, but its role was primari-
+ly supervisory, with no clear authority to determine policy.
+Because of this, and perhaps because it lacked forceful
+leaders, the Board did not dominate policy making until af-
+ter the System was restructured by the Banking Act of
+1935. See Wheelock (forthcoming) for details of this reor-
+ganization.
+22lnitially, each Reserve Bank determined its own open mar-
+ket operations. But Treasury Department complaints thatthey made it difficult to price new debt issues and a grow-
+ing understanding of the impact of open market operations
+on economic activity, led the Banks to form a "Governors
+Committee" to coordinate open market operations. This
+committee was replaced in 1923 by the Open Market In-
+vestment Committee, which Strong headed until his death.
+23"Prices and Price Control," in Burgess (1930), pp. 229-30.
+24Quoted by Chandler (1958), p. 200.
+25U.S. House of Representatives (1926), pp. 334-35.
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+14
+testified that, "when it comes to a decline of
+price level, the origin of which can not be at-
+tributed to a credit policy, this effort that you
+make by a credit policy to arrest a fall of prices
+may do more harm than good. . . ,"26 It is also
+difficult to interpret his writing that "the task of
+the System is to maintain a reasonably stable
+volume of money and credit, with due al-
+lowances for seasonal fluctuations in demand, for
+normal annual growth in the country's develop-
+ment. . . and with such allowance as may be im-
+posed by those great cycles of prosperity and
+depression. . . ."27 What sort of allowance for
+fluctuations does he mean? This statement could
+be read as advocating an increase or a decrease
+in money in response to a decline in economic
+activity. The latter is suggested by the following
+statement: "there should be no such excessive
+or artificial supplies of money and credit as will
+simply permit the marking up of prices when
+there is no increase in business or production
+to warrant an increase in the volume of money
+and credit."28 This sounds like the warnings by
+some officials during the Depression that mone-
+tary expansion would be inflationary or cause
+speculation because economic activity was low.
+Strong also seems to have concluded that the
+deflation from mid-1920 to 1921 had positive
+effects:
+The deflation which took place in the United
+States following the collapse of prices resulted
+in extricating the reserve system—the whole
+monetary system of the country—from a posi-
+tion of permanent entanglement. . . and I think
+that was one of the fortunate results of the
+policy. . . . One of the results of this liquida-
+tion. . . has been to put this country on as
+sound or a sounder monetary basis than any
+other country in the world, without the in-
+troduction of a lot of money or credit into cir-
+culation, based solely upon the Government
+debt to the bank of issue. I mean to explain
+that there have been offsetting advantages to
+that deflation. . . .29This quotation suggests that Strong might have
+found similar offsetting advantages to the defla-
+tion that followed the stock market crash in
+1929 and might have been reluctant to expand
+the money supply through purchases of govern-
+ment securities.
+These quotations illustrate the ambiguity of
+many of Strong's statements and the difficulty
+of inferring what policies he would have pur-
+sued in the 1930s. To determine whether mone-
+tary policy was changed by Strong's death, it is
+probably more instructive to examine the poli-
+cies he actually implemented.
+Two aspects of Strong's policies have received
+attention from scholars studying Federal
+Reserve behavior. First, beginning in the early
+1920s, the System offset or "sterilized" gold
+flows and other changes in reserve funds by al-
+tering the volume of Fed credit outstanding.30
+This policy limited fluctuations in bank reserves
+and, thus, in the money supply and price level.
+According to Friedman and Schwartz (1963), pp.
+394-99, however, the Fed permitted gold out-
+flows during the Depression to reduce bank
+reserves and the money supply and more than
+offset gold inflows. What had been an essential-
+ly neutral policy, therefore, became a contrac-
+tionary policy after Strong's death.
+Miron (1986) argues that a similar change oc-
+curred in the Fed's accommodation of seasonal
+credit and currency demands. From the Sys-
+tem's inception, Federal Reserve credit was sup-
+plied to prevent seasonal demands from
+draining bank reserves and increasing interest
+rates. According to Miron, the Fed was less ac-
+commodative after 1928, which contributed to
+the frequency of financial crises during the
+Depression.31
+Beyond the offsetting of gold and currency
+flows, a second aspect of Strong's policies has
+received considerable attention. In 1924 and
+1927, the Fed made large open market pur-
+chases and discount rate reductions that were
+followed by increases in bank reserves and the
+26lbid, p. 577.
+27"Prices and Price Control," April 1923, in Burgess (1930),
+p. 230 (italics added).
+28From a speech to the American Farm Bureau in 1922
+[quoted by Chandler (1958), p. 200].
+29U.S. House of Representatives (1926), p. 309.
+30Federal Reserve credit is supplied by Fed purchases of
+securities and discount window lending (member bank bor-
+rowing). It consists also of some miscellaneous compo-nents, such as float. In this era, the Federal Reserve pur-
+chased both U.S. government securities and bankers ac-
+ceptances (at fixed acceptance buying rates), and discount
+window lending consisted of both rediscount of eligible
+paper and advances to member banks at the discount
+rate.
+31 Miron does not test this claim except to show that Federal
+Reserve credit was somewhat less seasonal after 1928
+than before.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+15
+money supply. Friedman and Schwartz (1963)
+argue that the Fed's purpose was to combat
+recessions and that its failure to respond as ag-
+gressively during the Depression reflected a dis-
+tinct change in System behavior. Other
+researchers; however, such as Wicker (1966)
+and Brunner and Meltzer (1968), find no incon-
+sistency in Fed behavior, arguing that the com-
+paratively weak response to the Depression was
+in fact predictable from the policy strategy de-
+veloped by Strong.
+The Sterilization Policy
+Before entering World War I, the United
+States absorbed large gold inflows that added
+directly to bank reserves and caused a signifi-
+cant money supply increase.32 Although inflows
+ceased after America entered the war, bank
+reserves and the money supply continued to in-
+crease rapidly as Federal Reserve credit was ex-
+tended to help finance the war. After the war,
+gold outflows reduced the reserves of the
+Reserve Banks, leading them to raise their dis-
+count rates and thereby restrict credit to mem-
+ber banks.33 The resulting decline in Fed credit
+coincided with a sharp decline in the money
+supply and deflation.34
+Following the violent inflation-deflation cycle
+of 1917-21, the Fed began to intervene to pre-
+vent gold flows from affecting bank reserves.35
+In testimony before the House Committee on
+Banking and Currency, Strong gave a clear ex-
+planation of this policy, presenting charts show-
+ing the relationship between gold flows, Fed
+credit, bank reserves and the price level.36 He
+explained:
+In the old days there was a direct relation be-
+tween the country's stock of gold, bank deposits
+and the price level because bank depositswere. . . based upon the stock of gold and bore
+a constant relationship to the gold stock, and
+the volume of bank deposits and the general
+price level were similarly related. But in recent
+years the relationship between gold and bank
+deposits is no longer as close or direct as it
+was, because the Federal Reserve System has
+given elasticity to the country's bank reserves.
+Reserve Bank credit has become the equivalent
+of gold in its power to serve as the basis of
+bank credit. . . . Hence. . . the present basis for
+bank credit consists of gold plus Federal
+Reserve credit. Federal Reserve bank credit is
+an elastic buffer between the country's gold
+supply and bank credit.37
+Strong credited the Federal Reserve System for
+preventing inflation in 1921 and 1922:
+As the flow of gold imports was pouring into
+the United States in 1921 and 1922, many
+economists abroad, and in this country as well,
+expected that this inward flow of gold would
+result in a huge credit expansion and a serious
+price inflation. That no such expansion or infla-
+tion has taken place is due to the fact that the
+amount of Federal Reserve credit in use was
+diminished as the gold imports continued. Thus,
+in the broad picture of financial events in this
+country since 1920, the presence of the Reserve
+System may be said to have prevented rather
+than fostered inflation.38
+Figure 9 illustrates the policy of offsetting
+gold and currency flows during the 1920s.39
+The shaded insert on pages 18-19 describes the
+mechanics of this policy. Since gold is a source
+of banking system reserves, gold inflows, unless
+offset, add to the stock of reserves. A gold in-
+flow thus has the same effect on reserves as a
+32The accompanying shaded insert discusses the sources
+and uses of reserve funds and explains the mechanics of
+the Fed's sterilization policy.
+33The Reserve Banks were required to maintain gold
+reserves of 40 percent against their note issues and 35
+percent against deposits. A discount rate increase was in-
+tended to reduce discount loans and, thus, the Fed's note
+and deposit liabilities, as well as encourage gold inflows
+as investors sought higher yields in the United States.
+34ln January 1916, the All Commodities Price Index stood at
+112.8 (1913 = 100). In April 1917 (when the United States
+entered the war), it was at 172.9. At its peak in May 1920,
+the Index was at 246.7. It then fell to a low of 138.3 in
+January 1922.
+35Before the war, the Fed lacked the resources to offset
+gold inflows, so sterilization was impossible. By the end of
+1921, the Reserve Banks had sufficient reserves to reducetheir discount rates, and individually they began to pur-
+chase government securities. By 1923, there seems to
+have been a conscious effort to offset gold flows [Fried-
+man and Schwartz (1963), pp. 279-87].
+36These charts are reproduced by Hetzel (1985), p. 7, who
+examines Strong's unwillingness to support legislation that
+would require the Fed to adopt a price level stabilization
+rule.
+37U.S. House of Representatives (1926), p. 470.
+38Ibid, p. 471.
+39ln practice, the Fed also offset changes in other sources
+and uses of reserve funds, but gold and currency flows
+were the most substantial; the others can be ignored for il-
+lustrative purposes.
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+16
+Figure 9
+Gold and Currency Sterilization
+Federal Reserve purchase of securities. Currency
+held by the public is a use of reserves: in-
+creases in public currency holdings reflect
+reserve withdrawals from banks. Thus, if not
+offset, an increase in currency would correspond
+to a decrease in bank reserves. The difference
+between gold and currency is plotted in figure 9.
+It is clear that net increases (decreases) in this
+difference were largely offset by declines (in-
+creases) in Fed credit outstanding, so that total
+bank reserves changed relatively little.
+It is also clear that Benjamin Strong's death
+did not interrupt the offsetting of gold and cur-rency flows, at least until the fourth quarter of
+1931. The money supply contraction and defla-
+tion during the first two years of the Depres-
+sion were not caused by a decline in bank
+reserves. Instead, as figure 10 illustrates, the
+money supply fell because the money multiplier
+declined.40 This was particularly true beginning
+in the fourth quarter of 1930, when banking
+panics caused marked increases in the
+currency-deposit and reserve-deposit ratios.41
+The relative stability of bank reserves ended
+abruptly in September 1931. On September 21,
+Great Britain left the gold standard. Speculation
+multiplier plotted in figure 10 equals (1 + k)/(r + k),
+where k is the ratio of currency held by the public to de-
+mand deposits and r is the ratio of bank reserves to
+deposits. The multiplier is defined as the money supply
+(here M2) divided by the monetary base, or "high-powered
+money," which is the sum of bank reserves and currency
+held by banks and the public.41 Friedman and Schwartz (1963), pp. 340-42, conclude that
+the money supply decline between August 1929 and Oc-
+tober 1930 was caused by a decline in the monetary base.
+This decline was due to a decrease in currency, not bank
+reserves. Thereafter, the base rose, but less than neces-
+sary to offset the sharp decline in the multiplier.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+17
+Figure 10
+Money Supply and Base Multiplier
+that the United States would soon follow led to
+a large withdrawal of foreign deposits from
+American banks and a consequent gold out-
+flow.42 In the six weeks ending October 28,
+1931, the gold stock declined $727 million (15
+percent).43 The Fed raised its discount and ac-
+ceptance buying rates, hoping that an increase
+in domestic interest rates would halt the gold
+outflow by raising the relative yield of U.S.
+financial assets. This action was hailed as
+demonstrating the Fed's resolve to maintain gold
+convertibility of the dollar, and the gold outflow
+ceased.Banks continued to lose reserves, however, as
+depositors panicked and converted deposits into
+currency. Member banks were able to partially
+offset the reserve outflows by borrowing and
+by selling acceptances to the Reserve Banks, al-
+beit at the recently increased discount and ac-
+ceptance buying rates. But the Fed made only
+trivial purchases of government securities, and,
+in all, Federal Reserve member banks suffered a
+$540 million (22 percent) loss of reserves be-
+tween September 16, 1931, and February 24,
+1932.44
+42lf the United States had left the gold standard, it is likely
+that the dollar would have depreciated against gold and
+other currencies that remained linked to gold. This would
+have meant an immediate loss of wealth in terms of gold
+for anyone holding dollar-denominated assets.
+43Board of Governors of the Federal Reserve System (1943),
+p. 386.44Non-borrowed reserves declined $1112 million (52 per-
+cent), while discount loans (borrowed reserves) increased
+$572 million.
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+18
+Federal Reserve System Balance Sheet
+December 31,1929 (billions of dollars)
+Assets
+Gold and cash reserves
+Federal Reserve credit
+Bills discounted
+Bills bought
+Government securities
+Other
+Other assets
+Total assets
+Liabilities and Capital
+Federal Reserve notes
+Deposits
+Member bank
+Other
+Other liabilities
+Capital accounts
+Total liabilities and capital$3.01
+1.58
+$0.63
+0.39
+0.51
+0.05
+0.87
+$5.46
+$1.91
+2.41
+$2.36
+0.05
+0.69
+0.45
+$5.46The Federal Reserve Balance Sheet and Reserve
+Sterilization
+A simplified version of the Federal Reserve
+System's balance sheet on December 31,
+1929, is shown below. The principal assets of
+the Federal Reserve were its gold and cash
+reserves and Fed credit outstanding. The lat-
+ter consisted of member bank borrowing
+(bills discounted),1 bankers acceptances held
+by the Reserve Banks (bills bought),2 U.S.
+government securities held by the Reserve
+Banks and a miscellaneous component, made
+up primarily by float. The principal liabilities
+of the System were Federal Reserve notes
+outstanding, deposits of member banks, and
+deposits of the U.S. Treasury and others,
+such as foreign central banks.
+Most System transactions involve member
+commercial banks and directly affect member
+bank reserves. If the Fed makes an open
+market purchase of government securities
+from a member bank, for example, it pays
+for the securities by crediting the member
+bank's deposit with the Federal Reserve.
+Since a deposit at the Fed is the principal
+form in which banks hold their legal
+reserves,3 an open market purchase adds
+directly to bank reserves.4
+Many Federal Reserve transactions are in-
+itiated by commercial banks. When the Unit-
+ed States was on the gold standard, the Fed
+held substantial gold reserves, and transac-
+tions in gold were common. For example,
+suppose gold coin was deposited by a cus-
+tomer of a member bank. The bank could
+send the coin to its Federal Reserve Bank and
+receive an increase in its reserve deposit of
+that amount. The Fed's gold reserves and
+member bank deposits would increase by the
+same amount. Suppose instead that a member
+bank was experiencing large cash withdraw-
+als and needed extra currency. It could re-
+quest currency, in the form of Federal
+Reserve notes, from its Reserve Bank and pay
+for the currency with a reduction in its
+reserve deposit. Hence, as Federal Reserve
+notes outstanding increased, bank reserves
+would decline by the same amount.
+The Fed could offset, or "sterilize," the im-
+pact of one transaction on bank reserveswith a second transaction having the opposite
+impact on reserves. For example, if the Fed
+sold government securities in the amount of
+a gold inflow, there would be no net change
+in aggregate member bank reserves. The
+open market sale would reduce reserves just
+as the gold inflow added to them, leaving no
+net reserve change. Similarly, a bank could
+borrow reserves from its Reserve Bank to
+pay for Federal Reserve notes needed to satis-
+fy withdrawal demands, and thus avoid
+drawing down its reserve deposit. In this
+case, Federal Reserve credit (bills discounted)
+would increase by the amount of the increase
+in Federal Reserve notes outstanding, and
+bank reserves would not change. Note that,
+in this case, the Fed did not initiate the off-
+setting transaction. Indeed, much of the
+sterilization of gold and currency flows dur-
+ing the 1920s and early 1930s was at the in-
+itiative of member banks, although it was
+definitely the Fed's intent that sterilization
+occur.
+Federal Reserve sterilization of gold and
+currency flows from January 1924 to Febru-
+ary 1933 is illustrated in figure 9. Note that
+increases (decreases) in Federal Reserve
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+19
+credit accompanied declines (increases) in the
+net of gold and currency outstanding, and
+thus bank reserves changed comparatively lit-
+tle. In 1930, for example, member bank
+reserves rose from $2395 million in Decem-
+ber 1929 to $2415 million in December 1930,
+an increase of just $20 million. Over the samemonths, there was an increase of $259 mil-
+lion in the monetary gold stock and a $120
+million decline in currency in circulation. The
+gold inflow and decline in currency would
+have added $379 million to bank reserves,
+but Fed credit declined by $370 million to
+offset their impact almost entirely.5
+1 Loans to member banks consisted of discounts and ad-
+vances. Many commercial loans, which often were
+called "bills," were made on a discount basis; hence,
+when they were endorsed by a bank and sent to a
+Reserve Bank in exchange for reserve balances, they
+were "re-discounted" by the Reserve Bank at the
+prevailing discount rate. Alternatively, bills were used
+as collateral for direct advances to member banks,
+hence the term "bills discounted."
+2The terminology is confusing because "bills" in this
+case refer to bankers acceptances, not to the promisso-
+ry notes that member banks used as collateral for dis-
+count loans.
+3From 1917 to 1960, such deposits were the only form
+in which member banks were permitted to hold their le-gal reserves. At other times, vault cash has also
+counted.
+4Even if the Fed were to purchase securities from some-
+one other than a member bank, bank reserves would
+still increase once the check issued by the Fed to pay
+for the securities was deposited in a member bank.
+Open market security sales reduce bank reserves
+since, ultimately, a member bank reserve deposit is
+reduced to pay for the securities sold by the Fed.
+5The gold inflow, decline in currency and decline in Fed-
+eral Reserve credit do not sum exactly to the change in
+bank reserves because of the effect of other, small
+transactions affecting reserves.
+The Fed's failure to fully offset the gold and
+currency outflows suffered by banks permitted
+the money supply contraction to accelerate. Fed
+officials claimed that the Reserve Banks' lack of
+reserves precluded government security pur-
+chases to offset the reserve losses suffered by
+banks.45 The Reserve Banks were required to
+maintain gold reserves equal to 40 percent of
+their note issues and reserves of either gold or
+"eligible paper" against the remaining 60 per-
+cent.46 Since gold outflows had reduced the Sys-
+tem's reserve holdings, and since the System
+lacked other eligible paper, Fed officials asserted
+they could not increase Fed credit by purchas-
+ing government securities, which were not eligi-
+ble collateral.
+Friedman and Schwartz (1963), pp. 399-406,
+dispute the Fed's justification for not buying
+government securities. They argue that the Sys-
+tem had sufficient gold reserves and, in any
+event, that the Federal Reserve Board had the
+power to suspend the reserve requirementstemporarily. Epstein and Ferguson (1984),
+pp. 964-65, contend, however, that Fed officials
+did feel constrained by a lack of gold. Wicker
+(1966), pp. 169-70, suggests that Fed officials
+feared that open market purchases would
+weaken confidence in the Fed's determination to
+maintain gold convertibility and thereby renew
+the gold outflow.
+In any case, the Glass-Steagall Act of 1932 re-
+moved the constraint by permitting government
+securities to serve as collateral for Federal
+Reserve note issues. In March 1932, the System
+began what was then the largest open-market
+purchase program in its history.47 Between
+February 24 and July 27, 1932, the Fed bought
+$1.1 billion of government securities. Member
+bank reserves increased only $194 million in
+these months, however, because of renewed
+gold and currency outflows and a reduction in
+member bank borrowing. Moreover, the supply
+of money continued to fall because of a sharp
+decline in the money multiplier (see figure 10).48
+45See the Board of Governors of the Federal Reserve Sys-
+tem. Annual Report (1932), pp. 16-19.
+46Eligible paper consisted of either bankers acceptances or
+commercial notes acquired by direct purchase or pledged
+by member banks as collateral for discount loans. See
+Board of Governors of the Federal Reserve System (1943),
+pp. 324-29, and Friedman and Schwartz (1963), p. 400.
+47Why the Fed undertook these purchases is unclear, espe-
+cially if fear of undermining the gold standard explainswhy purchases were not made immediately following Bri-
+tain's departure from gold. Friedman and Schwartz (1963),
+pp. 384-89, argue that the Fed succumbed to pressure
+from Congress, while Epstein and Ferguson (1984) con-
+clude that pressure from both Congress and commercial
+banks was important.
+48During these months, both the reserve-deposit and
+currency-deposit ratios rose.
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+20
+The Fed ended its purchase program in July
+1932, largely because officials believed it had
+done little good.49 Bank reserves continued to
+increase, however, as gold inflows were not off-
+set by a corresponding reduction in Fed credit
+outstanding. Although the money supply ceased
+to fall, it also failed to rise significantly. In early
+1933, large gold and currency outflows caused
+a renewed money supply decline.50 On this oc-
+casion, the crisis was stopped by Franklin D.
+Roosevelt's decision to declare a Bank Holiday
+and suspend gold shipments. In essence, the
+Fed's failure to insulate the banking system
+from gold outflows and panic currency with-
+drawals had caused the president to act to pre-
+vent further reserve losses.
+While failure to sterilize gold and currency
+outflows in 1931 and 1933 was inconsistent
+with previous actions, it did not represent a
+fundamental change in regime. Fed officials ap-
+parently believed strongly in the gold standard,
+and there seems to have been no discussion of
+following Great Britain off gold. Benjamin
+Strong had been a committed advocate of the
+gold standard, and it seems doubtful that he
+would have proposed actions that might have
+weakened it.51 As an institution, the Federal
+Reserve System was willing to forego short-run
+stability to preserve the gold standard, which it
+saw as its fundamental mission.52
+Reserve sterilization constituted one aspect of
+System policy begun under Strong, and the Fed
+deviated little from the policy after his death, at
+least until the fourth quarter of 1931. In fact,
+from the stock market crash in October 1929 to
+Britain's departure from gold on September 21,
+1931, the Fed did little but offset gold and cur-
+rency flows. It certainly did not make large
+open market purchases, despite the deepening
+depression. On the surface, this lack of vigor
+appears at odds with the relatively large open
+market purchases the Fed made during the
+minor recessions of 1924 and 1927.Strong's Countercyclical Policy
+The Fed's actions in 1924 mark its first use of
+open market operations to achieve general poli-
+cy objectives. In that year, the Fed purchased
+$450 million of government securities and cut
+its discount rate (in three stages) from 4.5 per-
+cent to 3 percent. In testimony before the
+House Banking Committee in 1926, Benjamin
+Strong listed several reasons for these actions,
+including the following:
+1) To accelerate the process of debt repay-
+ment to the Federal Reserve Banks by the
+member banks, so as to relieve this weaken-
+ing pressure for loan liquidation.
+2) To give the Federal Reserve Banks an asset
+which would not be automatically liquidated
+as the result of gold imports so that later, if
+inflation developed from excessive gold im-
+ports, it might at least be checked in part by
+selling these securities, thus forcing member
+banks again into debt to the Reserve Banks
+and making the Reserve Bank discount rate
+effective.
+3) To facilitate a change in the interest rela-
+tion between the New York and London mar-
+kets. . . by establishing a somewhat lower
+level of interest rates in this country at a
+time when prices were falling generally and
+when the danger of a disorganizing price ad-
+vance in commodities was at a minimum and
+remote.
+4) By directing foreign borrowings to this
+market to create the credits which would be
+necessary to facilitate the export of com-
+modities. . . .
+5) To render what assistance was possible by
+our market policy toward the recovery of
+sterling and the resumption of gold payment
+by Great Britain.
+6) To check the pressure on the banking situ-
+ation in the west and northwest and the
+resulting failures and disasters.53
+49Banks' excess reserves increased substantially during the
+months of the open market purchases, which many saw as
+idle balances that were unneeded and potentially inflation-
+ary. See Friedman and Schwartz (1963), pp. 385-89. As
+discussed below, Epstein and Ferguson (1984) suggest
+that pressure from commercial banks contributed to the
+Fed's decision to end the program.
+50The money supply fell both because of a decline in
+reserves and a decline in the money multiplier induced by
+panic deposit withdrawals.
+51 Strong testified before the House Banking Committee in
+1928 that, "When you are speaking of efforts simply tostabilize commerce, industry, agriculture, employment and
+so on, without regard to the penalties of violation of the
+gold standard, you are talking about human judgment and
+the management of prices which I do not believe in at all."
+[Quoted by Burgess (1930), pp. 331.] See also Temin
+(1989), p. 35.
+52See Temin (1989), pp. 28-29 and 78-87, and Wheelock
+(1991).
+53U.S. House of Representatives (1926), p. 336.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+21
+The Fed undertook a second large purchase
+program in 1927, purchasing $300 million of
+government securities and reducing the dis-
+count rate again. Strong left no written justifica-
+tion for these operations. Friedman and
+Schwartz (1963) argue that they were made in
+response to a recession, and that the 1924 pur-
+chases had also been intended to bring about a
+domestic recovery. Wicker (1966), pp. 77-94 and
+106-16, challenges this interpretation, arguing
+that the actions were motivated by international
+considerations. According to Wicker, the pur-
+chases in 1924 were intended to encourage the
+flow of gold to Britain by reducing U.S. interest
+rates relative to those in London, with the goal
+of assisting Britain's return to the gold standard.
+The 1927 purchases were intended to help Bri-
+tain through a payments crisis, again by direct-
+ing capital toward London; these purchases
+followed closely a meeting between Strong and
+European central bank heads.
+Chandler (1958), p. 199, argues that both
+domestic and international goals were important
+in 1924 and 1927, and Wheelock (1991), ch. 2,
+finds empirical support for this view. Wheelock
+also shows that, relative to the decline in eco-
+nomic activity, the Fed made substantially fewer
+open market purchases in 1930 and 1931 than
+it did during 1924 and 1927. This might reflect
+a significant change in System behavior between
+the 1920s and early 1930s. But an analysis of
+the Fed's policy methods suggests that its anem-
+ic response in 1930-31 might also be explained
+as the consistent use of a single strategy.
+During the early 1920s, the Fed developed a
+strategy of using open market operations and
+discount rate changes to affect the level of
+member bank discount window borrowing. Fed
+officials observed that, when the System pur-
+chased government securities, member bank
+borrowing tended to decline by nearly the same
+amount and, similarly, that open market sales
+led to comparable increases in member bank
+borrowing. But, while the Fed's operations had
+little impact on the total volume of Fed credit
+outstanding, they appeared to have a significantimpact on money markets. According to Chan-
+dler (1958):
+Federal Reserve officials soon discovered. . .
+much to their amazement at first, that open
+market purchases and sales brought about
+marked changes in money market conditions
+even though total earning assets of the Reserve
+Banks remained unchanged. When the Federal
+Reserve sold securities and extracted money
+from bank reserves, more banks were forced to
+borrow from the Reserve Banks, and those al-
+ready borrowing were forced more deeply into
+debt. Since banks had to pay interest on their
+borrowings and did not like to remain continu-
+ously in debt, they tended to lend less liberally,
+which raised interest rates in the market
+pp. 238-39).
+Strong testified that "the effect of open market
+operations is to increase or decrease the extent
+to which the member banks must of their own
+initiative call on the Reserve Bank for
+credit. . . ."54 Security purchases led to less mem-
+ber bank borrowing and lower interest rates,
+while sales increased borrowing and rates.55
+Strong believed that monetary policy could
+stimulate economic activity by easing money
+market conditions:
+. . .[W]hen we have very cheap money, corpora-
+tions and individuals borrow money in order to
+extend their businesses. That results in plant
+construction; plant construction employs more
+labor, brings in to use more materials. ... It
+may cause some elevation of wages. It creates
+more spending power; and with that start it
+will permeate through into the trades and the
+general price level.56
+Chandler (1958) and Friedman and Schwartz
+(1963) conclude that under Strong's leadership
+the Federal Reserve System attempted to stimu-
+late economic activity during recessions by
+promoting monetary ease (cheap money). This
+explains why Strong listed "to accelerate the
+process of debt repayment. . . by the member
+banks" as a reason for the open market pur-
+54lbid, p. 468.
+55Presumably, discount rate changes alone could achieve
+the same impact on interest rates, but the Fed preferred to
+precede discount rate changes with open market opera-
+tions. Strong testified that "the foundation for rate
+changes can be more safely and better laid by these
+preliminary operations in the open market than would bepossible otherwise, and the effect is less dramatic and
+less alarming. . . than if we just make advances and
+reductions in our discount rate." [U.S. House of Represen-
+tatives (1926), p. 333].
+56U.S. House of Representatives (1926), pp. 578-79.
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+22
+Table 1
+Fed Policy During Three Recessions
+(dollar amounts in millions)
+Date
+1929 Jul
+Oct
+1930 Jan
+Apr
+Jul
+Oct
+1931 Jan
+Apr
+Jul
+Oct
+1923 Apr
+Jul
+Oct
+1924 Jan
+Apr
+Jul
+Oct
+1925 Jan
+1926 Oct
+1927 Jan
+Apr
+Jul
+Oct
+1928 JanAIP
+124
+118
+106
+104
+93
+88
+83
+88
+82
+73
+106
+104
+99
+100
+95
+84
+95
+105
+111
+107
+108
+106
+102
+107GS
+$147
+154
+485
+530
+583
+602
+647
+600
+674
+733
+229
+97
+91
+118
+274
+467
+585
+464
+306
+310
+341
+381
+506
+512DR
+5.0%
+6.0
+4.5
+3.5
+2.5
+2.5
+2.0
+2.0
+1.5
+3.5
+4.5
+4.5
+4.5
+4.5
+4.5
+3.5
+3.0
+3.0
+4.0
+4.0
+4.0
+4.0
+3.5
+3.5DL
+$1096
+885
+501
+231
+226
+196
+253
+155
+169
+614
+658
+834
+873
+574
+489
+315
+240
+275
+663
+481
+447
+454
+424
+465DL(NYC)
+$319
+74
+39
+17
+0
+6
+5
+0
+0
+74
+123
+143
+121
+85
+45
+13
+28
+32
+84
+76
+78
+59
+75
+94
+Variable definitions: AIP: Index of Industrial Production
+(seasonally adjusted); GS: Federal Reserve government secu-
+rity holdings; DR: discount rate of the Federal Reserve Bank
+of New York; DL: discount loans (member bank borrowing)
+of all Federal Reserve member banks; DL(NYC): discount
+loans of reporting banks in New York City.
+chases in 1924. Strong used the level of mem-
+ber bank borrowing to determine the specific
+quantity of security purchases necessary to
+bring about monetary ease:
+Should we go into a business recession while
+the member banks were continuing to borrow
+directly 500 or 600 million dollars. . . we should
+consider taking steps to relieve some of the
+pressure which this borrowing induces by pur-
+chasing Government securities and thus ena-
+bling member banks to reduce their
+indebtedness. ... As a guide to the timing andextent of any purchases which might appear
+desirable, one of our best guides would be the
+amount of borrowing by member banks in prin-
+cipal centers. . . . Our experience has shown
+that when New York City banks
+are borrowing in the neighborhood of 100 mil-
+lion dollars or more, there is then some real
+pressure for reducing loans, and money rates
+tend to be markedly higher than the discount
+rate. On the other hand, when borrowings of
+these banks are negligible, as in 1924, the
+money situation tends to be less elastic and if
+gold imports take place, there is liable to be
+some credit inflation, with money rates drop-
+ping below our discount rate. When member
+banks are owing us about 50 million dollars or
+less the situations appears to be comfortable,
+with no marked pressure for liquidation. . . .57
+Table 1 compares Federal Reserve actions dur-
+ing the 1924, 1927 and 1930-31 downturns. The
+Fed's index of industrial production indicates
+the severity of each recession. Following the
+stock market crash in October 1929, the New
+York Fed purchased $160 million of government
+securities and, by the end of December, the Sys-
+tem had purchased an additional $150 million.
+But, from January 1930 to October 1931, the
+Fed made only modest purchases, particularly in
+comparison with those made in 1924 and 1927,
+when the declines in economic activity were
+less.
+The relatively small purchases in 1930 and
+1931 appear consistent, however, with the use
+of member bank borrowing as a policy guide.
+This, according to Brunner and Meltzer (1968),
+explains the Fed's failure to respond aggressive-
+ly to the Depression.58 Member bank borrowing
+fell substantially following the stock market
+crash in October 1929 and averaged just $241
+million from January 1930 to August 1931. Bor-
+rowing by reporting member banks in New
+York City averaged just $8 million over the
+same months. Thus, by Strong's guidelines,
+money was exceptionally easy and substantial
+open market operations were unwarranted.
+The Fed's use of member bank borrowing as
+a guide to monetary conditions could explain
+57Presentation to the Governors' Conference, March 1926
+[quoted by Chandler (1958), pp. 239-40].
+(1969) agrees that, to the extent that the Fed
+responded to domestic conditions, it used member bank
+borrowing as a guide. See also Meltzer (1976).
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+23
+why it permitted the money supply to decline
+sharply during the Depression. During a reces-
+sion, loan demand declines and banks have fewer
+profitable investment opportunities. Consequent-
+ly; the demand for borrowed reserves declines.
+If this decline in demand is not offset, total
+reserves and the money supply fall. In a minor
+recession, as in 1924 and 1927, member bank
+borrowing falls little. The Fed's guidelines would
+have suggested that monetary conditions were
+relatively tight and, in response, it would have
+made large open market purchases. In a severe
+economic downturn, as in 1930-31, however,
+member bank borrowing may fall substantially.
+But, by Strong's rule the Fed would have made
+few open market purchases. Thus, ironically,
+this strategy could result in a greater contrac-
+tion in the supply of money, the more severe a
+decline in economic activity.59
+If, as Brunner and Meltzer (1968) argue, Sys-
+tem officials followed Strong's prescription to
+use the level of bank borrowing to guide policy
+during the Depression, then it seems that the
+Fed made no fundamental change in policy after
+Strong's death.
+Although Friedman and Schwartz (1963),
+pp. 362-419, believe that Strong would have re-
+sponded aggressively to the Depression, they
+agree that a majority of Fed officials interpreted
+the low level of member bank borrowing in
+1930 and 1931 as signaling monetary ease. They
+contend, however, that officials of the New
+York Fed understood the flaws in using member
+bank borrowing as a policy guide and would
+have pursued appropriately expansionary poli-
+cies if they had the authority.60
+In March 1930 the Open Market Investment
+Committee, which consisted of five Reserve
+Bank governors, was replaced by the Open Mar-
+ket Policy Conference, in which representatives
+of all 12 Banks participated. The Investment
+Committee had been led by Benjamin Strong,
+and then by George Harrison, Strong's successor
+as governor of the Federal Reserve Bank of New
+York. Friedman and Schwartz, p. 414, contendthat the Policy Conference was established to
+wrest power from the New York Bank. And
+they show, pp. 367-80, that New York officials
+proposed more expansionary actions, particular-
+ly in 1930, than were accepted by the rest of
+the System. Wicker (1966) finds, however, that
+Harrison ceased to advocate open market pur-
+chases once New York banks were no longer
+borrowing reserves. Thus, while the Federal
+Reserve would likely have pursued somewhat
+more expansionary policies had New York offi-
+cials held more authority, the modest open mar-
+ket purchases of 1930 and 1931 were
+apparently consistent with the guidelines out-
+lined by Strong.
+In sum, during the Depression, the Federal
+Reserve continued to sterilize gold and currency
+flows and made limited open market purchases
+and discount rate reductions in response to the
+economic decline. Notable deviations from these
+policies occurred, such as the incomplete sterili-
+zation of gold outflows during the crises of
+1931 and 1933. But it seems likely that mone-
+tary policy would have been somewhat more
+responsive to the Depression, particularly in
+1930, had officials of the Federal Reserve Bank
+of New York been able to dominate policymak-
+ing in the way Strong had before his death.61
+The general thrust of policy, however, appears
+consistent with that of Benjamin Strong.
+INTEREST GROUP PRESSURE
+EXPLANATIONS OF FED
+BEHAVIOR
+Until recently, most studies of Fed behavior
+have concluded that policymakers failed to per-
+ceive a need to take expansionary actions,
+despite deflation, rising unemployment and
+widespread bank failures. Some researchers
+now argue, however, that Fed officials were
+quite aware that their policies were contribut-
+ing to the contraction. These researchers con-
+clude that policymakers responded to interest
+group pressure and their own desire for in-
+59lndeed, except for a brief decline in M1 in 1927, the abso-
+lute quantity of money did not fall in 1924 or 1927, although
+its rate of increase declined. The Fed's strategy and the
+consequences of using bank borrowing as a policy guide
+are examined in greater detail in Wheelock (1991), ch. 3.
+60See also Schwartz (1981), pp. 41-42.
+61 It is by no means clear that Strong could have retained
+this degree of influence, as many officials believed that hispolicies, particularly in 1927, had contributed to stock mar-
+ket speculation and the crash and depression that fol-
+lowed. See Wheelock (1991), ch. 4, for analysis of
+disagreements among System officials during the
+Depression.
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+24
+fluence, rather than the public interest. Epstein
+and Ferguson (1984), for example, contend that
+a combination of ideology and conflicting in-
+terests explain the System's policy. And Ander-
+son, Shughart and Tollison (1988) argue that
+"the restrictive monetary policy of the Fed in
+the 1929-33 period was not based on myopia
+but instead on rational, self-interested behavior"
+(p. 4).
+Epstein and Ferguson (1984) focus their study
+on the Federal Reserve's $1.1 billion open mar-
+ket purchase program of 1932. They ask why
+the Fed waited so long to begin an expansionary
+program, what had changed to cause the Fed to
+begin the program when it did, and what led to
+the decision to end the program.
+To the first question, Epstein and Ferguson
+(1984) conclude that the liquidationist business
+cycle theory was dominant among Fed officials.
+Liquidationists believed that depressions were
+"vital to the long-run health of a capitalist econ-
+omy. Accordingly, the task of central banking
+was to stand back and allow nature's therapy to
+take its course." (p. 963). This certainly was the
+opinion of some key officials, such as George
+Norris, who argued at the September 25, 1930,
+meeting of the Open Market Policy Conference:
+We believe that the correction must come
+about through reduced production, reduced in-
+ventories, the gradual reduction of consumer
+credit, the liquidation of security loans, and the
+accumulation of savings through the exercise of
+thrift. These are slow and simple remedies, but
+just as there is no 'royal road to knowledge,' we
+believe there is no short cut or panacea for the
+rectification of existing conditions. . . .
+We have been putting out credit in a period of
+depression, when it was not wanted and could
+not be used, and will have to withdraw credit
+when it is wanted and can be used.62
+Norris clearly believed that monetary policy had
+been too stimulative and was interfering with
+the natural process of liquidation and recovery.
+Strong and other officials apparently held
+similar views during the recession of 1920-21.
+According to Wicker (1966):In the view of System officials the money sup-
+ply in 1920 was redundant (excessive) and
+should decline to restore the 'proper' relation-
+ship between prices, credit, and volume of
+production. The term most frequently used to
+describe this process was 'liquidation,' the
+necessity for which was not disputed by either
+the Board or by any other Federal Reserve offi-
+cial including Benjamin Strong. . .(p. 49).
+Most researchers argue that Strong's views
+changed significantly after the 1920-21 episode,
+however. Chandler (1958) writes:
+Like most other Federal Reserve officials, [in
+1920-1921 Strong] believed that some deflation
+of bank credit was essential and that some
+price reduction was inevitable and desirable.
+Within three years, Strong himself had rejected
+many of these ideas. A much smaller business
+recession in 1924 led him to advocate large and
+aggressive open-market purchases of govern-
+ment securities and reductions of discount rates
+to combat deflation at home as well as to en-
+courage foreign lending (p. 181).63
+In rejecting the importance of Strong's death,
+Epstein and Ferguson (1984) implicitly deny that
+Strong sought to prevent loan liquidation during
+recessions by pursuing monetary ease or that
+he subscribed to the countercyclical policy guide-
+lines he presented to the Governors Conference
+in 1926: "Should we go into a business reces-
+sion. . . we should consider taking steps to
+relieve. . . the pressure. . . by purchasing
+Government securities. . . ."64
+Epstein and Ferguson emphasize two addition-
+al reasons for the timing and extent of Fed ac-
+tions during the Depression. First, in contrast to
+Friedman and Schwartz, they conclude that a
+lack of gold reserves did keep the Fed from
+making open market purchases in the fourth
+quarter of 1931. They argue further that, while
+the Glass-Steagall Act of 1932 lessened the
+problem for the System as a whole, some of the
+Reserve Banks were reluctant to continue the
+purchase program in 1932 because they lacked
+sufficient gold reserves.65
+Second, Epstein and Ferguson argue that Fed
+concern with member bank profits contributed
+62Quoted in Chandler (1971), p. 137.
+63See also Friedman and Schwartz (1963), pp. 249-54, Wick-
+er (1966), pp. 57-66, and West (1977), pp. 173-204.
+64Quoted by Chandler (1958), p. 239-40.65Each Reserve Bank was required to maintain its own
+reserves. Pooling was not permitted, although the Banks
+could lend to one another.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+25
+to the timing and extent of open market pur-
+chases in 1932. During the first two years of
+the Depression, leading bankers generally ar-
+gued for loan liquidation and lower wages. But
+the sharp increase in interest rates in the
+fourth quarter of 1931 reduced the value of
+bond portfolios and threatened the solvency of
+many banks. Bankers then began to press the
+Fed to support bond prices. Epstein and Fergu-
+son argue that "a major goal of the [purchases
+of 1932] was to revive railroad bond values. . .
+and bond prices in general." (p. 967).
+Just as constituent pressure contributed to the
+decision to make open market purchases, it also
+seems to have caused the program's end. Dur-
+ing the Depression banks generally had shifted
+their bond portfolios toward short-term maturi-
+ties. And, while the need to support bond prices
+was paramount in early 1932, as the year
+progressed short-term interest rates fell sharply
+and bank earnings declined. The decline in
+earnings was especially acute in Boston and
+Chicago because banks in those cities had un-
+usually large holdings of short-term securities.
+Epstein and Ferguson conclude: "That the gover-
+nors of the Boston Fed and, especially, the
+Chicago Fed should be early critics of the refla-
+tion program is therefore no mystery." (p. 972).
+Declining interest rates and questions about
+the willingness of the United States to maintain
+the dollar's gold convertibility led to deposit
+withdrawals by foreigners, causing commercial
+banks to raise further doubts about the pur-
+chase program: "The continued loss of gold and
+deposits put many New York banks in an in-
+creasingly uncomfortable position. . . . Many
+complained that the reflation program had
+'demoralized money and exchange markets'."66
+Thus, pressure from member banks experienc-
+ing falling earnings and deposit outflows and
+the desire of some Reserve Banks to protect
+their gold reserves caused the System to aban-
+don its program of open market purchases.67Epstein and Ferguson (1984) were the first to
+explain Federal Reserve behavior during the
+Depression as a response to pressure from com-
+mercial bankers. Anderson, Shughart and Tolli-
+son (1988) push this view to the extreme,
+arguing that the principal aim of Fed policy dur-
+ing the Depression was to enhance the long-run
+profitability of member banks by eliminating
+nonmember competitors. This, in turn, benefited
+the Fed by increasing the proportion of the
+banking system under its regulatory control:
+The fall in the money supply presided over by
+the monetary authority between 1929 and 1933
+eliminated a large number of state-chartered
+and small, federally-chartered institutions from
+the commercial banking industry. The profits of
+those banks that survived. . . rose significantly
+as a result. Coincidentally, the monetary con-
+traction expanded the proportion of the com-
+mercial banking system within the Fed's
+bureaucratic domain. Thus, rather than
+representing the leading example of bureaucratic
+ineptitude, the Great Contraction may instead
+be the leading example of rational regulatory
+policy operating for the benefit of the regula-
+tors and the regulated.68
+Nonmember banks made up 75 percent of the
+banks that suspended operations between 1930
+and 1933. Failures were highest among small in-
+stitutions located in rural areas. Policymakers
+typically argued that such failures were caused
+by bad management or transportation improve-
+ments that made many banks redundant. George
+Harrison, Governor of the New York Reserve
+Bank, for example, testified before the Senate
+Banking Committee in 1931 that:
+. . .with the automobile and improved roads, the
+smaller banks. . . with nominal capital, out in
+the small rural communities, no longer had any
+reason really to exist. Their depositors wel-
+comed the opportunity to get into their automo-
+biles and go to the large centers where they
+could put their money.69
+66Epstein and Ferguson (1984), p. 975.
+67ln a comment on Epstein and Ferguson, Coelho and San-
+toni (1991) present econometric evidence suggesting that
+banks did not suffer reduced profits as a result of the
+Fed's 1932 purchases, and they question whether pres-
+sure from commercial banks caused the Fed to end its
+program. Indeed, they even doubt that expansionary policy
+was ended since the monetary base continued to rise. Ep-
+stein and Ferguson (1991) present additional qualitative
+evidence showing that banks thought that low interest
+rates had reduced their earnings.68Anderson, Shughart and Tollison (1988), pp. 8-9.
+69U.S. Senate (1931), p. 44.
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+26
+From the Federal Reserve's inception, Fed offi-
+cials argued that it was important that all banks
+join the System. Benjamin Strong argued in 1915
+that "no reform of our banking methods in this
+country will be complete and satisfactory to the
+country until it includes all banks. . . in one
+comprehensive system."70 Policymakers were
+likely less concerned with the failure of non-
+member banks than they were with the health
+of member banks.71 But it remains to be shown
+that Federal Reserve policies were deliberately
+intended to cause the failure of thousands of
+nonmember institutions.
+Anderson, Shughart and Tollison (1988) argue
+that "the Great Depression. . . was a by-product
+of economically rational behavior on the part of
+Federal Reserve member banks seeking rents
+through the elimination of their nonmember
+rivals." (p. 9) Member banks did not capture the
+Fed directly, they argue, but rather exerted
+pressure through members of the House and
+Senate Banking Committees. To test this hypoth-
+esis, the authors regress deposits in failed non-
+member banks in each state on dummy varia-
+bles indicating whether a state was represented
+on the House or Senate Banking Committees.72
+They find that nonmember bank losses were
+higher if a state had a representative on the
+House Banking Committee. This, they argue,
+supports their view that the Fed deliberately
+caused nonmember bank failures to be highest
+in states having a congressman on the Banking
+Committee, thereby enhancing the long-run
+profits of the member banks that remained. The
+Fed's payoff came in 1933 when it was freed
+from having to return a portion of its revenues
+to the Treasury.73
+This explanation of Federal Reserve policy
+provokes a number of questions. Left unclear,
+for example, is why member banks had more
+influence over Congress than nonmember banks.
+Nor is it explained how the Fed was able to af-
+fect the fortunes of nonmember banks in partic-ular states with the tools at its disposal. The Fed
+cannot control the destination of reserve flows
+generated by open market operations, and the
+discount window was not open to nonmember
+banks. Perhaps Fed officials could have selec-
+tively restricted credit to member banks that
+lent to nonmember banks in particular states,
+but it is doubtful that such a circuitous route
+would have had a large impact on losses.
+Huberman (1990) casts further doubt on the
+Anderson, Shughart and Tollison (1988) view.
+He notes that, although 75 percent of banks
+that suspended during the Depression were
+nonmember banks, the ratio of nonmember to
+member bank suspensions from 1930 to 1933
+was lower than it had been during the 1920s.
+Nonmember banks that suspended, moreover,
+reopened twice as often as member banks.
+Membership in the Federal Reserve System
+grew at a comparatively low rate during the
+Depression.
+Santoni and Van Cott (1990) also report evi-
+dence contrary to the Anderson, Shughart and
+Tollison hypothesis. They calculate a share price
+index for large New York City member banks
+and show that, relative to both the wholesale
+commodity price index and the Standard and
+Poor's index, bank share prices declined sub-
+stantially from 1929 to 1934. They show also
+that the index of bank stock prices was not af-
+fected by changes in the money supply, suggest-
+ing that monetary policy did not enhance the
+fortunes of banks in their sample.74
+CONCLUSION
+The Federal Reserve's failure to respond
+vigorously to the Great Depression probably
+cannot be attributed to a single cause. Each of
+the explanations discussed in this article clarifies
+certain points about Fed behavior during the
+Depression. A number of contemporary observ-
+ers, both within and outside the System, attrib-
+70Quoted by Chandler (1958), p. 80.
+71 Friedman and Schwartz, pp. 358-59, also make this point.
+72They include deposits in failed member banks, total bank
+deposits, and other control variables as additional
+regressors.
+73Anderson, Shughart and Tollison (1988), pp. 16-17.
+74Anderson, Shughart and Tollison (1990) reply by pointing
+out that member bank share prices rose dramatically rela-
+tive to those of nonmember banks during 1930. Even theshare prices of "small" member banks rose relative to
+those of nonmember institutions. Neither study tests
+whether the profits of surviving member banks were en-
+hanced in the long run, although the former note that in
+1936 the average national bank profit rate was higher than
+in 1925. Unfortunately, it is impossible to determine
+whether the increase in bank profits was caused by the
+demise of nonmember banks or by New Deal reforms,
+such as deposit interest rate ceilings, deposit insurance,
+and increased chartering requirements, which reduced
+competition and enhanced bank charter values.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+27
+uted some of the blame to what they viewed as
+excessively easy monetary policy during reces-
+sions in 1924 and 1927. They argued that the
+Fed's actions had promoted stock market specu-
+lation and led inevitably to the crash and
+Depression. The best policy during the Depres-
+sion, according to these observers, was to pro-
+mote loan liquidation and wage rate reductions,
+to allow recovery on a "sound basis." While
+those officials subscribing to the liquidationist
+view did not win approval of open market sales,
+they were able to prevent significant open mar-
+ket purchases until 1932. It is likely that the
+Fed would not have made large purchases even
+then without pressure from major bankers and
+Congress.
+The most important explanations of Federal
+Reserve behavior during the Depression,
+however, appear to be the dedication of
+policymakers to preserving the gold standard
+and their attachment to policy guides that gave
+erroneous information about monetary condi-
+tions. Benjamin Strong's death robbed the Sys-
+tem of an intelligent leader at a crucial time and
+undoubtedly imparted a contractionary bias to
+monetary policy during the Depression. It seems
+clear, however, that Strong's death did not
+cause a fundamental change in regime. Strong
+believed in the gold standard, and he would not
+likely have done anything to jeopardize gold
+convertibility of the dollar. There was also little
+deviation from either the gold sterilization or
+the countercyclical policy rules that Strong had
+developed during the 1920s—at least until the
+fourth quarter of 1931, when maintenance of
+the gold standard became the overriding goal of
+policy. Thus, while leadership changes and in-
+terest group pressure probably had some effect,
+monetary policy during the Depression was not
+fundamentally different from that of previous
+years. Federal Reserve errors seem largely at-
+tributable to the continued use of flawed
+policies.
+REFERENCES
+Anderson, Gary M., William F. Shughart II, and Robert D.
+Tollison. "A Public Choice Theory of the Great Contrac-
+tion," Public Choice (October 1988), pp. 3-23.
+. "A Public Choice Theory of the Great Contraction:
+Further Evidence," Public Choice (December 1990), pp.
+277-83.
+Belongia, Michael T, and Michelle R. Garfinkel, eds. What
+Do We Know About Business Cycles? (Kluwer Academic
+Publishers, forthcoming).
+Bernanke, Ben S. "Nonmonetary Effects of the Financial
+Crises in the Propagation of the Great Depression," Ameri-
+can Economic Review (June 1983), pp. 257-76.Board of Governors of the Federal Reserve System. Annual
+Report (various issues).
+. Banking and Monetary Statistics, 1914-1941 (1943).
+. Federal Reserve Bulletin (various issues).
+Bordo, Michael D. "The Contribution of A Monetary History
+of the United States, 1867-1960 to Monetary History," in
+Michael D. Bordo, ed., Money, History, and International
+Finance: Essays in Honor of Anna J. Schwartz (The Univer-
+sity of Chicago Press, 1989), pp. 15-75.
+Brunner, Karl, and Allan H. Meltzer. "What Did We Learn
+from the Monetary Experience of the United States in the
+Great Depression?" Canadian Journal of Economics (May
+1968), pp. 334-48.
+Burgess, W. Randolph, ed. Interpretations of Federal Reserve
+Policy in the Speeches and Writings of Benjamin Strong
+(Harper and Brothers, 1930).
+Calomiris, Charles W. "Deposit Insurance: Lessons from the
+Record," Federal Reserve Bank of Chicago Economic Per-
+spectives (May/June 1989), pp. 10-30.
+Chandler, Lester V. Benjamin Strong, Central Banker (Brook-
+ings Institution, 1958).
+. American Monetary Policy 1928-1941 (Harper and
+Row, 1971).
+Coelho, Philip R. P., and G. J. Santoni. "Regulatory Capture
+and the Monetary Contraction of 1932: A Comment on Ep-
+stein and Ferguson," Journal of Economic History (March
+1991), pp. 182-89.
+Darby, Michael R. "Three-and-a-Half Million U.S. Employees
+Have Been Mislaid: Or, an Explanation of Unemployment,
+1934-1941," Journal of Political Economy (February 1976),
+pp. 1-16.
+De Long, J. Bradford. "'Liquidation' Cycles: Old-Fashioned
+Real Business Cycle Theory and the Great Depression,"
+National Bureau of Economic Research Working Paper No.
+3546 (December 1990).
+Department of Commerce. Historical Statistics of the United
+States (1960).
+Epstein, Gerald, and Thomas Ferguson. "Monetary Policy,
+Loan Liquidation, and Industrial Conflict: The Federal
+Reserve and the Open Market Operations of 1932," Journal
+of Economic History (December 1984), pp. 957-83.
+. "Answers to Stock Questions: Fed Targets, Stock
+Prices, and the Gold Standard in the Great Depression,"
+Journal of Economic History (March 1991), pp. 190-200.
+Field, Alexander J. "A New Interpretation of the Onset of the
+Great Depression," Journal of Economic History (June
+1984), pp. 489-98.
+Fisher, Irving. Booms and Depressions (Adelphi, 1932).
+Friedman, Milton, and Anna J. Schwartz. A Monetary History
+of the United States, 1867-1960 (Princeton University Press,
+1963).
+Hamilton, James D. "Monetary Factors in the Great Depres-
+sion," Journal of Monetary Economics (March 1987),
+pp. 145-69.
+Hayek, Friedrich A. von. "The Fate of the Gold Standard," in
+Roy McCloughry, ed., Money, Capital and Fluctuations, Ear-
+ly Essays of Friedrich A. von Hayek (Routledge and Kegan
+Paul, 1984), pp. 118-35.
+Hetzel, Robert L. "The Rules Versus Discretion Debate Over
+Monetary Policy in the 1920s," Federal Reserve Bank of
+Richmond Economic Review (November/December 1985),
+pp. 3-14.
+Huberman, Douglas A. "An Alternative to 'A Public Choice
+Theory of the Great Contraction,"' Public Choice (Decem-
+ber 1990), pp. 257-68.
+Kesselman, Jonathan R., and N. E. Savin. "Three-and-a-Half
+Million Workers Never Were Lost," Economic Inquiry (April
+1978), pp. 205-25.
+Kindleberger, Charles P. The World in Depression,
+1929-1939, 2nd ed. (University of California Press, 1986).
+Lebergott, Stanley. Men Without Work: The Economics of
+Unemployment (Prentice-Hall, 1964).
+MARCH/APRIL 1992
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+
+28
+Meltzer, Allan H. "Monetary and Other Explanations of the
+Start of the Great Depression," Journal of Monetary Eco-
+nomics (November 1976), pp. 455-71.
+Miron, Jeffrey A. "Financial Panics, the Seasonality of the
+Nominal Interest Rate, and the Founding of the Fed,"
+American Economic Review (March 1986), pp. 125-40.
+Romer, Christina. "Spurious Volatility in Historical Unemploy-
+ment Data," Journal of Political Economy (February 1986a),
+pp. 1-37.
+. "New Estimates of Prewar Gross National ProductU.S. House of Representatives. Stabilization. Hearings Before
+the Committee on Banking and Currency. 69th Congress,
+1st Sess. (GPO, 1926).
+_. Banking Act of 1935. Committee on Banking and
+Appendix
+Data Sources
+All Commodities Price Index: Bureau of
+Labor Statistics (1926), pp. 24-25.
+Bank reserves: Board of Governors of the
+Federal Reserve System (1943), pp. 369-77,
+(member banks) and Friedman and Schwartz
+(1963), table A-2 (all banks).
+Bank suspensions and deposits in suspended
+banks: Board of Governors of the Federal
+Reserve System (1943), p. 283.
+Currency stock: Board of Governors of the
+Federal Reserve System (1943), pp. 369-77.
+Discount rate (Federal Reserve Bank of New
+York): Board of Governors of the Federal
+Reserve System (1943), pp. 440-41.
+Federal Reserve credit and its components:
+Board of Governors of the Federal Reserve
+System (1943), pp. 369-77, and ibid, pp.
+136-44 (discount loans of reporting New York
+City member banks).
+Federal Reserve System balance sheet: Board of
+Governors of the Federal Reserve System
+(1943), p. 331.Gold stock: Board of Governors of the Federal
+Reserve System (1943), pp. 369-77.
+Gross national product: Department of Com-
+merce (1960), Historical Statistics of the United
+States, series Fl (current dollar) and F3 (cons-
+tant dollar).
+Implicit price index: Department of Commerce
+(1960), Historical Statistics of the United States,
+series F5.
+Index of Industrial Production: Board of
+Governors of the Federal Reserve System
+(1937), Annual Report, pp. 175-77.
+Interest rates: 1) Baa-rated: Board of Governors
+of the Federal Reserve System (1943), pp.
+468-70; 2) long-term (daily average yield in
+June of each year on U.S. government
+bonds): ibid, pp. 468-70; 3) short-term (daily
+average yield in June of each year on U.S.
+government three- to six-month notes and
+certificates (1919 to 1933), and on Treasury
+bills (1934 to 1939): ibid, p. 460.
+Money supply: Friedman and Schwartz (1963),
+table A-l, col. 7 (Ml) and col. 8 (M2).
+Unemployment rate: Lebergott (1964), p. 27.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Digitized for FRASER 
+http://fraser.stlouisfed.org/ 
+Federal Reserve Bank of St. Louis
+

@@ -1,0 +1,10 @@
+{
+  "text": "vel: \u0005( k1;\u0016w1;\u0016e1) =P1(k1)\nRecursively, this is given by:\nP(k) = (1\u0000!)\u0005(k)\u0000k0+\fP(k0) +!(1\u0000\u000e)k;\n43\n\nwherek0denotes the level of the capital stock that the \frms in the industry\nwill choose. This will be the capital stock along the equilibrium path since\nthe workers will always o\u000ber ( \u0016 w;\u0016e) such that the \frms earn their reservation\npro\ft level, and thus weakly prefer accepting the o\u000ber (see Cole and Ohanian\n[35]).\n7.1. The Insiders' Problem\nThe insiders o\u000ber a wage/employment pair at each date that maximizes\nthe present discounted value of rents per worker from the cartelized sector,\nsubject to the reservation pro\ft constraint.16This value depends on the\nexisting stock of workers in the industry at the beginning of the period and\nthe capital stock.",
+  "metadata": {
+    "title": "what_started_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_started_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 85,
+    "total_chunks": 114
+  }
+}

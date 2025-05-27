@@ -1,0 +1,10 @@
+{
+  "text": "an institution in a small town to process checks equal \nto its required reserves within each week. If those checks took a week to clear through \ncorrespondents (also a typical period), then the bank\u2019s possessed no actual reserves, since the \n \n3 No source provides a figure or basis for determining this multiplier. It must have been at least one. Here, I provide \na rough estimate. If the volume of checks in transit was constant, if all banks sent checks through the system via \nthe most direct route to a correspondent which belonged either to the New York Clearing House or the Federal \nReserve System, if all correspondents routed their checks through either the New York Clearing House or the \nFederal Reserve System, if the Mississippi correspondent network was representative of correspondent networks \nthroughout the nation, and if funds returned at the same rate that checks moved through the system, then the \nmultiplier would have been approximately 1.5.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 40,
+    "total_chunks": 105
+  }
+}

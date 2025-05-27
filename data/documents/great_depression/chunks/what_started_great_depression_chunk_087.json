@@ -1,0 +1,10 @@
+{
+  "text": "the\nexisting stock of workers in the industry at the beginning of the period and\nthe capital stock. We denote the existing number of workers in the industry\nat the beginning of the period by e;which is equal to the number of workers at\nthe end of the previous period multiplied by the probability that the workers\nremain in that industry:\n16I assume families are large enough to smooth out a family member's employment\nrisk, but are small enough to work in only an arbitrarily small fraction of the industries.\nThese assumptions imply that the family is risk neutral with respect to the employment\noutcome of any individual family member. Moreover, this implies that the family does\nnot internalize the aggregate consequences of their actions since the likelihood of a family\nmember obtaining a cartel job is independent of the actions of the industries in which\nfamily members work.\n44",
+  "metadata": {
+    "title": "what_started_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_started_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 86,
+    "total_chunks": 114
+  }
+}

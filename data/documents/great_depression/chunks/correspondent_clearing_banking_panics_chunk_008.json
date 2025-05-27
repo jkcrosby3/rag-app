@@ -1,0 +1,10 @@
+{
+  "text": "ns from the onset of the contraction in 1929 and until the national banking holiday in \nMarch 1933. The source comes from the archives of the Federal Reserve Board, whose Division \nof Bank Operations tracked changes in the status of all bank operating in the United States, \nanalyzed the cause of each bank suspension, and recorded its conclusion and financial \ninformation for each bank on the St. 6386 series of forms. The complete series of St. 6386 forms \nsurvives in the National Archives of the United States (See Richardson (2005) for details). \nThis new source indicates that check-clearing systems played a critical, but as of yet \nunnoted, role in the propagation of banking panics during the Great Depression. At that time, \nthree check-clearing systems operated in the United States. The Federal Reserve cleared checks \nfor members of the system. Clearing houses cleared checks for banks belonging to their \norganizations.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 7,
+    "total_chunks": 105
+  }
+}

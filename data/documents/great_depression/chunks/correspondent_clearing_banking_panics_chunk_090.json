@@ -1,0 +1,10 @@
+{
+  "text": "KS 1 \n Louisville KY 1 1 Wichita KS 1 \n Kansas City MO 1 1 Minneapolis MN 11 \n St. Louis MO 1 1 St. Paul MN 1 \n Denver CO 1 1 \n \n South Pacific \n Montgomery AL Los Angeles CA 1 1 \n New Orleans LA 1 1 Pasadena CA \n Oklahoma City OK 1 1 Portland OR 1 1 \n Tulsa OK 1 Ogden UT 1 \n Nashville TN 1 1 Salt Lake City UT 1 1 \n Seattle WA 1 1 \n \n \nSource: Rand McNally Bankers\u2019 Directory, July 1930 \n \n\n 33 Table 3 \nCorrespondents of Banks in Mississippi, 1929 \n \n Location of Correspondent \n MS St. Louis Atlanta Total \n# Other \nStates 6th 8th 6th 8th New \nOrleans New \nYork \n (a) (b) (c) (d) (e) (f) (g) (h) (i) \n \n0 199 7 101 15 3 62 93 104 \n1 91 56 34 79 54 87 189 197 20 \n2 18 85 6 69 64 20 27 9 69 \n3 2 76 6 19 1 111 \n4 83 1 106 \n5 4 4 \n \nN 310 310 141 169 141 169 310 310 310 \n \nSource: Rand McNally Bankers\u2019 Directory \n \nNotes: Each column indicates the number of banks in Mississippi which \nreported 0, 1, 2, 3, 4, or 5 correspondents in the designated area.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 89,
+    "total_chunks": 105
+  }
+}

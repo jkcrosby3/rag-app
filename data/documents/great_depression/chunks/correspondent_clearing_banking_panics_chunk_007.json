@@ -1,0 +1,10 @@
+{
+  "text": "ve work (Calomiris and Mason, 2003) analyzes a panel of data for \nall Federal Reserve member banks. These different data sources provide different perspectives \non various segments of the banking industry, but none provides a comprehensive view of the \ncauses of failure for all types of banks operating in the United States throughout the contraction \nof the early 1930s. \nThis essay examines a new source of evidence that provides such a comprehensive \nperspective. The new source indicates the cause of suspension for all banks \u2013 including Federal \nReserve members and nonmembers, national and state, incorporated and private \u2013 that suspended \noperations from the onset of the contraction in 1929 and until the national banking holiday in \nMarch 1933.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 6,
+    "total_chunks": 105
+  }
+}

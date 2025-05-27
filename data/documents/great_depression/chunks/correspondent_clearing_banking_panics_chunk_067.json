@@ -1,0 +1,10 @@
+{
+  "text": "due to financial distress). The typical week witnessed few, if any, suspensions \nfrom this source. The weekly mode and median were zero. The weekly number rose during July \nof 1929, when a Mediterranean fruit fly epidemic produced a banking panic in Florida, and the \nsuspension of banks in Tampa, which served as the principal correspondents for banks in central \n\n 23 Florida, forced the banks to suspend operations throughout the region, but remained near zero \nuntil November 1930, when it spiked sharply upwards. \nIn a two week period, more than 120 banks were forced to suspend operations due to the \nclosure of their correspondents. The event is an obvious outlier. Never before or since have so \nmany financial institutions fallen in a counterparty cascade.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 66,
+    "total_chunks": 105
+  }
+}

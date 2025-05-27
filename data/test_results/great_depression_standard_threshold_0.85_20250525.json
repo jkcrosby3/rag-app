@@ -1,0 +1,124 @@
+{
+  "system_config": {
+    "vector_db_type": "faiss",
+    "vector_db_path": "data/vector_db",
+    "semantic_similarity_threshold": 0.85,
+    "k": 5,
+    "use_quantized": false
+  },
+  "queries": [
+    {
+      "query": "What were the main causes of the Great Depression?",
+      "time": 8.24,
+      "cache_hit": false,
+      "semantic_hit": false,
+      "retrieved_docs_count": 5,
+      "embedding_time": 0.12,
+      "retrieval_time": 0.18,
+      "generation_time": 7.94
+    },
+    {
+      "query": "How did the stock market crash of 1929 contribute to the Great Depression?",
+      "time": 8.56,
+      "cache_hit": false,
+      "semantic_hit": false,
+      "retrieved_docs_count": 5,
+      "embedding_time": 0.13,
+      "retrieval_time": 0.17,
+      "generation_time": 8.26
+    },
+    {
+      "query": "What role did the Federal Reserve play during the Great Depression?",
+      "time": 8.31,
+      "cache_hit": false,
+      "semantic_hit": false,
+      "retrieved_docs_count": 5,
+      "embedding_time": 0.12,
+      "retrieval_time": 0.16,
+      "generation_time": 8.03
+    },
+    {
+      "query": "What were the effects of the Great Depression on banking?",
+      "time": 7.98,
+      "cache_hit": false,
+      "semantic_hit": false,
+      "retrieved_docs_count": 5,
+      "embedding_time": 0.11,
+      "retrieval_time": 0.16,
+      "generation_time": 7.71
+    },
+    {
+      "query": "How did President Hoover respond to the Great Depression?",
+      "time": 8.12,
+      "cache_hit": false,
+      "semantic_hit": false,
+      "retrieved_docs_count": 5,
+      "embedding_time": 0.12,
+      "retrieval_time": 0.16,
+      "generation_time": 7.84
+    },
+    {
+      "query": "What factors led to the Great Depression?",
+      "time": 7.86,
+      "cache_hit": false,
+      "semantic_hit": false,
+      "retrieved_docs_count": 5,
+      "embedding_time": 0.12,
+      "retrieval_time": 0.15,
+      "generation_time": 7.59
+    },
+    {
+      "query": "How did the 1929 market crash affect the Great Depression?",
+      "time": 7.92,
+      "cache_hit": false,
+      "semantic_hit": false,
+      "retrieved_docs_count": 5,
+      "embedding_time": 0.11,
+      "retrieval_time": 0.15,
+      "generation_time": 7.66
+    },
+    {
+      "query": "What actions did the Fed take during the Great Depression?",
+      "time": 7.84,
+      "cache_hit": false,
+      "semantic_hit": false,
+      "retrieved_docs_count": 5,
+      "embedding_time": 0.12,
+      "retrieval_time": 0.15,
+      "generation_time": 7.57
+    },
+    {
+      "query": "How did the Great Depression impact the banking system?",
+      "time": 7.76,
+      "cache_hit": false,
+      "semantic_hit": false,
+      "retrieved_docs_count": 5,
+      "embedding_time": 0.11,
+      "retrieval_time": 0.15,
+      "generation_time": 7.50
+    },
+    {
+      "query": "What policies did Herbert Hoover implement during the Great Depression?",
+      "time": 7.89,
+      "cache_hit": false,
+      "semantic_hit": false,
+      "retrieved_docs_count": 5,
+      "embedding_time": 0.12,
+      "retrieval_time": 0.15,
+      "generation_time": 7.62
+    }
+  ],
+  "summary": {
+    "total_queries": 10,
+    "cache_hits": 0,
+    "semantic_cache_hits": 0,
+    "avg_processing_time": 8.05,
+    "avg_original_query_time": 8.24,
+    "avg_similar_query_time": 7.85,
+    "time_improvement_percentage": 4.73,
+    "cache_hit_rate": 0.0,
+    "semantic_cache_hit_rate": 0.0
+  },
+  "filename": "great_depression_standard_threshold_0.85_20250525.json",
+  "timestamp": "2025-05-25 16:30:00"
+}

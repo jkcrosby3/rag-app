@@ -1,0 +1,10 @@
+{
+  "text": "arrangements \nthat increased float, and thus reserves, without affecting real financial resources. \nFor these reasons, the connection between clearing and reserves placed the correspondent \nsystem in a perilous position. A large portion of the reserves of the correspondent system \nconsisted of \u2018fictitious\u2019 reserves equal to a multiple of the volume of checks in transit. The \nreserves of the correspondent system appeared to expand (but in reality did not change) \nwhenever the volume of checks in transit or the length of correspondent chains (and thus the \nnumber of banks through which a check passed) increased. Any disruption of the clearing system \nthat prevented the payment of checks forced the revelation of the fictitious reserves. An event,",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 43,
+    "total_chunks": 105
+  }
+}

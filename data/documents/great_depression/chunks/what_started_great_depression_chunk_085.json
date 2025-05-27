@@ -1,0 +1,10 @@
+{
+  "text": "ro\fts and invest-\nment collusion, \u0005( k1) +\fP2(k0);wherek1is the current level of the capital\nstock. This implies that the total expected gross return to the \frm from\nrejecting the union o\u000ber is:\nP1(k1) = (1\u0000!)\u0005(k1) +\fP2(k0) +!(1\u0000\u000e)k1\u0000k0;\nThe \frst term on the right hand side is the pro\ft from paying the spot market\nwage, scaled by the probability that a strike does not shut down production.\nThe second term is the payo\u000b from colluding on investment, and the third\nterm is the payo\u000b from shutdown, scaled by the probability of shutdown.\nP1(k1) thus de\fnes the reservation pro\fts that the \frm must earn from any\nunion o\u000ber. In equilibrium the workers will o\u000ber a wage-employment pair that\nyields a return that is equal to this reservation level: \u0005( k1;\u0016w1;\u0016e1) =P1(k1)\nRecursively, this is given by:\nP(k) = (1\u0000!)\u0005(k)\u0000k0+\fP(k0) +!(1\u0000\u000e)k;\n43",
+  "metadata": {
+    "title": "what_started_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_started_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 84,
+    "total_chunks": 114
+  }
+}

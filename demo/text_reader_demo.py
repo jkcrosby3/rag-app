@@ -1,7 +1,13 @@
 """Demo script for the text reader functionality using Alice in Wonderland."""
 import logging
+import os
+import sys
 from pathlib import Path
 
+# Add the project root directory to the Python path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+# Now we can import from src
 from src.document_processing.reader import TextReader
 
 # Set up logging
@@ -9,7 +15,7 @@ logging.basicConfig(
     level=logging.INFO, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
 
-
+ 
 def main():
     """Run the text reader demo using Alice in Wonderland."""
     # Path to Alice in Wonderland text file
@@ -30,7 +36,15 @@ def main():
 
     print("\nFirst 500 characters of content:")
     print("------------------------------")
-    print(result["text"][:500] + "...")
+    # Remove the BOM character if present and handle encoding issues
+    text = result["text"]
+    if text.startswith('\ufeff'):
+        text = text[1:]
+    try:
+        print(text[:500] + "...")
+    except UnicodeEncodeError:
+        print("[Content contains characters that cannot be displayed in the current console encoding]")
+        print(text[:500].encode('ascii', 'replace').decode('ascii') + "...")
 
     print("\nMetadata:")
     print("--------")

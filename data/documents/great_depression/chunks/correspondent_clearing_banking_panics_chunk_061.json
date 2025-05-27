@@ -1,0 +1,10 @@
+{
+  "text": "uspension. Row (b) indicates the number of banks suspending due to the closure of a \ncorrespondent. Row (c) indicates the number of banks suspending due to defalcations, \nmismanagement, excessive loans to officers and directors, excessive investment in building and \nfacilities, and similar circumstances. Row (d) indicates the number of banks suspending due to \nother or multiple causes. The latter consists in part of complex cases which do not fit into the \nmutually exclusive categories above, often because they spanned two or more classifications. An \nexample is a poorly managed bank which failed to enforce collections on its slow farm loans and",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 60,
+    "total_chunks": 105
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "text": "erence between the cxante real rate that we want to know and the cx post real rate that we observe\n\n27is unanticipated inflation. Under the assumption ofrational expectations,the expectation of unanticipated inflation using information available at thetimethe forecast is made is zero. Therefore, if one regresses the ex postreal rate on current and lagged information, the fitted values provideestimates of the ex ante real rate. This is true because the expectation ofboth the OLS error term and unanticipated inflation are zero.To apply this procedure 1 regress the ex post real rates calculatedabove on a variety of contemporaneous and lagged variables. In particular, Iinclude in the regression the current value and four quarterly lags of themonetary policy variable described in the multiplier calculations <but\ndisaggregated to quarterly values), the percentage change in industrialproduction, actual inflation, and the level of the nominal commercial paperrate.",
+  "metadata": {
+    "title": "what_ended_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_ended_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 64,
+    "total_chunks": 102
+  }
+}

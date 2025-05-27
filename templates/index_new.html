@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG System Interface</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .query-container {
+            margin-bottom: 20px;
+        }
+        .settings-container {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        .response-container {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        .document-container {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .document-text {
+            max-height: 200px;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        .topic-checkbox, .doc-type-checkbox {
+            margin-right: 10px;
+        }
+        .settings-label {
+            display: inline-block;
+            width: 150px;
+        }
+        .settings-value {
+            display: inline-block;
+            width: 50px;
+            text-align: center;
+        }
+        .chat-history-container {
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .chat-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .chat-query {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .chat-response {
+            margin-bottom: 10px;
+            white-space: pre-wrap;
+        }
+        .clarification {
+            border-left: 4px solid #ffc107;
+            background-color: #fff8e1;
+        }
+        .clarification-input {
+            border: 1px solid #ffc107;
+            background-color: #fffdf7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>RAG System Interface</h1>
+                <p class="lead">Ask questions about the Great Depression and get answers based on retrieved documents.</p>
+                
+                <div class="query-container">
+                    <h3>Ask a Question</h3>
+                    <form method="POST" action="/">
+                        <div class="mb-3">
+                            <textarea name="query" class="form-control" rows="3" placeholder="Enter your question here..." required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <h5>Example Questions:</h5>
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-outline-secondary example-question-btn">What are the top 10 issues that enabled the Great Depression to happen?</button>
+                                <button type="button" class="btn btn-outline-secondary example-question-btn">How did the banking crisis contribute to the Great Depression?</button>
+                                <button type="button" class="btn btn-outline-secondary example-question-btn">What role did monetary policy play in the recovery?</button>
+                            </div>
+                            <div class="mt-3">
+                                <a href="/great_depression_causes" class="btn btn-success w-100">View Key Components of the Great Depression</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Hidden form fields for settings -->
+                        <input type="hidden" name="top_k" id="top_k_hidden" value="5">
+                        <input type="hidden" name="temperature" id="temperature_hidden" value="0.7">
+                        <input type="hidden" name="max_tokens" id="max_tokens_hidden" value="1000">
+                        
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="use_cache" id="use_cache_checkbox" checked>
+                                <label class="form-check-label" for="use_cache_checkbox">Use Cache</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="enable_clarification" id="enable_clarification_checkbox" checked>
+                                <label class="form-check-label" for="enable_clarification_checkbox">Enable Clarifying Questions</label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    
+                    {% with messages = get_flashed_messages(with_categories=true) %}
+                        {% if messages %}
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ category }} mt-3">{{ message }}</div>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
+                </div>
+                
+                <hr>
+                
+                <div class="chat-history-container">
+                    <h3>Conversation History</h3>
+                    <div class="d-flex justify-content-end mb-3">
+                        <button id="save-session-btn" class="btn btn-outline-primary me-2">Save Session</button>
+                        <button id="new-session-btn" class="btn btn-outline-danger">New Session</button>
+                    </div>
+                    
+                    <div id="chat-history">
+                        {% if chat_history %}
+                            {% for item in chat_history %}
+                                <div class="chat-item {% if item.is_clarification %}clarification{% endif %}">
+                                    <div class="chat-query">
+                                        <strong>Q:</strong> {{ item.query }}
+                                    </div>
+                                    <div class="chat-response">
+                                        <strong>A:</strong> {{ item.result.response }}
+                                    </div>
+                                    <div class="chat-metadata">
+                                        <small>
+                                            Processing time: {{ "%.2f"|format(item.result.processing_time) }}s
+                                            {% if item.result.cache_hit %}
+                                                (Cache hit)
+                                            {% endif %}
+                                        </small>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <p class="text-muted">No conversation history yet. Ask a question to get started!</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="settings-container">
+                    <h3>Settings</h3>
+                    
+                    <div class="mb-3">
+                        <label for="top-k-range" class="form-label settings-label">Top K documents:</label>
+                        <input type="range" class="form-range" min="1" max="20" step="1" id="top-k-range" value="5" style="width: 60%; display: inline-block;">
+                        <span id="top-k-value" class="settings-value">5</span>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="temperature-range" class="form-label settings-label">Temperature:</label>
+                        <input type="range" class="form-range" min="0" max="1" step="0.1" id="temperature-range" value="0.7" style="width: 60%; display: inline-block;">
+                        <span id="temperature-value" class="settings-value">0.7</span>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="max-tokens-range" class="form-label settings-label">Max tokens:</label>
+                        <input type="range" class="form-range" min="100" max="4000" step="100" id="max-tokens-range" value="1000" style="width: 60%; display: inline-block;">
+                        <span id="max-tokens-value" class="settings-value">1000</span>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="use-cache" checked>
+                            <label class="form-check-label" for="use-cache">Use response cache</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="enable-clarification" checked>
+                            <label class="form-check-label" for="enable-clarification">Enable clarifying questions</label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="api-key" class="form-label">API Key (optional):</label>
+                        <input type="password" class="form-control" id="api-key" placeholder="Enter API key">
+                    </div>
+                </div>
+                
+                <div class="settings-container">
+                    <h3>Filter by Topic</h3>
+                    <div class="mb-3">
+                        {% for topic in topics %}
+                            <div class="form-check">
+                                <input class="form-check-input topic-checkbox" type="checkbox" name="topic" value="{{ topic }}" id="topic-{{ topic }}">
+                                <label class="form-check-label" for="topic-{{ topic }}">{{ topic|replace('_', ' ')|title }}</label>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <div class="settings-container">
+                    <h3>Filter by Document Type</h3>
+                    <div class="mb-3">
+                        {% for doc_type in document_types %}
+                            <div class="form-check">
+                                <input class="form-check-input doc-type-checkbox" type="checkbox" name="doc_type" value="{{ doc_type }}" id="doc-type-{{ doc_type }}">
+                                <label class="form-check-label" for="doc-type-{{ doc_type }}">{{ doc_type|replace('_', ' ')|title }}</label>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <div class="settings-container">
+                    <h3>Cache Statistics</h3>
+                    <div class="mb-3">
+                        <h5>Semantic Cache</h5>
+                        <div id="semantic-cache-stats">Loading...</div>
+                    </div>
+                    <div class="mb-3">
+                        <h5>Embedding Cache</h5>
+                        <div id="embedding-cache-stats">Loading...</div>
+                    </div>
+                    <button id="refresh-stats-btn" class="btn btn-sm btn-outline-secondary">Refresh Stats</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // JavaScript for the application
+        document.addEventListener('DOMContentLoaded', function() {
+            // Example question buttons
+            document.querySelectorAll('.example-question-btn').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    document.querySelector('textarea[name="query"]').value = this.textContent;
+                    // Scroll to the submit button
+                    document.querySelector('button[type="submit"]').scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+            
+            // Update hidden form fields when settings change
+            document.getElementById('top-k-range').addEventListener('input', function() {
+                document.getElementById('top_k_hidden').value = this.value;
+                document.getElementById('top-k-value').textContent = this.value;
+            });
+            
+            document.getElementById('temperature-range').addEventListener('input', function() {
+                document.getElementById('temperature_hidden').value = this.value;
+                document.getElementById('temperature-value').textContent = this.value;
+            });
+            
+            document.getElementById('max-tokens-range').addEventListener('input', function() {
+                document.getElementById('max_tokens_hidden').value = this.value;
+                document.getElementById('max-tokens-value').textContent = this.value;
+            });
+            
+            // Sync checkbox states
+            document.getElementById('use-cache').addEventListener('change', function() {
+                document.getElementById('use_cache_checkbox').checked = this.checked;
+            });
+            
+            document.getElementById('enable-clarification').addEventListener('change', function() {
+                document.getElementById('enable_clarification_checkbox').checked = this.checked;
+            });
+            
+            // Add topic checkboxes to form on submit
+            document.querySelector('form').addEventListener('submit', function(e) {
+                // Get selected topics
+                document.querySelectorAll('input[name="topic"]:checked').forEach(checkbox => {
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = 'topics';
+                    input.value = checkbox.value;
+                    this.appendChild(input);
+                });
+                
+                // Get selected document types
+                document.querySelectorAll('input[name="doc_type"]:checked').forEach(checkbox => {
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = 'doc_types';
+                    input.value = checkbox.value;
+                    this.appendChild(input);
+                });
+                
+                // Add API key if provided
+                const apiKey = document.getElementById('api-key').value.trim();
+                if (apiKey) {
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.name = 'api_key';
+                    input.value = apiKey;
+                    this.appendChild(input);
+                }
+            });
+            
+            // Save session
+            document.getElementById('save-session-btn').addEventListener('click', function() {
+                fetch('/save_session', {
+                    method: 'POST'
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Session saved to ' + data.filepath);
+                    } else {
+                        alert('Error: ' + data.error);
+                    }
+                })
+                .catch(error => {
+                    alert('Error: ' + error);
+                });
+            });
+            
+            // New session
+            document.getElementById('new-session-btn').addEventListener('click', function() {
+                if (confirm('Are you sure you want to start a new session? This will clear your current conversation history.')) {
+                    fetch('/new_session', {
+                        method: 'POST'
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            window.location.reload();
+                        } else {
+                            alert('Error: ' + data.error);
+                        }
+                    })
+                    .catch(error => {
+                        alert('Error: ' + error);
+                    });
+                }
+            });
+            
+            // Refresh cache stats
+            function refreshCacheStats() {
+                fetch('/cache_stats')
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        const semanticCache = data.semantic_cache;
+                        const embeddingCache = data.embedding_cache;
+                        
+                        let semanticHtml = `
+                            <div>Size: ${semanticCache.size}/${semanticCache.max_size}</div>
+                            <div>Hit rate: ${(semanticCache.hit_rate * 100).toFixed(2)}%</div>
+                            <div>Exact hits: ${semanticCache.hits}</div>
+                            <div>Semantic hits: ${semanticCache.semantic_hits}</div>
+                        `;
+                        
+                        let embeddingHtml = `
+                            <div>Size: ${embeddingCache.size}/${embeddingCache.max_size}</div>
+                            <div>Hit rate: ${(embeddingCache.hit_rate * 100).toFixed(2)}%</div>
+                            <div>Memory usage: ${embeddingCache.estimated_memory_kb.toFixed(2)} KB</div>
+                        `;
+                        
+                        document.getElementById('semantic-cache-stats').innerHTML = semanticHtml;
+                        document.getElementById('embedding-cache-stats').innerHTML = embeddingHtml;
+                    } else {
+                        document.getElementById('semantic-cache-stats').textContent = 'Error: ' + data.error;
+                        document.getElementById('embedding-cache-stats').textContent = 'Error: ' + data.error;
+                    }
+                })
+                .catch(error => {
+                    document.getElementById('semantic-cache-stats').textContent = 'Error: ' + error;
+                    document.getElementById('embedding-cache-stats').textContent = 'Error: ' + error;
+                });
+            }
+            
+            document.getElementById('refresh-stats-btn').addEventListener('click', refreshCacheStats);
+            
+            // Initial load of cache stats
+            refreshCacheStats();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+# The Glass-Steagall Act (Banking Act of 1933): Historical Context and Impact
+
+The Glass-Steagall Act, formally known as the Banking Act of 1933, separated commercial banking from investment banking activities and established the Federal Deposit Insurance Corporation (FDIC) to protect bank deposits.
+
+## Historical Context Leading to Glass-Steagall
+
+### Banking Industry Transformation (1920s)
+- United States emerged as world's leading economic power after World War I
+- 1920s witnessed unprecedented prosperity
+- Industrial production nearly doubled
+- Per capita income rose by approximately 30%
+- Banks increasingly engaged in speculative activities beyond traditional commercial banking
+
+### Blending of Commercial and Investment Banking
+- Prior to 1920s, most banks focused on accepting deposits and making loans
+- During economic expansion, many banks established securities affiliates
+- By 1930, commercial banks were underwriting approximately half of all new securities issues
+- Created inherent conflicts of interest
+- Banks had incentives to promote securities they underwrote to depositors
+
+### Speculative Practices
+- Banks increasingly directed depositors' funds toward speculative investments
+- Extended loans to customers for stock purchases
+- Purchased stocks often served as collateral ("buying on margin")
+- Created precarious financial situation with artificially inflated stock values
+
+### Banking Crisis (1930-1933)
+- Stock market crash (October 1929) triggered collapse
+- Banks with heavy stock investments suffered enormous losses
+- Loans for stock purchases became uncollectible as collateral values plummeted
+- Liquidity crisis forced banks to call in loans and sell assets at fire-sale prices
+- Between 1930-1933, approximately 9,000 banks failed (nearly one-third of all U.S. banks)
+- Millions of Americans lost their savings
+
+### Banking System Collapse (Early 1933)
+- Wave of bank failures triggered widespread panic
+- By March 1933, banking systems in 38 states had closed or imposed withdrawal restrictions
+- Roosevelt declared national "bank holiday" as first official act
+- Temporarily closed all banks to prevent further runs and restore confidence
+
+## Development and Passage of Glass-Steagall
+
+### Key Architects
+- Senator Carter Glass (Virginia): former Treasury Secretary who helped establish Federal Reserve
+- Representative Henry Steagall (Alabama): chairman of House Banking and Currency Committee
+- Glass advocated for separating commercial and investment banking
+- Steagall championed federal deposit insurance
+
+### Banking Act of 1933
+- Signed into law by President Roosevelt on June 16, 1933
+- Sections 16, 20, 21, and 32 established wall between commercial and investment banking
+- Commercial banks prohibited from underwriting or dealing in securities (with limited exceptions)
+- Investment banks barred from accepting deposits
+- Banks given one year to decide whether to engage in commercial or investment banking
+
+### Federal Deposit Insurance Corporation (FDIC)
+- Initially insured deposits up to $2,500 (later increased)
+- Dramatically reduced risk of bank runs
+- Funded by assessments on member banks
+- Banking industry itself financed the insurance fund
+
+### Additional Provisions
+- Enhanced Federal Reserve's regulatory powers
+- Imposed interest rate ceilings on deposits (Regulation Q)
+- Prohibited banks from paying interest on demand deposits (checking accounts)
+- Restricted interstate banking
+- Aimed to create more stable, less competitive banking environment
+
+## Impact and Legacy
+
+### Immediate Impact
+- Bank failures declined dramatically (from thousands annually to fewer than 100 per year by late 1930s)
+- Public confidence in banking system restored
+- Ended cycle of panic withdrawals
+- Eliminated many conflicts of interest
+- Reduced speculative activities by commercial banks
+
+### Gradual Erosion and Repeal
+- Wall between commercial and investment banking remained largely intact for over six decades
+- Gradual erosion began in 1980s as regulators reinterpreted Act's provisions
+- Final dismantling came with Gramm-Leach-Bliley Act of 1999
+- Repealed core Glass-Steagall restrictions
+- Allowed formation of financial holding companies engaging in commercial banking, investment banking, and insurance
+
+### Broader Legacy
+- Established principle that financial stability requires appropriate regulation
+- Demonstrated government's willingness to intervene decisively in markets
+- Influenced financial regulatory frameworks worldwide
+- Many countries adopted similar structural reforms
+
+### Contemporary Relevance
+- 2008 financial crisis reignited debate about Glass-Steagall's wisdom
+- Some argued its repeal contributed to crisis by allowing "too big to fail" financial conglomerates
+- Encouraged excessive risk-taking
+- Remains powerful symbol of regulatory response to financial crisis
+
+## Sources
+- Benston, George J. "The Separation of Commercial and Investment Banking: The Glass-Steagall Act Revisited and Reconsidered"
+- Carosso, Vincent P. "Investment Banking in America: A History"
+- Perino, Michael. "The Hellhound of Wall Street: How Ferdinand Pecora's Investigation of the Great Crash Forever Changed American Finance"
+- White, Eugene N. "The Regulation and Reform of the American Banking System, 1900-1929"
+- Federal Reserve History, "Banking Act of 1933 (Glass-Steagall)"

@@ -1,0 +1,10 @@
+{
+  "text": "function, I assume that the cost of entering the workforce di\u000bers across\nindividuals in the family. Rank-ordering household members by their posi-\ntion in the distribution of these costs, and specifying that these costs rise\nlinearly, I obtain:\n\u0000v(eat+emt) =\u0000Zet\ni=0(\u00180+ 2\u00181x)dx=\u0000(\u00180et+\u00181e2\nt)\nThis speci\fcation yields a strictly convex cost function for employment,\nand thus implies a well-de\fned problem for the household in choosing both\nthe number of workers and the length of the workweek.\n31\n\n6.2. Final Goods Production\nProduction of \fnal goods, which is the numeraire, is competitive. The\nproblem for a representative \fnal producer is given by:\nmax\"X\ns\u000bs\u0012Z1\n0yd\ns(i)\u0012di\u0013\u001e=\u0012#1=\u001e\n\u0000X\ns\u0012Z1\n0ps(i)yd\ns(i)di\u0013\n(7)\nwhereyd\nsdenotes the \fnal good producer's demand for the output from\nindustryiin sectors:This problem yields the following e\u000eciency condition\nfor the demand for intermediate inputs:\n\u000bsY1\u0000\u001eY\u001e\u0000\u0012\ns(yd\ns(i))\u0012\u00001\u0000ps(i) = 0 for all iands=fa;mg: (8)\n6.3.",
+  "metadata": {
+    "title": "what_started_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_started_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 62,
+    "total_chunks": 114
+  }
+}

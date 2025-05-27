@@ -1,0 +1,10 @@
+{
+  "text": "ces. Scholars in the traditional school analyze data aggregated at the national or regional \nlevel. This data reveals bank failures clustered in space and time, often coinciding with turning \npoints in macroeconomic time-series such as indices of industrial production, the money supply, \nthe money multiplier, interest rates, and the deflation rate. Narrative sources from the 1930s \ncharacterize these clusters as banking panics. Scholars in the second school analyze data at lower \n\n 2 levels of aggregation, or disaggregated data consisting of samples of national banks, or panels of \nbanks from within individual cities, states, or Federal Reserve districts. Eugene White (1984) \npioneered this line of research by examining a panel of data drawn from national banks. The \nmost recent and comprehensive work (Calomiris and Mason, 2003) analyzes a panel of data for \nall Federal Reserve member banks.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 5,
+    "total_chunks": 105
+  }
+}

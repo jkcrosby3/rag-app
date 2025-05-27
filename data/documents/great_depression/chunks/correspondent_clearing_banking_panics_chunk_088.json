@@ -1,0 +1,10 @@
+{
+  "text": "Idaho 3 6 9 Rhode Island 1 9 16 \n \nIllinois 1 1 1 15 214 321 South Carolina 9 32 47 \nIndiana 1 14 92 165 South Dakota 4 13 19 \nIowa 4 13 71 97 Tennessee 2 2 5 30 58 \nKansas 3 11 91 106 Texas 1 3 7 16 81 130 \nKentucky 1 1 5 27 48 Utah 1 2 3 15 24 \n \nLouisiana 1 1 1 9 13 Virginia 1 1 5 27 53 \nMaine 2 12 15 Washington, D.C. 1 1 37 44 \nMaryland 3 30 64 Washington 2 6 26 80 \nMassachusetts 1 1 8 56 134 West Virginia 2 18 23 \nMichigan 1 2 12 56 111 Wisconsin 1 11 96 117 \n \nMinnesota 1 2 11 89 123 Wyoming 2 5 6 \nMississippi 7 19 27 \nMissouri 2 3 12 106 185 \nMontana 1 1 3 11 12 \nNebraska 1 2 6 26 56 United States 12 24 2 57 349 2,186 3,805 \n \n \nSource: Rand McNally Bankers\u2019 Directory, July 1930 \n \nNotes: Column (1) indicates the number of Federal Reserve District Banks in the state. Column (2) indicates \nthe number of Federal Reserve Branch Banks. Column (5) indicates the number of cities with clearing houses. \nColumn (6) indicates the number of banks belonging to clearing houses.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 87,
+    "total_chunks": 105
+  }
+}

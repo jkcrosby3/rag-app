@@ -1,0 +1,10 @@
+{
+  "text": "nk suspensions also disproportionately afflicted banks that cleared \nchecks through correspondents. \nA comparison of the three check-clearing systems reveals reasons why correspondent \nnetworks collapsed like dominos at the onset of the banking crisis. Large banks providing \ncorrespondent services resembled central banks. Deposits in correspondents counted as a portion, \nusually the preponderance, of a client bank\u2019s reserves. When a correspondent closed, these \nreserves disappeared, and the client bank had to suspend operations. If the client, in turn, had \ncorrespondents of its own, those banks had to suspend operations as well. \nA ubiquitous feature of pre-depression correspondent-clearing networks exacerbated the \nsituation.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 9,
+    "total_chunks": 105
+  }
+}

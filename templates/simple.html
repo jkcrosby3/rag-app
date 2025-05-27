@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple RAG Interface</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+        }
+        .chat-item {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .clarification {
+            border-left: 4px solid #ffc107;
+            background-color: #fff8e1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple RAG Interface</h1>
+        <p class="lead">Ask questions about the Great Depression with clarifying questions</p>
+        
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} mt-3">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h3>Ask a Question</h3>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="/">
+                            <div class="mb-3">
+                                <textarea name="query" class="form-control" rows="3" placeholder="Enter your question here..." required></textarea>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="enable_clarification" id="enable_clarification_checkbox" checked>
+                                    <label class="form-check-label" for="enable_clarification_checkbox">Enable Clarifying Questions</label>
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h3>Conversation History</h3>
+                        <form method="POST" action="/new_session">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">New Session</button>
+                        </form>
+                    </div>
+                    <div class="card-body">
+                        {% if chat_history %}
+                            {% for item in chat_history %}
+                                <div class="chat-item {% if item.is_clarification %}clarification{% endif %}">
+                                    <div class="chat-query">
+                                        <strong>Q:</strong> {{ item.query }}
+                                    </div>
+                                    <div class="chat-response mt-2">
+                                        <strong>A:</strong> {{ item.response }}
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        {% else %}
+                            <p class="text-muted">No conversation history yet. Ask a question to get started!</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to toggle source document visibility
+        function toggleSource(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.classList.toggle('show');
+            }
+        }
+    </script>
+</body>
+        
+</html>
+            

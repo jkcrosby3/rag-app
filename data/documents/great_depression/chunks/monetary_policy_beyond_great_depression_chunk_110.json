@@ -1,0 +1,10 @@
+{
+  "text": "2.45\n1936 82.7 13.16 100.9 9.89 59.3 1.02 29630 16.20 43341 13.02 4411306 0.14 -0.88\n1937 90.8 9.34 109.1 7.81 61.4 3.48 30587 3.18 45195 4.19 5919723 0.45 -3.03\n1938 85.2 -6.37 103.2 -5.56 60.3 -1.81 29173 -4.73 44100 -2.45 5410532 0.05 1.86\n1939 91.1 6.70 111.0 7.29 59.4 -1.50 32586 11.06 47681 7.81 4234998 0.02 1.52\n1940 100.6 9.92 121,0 8.63 59.9 0.84 38763 17.36 54328 13.05 22 5943 0.01 -0.83\n1941 125.8 22.35 138.7 13.65 62.9 4.89 45349 15.69 61296 12.07 83726 0.10 -4.79\nNotes:(1)$billions (Historical Statistics,Fl)\n(2)$billions,1929prices(Historical Statistics, F3)\n(3)1947-49= 100(Historical Statistics, El13)\n(4)$millions, June figure(Friedman andSchwartz, 1963,Appendix Al)\n(5)$millions, June figure(Friedman andSchwartz, 1963,Appendix Al)\n(6)suspended banks(BoardofGovernors, 1943,p.283)\n(7) deposits insuspended banks(BoardofGovernors, 1943,p.283)\n(8)yearlyaverageyieldon3-6monthTreasurynotesandcertificates (1919-33) andbills(1934-41)\n(BoardofGovernors, 1943, p.460)\n(9)short-term",
+  "metadata": {
+    "title": "monetary_policy_beyond_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\monetary_policy_beyond_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 109,
+    "total_chunks": 116
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "text": "hange in industrialproduction, actual inflation, and the level of the nominal commercial paperrate. To account for possible seasonal variation I also include a constantterm and three quarterly dummy variables. This regression is run over thesample period 1923 to 1942.21The results of this regression are shown in Table 1. The includedexplanatory variables explain a substantial fraction of the total variation inthe cx post real interest rate; the R2 of the regression is 0.52. Of theindividual explanatory variables, the one of most interest is the monetarypolicy variable. Obviously, if the conventional transmission mechanism isoperating, the monetary policy variable should enter with a significantnegative coefficient. As can be seen, this is clearly the case. The firstlagof the monetary policy variable enters the regression with a coefficientof \u20140.463 and has a t\u2014statistic of \u20143.02.",
+  "metadata": {
+    "title": "what_ended_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_ended_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 65,
+    "total_chunks": 102
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "exact_hits": 5,
+  "semantic_hits": 5,
+  "misses": 17,
+  "response_times": [
+    0.5115067958831787,
+    0.5095992088317871,
+    0.5101406574249268,
+    0.5036652088165283,
+    0.5093977451324463,
+    0.0004525184631347656,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5102746486663818,
+    0.5134189128875732,
+    0.0008144378662109375,
+    0.0005831718444824219,
+    0.0010905265808105469,
+    0.5144431591033936,
+    0.00034499168395996094,
+    0.5140094757080078,
+    0.513077974319458,
+    0.5149898529052734,
+    0.5127296447753906,
+    0.0,
+    0.5126960277557373,
+    0.5113449096679688,
+    0.508136510848999,
+    0.5096430778503418,
+    0.5124630928039551
+  ],
+  "cache_hit_times": [
+    0.0004525184631347656,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0008144378662109375,
+    0.0005831718444824219,
+    0.0010905265808105469,
+    0.00034499168395996094,
+    0.0
+  ],
+  "cache_miss_times": [
+    0.5115067958831787,
+    0.5095992088317871,
+    0.5101406574249268,
+    0.5036652088165283,
+    0.5093977451324463,
+    0.5102746486663818,
+    0.5134189128875732,
+    0.5144431591033936,
+    0.5140094757080078,
+    0.513077974319458,
+    0.5149898529052734,
+    0.5127296447753906,
+    0.5126960277557373,
+    0.5113449096679688,
+    0.508136510848999,
+    0.5096430778503418,
+    0.5124630928039551
+  ],
+  "query_results": [
+    {
+      "query": "What were the key provisions of the Glass-Steagall Act?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.5115067958831787,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "How did the Glass-Steagall Act separate commercial and investment banking?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.5095992088317871,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "What was the purpose of the SEC during the Great Depression?",
+      "topics": [
+        "sec"
+      ],
+      "response_time": 0.5101406574249268,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "Compare the New Deal programs with Glass-Steagall regulations.",
+      "topics": [
+        "new_deal",
+        "glass_steagall"
+      ],
+      "response_time": 0.5036652088165283,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "What were the major financial reforms after the Great Depression?",
+      "topics": null,
+      "response_time": 0.5093977451324463,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "What were the key provisions of the Glass-Steagall Act?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.0004525184631347656,
+      "cache_hit": true,
+      "hit_type": "exact"
+    },
+    {
+      "query": "How did the Glass-Steagall Act separate commercial and investment banking?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.0,
+      "cache_hit": true,
+      "hit_type": "exact"
+    },
+    {
+      "query": "What was the purpose of the SEC during the Great Depression?",
+      "topics": [
+        "sec"
+      ],
+      "response_time": 0.0,
+      "cache_hit": true,
+      "hit_type": "exact"
+    },
+    {
+      "query": "Compare the New Deal programs with Glass-Steagall regulations.",
+      "topics": [
+        "new_deal",
+        "glass_steagall"
+      ],
+      "response_time": 0.0,
+      "cache_hit": true,
+      "hit_type": "exact"
+    },
+    {
+      "query": "What were the major financial reforms after the Great Depression?",
+      "topics": null,
+      "response_time": 0.0,
+      "cache_hit": true,
+      "hit_type": "exact"
+    },
+    {
+      "query": "What were the key provisions of the Banking Act of 1933 Act?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.5102746486663818,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "Could you explain the key provisions of the Glass-Steagall Act?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.5134189128875732,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "What did the Glass-Steagall Act accomplish?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.0008144378662109375,
+      "cache_hit": true,
+      "hit_type": "semantic"
+    },
+    {
+      "query": "What were the main components of the Glass-Steagall Act?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.0005831718444824219,
+      "cache_hit": true,
+      "hit_type": "semantic"
+    },
+    {
+      "query": "What were the important aspects of the Glass-Steagall Act?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.0010905265808105469,
+      "cache_hit": true,
+      "hit_type": "semantic"
+    },
+    {
+      "query": "How did the Banking Act of 1933 Act separate commercial and investment banking?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.5144431591033936,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "How did the Glass-Steagall Act separate commercial and investment banking?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "response_time": 0.00034499168395996094,
+      "cache_hit": true,
+      "hit_type": "semantic"
+    },
+    {
+      "query": "What was the role of the SEC during the Great Depression?",
+      "topics": [
+        "sec"
+      ],
+      "response_time": 0.5140094757080078,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "Why was the SEC created of the SEC during the Great Depression?",
+      "topics": [
+        "sec"
+      ],
+      "response_time": 0.513077974319458,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "Can you tell me what the SEC was supposed to do during the Great Depression?",
+      "topics": [
+        "sec"
+      ],
+      "response_time": 0.5149898529052734,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "Compare the New Deal programs with Banking Act of 1933 regulations.",
+      "topics": [
+        "new_deal",
+        "glass_steagall"
+      ],
+      "response_time": 0.5127296447753906,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "Compare the New Deal programs with Glass-Steagall regulations.",
+      "topics": [
+        "new_deal",
+        "glass_steagall"
+      ],
+      "response_time": 0.0,
+      "cache_hit": true,
+      "hit_type": "semantic"
+    },
+    {
+      "query": "What are the similarities and differences between the New Deal programs with Glass-Steagall regulations",
+      "topics": [
+        "new_deal",
+        "glass_steagall"
+      ],
+      "response_time": 0.5126960277557373,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "How do New Deal programs differ from Glass-Steagall regulations?",
+      "topics": [
+        "new_deal",
+        "glass_steagall"
+      ],
+      "response_time": 0.5113449096679688,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "What were the significant banking regulations after the Great Depression?",
+      "topics": null,
+      "response_time": 0.508136510848999,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "What financial legislation was passed following the Great Depression?",
+      "topics": null,
+      "response_time": 0.5096430778503418,
+      "cache_hit": false,
+      "hit_type": "miss"
+    },
+    {
+      "query": "What were the most important financial laws enacted after the 1929 crash?",
+      "topics": null,
+      "response_time": 0.5124630928039551,
+      "cache_hit": false,
+      "hit_type": "miss"
+    }
+  ],
+  "total_queries": 27,
+  "hit_rate": 0.37037037037037035,
+  "semantic_hit_rate": 0.29411764705882354,
+  "avg_response_time": 0.3220304648081462,
+  "avg_cache_hit_time": 0.00032856464385986326,
+  "avg_cache_miss_time": 0.511266876669491,
+  "speedup": 1556.061755955557,
+  "cache_stats": {
+    "size": 17,
+    "max_size": 200,
+    "hits": 6,
+    "semantic_hits": 3,
+    "misses": 13,
+    "hit_rate": 0.4090909090909091,
+    "similarity_threshold": 0.75,
+    "ttl_hours": 48
+  }
+}

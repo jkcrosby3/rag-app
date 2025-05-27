@@ -1,0 +1,113 @@
+# The Securities and Exchange Commission (SEC): Historical Context and Impact
+
+The Securities and Exchange Commission (SEC), established in 1934, was created to restore investor confidence and ensure fair, orderly, and efficient markets following the Great Depression.
+
+## Historical Context Leading to the SEC's Creation
+
+### Stock Market Boom (1920s)
+- Unprecedented boom in American stock market
+- Between 1921 and 1929, Dow Jones Industrial Average rose from 63 to 381 (sixfold increase)
+- Coincided with genuine economic expansion (automobiles, radios, household appliances)
+- Market growth far outpaced underlying economic fundamentals
+- Fueled by excessive speculation and questionable financial practices
+
+### Minimal Regulation of Securities Markets
+- Most oversight at state level through "blue sky laws"
+- Laws varied widely in scope and enforcement
+- Limited federal authority (Justice Department could prosecute fraud under mail fraud statutes)
+- No comprehensive regulatory framework existed
+
+### Abusive Market Practices
+- Market manipulation was rampant
+- "Pool operators" coordinated trading to artificially inflate stock prices
+- Investment bankers engaged in "stock watering" (issuing shares exceeding company's actual value)
+- Corporate insiders exploited positions to profit from non-public information
+- Minimal disclosure requirements left investors with little information about companies
+
+### Stock Market Crash and Aftermath
+- Between September 1929 and July 1932, Dow Jones Industrial Average lost approximately 89% of value
+- Wiped out billions in wealth
+- Devastated wealthy speculators and ordinary Americans
+- Public confidence in financial markets collapsed
+- Many viewed Wall Street as fundamentally corrupt
+
+### Congressional Investigations
+- Pecora Commission (1932-1934) conducted influential hearings
+- Exposed numerous scandals involving prominent financial institutions
+- National City Bank (now Citibank) sold worthless bonds to unsuspecting investors
+- Chase National Bank's chairman Albert Wiggin shorted his own bank's stock during crash
+- Investment banks manipulated stock prices and allocated shares to political allies
+- Revelations fueled public outrage and created momentum for reform
+
+## Development and Establishment of the SEC
+
+### Roosevelt Administration Priorities
+- President Franklin D. Roosevelt took office in March 1933
+- Made securities regulation a priority of New Deal agenda
+- Believed restoring confidence in financial markets essential to economic recovery
+- Declared "money changers have fled from their high seats in the temple of our civilization"
+
+### Securities Act of 1933
+- Often called "Truth in Securities Act"
+- Established principle that companies offering securities must provide full and fair disclosure
+- Required registration of new securities offerings with Federal Trade Commission (later SEC)
+- Established civil and criminal penalties for misrepresentation
+- Philosophy: not to prevent unwise investments but ensure accurate information
+
+### Securities Exchange Act of 1934
+- Created Securities and Exchange Commission as independent regulatory agency
+- Granted broad authority over securities markets
+- Regulated securities exchanges, brokers, and dealers
+- Prohibited manipulative and deceptive practices
+- Required periodic reporting by publicly traded companies
+- Regulated proxy solicitations and tender offers
+
+### Early Leadership and Implementation
+- Joseph P. Kennedy appointed as first SEC chairman
+- Despite history as market speculator, proved effective chairman
+- Recruited talented staff and established SEC's credibility
+- Implemented registration and disclosure requirements
+- Investigated market abuses
+- Developed rules to govern securities markets
+
+### Initial Regulatory Actions
+- Established standardized accounting principles for public companies
+- Created comprehensive system for registering securities offerings
+- Developed forms for periodic reporting
+- Reorganized nation's stock exchanges (particularly NYSE)
+- Eliminated abusive practices and ensured fair treatment of investors
+
+## Impact and Legacy
+
+### Immediate Impact
+- Helped restore investor confidence in markets devastated by crash
+- Between 1935 and 1937, volume of securities registered exceeded $4.5 billion
+- Demonstrated revival of capital formation
+- Enforcement actions against market manipulators and fraudsters
+- Demonstrated securities laws would be vigorously enforced
+
+### Enduring Regulatory Principles
+- Disclosure-based regulatory approach became cornerstone of American securities regulation
+- Independent regulatory agency with specialized expertise and enforcement powers
+- Emphasis on market integrity and investor protection
+- Influenced securities regulation globally
+
+### Expansion of Responsibilities
+- Investment Company Act and Investment Advisers Act of 1940: extended regulation to mutual funds and investment advisers
+- Williams Act of 1968: regulated tender offers and established disclosure requirements for large shareholders
+- Foreign Corrupt Practices Act of 1977: prohibited bribery of foreign officials
+- Sarbanes-Oxley Act of 2002: enhanced corporate governance requirements following accounting scandals
+- Dodd-Frank Act of 2010: expanded SEC's authority in response to 2008 financial crisis
+
+### Fundamental Mission
+- Protecting investors
+- Maintaining fair, orderly, and efficient markets
+- Facilitating capital formation
+- Established principle that markets require effective oversight
+
+## Sources
+- Seligman, Joel. "The Transformation of Wall Street: A History of the Securities and Exchange Commission and Modern Corporate Finance"
+- Parrish, Michael E. "Securities Regulation and the New Deal"
+- Ritchie, Donald A. "The Pecora Wall Street Expose, 1933-1934"
+- Loss, Louis and Joel Seligman. "Securities Regulation"
+- SEC Historical Society Digital Archive

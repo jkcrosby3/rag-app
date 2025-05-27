@@ -1,0 +1,10 @@
+{
+  "text": "1356 2274 1462 468 6063 \n \nNote: Statistics for 1933 include only the months January through March. Figures do \nnot include banks closed due to government proclamations, moratoria, or banking \nholidays. Rows (a.1.1) through (a.1.5) indicate subtotals of line (a.1). \n \nSource: Richardson (2005). \n \n\n 35 Table 5 \nTemporary and Terminal Suspensions by Clearing System and Year \nJanuary 1929 to March 1933 \n \n Correspondent Clearing Federal Reserve \n Term. Temp. Term. Temp. Term. Temp. \n (a) (b) (c) (d) (e) (f) \n \n1929 366 62 3 0 64 7 \n1930 874 241 37 6 169 21 \n1931 1,461 224 72 10 432 74 \n1932 976 133 37 2 290 27 \n1933 326 41 11 1 83 2 \n \nTotal 4,003 701 160 19 1,038 131 \n \n# 1929 14,080 2,183 8,707 \n \n% Suspended 33.4% 8.2% 11.9% \n% Failed 28.4% 7.3% 13.4% \n \n \nSource: Rand McNally Bankers\u2019 Directory, Historical Statistics of the United \nStates, and National Archives and Records Administration. See data appendix \nand Richardson (2005) for details of NARA data.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 92,
+    "total_chunks": 105
+  }
+}

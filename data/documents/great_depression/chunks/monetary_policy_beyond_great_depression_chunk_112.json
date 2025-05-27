@@ -1,0 +1,10 @@
+{
+  "text": "107 310 4.0 4.25 481 76\nApr1927 108 341 4.0 4.13 447 78\nJul1927 106 381 4.0 4.25 454 59\nOct1927 102 506 3.5 4.00 424 75\nJan1928 107 512 3.5 4.00 465 94\nDefinitions:\nIP:Index ofIndustrial Production (seasonally adjusted);\nGS: Federal Reserve System\u2019s holdings ofgovernment securities (in$millions);\nDR: discount rateoftheFederal Reserve Bank ofNew York (in%);\ni:commercial paper interest rate (in%);\nDL: borrowed reserves ofFedmember banks;\nDL(NYC): borrowed reserves ofNew York CityFedmember banks.\nData sources: Board ofGovernors (1937) pp.175-77 forIP,and Board ofGovernors\n(1943) pp.370-7 1forGSandDL,pp.440-41 forDR,pp.450-5 1fori,andp.400for\nDL(NYC).",
+  "metadata": {
+    "title": "monetary_policy_beyond_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\monetary_policy_beyond_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 111,
+    "total_chunks": 116
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "text": "the transition path to the\nsteady state :Cole and Ohanian [35] present details of this model.\n7.2. The Steady State of the Union Model\nTo demonstrate the impact of the insider-outsider distortion, I present\nthe steady state of the union model relative to the model without the union.\nParameter values are the same as chosen above, and there are two additional\nparameters, the probability that a strike is successful ( !);and a union mem-\nber's survival probability ( \u001f)17I choose!such that the union wage is 25\npercent above trend, which is a conservative choice relative to estimates of\nunion wages relative to trend at that time. The implied value of !is about\n0.8. I am unaware of any speci\fc estimates of the likelihood that a strike\nwould disrupt production. Dinardo and Hallock [36] analyzed major strikes\nbetween 1925 and 1937 and classi\fed whether the strike was \"won\" by work-\ners, \"won\" by \frms, or whether the result of the strike was a compromise\nbetween the union and \frm.",
+  "metadata": {
+    "title": "what_started_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_started_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 89,
+    "total_chunks": 114
+  }
+}

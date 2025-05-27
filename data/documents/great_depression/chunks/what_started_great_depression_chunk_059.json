@@ -1,0 +1,10 @@
+{
+  "text": "h(i)es(i)\nks(i)1\u0000\n;\nin which the length of the workweek is given by h;employment is given by e;\n28\n\nand capital is given by k:I use a technology with a variable workweek since\nHoover's program impacted the workweek in manufacturing. This speci\f-\ncation has been used by Kydland and Prescott [26], Braun and McGrattan\n[27], Hayashi and Prescott [28], Osuna and Rios-Rull [29] , and McGrattan\nand Ohanian [30], among others.7\n7Capital input in this model is variable, and is equal to the capital stock scaled by the\nlength of the workweek, or hours per worker. In the model, utilization falls in manufac-\nturing, which is consistent with actual manufacturing utilization during the Depression.\nIt is worth pointing out two issues about tieing the decline in utilization to hours per\nworker. One is that some of the decline in utilization was due to plant closings, rather\nthan a shorter workweek across all plants.",
+  "metadata": {
+    "title": "what_started_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_started_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 58,
+    "total_chunks": 114
+  }
+}

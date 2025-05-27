@@ -1,0 +1,10 @@
+{
+  "text": "uring\nworkweek changes net of a linear trend. The source of the data is Kendrick [5], page 465.\n34\n\n6.6. The Hoover Depression\nThis section presents the perfect foresight equilibrium path of the Hoover\neconomy. To do this, note that the Hoover intervention is a unanticipated\nand permanent change in the model, with the economy transiting afterwards\nto the Hoover steady state.\nI construct the Hoover economy using the model above, and by introduc-\ning two additional features. First, I specify that the manufacturing sector\npays the observed real manufacturing wage sequence from 1929:4-1931:4. The\nmanufacturing wage is exogenous in the model, which I interpret as the prod-\nuct of Hoover's \fxed nominal wage program in conjunction with de\nation.\nThe second feature is that the workweek in manufacturing is exogenously\n\fxed at its actual sequence between 1929:4 - 1931:4.",
+  "metadata": {
+    "title": "what_started_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_started_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 68,
+    "total_chunks": 114
+  }
+}

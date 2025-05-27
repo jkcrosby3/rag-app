@@ -1,0 +1,10 @@
+{
+  "text": "ent out of business, in other \nwords, had asset problems severe enough to have caused their demise. For temporary \nsuspensions, the pattern was different. Temporary suspensions appear to have been issues of \nilliquidity. Banks suspended operations temporarily when they lacked enough cash on hand to \nsatisfy the demands of depositors. Heavy withdrawals were the primary cause of more than a half \nof all temporary suspensions. The closure of counterparties caused a sixth of all temporary \nsuspensions. \n \nSection 3: Correspondent Networks and the Initial Panic of the Depression \n The correlation between suspensions and the closure of correspondents was particularly \npronounced during the initial banking panic of the depression. Figure 3 plots the number of \nsuspensions each week due to the closure of correspondents (and for sake of comparison also \nplots total changes due to financial distress). The typical week witnessed few, if any, suspensions \nfrom this source.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 65,
+    "total_chunks": 105
+  }
+}

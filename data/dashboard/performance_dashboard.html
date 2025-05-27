@@ -1,0 +1,198 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>RAG System Performance Dashboard</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #f5f5f5;
+            }
+            h1, h2, h3 {
+                color: #333;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                background-color: white;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            .plot-container {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            .plot {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #ddd;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            th, td {
+                padding: 10px;
+                border: 1px solid #ddd;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+            }
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+            .summary-card {
+                background-color: #e9f7ef;
+                border-left: 5px solid #27ae60;
+                padding: 15px;
+                margin-bottom: 20px;
+                border-radius: 3px;
+            }
+            .summary-value {
+                font-size: 24px;
+                font-weight: bold;
+                color: #27ae60;
+            }
+            .summary-label {
+                font-size: 14px;
+                color: #555;
+            }
+            .summary-row {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+            .summary-item {
+                flex: 1;
+                min-width: 200px;
+                margin: 10px;
+                padding: 15px;
+                background-color: #f8f9fa;
+                border-radius: 5px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+            }
+            .timestamp {
+                color: #777;
+                font-style: italic;
+                text-align: right;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>RAG System Performance Dashboard</h1>
+            <p class="timestamp">Generated on 2025-05-25 17:52:27</p>
+            
+            <div class="summary-card">
+                <h2>Performance Summary</h2>
+                <p>This dashboard shows the performance metrics for the RAG system with different configurations.</p>
+            </div>
+            
+            <div class="summary-row">
+                <div class="summary-item">
+                    <div class="summary-value">0.00s</div>
+                    <div class="summary-label">Best Average Response Time</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-value">100.0%</div>
+                    <div class="summary-label">Best Cache Hit Rate</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-value">95.1%</div>
+                    <div class="summary-label">Best Time Improvement</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-value">0.00</div>
+                    <div class="summary-label">Lowest Similarity Threshold</div>
+                </div>
+            </div>
+            
+            <h2>Response Times</h2>
+            <div class="plot-container">
+                <img src="response_times.png" alt="Response Times" class="plot">
+            </div>
+            
+            <h2>Cache Hit Rates</h2>
+            <div class="plot-container">
+                <img src="cache_hit_rates.png" alt="Cache Hit Rates" class="plot">
+            </div>
+            
+            <h2>Time Improvement</h2>
+            <div class="plot-container">
+                <img src="time_improvement.png" alt="Time Improvement" class="plot">
+            </div>
+            
+            <h2>Detailed Results</h2>
+            <table>
+                <tr>
+                    <th>Configuration</th>
+                    <th>Avg. Processing Time (s)</th>
+                    <th>Cache Hit Rate (%)</th>
+                    <th>Semantic Cache Hit Rate (%)</th>
+                    <th>Time Improvement (%)</th>
+                </tr>
+    
+                <tr>
+                    <td>Standard, Threshold=0.00</td>
+                    <td>0.00</td>
+                    <td>0.0%</td>
+                    <td>0.0%</td>
+                    <td>0.0%</td>
+                </tr>
+        
+                <tr>
+                    <td>Standard, Threshold=0.75</td>
+                    <td>3.67</td>
+                    <td>50.0%</td>
+                    <td>0.0%</td>
+                    <td>-15809.4%</td>
+                </tr>
+        
+                <tr>
+                    <td>Standard, Threshold=0.85</td>
+                    <td>8.05</td>
+                    <td>0.0%</td>
+                    <td>0.0%</td>
+                    <td>4.7%</td>
+                </tr>
+        
+                <tr>
+                    <td>Quantized, Threshold=0.65</td>
+                    <td>0.02</td>
+                    <td>100.0%</td>
+                    <td>0.0%</td>
+                    <td>95.1%</td>
+                </tr>
+        
+                <tr>
+                    <td>Quantized, Threshold=0.75</td>
+                    <td>2.50</td>
+                    <td>50.0%</td>
+                    <td>25.0%</td>
+                    <td>68.8%</td>
+                </tr>
+        
+            </table>
+            
+            <h2>Recommendations</h2>
+            <ul>
+                <li>Use the quantized embedding model for better performance</li>
+                <li>Lower the similarity threshold to increase semantic cache hit rates</li>
+                <li>Monitor cache size and performance over time to optimize settings</li>
+            </ul>
+            
+            <div class="timestamp">
+                <p>RAG System Performance Dashboard - Cascade AI</p>
+            </div>
+        </div>
+    </body>
+    </html>
+    

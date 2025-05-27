@@ -1,0 +1,63 @@
+{
+  "vector_db_type": "faiss",
+  "total_queries": 5,
+  "queries": [
+    {
+      "query": "What were the key provisions of the Glass-Steagall Act?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "description": "Factual query about Glass-Steagall provisions",
+      "response_time": 9.788411855697632,
+      "num_docs_retrieved": 3,
+      "response_length": 1845,
+      "success": true
+    },
+    {
+      "query": "How did the Glass-Steagall Act separate commercial and investment banking?",
+      "topics": [
+        "glass_steagall"
+      ],
+      "description": "Specific mechanism query about Glass-Steagall",
+      "response_time": 5.832021951675415,
+      "num_docs_retrieved": 3,
+      "response_length": 1750,
+      "success": true
+    },
+    {
+      "query": "What was the purpose of the SEC during the Great Depression?",
+      "topics": [
+        "sec"
+      ],
+      "description": "Purpose query about SEC",
+      "response_time": 5.939294099807739,
+      "num_docs_retrieved": 1,
+      "response_length": 1835,
+      "success": true
+    },
+    {
+      "query": "Compare the New Deal programs with Glass-Steagall regulations.",
+      "topics": [
+        "new_deal",
+        "glass_steagall"
+      ],
+      "description": "Comparative query across multiple topics",
+      "response_time": 5.320976734161377,
+      "num_docs_retrieved": 3,
+      "response_length": 1388,
+      "success": true
+    },
+    {
+      "query": "What were the major financial reforms after the Great Depression?",
+      "topics": null,
+      "description": "Broad query across all topics",
+      "response_time": 7.285774230957031,
+      "num_docs_retrieved": 3,
+      "response_length": 1644,
+      "success": true
+    }
+  ],
+  "avg_response_time": 6.833295774459839,
+  "max_response_time": 9.788411855697632,
+  "min_response_time": 5.320976734161377
+}

@@ -1,0 +1,10 @@
+{
+  "text": "ning a cartel job is independent of the actions of the industries in which\nfamily members work.\n44\n\net=\u001fet\u00001\nWe denote the number of those who work in the cartel that period by \u0016 e:If\n\u0016e<e; thene\u0000\u0016eof the workers are randomly chosen to leave the industry. If\n\u0016e>e; then the union adds members using a lottery. Given P;the solution to\nthe cartel workers' problem is implicitly determined by the following Bellman\nequation in which V(e;k) denotes the expected value of being a cartel worker\n(relative to working in the competitive sector), in which there are eworkers\nin the industry at the beginning of the period, and kunits of capital in place:\nV(e;k) = max\n( \u0016w;\u0016e)n\u0010\nminh\n1;\u0016e\nei\u0011\n[ \u0016w\u0000w+\u001f(Q0=Q)V(\u001f\u0016e;k0)]o\n(15)\nsubject to \u0005( k;\u0016w;\u0016e)\u0000k0+\fP(k0)\u0015P(k):\nThe left hand side of the constraint is the \frm's payo\u000b if it accepts the workers\no\u000ber, where \u0005( k;\u0016w;\u0016e) denotes the pro\fts that it earns during the period, and\n\u0000k0+\fP(k0) is the return from colluding on investment.",
+  "metadata": {
+    "title": "what_started_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_started_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 87,
+    "total_chunks": 114
+  }
+}

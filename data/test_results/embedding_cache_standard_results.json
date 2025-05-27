@@ -1,0 +1,175 @@
+{
+  "exact_hits": 5,
+  "misses": 15,
+  "generation_times": [
+    3.477365255355835,
+    0.013166427612304688,
+    0.012636899948120117,
+    0.013565301895141602,
+    0.396498441696167,
+    0.00030422210693359375,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.014973640441894531,
+    0.014595746994018555,
+    0.010430335998535156,
+    0.01121973991394043,
+    0.01223134994506836,
+    0.016280412673950195,
+    0.011925220489501953,
+    0.01181650161743164,
+    0.013582944869995117,
+    0.01486063003540039
+  ],
+  "cache_hit_times": [
+    0.00030422210693359375,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "cache_miss_times": [
+    3.477365255355835,
+    0.013166427612304688,
+    0.012636899948120117,
+    0.013565301895141602,
+    0.396498441696167,
+    0.014973640441894531,
+    0.014595746994018555,
+    0.010430335998535156,
+    0.01121973991394043,
+    0.01223134994506836,
+    0.016280412673950195,
+    0.011925220489501953,
+    0.01181650161743164,
+    0.013582944869995117,
+    0.01486063003540039
+  ],
+  "text_results": [
+    {
+      "text": "The Glass-Steagall Act was a landmark banking legislation that separated commercial and investment banking activities.",
+      "generation_time": 3.477365255355835,
+      "cache_hit": false
+    },
+    {
+      "text": "The Securities and Exchange Commission (SEC) was created to regulate the securities industry and protect investors.",
+      "generation_time": 0.013166427612304688,
+      "cache_hit": false
+    },
+    {
+      "text": "The New Deal was a series of programs and projects instituted by President Franklin D. Roosevelt during the Great Depression.",
+      "generation_time": 0.012636899948120117,
+      "cache_hit": false
+    },
+    {
+      "text": "The Federal Deposit Insurance Corporation (FDIC) was established to provide deposit insurance to bank depositors.",
+      "generation_time": 0.013565301895141602,
+      "cache_hit": false
+    },
+    {
+      "text": "The stock market crash of 1929 was a major American stock market crash that occurred in the fall of 1929.",
+      "generation_time": 0.396498441696167,
+      "cache_hit": false
+    },
+    {
+      "text": "The Glass-Steagall Act was a landmark banking legislation that separated commercial and investment banking activities.",
+      "generation_time": 0.00030422210693359375,
+      "cache_hit": true
+    },
+    {
+      "text": "The Securities and Exchange Commission (SEC) was created to regulate the securities industry and protect investors.",
+      "generation_time": 0.0,
+      "cache_hit": true
+    },
+    {
+      "text": "The New Deal was a series of programs and projects instituted by President Franklin D. Roosevelt during the Great Depression.",
+      "generation_time": 0.0,
+      "cache_hit": true
+    },
+    {
+      "text": "The Federal Deposit Insurance Corporation (FDIC) was established to provide deposit insurance to bank depositors.",
+      "generation_time": 0.0,
+      "cache_hit": true
+    },
+    {
+      "text": "The stock market crash of 1929 was a major American stock market crash that occurred in the fall of 1929.",
+      "generation_time": 0.0,
+      "cache_hit": true
+    },
+    {
+      "text": "The Glass-Steagall Act is considered a landmark banking legislation that separated commercial and investment banking activities.",
+      "generation_time": 0.014973640441894531,
+      "cache_hit": false
+    },
+    {
+      "text": "The Glass-Steagall Act was a landmark banking legislation that separated commercial and investment banking activities in the United States.",
+      "generation_time": 0.014595746994018555,
+      "cache_hit": false
+    },
+    {
+      "text": "The Securities and Exchange Commission (SEC) is considered created to regulate the securities industry and protect investors.",
+      "generation_time": 0.010430335998535156,
+      "cache_hit": false
+    },
+    {
+      "text": "The Securities and Exchange Commission (SEC) was created to regulate the securities industry and protect investors in the United States.",
+      "generation_time": 0.01121973991394043,
+      "cache_hit": false
+    },
+    {
+      "text": "The New Deal is considered a series of programs and projects instituted by President Franklin D. Roosevelt during the Great Depression.",
+      "generation_time": 0.01223134994506836,
+      "cache_hit": false
+    },
+    {
+      "text": "The New Deal was a series of programs and projects instituted by President Franklin D in the United States. Roosevelt during the Great Depression in the United States.",
+      "generation_time": 0.016280412673950195,
+      "cache_hit": false
+    },
+    {
+      "text": "The Federal Deposit Insurance Corporation (FDIC) is considered established to provide deposit insurance to bank depositors.",
+      "generation_time": 0.011925220489501953,
+      "cache_hit": false
+    },
+    {
+      "text": "The Federal Deposit Insurance Corporation (FDIC) was established to provide deposit insurance to bank depositors in the United States.",
+      "generation_time": 0.01181650161743164,
+      "cache_hit": false
+    },
+    {
+      "text": "The stock market crash of 1929 is considered a major American stock market crash that occurred in the fall of 1929.",
+      "generation_time": 0.013582944869995117,
+      "cache_hit": false
+    },
+    {
+      "text": "The stock market crash of 1929 was a major American stock market crash that occurred in the fall of 1929 in the United States.",
+      "generation_time": 0.01486063003540039,
+      "cache_hit": false
+    }
+  ],
+  "total_texts": 20,
+  "hit_rate": 0.25,
+  "avg_generation_time": 0.20227265357971191,
+  "avg_cache_hit_time": 6.084442138671875e-05,
+  "avg_cache_miss_time": 0.26967658996582033,
+  "speedup": 4432.23197492163,
+  "cache_stats": {
+    "model_name": "all-MiniLM-L6-v2",
+    "size": 15,
+    "max_size": 1000,
+    "hits": 5,
+    "disk_hits": 0,
+    "misses": 15,
+    "hit_rate": 0.25,
+    "memory_hit_rate": 0.25,
+    "disk_hit_rate": 0.0,
+    "expired_entries": 0,
+    "ttl_hours": 24,
+    "estimated_memory_kb": 45.0,
+    "avg_load_time": 0.0,
+    "avg_save_time": 0.026633644104003908,
+    "persistent": true
+  }
+}

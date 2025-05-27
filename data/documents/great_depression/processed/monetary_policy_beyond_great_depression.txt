@@ -1,0 +1,1291 @@
+WORKING PAPER SERIES
+Monetary Policy in the Great Depression and Beyond: 
+The Sources of the Fed's Inflation Bias
+David C. Wheelock
+Working Paper 1997-011A
+http://research.stlouisfed .org/wp/1997/97-011.pdf
+PUBLISHED: The Economics of the Great Depression. Mark Wh eeler, (ed.) The Upjo hn Institute, 1998.
+FEDERAL RESERVE BANK OF ST. LOUIS
+Research Division
+411 Locust Street
+St. Louis, MO 63102
+______________________________________________________________________________________
+The views expressed are those of the individual authors and do not necessarily reflect official positions of
+the Federal Reserve Bank of St. Louis, the Fede ral Reserve System, or the Board of Governors.
+Federal Reserve Bank of St. Louis Working Papers are preliminary materials circulated to stimulate
+discussion and critical comment. References in publications to Fede ral Reserve Bank of St. Louis Working
+Papers (other than an acknowledgment that the writer has had access to unpublished material) should be
+cleared with the author or authors.
+Photo courtesy of The Gateway  Arch, St. Louis, MO.   www.gatewayarch.com
+
+
+MonetaryPolicy inthe Great Depression and Beyond:
+TheSourcesofthe Fed’sInflation Bias
+April1997
+Abstract
+Thedeflationary outcomeofmonetary policy during theGreatDepression hadtwo
+fundamental causes: 1)theFederalReserve’s useofflawedoperating guides,and2)
+adecisiontomakepreservation ofthegoldstandardtheoverriding objectiveofpolicy.
+TheGreatDepression resultedinlastingchangesinthedomestic and international
+monetary regimethatsubstantially weakened thegoldstandard, increased political
+controlofmonetary policy, and created new opportunities tomonetize government
+debt,allofwhichgavemonetary policyaninflationbias.Uncorrected flawsinthe
+FederalReserveoperating strategyandthelesseningofthegoldstandardconstraint
+enabledasustainedinflationary monetary policy toemergeinthe1960s.Ultimately,
+thatpolicyledtothecollapseoftheBrettonWoodsSystemandabandonment of
+international linkages altogether.
+Keywords: FederalReserveSystem,Monetary Policy, GreatDepression,
+BrettonWoodsSystem
+JELClassification: E5,N12
+DavidC.Wheelock
+Research Officer
+FederalReserveBankofSt.Louis
+411LocustStreet
+St.Louis,MO63102
+
+
+4/14/97
+MonetaryPolicy inthe GreatDepression andBeyond:
+TheSourcesoftheFed’sInflation Bias
+OnAugust15,1971,President Nixonannounced his“NewEconomic Policy.” Nixon’s
+planincludedtwofeaturesthatreflected on thestate ofAmericanmonetary policy. First, to
+combatinflation, Nixonimposed wage andpricecontrols. And, second,in response to
+America’slong-running andworseninginternational payments deficit,Nixonsuspended
+convertibility ofthedollarinto gold. Bothpolicies were intendedto betemporary. Wageand
+pricecontrolsweretemporary, butthegoldwindowappears tobe permanently shutandthe
+dollarhasfloatedagainst othercurrencies since1973.
+The imposition ofwageandpricecontrolsandsuspension ofdollarconvertibility
+reflected thefailureofU.S.monetary policytocontrol inflation under the prevailing
+international monetary regime --the Bretton Woods System. Although Bretton Woods was atits
+heartagoldstandard, it did not imposethesamelevel ofdiscipline onmonetary policythatthe
+pre-wargoldstandard had. Undertheclassical goldstandard, marketdrivengoldoutflows
+wouldlimitinflationary moneysupplygrowthandprovide long-run pricestability. Bretton
+Woods was a goldstandardmanaged bycentralbanks, however, andwithcentralbank
+cooperation acountry couldrunalong-termpayments deficit ifothercountries werewilling to
+holditscurrency. The Bretton Woods System ultimatelycollapsed becauseothercountries
+becameunwilling to holddollarsandbecausetheUnitedStateswas unwilling toimposea
+monetary policyonitselfthatwouldensureconvertibility ofdollars into gold.
+TheUnitedStateshadconfronted asimilarchoice before. In 1931, uncertainty aboutthe
+ability or willingness oftheUnitedStatesto remainon the goldstandardprecipitated gold
+outflows that forced American monetaryauthorities tomakeadecision. Theycould chooseto
+defendtheirgold reservebytightening monetary policyortheycouldsuspendconvertibility of
+thedollarinto gold. In themidst oftheGreat Depression FederalReserve officials understood
+
+
+4/14/97 2
+thatatightermonetary policymightworsenthedownturn, buttopreservethegoldstandardthey
+chose toraiseinterestratesandallowacontraction ofbankreserves.
+In thispaper, Iarguethat American officials chose to abandon goldin1971becauseof
+institutional andideological changesbroughtaboutbytheGreat Depression. Key changes
+includedanewavenueformonetizing FederalGovernment debt, aweakening oftheFederal
+Reserve System’s insulation frompoliticalinterference, andaneweconomic policyideology
+thatdoubtedthe stability ofprivatemarketsandprescribed government management of
+aggregate demand.
+Themostimportant changeformonetary policystemming from theGreatDepression
+concerned thegoldstandard. In 1931, FederalReserve officialsviewedthegoldstandardas
+fundamental tolong-runeconomic prosperity andwerewilling to defendthesystemevenifit
+meanttaking actions that would worsentheongoingdepression. In 1971,U.S. economic policy
+makersno longer viewedthegoldstandardinthisway,andwereunwilling totightenmonetary
+policyto preserve thegold standard, eventhoughtheUnitedStateshadarising rate ofinflation
+andagrowingeconomy. The choicetoabandonBretton Woods was made, I argue, becausethe
+GreatDepression hadweakened theideologicalunderpinnings ofthegoldstandard.t
+During the Depression, the goldstandardhadfailed topreserve prosperity forthose
+countries witheven the largest reserveholdings, andsuspension provedto beaprerequisite for
+recovery inmostcountries (Eichengreen andSachs,1985).Although manypeoplecontinued to
+viewthegoldstandardandfixedexchange ratespositively, most believedthatthegoldstandard
+requiredthemanagement ofgovernment officials. Thus, after World WarII,themanagedgold
+Calomiris andWheelock (1997)examineinstitutional changes toU.S. monetary policy making resulting
+from the Great Depression, and arguethat those affectingthe goldstandardwere the mostimportant. That
+paperfocusesonFederalReservepolicy during 1933-41inparticular, andduring thel950sand 1960s
+generally. Bycontrast, the presentpaperexamines inmuch greaterdetail the policy recordleading up to
+suspension ofgoldpayments in 1971,andhowitcompares withFederalReserve policy during the Great
+Depression.
+
+
+4/14/97 3
+standardofBretton Woods supplanted thepre-wargoldstandard. UnderBrettonWoods, the
+UnitedStateswasable torun an inflationarymonetary policywithoutthe swift discipline ofgold
+outflows. The initialimpetusfor inflation resultedfromotherchanges --increased political
+pressureontheFedandattemptsto stimulate output by increasing aggregate demand,for
+example, aswellas fromflawsintheFed’sbasicoperating strategy. ButunderBrettonWoods,
+inflationcould gathersubstantial momentum before policy makerswereforcedtoconfrontthe
+consequences oftheirpolicies. In the face ofahemorrhaging balanceofpayments deficitandno
+strongideologicalattachment to gold,Bretton Woods collapsed andexternalconstraints on
+domesticmonetary policywereabandoned.
+Thispaperbeginswithanoverview ofmonetary policyduringtheGreat Depression. By
+many,thoughnot all, possible measures, monetary policy was exceptionally contractionary
+during1929-33,andIexamine whythe Fedpursuedsuchapolicyduringthisperiod.Next, I
+identifyanddiscusskeyinstitutional changes tothe monetary policyenvironment thatresulted
+directlyfromtheGreatDepression. Iarguethat thesechangeshelpexplaintheinflationbiasof
+the Fed’s post-World WarIImonetary policy.Finally,IdescribetheFederalReserve’s
+response, or lack thereof,tothe growing balanceofpayments deficitsleadingup tothe collapse
+ofBretton Woods in 1971, andhowthedecisionto abandon goldin1971wasalegacyofthe
+GreatDepression.
+Monetary PolicyintheFirstPhaseofthe GreatDepression
+Byalmostanymeasure, monetary policyduring1929-33wasadisaster: themoney
+supplyandpricelevelbothfellby one-third, expostrealinterestratesreacheddouble-digits, and
+banks failed by thethousands (seeTable1).Howcouldthe Fed haveletthishappen?
+Theexplanations forthe Fed’sdisastrous monetary policyduringtheGreatDepression
+largelyfall into twocategories. One attributes policyfailurestoinnocentmistakes orneglect,
+
+
+4/14/97 4
+while theother contends thattheFedwillfullyengineered contractionary monetary policyto
+fosterbureaucraticobjectives, or inresponse tointerestgroup pressure. Although somepolitical
+scientists andpublicchoiceeconomists favor the latterexplanation (e.g., Epstein andFerguson,
+1984;Anderson, etal.,1988),mosteconomists andeconomic historians blametheFed’spolicy
+onmisguided policyrules, aswellason pettyjealousies thatlimited the Fed’sabilitytorespond
+decisively to rapidly changing conditions.
+Themostprominent explanation ofFederalReservebehaviorduring theGreat
+Depression isthatofFriedman andSchwartz (1963), whoargue thatadistinctshiftinpolicy
+occurredwiththedeathin1928ofBenjamin Strong,Governor oftheFederal Reserve Bankof
+NewYork. Like Fisher(1935)before them, Friedman andSchwartz (1963)contendthat Strong
+understood howto employ thetoolsofmonetary policytominimize cyclicalfluctuations in
+outputandpricesandtopreventorlimitfinancialpanics. Hisdeathcreatedavoidofboth
+leadership andunderstanding whichlefttheFedunresponsive tofinancialcrises,bankruns, and
+theircontractionary effects.
+UnderStrong’sleadership, theFedhadusedthetoolsatitsdisposal to pursueboth
+domestic andinternationalobjectives (Wheelock, 1991).Largeopen-marketpurchases and
+discountratereductions in1924and1927wereapparent attemptsbothtoencourage domestic
+economic growthandtoenableGreatBritaintoattractgoldreserves (by lowering U.S.interest
+ratesrelativeto those in Britain). Open-market salesanddiscountrate hikes in 1928-29,on the
+otherhand, were intended todiscourage stockmarketspeculation, whichatleast some Fed
+officialsviewedasamanifestation ofinflation.
+On the surface,theFed seemstohavebeen less responsive to theDepression thanithad
+beentoearlier,smaller, cyclical downturns. Table 2presents aroughcomparison ofFederal
+Reserve actions duringtheinitialphase oftheGreatDepression(1929-31) withFedactions
+
+
+4/14/97 5
+duringtherecessions of1924and1927.TheFed’sIndexofIndustrial Production serves asa
+measureofeconomic activity. The index declinedapproximately 20pointsfromthecyclical
+peakin April1923tothetroughin July1924.Therecession of1927wasconsiderably more
+modest --the index declined 11pointsfromOctober1926to October 1927. By contrast, the
+IndexofIndustrial Production declinedby42pointsbetweenJuly1929andJuly1931,and
+another9pointsfrom July 1931toOctober1931.IntermsoftheFed’sbasicpolicy tools --the
+discount rate andopen-market purchases ofgovernmentsecurities --theFedwasmuchless
+vigorous in1929-31thanithadbeeninresponse to the smaller recessions of1924and1927.
+Thisfact,alongwiththeoccurrence ofbankingpanicsandsharpdeclinesinthemoneystockand
+pricelevelduring1929-31, leadFriedman andSchwartz (1963) to conclude thattheintentand
+implementation ofmonetary policyduringtheGreat Depression weredramatically differentthan
+theyhadbeenin1924or1927.2
+DespitetheFed’sweakresponse totheDepression, some researchers arguethatpolicy
+changedlittle,ifatall,withBenjamin Strong’sdeath(e.g.,Wicker, 1966;BrunnerandMeltzer,
+1968;Wheelock, 1991).DuringtheDepression, theFedusedborrowed reserves(discount
+windowloans)andmarketinterest ratesaspolicyguides.3Whenmemberbanksborrowed
+relatively little from the Federal Reservediscountwindow ormarketinterest rates were
+unusually low, Fed officials interpreted monetaryconditions as“easy.”Conversely, highlevels
+2Wheelock (1991)presentseconometricestimates oftheFederalReserve“reactionfunction” for1924-
+1929.Simulations ofthisfunctionalsoillustratethattheFedmadefeweropen-market purchases and cut
+itsdiscountrate lessduring1929-31thanitwouldhavedoneunderthepre-1929 reactionfunction. But,as
+discussed below,thisdoesnotnecessarily implythatthepolicyregime, i.e., the Fed’s objectives or
+strategy,hadchanged.
+Theuseofopen-marketoperations forobjectives otherthantosecureearningassetsevolvedintheearly
+l920s,buttheirusetomanipulate instruments oroperating targets,suchasborrowed reserves, evolved
+onlygradually astheFedgainedexperience. WellintotheDepression, thedirections tothe Fed’s trading
+desk from theOpenMarketCommittee specifiedthe dollaramounts ofsecurities thedeskwasauthorized
+tobuy orsell.By1932,however, discussion atOpenMarketCommittee meetings turnedmoretowardthe
+desiredlevelofexcessreserves,andfocusedlessonthespecificdollarvolumeofsecuritiestobuyor sell.
+Laterinthe‘30s,the Committee targetedyieldsonTreasurysecurities, aswellasexcessreserves.
+
+
+4/14/97 6
+ofborrowed reserves or highinterestratessignaledthatmoneywas“tight.”Oncethe
+Depression began,bothborrowed reservesandinterestratesfell sharply andgenerally remained
+low, giving Fedofficialstheimpressionthat moneywasplentifuland“cheap.”
+The Fed’s useofdiscount window borrowing andinterestratesaspolicyguidesduring
+theDepression appears consistent withthepolicyframework thatBenjamin Stronghadoutlined
+whenhewasrunningtheFed.Speaking toFederalReserve officials in 1926, forexample,
+Strongdescribed hisruleofthumb fordetermining howtouseopen-market policyduringa
+recession:
+Shouldwego intoabusinessrecession whilethememberbankswerecontinuing
+toborrowdirectly500or600 milliondollars ...weshouldconsidertakingsteps
+torelievesomeofthepressurewhichthisborrowing inducesbypurchasing
+government securities andthusenablingmemberbanksto reduce their
+indebtedness....
+Asaguideto thetimingandextentofany[open-market] purchases which might
+appeardesirable, oneofourbestguideswouldbetheamountofborrowing by
+memberbanksinprincipal centers.... Our experience hasshownthatwhenNew
+YorkCitybanksareborrowing intheneighborhood of100milliondollars or
+more,thereisthensome real pressureforreducing loans,andmoneyratestend
+tobemarkedly higherthanthediscountrate....Whenmemberbanksareowing
+usabout50milliondollars orlessthesituationappearstobecomfortable, with
+nomarkedpressureforliquidation. (quotedby Chandler, 1958,pp.239-40)
+By Strong’s guidelines, additional open-marketpurchases were not called forin1929-31. The
+borrowed reserves (discount loans)ofallFedmemberbanksas well as those ofNewYorkCity
+banksdeclin& ~arbelowtheirlevelsof1924and1927(seeTable 2). Similarly, money market
+interestrateswere unusually low in1930-31. Thus,by Strong’s measures, the stance of
+monetary policyin1930-31appears to havebeen quite easy. Policy makersinferredthat there
+was little morethe Fedcould, or should,do,andthatitwasnowup,totheeconomy to respond.
+As Strong(1926, p. 468) hadsaidonanotheroccasion, “TheReserveBanks do not pushcredit
+intouse”(emphasis inoriginal).
+
+
+4/14/97 7
+Manyeconomists havenotedthatrigiduseofborrowed reservesorinterestratesas
+policyinstruments will causethe moneysupplyto riseandfallprocyclically becauseborrowed
+reservesandinterestrates tend tovarypositively witheconomic activity. Moreover, the banking
+crisesof1929-33madeborrowed reserves an especially poorindicatorofmonetary conditions
+duringtheDepression becauseafearofrunsmadebanks especially reluctant to suggest any
+weakness todepositors, whichdiscount-window borrowingmight do(Wheelock, 1991).
+Althoughafew System officialsquestioned thereliability ofborrowed reserves as apolicyguide
+duringtheDepression, the prevailing viewwas thatmonetaryconditions wereexceptionally
+easy,andthattheeconomy’s failuretoexpandwas notthefaultofmonetary policy.Wecannot
+sayforcertain whether monetary policywouldhavebeen differentduring1929-31hadBenjamin
+Stronglived,but it does seemtohavebeen consistent withStrong’sresponse tobusinesscycle
+downturns in 1924and1927,andtheguidelines forassessing thestance ofmonetary policyhe
+hadoutlined.
+The Gold Crisis of1931
+FederalReservepolicyduringtheinitialphaseoftheGreatDepression --fromthestock
+marketcrash inOctober1929throughSeptember 1931 --was largely predictable fromthepolicy
+guidelines followed by Benjamin Strongduringthe1920s.Butinterestratesanddiscount
+windowborrowing shotupdramatically inthefourthweekofSeptember 1931andremained
+highuntilearly1932. During thisperiod the Fedraisedits discountrate but failedtomake
+significant open-market purchases, eventhoughtheDepression wasgettingworseandmonetary
+conditions wereexceptionallyrestrictive.
+Theyear1931wasmarkedbyaseriesoffinancialcrises thatledtosuspension ofthe
+goldstandardbyanumberofEuropean countries, culminating withGreatBritainonSeptember
+21.Following Britain’s departure fromgold, speculation thattheUnitedStateswould soon
+
+
+4/14/97 8
+followtriggeredamassivegoldoutflow fromthe UnitedStatesandattendant declinein
+commercial bankreserves. TheFederalReserveactedtostemtheoutflowbyraisingitsdiscount
+rate--the classic defense --but did not useopen-market operationsto replacetheoutflowof
+commercial bankreserves.
+In the six weeksendingOctober 28, 1931,themonetary goldstockoftheUnitedStates
+declinedby $727 million,or some 15percent. At thispoint, the goldstockstabilized, but
+uncertainty aboutthecondition ofAmerican bankscausedbankcustomers toredeemtheir
+depositsforcurrency. Betweenmid-September andtheendofDecember, currency heldbythe
+publicrose$544million(11percent). Banksborrowed heavilyfromtheFederal Reserve to
+replacereserveslostfromdepositredemptions forgoldandcurrency, eventhoughtheFedhad
+increased itsdiscountrate from 1.5percentto3.5percent.4
+TheFedmadevirtuallynoopen-marketpurchases ofgovernment securities duringthe
+crisis.OnFebruary 24,1932,theFed’s securityportfolio wasthesamesizethatithadbeenon
+September 16,1931,andthusopen-marketoperations hadcontributed nothingtoward offsetting
+thegoldandcurrency outflows. Whileincreased discountwindow borrowingoffsetthese
+outflows somewhat, memberbanktotal reserves stillfellby $540million,or22percent,between
+mid-September andtheendofFebruary.
+Onthesurface, theFed’s behavior inthefourthquarterof1931appearsinconsistent both
+withBenjamin Strong’spolicyguidelines andwithappropriate lender oflastresort policy. As
+Friedman andSchwartz (1963, pp.315-22)describe, theFedhadactedtohaltan“external drain”
+ofreserves from thebankingsystem(goldoutflows), but not the “internaldrain” (conversion of
+deposits into currency).
+~Thisreferstothe discount rateoftheFederalReserve Bank ofNewYork.ByDecember, the discount
+ratesofalltwelveReserveBankswereat3.5percentorhigher.TheFedalsoaugmented bankreservesby
+purchasing bankersacceptances frommemberbanks.TheFedpurchased all eligible acceptances offered
+bybanksbut,aswithitsdiscountrate,theFedincreased theinterestrateatwhichitmadethesepurchases.
+
+
+4/14/97 9
+TheFedarguedthat ithadnotmadeopen-marketpurchases duringthecrisisof1931
+becauseitsownreserveposition was injeopardy. TheFederal Reserve Bankswererequiredto
+maintaingoldreservesequalto 40percentoftheir notes outstanding and35percentoftheir
+depositliabilities (whichconsisted mainlyofmemberbankreserveaccounts). Inaddition, the
+ReserveBankswererequiredtoholdcollateral inthe form ofgoldor eligible securities against
+theirnoteissues(goldheldas reserves alsocountedas collateral). Finally,theReserveBanks
+wererequiredtodepositgoldwith theU.S.Treasury equaltoatleast5percentoftheirnote
+issuesthatwerecollateralized by securities.
+Securities eligibleforuseascollateral forFederalReservenoteissuesincludedbankers
+acceptances andcommercial notestheReserveBankshadpurchased ordiscounted formember
+banks, but not government securities acquiredintheopen-market. Thus,purchases of
+government securitiesincreased Fedliabilities but did not addtothecollateral backingthem,and
+so theFedhadtoholdexcessreserves before it couldengage in open-market purchases.5
+FromJulytoOctober1931,FederalReserveBankgoldreserves declined fromover84
+percentofFedliabilities to63percent.Although theFedstillhadsufficient goldtocoverits
+goldreserverequirement, someofitsexcess goldreservewas used as collateral forReserve
+Banknoteissues. Consequently, theFed’s “freegold,” i.e., the amount ofgoldnotcurrently
+pledgedas reserves or collateral, dwindled.
+In its1932AnnualReport,theFederalReserveBoardimpliedthatalackoffreegold
+reserveshadkeptitfrompurchasinggovernmentsecurities duringthe1931crisis,andnotedthat
+largepurchases hadfollowed enactment oftheGlass-Steagall ActofFebruary 27,1932,which
+hadexpanded thetypesofsecurities that wereeligible for useascollateral forFedliabilities to
+Whereas Fedholdingsofgovernment securities couldnot serveas collateral, discountwindow loans
+alwaysproduced collateral, including those securedbycommercial bank holdingsofgovernment
+securities.
+
+
+4/14/97 10
+include U.S. Government securities (see alsothe FederalReserve Bulletin,March1932).
+Friedman andSchwartz (1963,pp. 399-406) contendthatthe Fed’s claimthatalackoffreegold
+hadpreventedopen-market purchases wasaruse,thoughothers, such asEpsteinandFerguson
+(1984, pp. 964-65) arguethat Fedofficials trulyfeltconstrained byalackofreserves.
+Regardless ofwhetheror not the Fedwasconstrained byitscollateral requirement, the
+Systemhadanother option --theFederalReserveBoardhadtherighttosuspendtheFed’s
+reserverequirements. I amaware ofnoevidence that theFed considered suspension, however.
+Wicker(1966,pp. 169-70)arguesthatFedofficialsfeared that open-marketpurchases would
+exacerbate goldoutflowsby increasing doubt abouttheFed’s resolvetomaintainthevalueofthe
+dollarin termsofgoldover the long-run. Presumably theseofficials believedthatsuspension of
+theFed’s reserve requirements wouldalsocause goldoutflows, andhencethatacombination of
+suspension andopen-market purchases wasuntenable.
+DidTheFedFollowGoldStandard Orthodoxy?
+Fed officials believed strongly in preserving the gold standard andatfirstglancetheir
+policy actions appeartohavereflectedgoldstandarddoctrine. But,twoaspectsofpolicy --the
+Fed’sdelayinraisingitsdiscountrate following Britain’s suspension ofthegoldstandard, and
+the Fed’s long-time policyoflimitingthe impact ofgoldflowson the domestic moneysupply --
+suggestotherwise.
+Wicker(1996, pp. 86-94) arguesthatthegoldstandardplayedonlya“minor”role inthe
+discount rate increases ofOctober1931,citing the factthatthe discountratewasnotincreased
+untiltwoandone-halfweeks after Britainsuspended goldpayments andtheUnitedStateshad
+experienced heavygoldoutflows. As furtherevidence, hecitesmeetingrecords oftheboardof
+directorsoftheFederalReserveBank ofNewYorkinwhichGeorgeHarrison, Governor ofthe
+NewYorkFed,arguedagainst raising ratesinthewakeofBritain’saction,andthenburied
+
+
+4/14/97 11
+defenseofgoldamongotherreasonswhenlateradvocating adiscountrateincrease. Wicker
+arguesthatthe Fed’s policywas thus not a“knee-jerk” responsetogoldstandardconventions.
+Chandler(1971, p.177)interpretsthe Fed’s delayinraisingitsdiscountratesomewhat
+differently. He arguesthatsome Fedofficialsbelievedthatadiscount rateincreasemight
+suggestweakness andtherebyexacerbate goldoutflows, thoughfearthatarateincreasemight
+hurtthe economy alsoplayed some part in thedelay. Moreover, otherFederal Reserve policy
+makersdid press foran immediatediscount rate increase to defendthegoldstandard. Fed
+Governor EugeneMeyer, for example, argued that “anadvance in therate wascalledforby
+everyknownrule,and...foreigners wouldregard itasalackofcourageiftheratewerenot
+advanced” (quotedby Wicker, 1996,p.93).Friedman andSchwartz (1963,p. 383) citea
+memorandum prepared forameetingofthe Fed’s OpenMarketCommittee inNovember 1931
+whichconcluded thatthe“foreignanddomestic drainsuponbankreservesweremetin the
+classicwayby increases inthediscount rate combined withapolicyoffreelending.” Although
+disputing thememo’sconclusion regarding the policy’sefficacy, Friedman andSchwartz (1963)
+agreethattheFedhadsoughttomaintain thegoldstandard.
+Besidesthedelayinraisingthediscountrate in 1931,theFed’slong-standing policyof
+limitingtheimpactofgoldflowson the domestic moneystockalsosuggeststhattheFedwas not
+fullycommitted to thegoldstandard. Gold standarddoctrine (the “rules ofthegame”)heldthat
+goldinflows(outflows) shouldbepermitted to increase(decrease) acountry’s moneystockand
+price level soas to induce shifts incapital flows andthebalanceoftradethatwouldlimitfuture
+goldmovements.6Sincethe earlyl920s,however, theFedhadlargelyoffsetreservefluctuations
+causedby flowsofgold, currency andothersourcesbyvaryingthequantityofreserves supplied
+6SeeEichengreen(1992) orTemin(1989)fordetailaboutthe operationoftheinternational goldstandard
+and its roleinthe GreatDepression.
+
+
+4/14/97 12
+byopen-marketoperations anddiscountwindowlending. In essence, theFed “sterilized” gold
+flows, as Benjamin Strongexplained in1926:
+In the old days therewasadirectrelation between thecountry’s stockofgold,
+bankdepositsandthepricelevelbecausebankdeposits were ...based on the
+stockofgoldandborea constant relationship tothegoldstock....Butinrecent
+years the relationship betweengoldandbankdeposits is nolonger as closeor
+direct ...becausetheFederalReserveSystemhasgivenelasticity tothe
+country’s bankreserves.... FederalReservebankcredit isanelastic buffer
+betweenthecountry’s goldsupplyandbankcredit. (Strong, 1926,p. 470)
+Moreover, Strong creditedthe Fedwithpreventing inflationby offsetting goldinflows in 1921
+and1922:
+As the flow ofgoldimports was pouringinto theUnitedStatesin 1921and
+1922,manyeconomists abroad,andinthiscountryas well,expected thisinward
+flowofgoldwouldresultinahugecredit expansion andaseriousprice
+inflation. That nosuch expansion or inflation hastakenplace isduetothe fact
+thatthe amount ofFederalReserve credit in use was diminished asgoldimports
+continued. Thus ...thepresenceoftheReserveSystemmaybesaidtohave
+prevented ratherthanfosteredinflation. (Strong, 1926,p.471).
+Although theFedgenerallysterilized goldflows, itprovedwilling todeviatefromthat
+policywhen itseemednecessary toprotectthegoldstandard. The easing ofmonetary policyin
+1924and1927seemsatleastpartlymotivated by adesiretorepelgold inflows,andthereby
+assistBritain’sability to maintain goldreserves(Wicker, 1966;Wheelock, 1991).Moreover,
+whengoldoutflowsreduced theFed’s reserve ratio in 1920-21, theFedincreased itsdiscount
+rate to7percent(alevel not reached againuntil 1973) andenduredasharpdeflation inorderto
+preserveitsgoldreserve. This episode demonstrated theFed’s resolvetomaintain itsgold
+reserveandset theprecedent foritspolicyinlate1931.Benjamin Strongmayhave
+“discovered” andactivelyused open-market policy,but hewas unwilling to conductpolicy
+outsidetheframework ofthe goldstandard. Hetestifiedin1928that
+Whenyouare speaking ofeffortssimplyto stabilizecommerce, industry,
+agriculture, employment andso on,withoutregard tothe penalties ofviolation
+ofthegoldstandard, you are talkingabouthumanjudgment andthemanagement
+ofpriceswhichIdonotbelieveinatall. (Quoted by Burgess, 1930,pp. 331).
+
+
+4/14/97 13
+LikeStrong,FederalReserve officials in 1931viewedpreservation ofthegoldstandard
+asfundamental tolong-runeconomic stability,andto preserve the goldstandardforthe long-
+termtheywerewillingtoundertake policiesthatmightbedestabilizing in the short-run. Their
+responseto the goldcrisisof1931mayhavesealed the fate ofHerbertHooverand the
+Republicans in Congress, however, andensuredtheelectionofpoliticians whowouldprove
+willing to change dramatically theinstitutions ofmonetary policymaking inthe UnitedStates,
+including the goldstandard.
+Institutional ChangestotheMonetary PolicyRegime1
+Theyear1932markedthebeginning ofaseriesofinstitutional reformswithpotentially
+largeconsequences formonetary policy(seeTable 3). Among the most significant werethe
+Glass-Steagall Actof1932,whichpermitted the FederalReserve touse government securities to
+backitsnoteissues;suspension oftheinternational goldstandardby executive orderonMarch6,
+1933(ratifiedby Congress onMarch9);theThomasAmendment totheAgricultural Adjustment
+Actof1933which,amongotherthings,permitted theFederalReserve to adjustcommercial
+bankreserverequirements; the GoldReserveActof1934,whichauthorized thepresident tofix
+the dollar priceofgoldandestablished the Treasury’s Exchange Stabilization Fund;andthe
+BankingActof1935,whichmarkedly alteredthe structure oftheFederal Reserve Systemand
+expanded theFed’sauthoritytoadjustreserverequirements.
+Bypermitting U.S.Govermnent securitiesto serve asbackingforFederal Reserve notes,
+theGlass-Steagall Actof1932removed animportantconstraint ondiscretionary monetary
+policyandenhanced theFed’sabilityto initiate transactions thatmonetizedgovermnent debt.8
+Although he lent hisnameto theenabling legislation, CarterGlass, whohadsponsored the
+Thissectiondrawsheavily on Calomiris andWheelock(1997), whereadditional detailcanbefound.
+DuringWorldWarI,theFedlentreservestobanksagainsttheirholdingsofU.S.Government securities
+at adiscountratethatguaranteed banksaprofitontheirsecurityholdings. Thisalsohadthe effectof
+monetizing government debt.
+
+
+4/14/97 14
+originalFederalReserveAct, apparently voicedconsiderable worryabouttheinflationary
+potentialofpermitting government obligations to serve as collateral forFederal Reserve notes
+(Chandler 1971,p.189).I arguebelowthatGlasswas prescient in hisconcerns.9
+Thenextinstitutional change came whenPresident FranklinRoosevelt suspended the
+gold standardupon takingoffice inMarch1933.Roosevelt was willing --perhapsforced --to
+takethe step that FederalReserveofficials hadso feared. As in othercountries, economic
+recovery followed suspension andtherebygavecredibility to aregimeof“managed money”(see
+Eichengreen, 1992orTemin, 1989).
+Usingauthoritygrantedby theGold Reserve ActofJanuary1934,Roosevelt fixedthe
+valueofgoldat$35per ounce(the previous levelhadbeen$20.67). Although theownership of
+goldanditsusefordomestic payments remainedprohibited, theUnitedStatesreturnedto the
+gold standard forthe settlement ofpayments with othercountries thatalsowere on the gold
+standard. Therestoredgoldstandard, however, differedfundamentally fromtheprevious
+standard inthedegree to whichitsoperation wasremovedfromprivate markets andplaced
+under control ofgovernment authorities. Americans wereforbidden fromholdinggold,gold
+clauses in privatecontracts weremadeillegal, and theTreasurywouldsellgoldonly for making
+foreignpayments.
+Goldalsowasnolongerregarded as anabsoluteexogenous checkongovernment
+manipulation ofthe supply ofmoney. Underthe weightofthe Great Depression, theideologyof
+thegoldstandard, whichviewedgoldasfundamental toacountry’seconomicprosperity, had
+cracked. Although thedollarremained linked togold, thelink wasweakened and,perhapsmore
+‘TheGlass-Steagall Actof1932wasoriginally settoexpireafteroneyear,butwasmadepermanent in
+1933.Itshouldnotbeconfusedwiththe Banking Actof1933which,among otherthings,established
+Federaldepositinsurance, separated commercial andinvestment banking, and outlawed thepaymentof
+interestondemanddeposits. TheBankingActof1933isalsosometimes referredtoasthe Glass-Steagall
+Act.
+
+
+4/14/97 15
+importantly, government authorities haddemonstrated awillingness tomanipulate thegold
+standardto limittheextenttowhichitwouldinterferewithdiscretionary monetary policy.
+Thereafter, whentheFed’s gold reserverequirement threatened tolimitmoneysupplygrowth,
+thereserve requirements werereducedandultimately eliminated withapparently littledebateor
+fanfare. The goldstandardas itexisted after 1933was thus fundamentally different from its
+precursor, andforeshadowed theBretton Woods goldstandardthatwas toreplaceit afterWorld
+WarII.
+In addition to markingafundamental shift inthe degreeto whichgoldservedasa
+constraint ondomesticmonetary policy, the revaluation ofgoldin1934lefttheU.S. Treasury
+withacapitalgainofsome$2.8billionon itsgoldholdings. Underauthorityconveyed by the
+GoldReserveActof1934,theTreasury used $2billionofitswindfalltoestablish theExchange
+Stabilization Fund:“Forthepurposeofstabilizing theexchange valueofthedollar,theSecretary
+oftheTreasury...is authorized...to deal ingoldandforeignexchange andsuchotherinstruments
+ofcreditandsecurities as he maydeemnecessary.”
+Although theoperations oftheExchangeStabilization Fundduringthel930shadlittle
+effect on the quantity or growthofbankreserves, the sizeandopen-ended authorityoftheFund
+waswidely viewed asathreat totheFederalReserve Systemandits ability to effect monetary
+policy. Forexample, RoyYoung, thenGovernor oftheFederalReserve BankofBoston, argued
+that theGold Reserve Act“gives the Secretary ofthe Treasury such powers,ofapermanent
+nature, thathe couldnullifyanything we[theFederalReserve] coulddo”(quotedbyJohnson
+1939,p. 36).The Commercial andFinancial Chronicle (January20, 1934, p.367)hadasimilar
+reaction: “TheReserveauthorities havebeen reducedto shadowy nonentities, theFederal
+ReserveSystemhaving becomesimplyanadjunctoftheUnitedStatesTreasury andtheFederal
+Government, todowhatthey aretold to do.”
+
+
+4/14/97 16
+In addition to theExchange Stabilization Fund, additional authorities grantedthe
+President andTreasury Secretary includedtherightto“request” the FederalReserve to use open-
+marketpurchases to increasebankreserves by up to $3billion, and, ifthe Fedrefused,toissuea
+commensurate amount offiat currency. Thispowerwasgrantedby theThomasAmendment to
+theAgriculturalAdjustment Actof1933,which, along withthe Silver Purchase Actof1934,
+also authorizedthe purchaseofsilverandpermitted thePresident todevaluethesilverdollar.
+Between 1933and1938,the Treasury purchased 1.8billionouncesofsilver,therebyincreasing
+bankreserves by $1billion(some20percentofthe totalincrease inreserves duringtheperiod).
+HadthePresident chosentodevalue thedollarintermsofsilver, the Treasury wouldhavereaped
+a$2.2billion windfall onitssilverholdings (Johnson 1939,pp. 195-98). Insummarizing the
+variousnew authorities giventheAdministration, Johnson (1939,p. 202) concludes, “The
+President coulddoubleor triple bank reserves, hadcomplete discretion overthegoldvalue--and
+consequently theforeignexchange value--of thedollar, andcouldestablishbimetallism by
+proclamation, inotherwords,hecouldcompletely refashion themonetary systemofthecountry,
+andthesolecriteriarequired were hisownsubjective evaluations ofthesituation.”
+Organizational changes tothe FederalReserve System mayhave alsocontributed tothe
+Fed’swillingness to accept theAdministration’s desiredmonetary policy. The authorsofthe
+FederalReserveActagreedthattheFederalReserve Systemshould not be a“centralbank”on
+theEuropean model, but afederal system ofsemi-autonomous Reserve Banks withan
+overseeing board.Dissatisfaction withthesubsequentperformance oftheFederalReserve, both
+duringthe1920sandduring1929-33, ledto reforms thatenhanced theauthority oftheFederal
+ReserveBoardattheexpenseofthe ReserveBanks. Manner Ecclesacceptedthechairmanship
+oftheFederalReserveBoardin1933withtheunderstanding thathewouldhavefreedomto
+redesignthe FederalReserveSystem.Hisreforms included limitsonthepoweroftheFederal
+
+
+4/14/97 17
+Reserve Bank ofNewYork,whichheviewedas aninstrument oftheprivate interests ofNew
+Yorkbankers,andmeasures to ensure oversight andcoordination oftheactivities oftheregional
+Reserve Banks in pursuitofthe national interest(Eccles 1966,pp.170-72).
+UnderEccles’ plan, whichwaslargelyadopted by theBanking Actof1935,theBoardof
+Governors was given substantial control overopen-marketoperations andFederalReserveBank
+discount rates. The FederalOpenMarketCommittee (FOMC)was reconstituted to include all
+sevenmembers oftheBoardofGovernors andjustfiveofthetwelve ReserveBankpresidents.’°
+Thelegislation therebyincreased theauthority andstatureoftheFederalReserve officials
+locatedinWashington andappointed by the President. Ontheotherhand,italsosoughttolimit
+theinfluence ofthePresident by removing the Secretary oftheTreasury andComptroller ofthe
+Currency asexofficio FOMC members. With his reforms,Ecclesintendedthatmonetary policy
+makingwouldbemadebyprofessionals whoseallegiance wassolelytothenationalinterest.
+These changes, however,increased politicalpressures on theFedatthesametimethat
+establishment oftheExchange Stabilization Fundandothermeasures increased the
+Administration’s powertoconductmonetary policy. Consequently, thesereformsshiftedpower
+away fromthe Fed towardtheTreasury, andpromoted an inflationbias in monetary policy.
+ThePost-War Monetary Regime
+From1933to 1951,the FederalReserve Systemwas largely subordinate totheTreasury
+intheconductofmonetary policy. The Fed increased reserverequirements in1936and1937to
+absorb some ofthelargevolumeofexcessreserves that memberbankshadbuilt-up. A
+subsequent increase in government securityyieldsangeredTreasury officials, however, andthe
+~°TheBankingActof1935alsochangedthe titlesofthechiefexecutive officersoftheFederalReserve
+Banksfromthemoreprestigious “Governor” to“President,” while discontinuingthe FederalReserve
+BoardinfavoroftheBoardofGovernors, whosemembers allheldthetitle“Governor.” TheBoardof
+Governors was alsoauthorized toapprovetheappointments ofFederalReserve Bank presidents and first
+vicepresidents, andtogenerally supervise Reserve Bank operations.
+
+
+4/14/97 18
+Fed was forced to makeopen-marketpurchases andeventually reversesomeofthe change in
+reserverequirements.
+DuringWorldWarII,theFedagreedtopreventgovernment securityyieldsfromrising
+abovepredetermined levels. The Fed remained an instrument ofdebtmanagement until 1951,
+whenrising inflation causedFedofficials to arguefor anindependentmonetary policy.
+Negotiations betweentheFedandTreasuryproduced theAccordofMarch1951, inwhichthe
+Treasury agreed thatthe prices ofgovernment securities shouldbe permitted tofindtheirmarket
+levelsandthe FedagreedtobemindfulofTreasury debtfinancing in carryingout itsmonetary
+policies. Tacitly, theFedacceptedstability ofgovernment securities prices as an objective of
+monetary policy. In particular, theFedfollowedapolicyknownas“evenkeel” inwhichit
+limitedfluctuations in Treasury bill yields aroundTreasury issuing dates.
+The Bretton Woods agreements of1944established theinternational monetary regime
+underwhichtheFedoperatedinthepost-warera.”FromtheendofWorldWarIIthrough
+1958,international tradeandcapitalmovements tookplacetotheextentpermitted byexchange
+andcapitalcontrols, withinternationalpayments settledby means ofbilateralagreements among
+countries. Earlyon, European countries ranlargecurrent account deficits andtheworldsuffered
+froma“dollarshortage.” Americaneconomic strengthandstability, along withtheMarshall
+Planandothercooperative efforts,causedthedollarto emergeas the keycurrencyofthe
+internationalpayments system.As the1950sprogressed, Europestrengthenedeconomically and
+severalcountries ran substantial current account surpluses. The main westernEuropean
+currencies becameconvertible intodollarsforcurrent accounttransactions in1959(various
+capitalcontrolsremained). The UnitedStates,inturn,maintainedconvertibility ofthedollar
+intogoldatthefixedpriceof$35per ounce. Bretton Woods was thus agold-exchange standard,
+SeeBordo(1993) orSolomon(1977)forahistoryoftheBrettonWoodsSystem,andMeltzer(1991)
+formore specificanalysis ofU.S.economicpolicy underBretton Woods.
+
+
+4/14/97 19
+asitsinterwarpredecessorhad been. However, the mechanism ofdollarconvertibility under
+Bretton Woods was fundamentally differentfromthe mechanism ofthepre-Great Depression
+goldstandard,andthe new mechanism explainshowtheUnitedStatescouldconductan
+inflationary monetary policywhilemaintaining afixedexchange ratebetweenthedollarand
+gold.
+Unlikethegoldstandardas itexisted before 1933,under theBrettonWoodsSystem, the
+balanceofpayments couldexertmonetarydiscipline onlyto theextentpermitted bycentral
+banksthemselves. Thismechanism reflectedafundamental shiftin ideology, from onethatsaw
+maintaining goldconvertibility as paramount forlong-runprosperity, to anideology thatviewed
+fixedexchange ratesandgoldconvertibility as desirable, but not so important as to sacrifice
+short-run economic stabilityin defense oftheinternational system.Discretionary monetary
+policy --“managed money” --waspermitted under Bretton Woods to adegreeneverbefore
+achieved under agoldstandard.’2
+UnderBrettonWoods, American balanceofpayments deficits(surpluses) wouldbe
+reflected inrising (falling) foreigncentral bankholdingsofU.S.dollarsunlessforeigncentral
+banksandtheUnitedStates exchanged dollars forgold.Although foreigncentralbanks could
+enforcemonetary discipline ontheUnitedStates,inpracticetheyrefrained fromdoing sountil
+1965,whentheFrenchbeganlarge-scaleconversions ofdollarsintogoldinthefaceoflargeand
+persistingAmerican payments deficits. Throughout thel960s,dollarsheldoutsideoftheUnited
+Statesincreased rapidly,whileAmerican goldreservesdwindled (seeFigure1).“TheUnited
+12Redish (1993) arguesthatBrettonWoodsrepresented justoneof aseriesofsteps away fromagold
+standardoperatedsolelybyprivatemarkets,withlittleornogovernment interference, toaflat monetary
+regime.Asnotedabove,underthe interwargold-exchangestandardthe FederalReserve(andother central
+banks)sterilized goldflowsandusedopen-marketoperations anddiscountratepolicytomanipulate gold
+flows.
+‘~ThedatasourcesforFigure 1areTheRoleofGoldinthe Domestic andInternational Monetary Systems:
+Reporttothe Congress ofthe Commission ontheRoleofGold inthe Domestic andInternational Monetary
+Systems,Volume 1,TableSC-10,column3(U.S.monetarygoldstock)andTableSC-8, columns Iand2
+
+
+4/14/97 20
+States’commitment togoldconvertibility thusbecamelessandlesscredible. Numerous
+remedies otherthanasubstantial tightening ofmonetary policywereattempted toimprovethe
+U.S.payments deficit.But,withoutaddressing thefundamental problem, the Bretton Woods
+Systemwas destinedtocollapse,which itdidwhenPresident Nixonclosedthegoldwindowon
+August 15,197l.’~
+American Inflation
+TheBretton Woods System collapsed becausethedollarshortageofthel950swas
+replaced byadollar glut inthe1960s. TheFederalReservepursuedamonetary policythat
+contained inflationthroughout muchofthedecadefollowingtheFed-TreasuryAccord ofMarch
+1951. Asillustrated inFigure 2,during the1950s,thegrowth rate ofMl(which consistsmainly
+ofcommercial bank demanddeposits and currencyheldby the public) generally movedopposite
+totherateofinflation (asmeasured herebytheConsumer Price Index).’5Inflation controlwas
+notthesoleobjectiveofmonetary policyduringthel950s,butdidgenerally coincidewiththe
+Fed’s other objectives oflimiting fluctuations innational output andemployment andpreserving
+stability ofthegovernmentsecurities market.
+The money supplygrowthrate begantoaccelerate intheearly1960sand,bythemid-
+1960s,inflationhadalsobeguntorise(Figure2). The desires ofFedofficialstopromotefull
+employment andtostabilizetheyieldson government securities explaintheinitialacceleration
+ofmoney growth. Fed officials remainedcommitted tocontrolling inflation, however, andthe
+accelerating inflationrateofthe1960sdid notreflectasubstantial changeinthetastefor
+inflationamong Fedofficials. Rather, the Fed stumbled into aninflationary policyasmuch
+(world monetary goldstock),and International Monetary Fund,International FinancialStatistics
+Supplement, 1972,pp.2-3,rows4and4a(U.S.externalliabilities).
+14Asystemoffixedexchange rateswasimposedbytheSmithsonian Agreement in 1972,butthissystem
+collapsedin1973andthedollarhassincefloated.Sincemyinteresthereconcernsthe endofdollar
+convertibility intogold,ItreatAugust15,1971asthedateatwhichthe BrettonWoodsregimeended.
+‘~Allseries inFigures2-4aresmoothed usingacentered13-month movingaveragefilter.
+
+
+4/14/97 21
+becauseofflaws inits operating strategyasbecauseofadesiretopursueobjectivesother than
+inflationcontrol.
+Theoperatingframework ofFederalReservepolicy inthe 1950sand1960swas much
+likethatwhichBenjamin Stronghaddescribed inthe 1920s.Thatstrategywasflawed because it
+permitted destabilizingfluctuations inthe supply ofmoney. Ibelieve thishelpsexplainwhyFed
+officials wereable to convincethemselves thattheir policieswerepromoting recovery from the
+Depression wheninfacttheywerepermitting acontractionary declinein themoneystock
+(Wheelock, 1991).Similarly,the Fed’suseofthisoperating strategyinthe1960sexplainshow
+Fedofficials couldarguethatpolicywas “leaningagainst the wind”ofinflationdespite
+accelerating moneysupplygrowth.
+The Fed’s interwar-era policy strategy, anditspost-Accord reincarnation, focused on the
+levelsofmarketinterest ratesandthenetborrowed, or“free,”reservesofcommercial banks.
+Fedofficials engagedinopen-marketoperations toaltertheleveloffreereserves, whichequals
+thedifference betweenreserves that banks hold inexcessoflegalrequirements andreserves
+borrowed fromthe Fed’s discountwindow. Throughfreereserves, theFedsoughttomanipulate
+moneymarketinterest rates(Treasury billyields inthe early1960s,thefederalfundsrate later
+on).Open-market purchases (sales) tendtoaddto(subtract from)thestockoffreereserves, and
+anincrease (decrease) infree reserves wasviewed asaneasing (tightening) ofpolicy. The level
+offreereserves is plottedalongside the rate ofinflationfor the periodfromtheAccord (March
+1951) through December 1971inFigure3.TheFedtendedto reducefree reservestocombat
+increasesininflation, andincrease free reserves wheninflation was declining. ThusFed
+officials soughtto contractthe leveloffree reserves in response tothegenerally risingrateof
+inflation ofthe1960s. Because market interest rates tended torise, Fed officialswerefurther
+convinced thatpolicy was tight.
+
+
+4/14/97 22
+Many economists, especially monetarists,criticized the Fed’s policystrategybecause of
+itstendency toexacerbate swings in moneysupply growth.’6Asillustrated inFigure 4,money
+supply growth acceleratedthroughout muchofthe1960s,evenasFedofficialsratcheted down
+thelevel offreereserves. Theevidence therefore doesnotindicatethatFedofficials lacked
+concern for inflation orfailed toattempt tocheckthe rising pricelevel.Nevertheless, the Fed’s
+policypermitted themoneysupplyto riseataninflationary rate.
+TheFederalReserve was notpowerless to haltthe rising inflation, andFedofficials
+understood that inflationwascontributing totheAmerican balanceofpayments deficitand
+threatening thegoldstandard. Still,under the Bretton Woods System, U.S. policymakersdid
+nothave tomake price stability thesole, oreven primary, objective ofmonetary policy aslong
+asothercountries werewilling to holdthegrowingsupplyofdollarsavailable onworldmarkets.
+Foreigncentral banksdidforbearforatime,particularly sincethedollarwas thekeycurrencyof
+theinternationalpayments system. This gavetheUnitedStatesbreathing room --not,asit
+turned out, to correctitsbalance ofpayments deficit,but topursueotherpolicy goalswhile
+inflationworsened andthe collapse ofBretton Woods becameinevitable.
+TheMonetary Policy Legacy oftheGreat Depression
+TheFederalReserve stumbledinto an inflationary monetary policyintheearly1960s
+because,absentdiscipline exertedby balance ofpayments deficits, policymakerswereable to
+pursueotherobjectives, namelyemployment growthandlow interestrates on government debt.
+With itsfocuson free reserves andinterest rates, theFed’soperating framework tendedtocause
+moneysupplygrowthtoaccelerate ataninflationary pace aseconomic activityexpanded.
+BecausetheFedhadused much the same operating framework beforetheDepression, thiscause
+ofinflationary policyduringthe1960s was not a result oftheDepression havingoccurred.
+16Meigs(1962) andBrunnerandMeltzer(1964)wereamongtheearliestcriticsofthe Fed’s freereserves
+strategy.
+
+
+4/14/97 23
+Keynesian Macroeconomics andMonetary PolicyMaking
+Muchofthe“inflationary bias”inmonetary policyduringthe1960scan,however, be
+attributed to changedinstitutions andeconomic policyideologycaused by theGreatDepression.
+Keynesian macroeconomics anditsinfluence oneconomic policy making was an important
+ideological productofthe GreatDepression. The influence ofKeynesianeconomic ideas on
+policy making duringthe1960shasreceivedconsiderable attention (e.g.,DeLong, 1995),with
+Lucas (1980,p. 704) writingthatoneofthe“mainfeaturesoftheKeynesian Revolution andthe
+neoclassical synthesis intowhichitevolvedintheUnitedStates ...[was] the onset ofthe Great
+Depression andtheconsequent shiftofattentionfromexplaining arecurrentpatternofupsand
+downstoexplaining aneconomy apparently stuck inan interminable down.”
+Keynesian-oriented policymakersbelievedthatmonetary andfiscalpolicycould
+reliablyincreaseaggregate demandandemployment alongastablePhillipscurve.Centralto
+discussions ofmonetary policyamongFederalReserve officials was the perceived tradeoffof
+unemployment andinflation. AsFederalReserveGovernor ShermanMaiselexplained it,“There
+isatrade-off betweenidlemenandamorestablevaluefor thedollar. Aconscious decision
+must bemade astohowmuch unemployment andlossofoutput must bemade inorder toget
+smaller price rises”(Maisel, 1973, p.14). Maisel added “that atleastsome oftheCommittee’s
+differences onpolicyreflected differences inbasicvaluejudgments regarding therelative
+importance ofvariousconflicting goals --forexample, regarding the appropriate trade-off
+betweenemployment andpricestability” (FOMCMinutes, October20,1970,p.41).’~
+Maisel’sviews were widely sharedamong his colleagues, including ArthurBurns,who
+becameChairman oftheFederalReserveBoardofGovernors in 1970.Burnsconsistently was
+‘~TheMinutesoftheFederalOpenMarketCommittee arenotverbatimtranscriptions ofFOMC meetings.
+Theydoappeartogiveareasonably fullaccountofthe discussion, however, andattributecomments to
+individuals byname.
+
+
+4/14/97 24
+among those favoringan easymonetary policyin1970and1971,andoftencitedthe
+consequences ofmonetary policyforemployment. At an FOMC meetingonMarch9,1971,for
+example, MaiselreadaNewYorkTimes editorial totheeffectthat“anyonewhowasapartyto
+theuseofunemployment tocombatinflationhadamoraldutytoleadtheway,eitherby
+relinquishing his jobor bycontributing his incometo thesupport oftheinvoluntarily
+unemployed.” Burns repliedthat“hewantedto endorse Mr.Maisel’s ...comments,” thatthe
+ongoingeconomic recovery was“fragile”andthat“rising[interest] ratescouldprove fatal tothe
+prospects forrecovery” (FOMC Minutes,March 9,1971, pp.44~49)~18
+Toavoidconfronting theinflation-unemployment tradeoff,Burns,likemanyofhisFed
+colleagues, advocated wageandpricecontrols sothat monetary policy couldfocus onfighting
+unemployment. Moreover, Burnsfrequently arguedthatinflation associated withincreases in
+wagesandotherproduction costs, asopposedtoexcessive monetary growth, should not be
+fought with tight monetary policy. AtanFOMC meeting onJune 8,1971, forexample, he
+argued that“Monetary policycoulddoverylittle to arrestan inflationthatrestedsoheavilyon
+wage-cost pressures.... Amuchhigherrateofunemployment produced bymonetary policy
+wouldnot moderate suchpressures appreciably.... He intendedto continuetopress[the
+Administration] hard foraneffective incomespolicy”(FOMCMinutes, June 8,1971, p.51).
+BurnsandotherFedofficialsfrequently arguedthatmonetary policy could noteffectively
+controlinflation, butthatfiscalpolicyandwageandpricecontrolscouldbetter accomplish the
+task.Monetary policy, on theotherhand, should prevent interest ratesfromrising andchoking
+offeconomic growth. Inarguingagainst apolicytightening in April 1971,Burnscontended that
+anyincrease in long-term interestrateswouldslowthe economy “andthenationmight thenenter
+8SeeWells(1994)foranalysisofBurns’views.
+
+
+4/14/97 25
+onalong period ofeconomic stagnation. The FederalReservecouldnotpermitthat
+development” (FOMCMinutes, April 6,1971, p.56).
+Duringthel960sand1970s,Fedofficialsbelievedthatpolicyactionstopushdown
+interestrates couldpromoteoutputandemployment growth.Suchactionwould notnecessarily
+causeinflation, theyargued,andifit did, inflationwas an acceptable costofhighemployment.
+Moreover, wageandpricecontrolscouldlimitinflation. It ismyviewthatFederalReserve
+policymakerswereno lessconcerned about the unemployed andtheprospects foreconomic
+growthduringtheGreatDepression. Theirviews about howmonetary policycould beused to
+fostergrowth,however, werealmostdiametrically opposedto thoseofFedofficialsinthe1960s
+andearly1970s.
+IntheDepression, acommonviewamongFedofficials was thatpumping liquidity into
+theeconomy would onlyprolongtheDepression bydelaying theadjustments towagesand
+prices thattheysawasnecessary forarecovery tobegin. Oneexample ofthispoint ofview is
+evident inthe comments ofWilliamMcChesney Martin,Governor oftheFederalReserveBank
+ofSt.LouisduringtheDepressionand fatherofWilliamMcChesney Martin,Jr.,theFederal
+Reserve Board’s Chairman from 1951 to1970. Inearly 1930, Martin argued,
+Icannot seehow thesituationcanbebenefited by putting fiftymillionsof
+dollars, or,infact,anyotheramount, intothe general marketatthistime.... The
+reason thatmore money isnot being used is because itisnot needed, andwhen
+there isalreadysufficient moneyto meettheexpressed needs, itseems tome
+unwise artificially toaddtotheamountalreadysufficient ...becausebasedona
+redundancy ofmoneyratherthanon actualneeds maybe hazardous. (quotedby
+Chandler, 1971, p.142)
+Asimilar viewwasexpressed by George Norris,Governor oftheFederalReserve Bankof
+Philadelphia:
+Webelievethatthecorrection mustcomeabout throughreducedproduction,
+reducedinventories, thegradualreduction ofconsumer credit,theliquidation of
+securityloans,andthe accumulation ofsavings through theexercise ofthrift....
+Wehavebeen putting out credit ina period ofdepression, whenitwas not
+wantedandcouldnot beused. (quotedby Chandler, 1971,p.137).
+
+
+4/14/97 26
+The Governor oftheFederalReserve BankofSanFrancisco, JohnCalkins, also arguedagainst
+tryingtostimulate theeconomy by lowering interest rates: “Withcreditcheapandredundant we
+donotbelievethatbusiness recovery will beaccelerated by making credit cheaperandmore
+redundant” (quotedby Friedman andSchwartz, 1963, p.372).
+The views ofMartin, Norris andCalkinswerenotatypicalamong FederalReserve
+officialsduringthe1930s.Norwasitunusualforgovernment officialsoutsideoftheFederal
+Reserve to hold similarviews. Secretary oftheTreasury AndrewMellon,forexample, believed
+thatthebestmedicine fortheDepression was to “Liquidate labor, liquidate stocks,liquidatethe
+farmers,liquidatereal estate ...purgetherottenness outofthe system” (quotedbyEichengreen,
+1992,p.251).Suchaprescription couldhardlybecalled“Keynesian.”
+PoliticalPressures on theFed
+Themacroeconomic modelusedbyFederalReserveofficials duringthe1960sand
+l970swas quite differentfromthatusedin theearly1930s.Sotoo was the extenttowhichthe
+FederalReserve waspressured byothergovernment officials.
+Although theFederal Reserve hasneverbeenatruly“independent” centralbank,certain
+institutional changesoccurring as aresultofthe Great Depressionsubjected theFedtogreater
+politicalpressure, whileatthe sametimeincreasing the opportunity for theFedtomonetize
+fiscal deficits. Together these changes addedan inflation biastomonetary policy.
+The Glass-Steagall Actof1932, asnotedpreviously, permitted U.S.Government
+securities to serve as partial backingforFederalReservemonetaryliabilities. Thusmonetization
+offiscaldeficits couldoccur eveniftheFedheldnoexcess gold orcommercial paper reserves.
+Inthe1930s,specialauthorities given by Congress to thePresident to fixthevalueofthedollar
+interms ofgold,tomonetize silver,tobuyandsell foreign exchange andeventoorderthe
+Federal Reserve tomakeopen-marketpurchases allweakened the Fed’s ability to conductan
+independentmonetary policy.Inaddition, changesto thestructureoftheFederalReserve
+
+
+4/14/97 27
+Systemitselfincreased theconcentration ofpowerwithin the Fed inthe handsofgovernment
+appointees located in Washington.
+Although theFed-Treasury Accordof1951returnedameasureofindependence tothe
+Fed, thelevel andstabilityofgovernment security yields remainedakeyfocusofmonetary
+policy. Part oftheexplanation forthisfocus may restwiththe Korean andVietnamWars.The
+Fedhadensuredplentifulandinexpensive funding forthe Treasury duringthetwoworldwars,
+andtheFedmayhave soughtto limit increasesin government securityyieldsduringtheKorean
+andVietnam episodes outofasenseofpatriotic duty.’9Abyproduct ofsuchapolicy,ofcourse,
+wasafasterrate ofincrease in thesupplyofmoney.
+NewDealchangestothe Fed’sinternal structure mayhave alsocontributed towardits
+policyoflimitingincreases ininterestrates.Byreducingthe role ofFederal Reserve Bank
+presidents infavoroftheBoardofGovernors, theBanking Act of1935subjected theFedto
+greaterpolitical influence byconcentrating powerinthehands ofWashington-based officials
+whoarepresidentialappointees. Politicalinfluence onmonetary policyhasbeenthesubjectof
+extensive study(e.g.,Wooley, 1984;Havrilesky, 1993),andageneralconclusionseems to be
+thatthe short, finite horizonofpolitical election cyclesgives politicians anincentive tofavor
+moreexpansionary monetary policiesthandoes the public asawhole. To the extentthat
+politicians are ableto getthemonetary policytheydesire, theresult is ahigherlong-runrateof
+inflationthanwould otherwise occur.Thuscountries withlessindependent central banks tend to
+havehigher inflation ratesthan countries withrelativelyindependent centralbanks.
+Aninfamous example ofFederalReserveacquiescence topolitical pressurecame in
+1972 when attherequestoftheAdministration ArthurBurnswas allegedtohaveincreased the
+moneysupplygrowth rate to promotePresident Nixon’sreelection (seeWells, 1994for
+~EvidenceofthisisgiveninCalomiris and Wheelock (1997).
+
+
+4/14/97 28
+discussion). Whetheror not such overtpressurewas exerted, it is clearthatunderbothBurns
+andMartinpolitical considerations influenced thesetting ofmonetary policy. With the possible
+exception ofNixon’sreelection, such pressurewas not overtly connected toelections, butrather
+toconsideration oftheAdministration’s or Congress’ policypreferences. To theextentsuch
+considerations influenced policyoutcomes, theywouldalmostalways havedone soon the side
+ofpromoting inflation. 20
+Monetary Policyandthe Balance ofPayments
+TheFed’soperating strategy, desireto promotehighemployment, andpressures onthe
+Fed tokeepinterestrateslowallgavemonetarypolicy abiastowardinflation. By themselves,
+however, theycouldnothaveresultedinasustained inflationwithoutanaccommodating
+internationalmonetary regime.Undertheclassical goldstandard, forexample, an inflationary
+monetary policycould nothavebeen sustained. But, under Bretton Woods,sustained inflation
+was possible aslongasforeigncentralbankswerewilling to holdthedollarstheyaccumulated
+as aresultoftheAmericanpayments deficit,ratherthandemandpayment ingoldforthose
+dollars.
+Although theBretton Woods System provided someinsulation fordiscretionary
+monetary policy,FederalReserve officials understood thattheUnitedStatescould not run a
+balanceofpayments deficit indefinitely. But, Fedofficials were also waryofcombating a
+balanceofpayments deficitwithpolicies that mightinterferewithothergoals. On oneoccasion,
+~°Burnshadacloserelationship withNixonandclearly understood the monetarypolicy desiredbythe
+Administration. Twoexamplesofthe interjection ofpolitical considerations intomonetarypolicy
+discussionsoccurred atameetingoftheFOMCinOctober1970andJanuary 1971.On thefirstoccasion,
+Burnssuggested thatcommittee membersconsiderthe‘judgments ofmembersofCongress, senior
+officialsoftheAdministration, andothers”when attempting todetermine howhightheywerewillingtolet
+the unemployment rateriseinfightinginflation(FOMCMinutes,October20,1970,p.41).Three
+meetingslater,Burnstoldthecommittee that“TheAdministration’sconfidence intheSystemwas
+weakening asaresultoftheshortfalls thathadoccurredintheratesofmoneygrowth.... Thecredibility of
+theFederal Reserve wouldbe greatly strengthened ifitbecameapparentthatthe Committee was seeking to
+makeupthe...shortfall” (FOMCMinutes,January12,1971,p. 37). SeeCalomiris and Wheelock(1997)
+forexamplesofpoliticalpressure ontheFedwhenWilliamMartinwasFedchairman.
+
+
+4/14/97 29
+President AlfredHayesoftheFederalReserveBankofNewYork,arguedthat“Iwouldthink it
+unwise to letthe goldoutflowitselfaffectourmonetary policydirectly, i.e., inthe way ofusing
+atightening movedirectedspecifically towardstemming theflowandunrelated todomestic
+economic developments”(FOMC Minutes, November 10,1958,p.14-15).Anothertime, a
+Reserve Bank president expressed concernaboutthe balanceofpayments deficit,but was
+reluctant toadvocateatighterpolicyforfearofdisrupting themarketforgovernment securities:
+“Generally, he feltthat the courseofmonetary policyshouldbe movingtoward amore
+restrictive posture. At thesame time, hewas quite concerned abouttheratepicturein the
+governmentsecurities marketandtheproblems facing theTreasury in the future” (FOMC
+Minutes,May5,1959, p.34).Thisreluctance to facesquarely goldoutflowsandabalanceof
+payments deficit stands in marked contrast totheFed’sreactiontogoldoutflows in1931.At
+thattime, Fed officials agreed thatmaintaining convertibility ofthedollarintogoldataconstant
+price wasfundamental tolong-run economic stability, andtheywere willing totightenmonetary
+policy inthemiddleofadepression topreservetheinternationalmonetary regime.Bycontrast,
+inthe1950s and1960s, Fedofficials viewedthebalanceofpayments withconcern, butwere
+hesitant to makeitthesole,oreventhe primary, focus ofpolicy. This changeinphilosophy,
+attaching lessimportance to thegoldstandardrule andmoretodiscretionary policywas an
+important legacyofthe GreatDepression.
+Although Fedofficialswereunwilling to tightensufficiently to arrestthebalanceof
+payments deficit,theydid seethedeficit as influencing their ability to promotedomestic
+economic activity. Chairman Martin,forexample, arguedthat“IftheFederal Reserve got the
+reputation offollowing acheapmoneypolicyjustfor thesake ofdoing so, peopleabroadwould
+beencouraged tothinkthe System wasnotconcerned withthe balance ofpayments or the
+soundness ofthedollar”(FOMCMinutes, December 13,1960, p.40). Martin alsoargued that
+
+
+4/14/97 30
+“Thebalanceofpayments problem ...was avitalfactorinthe unemployment situation. Foreign
+capital was findingtheUnitedStateslessandless attractive, therewere pressures formovement
+ofcapital abroad, andthiswashavingadeleteriouseffect on employment inthiscountry”
+(FOMCMinutes, March 6,1962, p.56).
+Fedofficialsalsounderstood thatthe balance ofpayments deficitstemmed from
+differences in themacroeconomic policiesofdifferent countries. AtaFOMCmeetingin1959,a
+Fedstaffmember reported that“Thenetresultofattempts in thiscountrytovalidateourwage
+andpricepoliciesthroughmonetary expansion could succeedonlyifwecouldinflate the whole
+world.” The staffmemberwenton toargue thatexpansionarymonetary andfiscalpolicycould
+“priceUnitedStates’ goodsout ofworldmarkets” becauseofficialsofothercountries, notably
+Germany andTheNetherlands, surelywould not permitinflation in theirdomestic prices
+(FOMCMinutes, May5,1959,p. 14).Thesameofficial,however, wasunwilling toblame
+monetary policyalonefor thebalanceofpayments deficit. In arguingthatgoldoutflows“call
+foragenerallyrestrictive creditpolicy ...more effective corrections ...would bemoves toreduce
+thebudgetary deficitandthe checking ofpricerisesduetowageandothercostincreases”
+(FOMCMinutes,October 21,1958).
+TheFed’sunwillingness to tightensufficiently to stem thebalanceofpayments deficit
+ledit toconsiderotheractions it might take. One oftheearliestofthepoliciesintended to
+restoreexternalbalancewas “OperationTwist”--an attempt to raise short-term interestrateshigh
+enoughtoattractforeigncapital, while keepinglong-term interestrateslowenoughtofavor
+domestic expansion.
+Otherpolicies intended tocorrectinternationalpayments imbalances without slowing
+domestic activity included agreements with foreign central banks toforebearfromdemanding
+gold, intervention inforeign exchange markets, theissuance offoreign currency-denominated
+U.S. bonds (“Roosabonds”), requestsofearlyrepaymentby foreigngovernments ofdebts tothe
+
+
+4/14/97 31
+U.S.Government, the removal ofinterestrateceilings on U.S. banktime deposits, capital
+outflowconstraints imposedin theUnitedStates,andchanges in U.S.taxtreatment offoreign
+earnings. Balanceofpayments deficitscontinued, however, andthelong-term feasibility ofthe
+existingdollargold-exchange standardgrewincreasingly doubtful.
+The Collapse ofBretton Woods
+WhenArthurBurnstookoveraschairmanoftheFed’s BoardofGovernors inearly
+1970,the U.S.economy wasslidingtoward arecession, the inflation rate stoodat6.5percent
+(firstquarter average annualized rateofCPI inflation), andthe U.S.balanceofpayments had
+beenindeficitnearlyeveryyearsincethelate1950s.Athisfirstmeeting,Burnsannounced that
+“inhisjudgment, economic developments hadreachedapointatwhicharethinking ofmonetary
+policywas inorder” (FOMC Minutes, February 10,1970,p.3). Itquickly became apparentthat
+Burnswouldmake avoidance ofarecession hisfirstpriority. Against threedissents,theFederal
+OpenMarketCommittee votedtoeasemonetary policy atthatmeeting. Oneofthedissenting
+votes came from AndrewBrimmer, whoexpressed thehopethat “the Committeewould notlose
+sightofthehighlyunfavorable outlookforthebalanceofpayments andwouldgivethepayments
+balancesomewhat greaterthancustomary weightinformulating policyoverthenearterm”(ibid,
+p.59).
+FederalOpenMarketCommittee meetings usuallybeginwithanalysisofeconomic
+conditions by Fed staffmembers, andduring1970and1971,thestafffrequently expressed
+pessimism aboutthebalanceofpayments deficit.Following the staffreports,thereusuallywasa
+report from aFedgovernor, oftenDewey Daane,whoattendedaregular meeting ofcentralbank
+officials inEurope. The U.S. payments deficitwasaprincipal topic atthosemeetings, withthe
+Europeans frequently questioning American resolvetocontrol inflation(see, e.g., FOMC
+Minutes, June 23, 1970).The balance ofpayments seemsto have hadlimitedimpacton FOMC
+
+
+4/14/97 32
+deliberations,however, becauseafterhearingthesummary ofthe European meeting,the
+Committee wouldreviewdomestic economicconditions anddiscussthepolicydirective, usually
+withlittle ornoreference tothebalanceofpayments.
+At the FOMC meetingofOctober20, 1970,theFedstaffgave aparticularly lengthyand
+pessimistic reporton thebalanceofpayment. Following the report, Burns“said hecouldadd
+onewordofreassurance. Workon thebalanceofpayments problemwas going forward actively,
+andhewasconfident thatadequate measures forgrappling withtheproblemcouldbedevised”
+(FOMCMinutes,October20,1970,p.21).Fromthiscomment, itis clearthatBurnsviewedthe
+balanceofpayments deficitasaproblemthatcouldbecontrolled effectively withoutmonetary
+policyaction. Moreover, the comment reflects the factthatthe Treasury, especially
+Undersecretary PaulVolker,wastakingthe leadin devising America’sinternational economic
+policy.
+Despitetheseeminglackofinfluence ofthebalanceofpayments deficitonFederal
+Reservepolicy,someoftheFed’sstaff aswellas theoccasional governor, warnedaboutthe
+worseningpayments deficit.At anFOMC meetingon June 23, 1970, thefirstvicepresident of
+theNewYorkFedarguedthat“Aconvincing andsustained attackondomestic inflationremains
+essentialforimproving ourbalanceofpayments andstrengtheningconfidence inthedollar”
+(FOMCMinutes,June23,1970,p.57).Onanotheroccasion, AlfredHayes,President ofthe
+NewYorkFednotedthat“astiffpriceisbeingpaidfor theeasing ofmoneymarket conditions in
+theUnitedStates.... International conditionsunderline theneedforgivinghighpriorityto the
+inflationproblem” (FOMCMinutes, September 15,1970,pp.43-44). But,Governor Maisel
+repliedthat
+Itwouldbeimproper to assumethat balanceofpayments considerationsshould
+be aconstraint on [policy]. Ifthebalanceofpayments remained unsatisfactory
+withdemandstill farbelownormal, that wouldappearto be an indication of
+basicstructuralproblems inthebalanceofpayments sphere.TheCommittee
+shouldbe workingtocorrectthose structuralimbalances ratherthanassuminga
+
+
+4/14/97 33
+posturewhichtraded offlossesofincome,output,andjobsinanattemptto
+offsetbasicstructural defects inthe balanceofpayments sphere. (ibid. p. 46)
+ArthurBurnsaddedthat “Hebelievedthatbalanceofpayments considerations should not
+preventtheCommittee fromtakingthepolicyactions it felt requiredby thedomestic economy”
+(ibid.p.65).Laterinthesamemeeting Burns advocated “specialmeasures,”presumably capital
+controlsor similarmeasures, to dealwith the balanceofpayments deficit(ibid,p.81). Burns
+reiterated thisviewonFebruary 9,1971:“Chairman Burnscommented thatwhiletheSystem
+wasfacedwithinternational aswellasdomesticproblems, thelatterwerethemorepressing.
+Moreover, special tools were available fordealingwiththeformer”(FOMC Minutes, February 9,
+1971,p. 92).
+Thebalanceofpayments deficit grewincreasingly worse inearly1971,andthe Fed’s
+staffwarnings becamestronger. At the MarchFOMCmeeting,aFedstaffmember warned that
+“Sooner or later —andhesuspected thatitwouldbesooner --thecentralbankcomplaints now
+beingvoicedprivately [about theirbuild-upofdollarbalances] wouldbecomeknown to the
+market,whichmight thendecidetoprotectitselfagainsttheriskofasuddenbreakinthe
+structureofexchange parities”(FOMCMinutes,March9,1971,p. 22).Anotherstaffmember
+reportedthat
+1)thebalance ofpayments deficit inthe firsttwo months ofthisyearwas
+enormous; [and]2) themonetary aggregates havebeengrowingveryrapidly.
+Whatconnectsthesetwo setsoffacts istheverysteepdeclineinshort-term
+interestrates. It isnot surprising, therefore,that the short-term capital outflow
+hasbeenextremely large.... Considerable reluctance hasbeenbuilt upabroad,
+especially amongfmancialofficialsinEurope,over whattheyregardasan
+undermining oftheirownmonetary policiesresulting fromthemassiveshort-
+term capital outflows fromtheUnitedStatesandfromthesteep declineinshort-
+term rates. Theimpression exists that ...theUnitedStateshascompletely
+ignoredtheeffects its policiesarehavingon therestofthe world. (ibid, pp. 28-
+29)
+As theyear1971progressed,the international payments crisis worsened. AttheFOMC
+meetingofMay11,NewYorkFedpresident Hayesremarked that “We are ...inthemidstofan
+
+
+4/14/97 34
+internationalmonetary crisis.... Avoteofno confidence inthe dollarhasbeentakenby several
+centralbanks”(FOMCMinutes, May11,1971,p.53).Hayesalsoreportedthatthedirectorsof
+theFederal Reserve Bank ofNewYorkhadvotedto increase the Bank’s discount rateby1/2
+point,the same step takeninresponse to aflightfromthedollarinOctober1931:
+The directors felt in thismajorinternational crisistherewasnothingthe System
+coulddothatwouldbemoreuseful andmoretimelythantogiveanovertsignal
+ofourconcernandourwillingness tomove quickly towardnarrowing the
+interestrate spreadwhichwasamajorcauseofthedifficulty.... While
+recognizing therisksinvolved inageneral increase in domestic interestrates,
+theyfeltthatthoseriskswere outweighed byinternationalconditions. (ibid,pp.
+55-56)
+TheBoardofGovernors turneddowntheNewYorkBank’srequestforadiscountrate
+increase, citing weakness inthe domestic economy, the adverse effects ofhigher interest rateson
+themortgage marketandthemarketforstateandlocalgovernment debt,andthelikely
+instability that adiscountratehikewouldcausein all financial markets. At thepriorFOMC
+meeting, Burns seemtohavepredicted theNewYorkBank’srequestforadiscountrate increase
+whenhe relayedthat“He hadavividrecollection ofdevelopments in 1931, whentheFederal
+Reservehadraisedits discountrateandacted to stiffen short-term ratesbecauseofabalanceof
+payments problem, andanincipient [domesticeconomic] recoveryhadbeencutoff”(FOMC
+Minutes, April6,1971,p.56).For Burns, thelessonof1931was to put thedomestic economy
+first,aheadofthebalanceofpayments andpreservation ofthegoldstandard.
+Conclusion
+Thefailuresofeconomic policy,especially monetary policy, during theGreat
+Depression produced severalsignificant institutional andideological changesinthemonetary
+policy regime. Notsurprisingly, becausemonetary policywas associated withdeflation and
+contraction during1929-33,the newregime included featuresthatgavepolicyan inflationbias.
+Thosefeaturesincludedbothanewavenue for monetizing government debtandincreased
+
+
+4/14/97 35
+political control ofFederalReserve policy. The Great Depression alsoputtheneweconomics of
+Keynes, with its emphasis ongovernment management ofaggregate demand,into the
+professional andpolicymainstream.
+The most fundamental legacyofthe Great Depression formonetary policy,however,
+concerned theinternational goldstandard. Althoughgovernments interferedwith theoperation
+ofthegoldstandardbefore 1933, andanunsettled questionamongeconomic historians isthe
+extenttowhichalaissez-faire’ goldstandardwouldhaveprovedmorestable,akeylessontaken
+from theGreat Depression was thatthe internationalmonetary systemrequiredactive
+management ofgovernment officials. Faiththatthegoldstandardwouldensureprosperity was
+destroyed, aswasanynotionthatadisasterworsethantheDepression would result ifthegold
+standard was abandoned. Beginning in 1933,andcontinuing atleast tothe 1970s,thedominant
+ideologywas thatagoldstandardandfixedexchange rates aredesirable, but notworth
+sacrificing highemployment to maintain. Thischange in attitude,andtheinstitutional changes
+accompanying it,largelyexplains theinflationary monetary policyofthel960sandearly1970s,
+aswellasthedecisiontoabandongoldandfixedexchange ratesin1971-73.
+Sincethe l970s,thependulum hasswungaway from inflationarymonetary policy
+somewhat. The costs ofhighinflationandthe seeming inabilityofaggregate demandpolicyto
+maintain fullemployment helpedpromote NewClassical macroeconomics andcauseda
+rethinking oftheappropriate goals ofmonetary policyamong government officials. Several
+countries nowspecifyinflationtargetsfortheircentralbanks,andhaveformallyadopted price
+stabilityas the paramount objective formonetary policy. The institutional environment of
+monetary policyintheUnitedStates,however, has notchangedsince1973,whenfixed
+exchange rateswere abandoned. The legacyofthe Great Depression formonetary policy was in
+causinganinstitutional andideological shifttoa managed, discretionarymonetary regime. The
+fundamentals ofthisregimeremain inplace today.
+
+
+References
+Anderson, GaryM., Shughart, WilliamF.andTollison, RobertD. “APublicChoiceTheoryof
+theGreat Contraction,” PublicChoice(October 1988):3-23.
+BoardofGovernors oftheFederalReserve System. BankingandMonetary Statistics, 1914-41.
+Washington, D.C.,1943.
+Bordo, Michael D., “TheBretton Woods InternationalMonetary System:AHistorical
+Overview.” In ARetrospective ontheBretton Woods System:LessonsforInternational
+Monetary Reform ,editedby Michael D. BordoandBarryEichengreen. Chicago:
+University ofChicagoPress,1993:3-98.
+Brunner, Karl,andAllanH.Meltzer. “What DidWeLearnfromtheMonetaryExperience ofthe
+UnitedStatesIntheGreatDepression?” Canadian JournalofEconomics 1(May1968):
+334-48.
+and------.TheFederalReserve’s Attachment to theFreeReserves Concept. Staff
+Analysis, Committee onBankingandCurrency, UnitedStatesHouse ofRepresentatives,
+88th Congress, 2ndSession, 1964.
+Burgess, W.Randolph, ed.Interpretations ofFederalReservePolicyin theSpeeches and
+WritingsofBenjamin Strong. NewYork: Garland, 1983[1930].
+Calomiris, CharlesW. andDavidC.Wheelock. “Wasthe GreatDepression aWatershed for
+AmericanMonetary Policy?”NBERworking paper,1997.
+Chandler, Lester V.Benjamin Strong: CentralBanker. Washington, D.C.:Brookings
+Institution, 1958.
+.American Monetary Policy,1928-1941. NewYork:HarperandRow,1971.
+De Long, J.Bradford. “America’s OnlyPeacetime Inflation: The 1970s.”Manuscript.
+University ofCalifornia, 1995.
+Eccles,Manner S.~eckoning Frontiers. NewYork:AlfredA. Knopf, 1966.
+Eichengreen, Barry. Golden Fetters: TheGold Standard andtheGreat Depression, 1919-1939.
+NewYork:OxfordUniversity Press,1992.
+andJeffreySachs. “ExchangeRates andEconomic Recovery in thel930s,Journalof
+Economic History45(1985):925-46.
+Epstein,Gerald andThomasFerguson. “Monetary Policy, LoanLiquidation, andIndustrial
+Conflict: The FederalReserveandtheOpenMarketOperations of1932.”Journalof
+Economic History44(December 1984):957-83.
+FederalOpenMarketCommittee. MinutesoftheFederalOpenMarketCommittee (various
+issues).
+
+
+Fisher, Irving. “Testimony BeforetheBankingandCurrency Committee, UnitedStatesHouse of
+Representatives.” BankingActof1933.74thCongress, 1stSession.
+Friedman, MiltonandAnnaJ.Schwartz. AMonetary HistoryoftheUnitedStates,1867-1960.
+Princeton: Princeton University Press,1963.
+Havrilesky, Thomas. ThePressures onAmerican Monetary Policy.Boston:KluwerAcademic
+Publishers, 1993.
+Johnson,G.Griffith. TheTreasury andMonetary Policy,1933-1938. Cambridge: Harvard
+University Press,1939.
+Lucas,RobertE. “Methods andProblems in Business Cycle Theory.” JournalofMoney,Credit,
+andBanking 12(November 1980,part2):696-715.
+Maisel, Sherman J.Managing theDollar.NewYork:W.W.Norton, 1973.
+Meigs, A. James. FreeReservesandtheMoneySupply. Chicago: University ofChicago Press,
+1962.
+Meltzer,AllanH. “U.S. Policy inthe Bretton Woods Era.”Review,FederalReserveBankofSt.
+Louis (May/June 1991),pp. 54-83.
+Redish,Angela. “Anchors Away: The Transition from Commodityto Fiat Money in Western
+Economies,” Canadian JournalofEconomics 26(November 1993):777-795.
+Solomon, Robert.TheInternational Monetary System,1945-1976. NewYork:Harperand
+Row,1977.
+Strong,Benjamin. “Testimony BeforetheBankingandCurrencyCommittee, UnitedStates
+HouseofRepresentatives,” Stabilization. 69thCongress, 1stSession, 1926.
+Temin, Peter. Lessons from theGreat Depression. Cambridge: The M.I.T. Press,1989.
+Wells,WyattC.Economist inanUncertain World: ArthurF.BurnsandtheFederalReserve,
+1970-78. NewYork:Columbia UniversityPress, 1994.
+Wheelock, DavidC.TheStrategy andConsistency ofFederalReserve Monetary Policy, 1924-
+1933. Cambridge: CambridgeUniversity Press,1991.
+Wicker, Elmus. TheBanking Panics oftheGreatDepression. Cambridge: Cambridge
+University Press,1996.
+.FederalReserveMonetary Policy, 1917-1933. NewYork:RandomHouse,1966.
+Woolley, JohnT.Monetary Politics: TheFederalReserveandthePoliticsofMonetary Policy.
+NewYork: Cambridge University Press,1984.
+
+
+Table 1
+SelectedMeasuresofMonetary PolicyandEconomic Activity
+Nominal Real Bank Fail Interest Real
+Year GNP %change GNP%change CPI%change Ml%change M2%change Failures Deposits Rate Rate
+(1) (2) (3) (4) (5) (6) (7) (8) (9)
+1919 78.9 74.2 74.0 21390 30320 62
+1920 88.9 11,93 73.3 -1.22 85.7 14.68 23592 9.80 34708 13.52 167 5.42 -9.26
+1921 74.0 -18.34 71.6 -2.35 76.4 .11.49 20955 -11.85 32212 -7.46 505172188 4.83 16.32
+1922 74.0 0.00 75.8 5.70 71.6 -6.49 21618 3.11 33646 4.36 36691182 3.47 9.96
+1923 86.1 15.14 85.8 12.39 72.9 1.80 22653 4.68 36411 7.90 646149601 3.93 2.13
+1924 87.6 1.73 88.4 2.99 73.1 0.27 23226 2.50 37992 4.25 775 210151 2.77 2.50
+1925 91.3 4.14 90.5 2.35 75.0 2.57 25362 8.80 41691 9.29 618167555 3.03 0.46
+1926 97.7 6.78 96.4 6,32 75.6 0.80 26082 2.80 43539 4.34 976260378 3.23 2.43
+1927 96.3 -1.44 97.3 0.93 74.2 -1.87 25796 -1.10 44384 1.92 669 199329 3.10 4,97
+1928 98.2 1,95 98.5 1.23 73.3 -1.22 25761 -0.14 45861 3.27 498 142386 3.97 5.19
+1929 104.4 6.12 104.4 5.82 73.3 0.00 26189 1.6545918 0.12 659 230643 4.42 4.42
+1930 91.1 -13.63 95.1 -9.33 71.4 -2.63 25293 -3.48 45303 -1.35 1350837096 2.23 4.86
+1931 76.3 -17.73 89.5 -6.07 65.0 -9.39 23883 -5.74 42598 -6.16 22931690232 1.15 10.54
+1932 58.5 -26.56 76.4 -15.83 58.4 -10.71 20449 -15.52 34480 -21.14 1453706188 0.78 11.49
+1933 56.0 -4.37 74.2 -2,92 55.3 -5.45 19232 -6.14 30087 -13.63 40003596698 0.26 5.71
+1934 65.0 14.90 80.8 8.52 57.2 3.38 21068 9.12 33073 9.46 5736937 0.26 -3.12
+1935 72.5 10.92 91.4 12.33 58.7 2.59 25199 17.90 38049 14.02 3410015 0.14 -2.45
+1936 82.7 13.16 100.9 9.89 59.3 1.02 29630 16.20 43341 13.02 4411306 0.14 -0.88
+1937 90.8 9.34 109.1 7.81 61.4 3.48 30587 3.18 45195 4.19 5919723 0.45 -3.03
+1938 85.2 -6.37 103.2 -5.56 60.3 -1.81 29173 -4.73 44100 -2.45 5410532 0.05 1.86
+1939 91.1 6.70 111.0 7.29 59.4 -1.50 32586 11.06 47681 7.81 4234998 0.02 1.52
+1940 100.6 9.92 121,0 8.63 59.9 0.84 38763 17.36 54328 13.05 22 5943 0.01 -0.83
+1941 125.8 22.35 138.7 13.65 62.9 4.89 45349 15.69 61296 12.07 83726 0.10 -4.79
+Notes:(1)$billions (Historical Statistics,Fl)
+(2)$billions,1929prices(Historical Statistics, F3)
+(3)1947-49= 100(Historical Statistics, El13)
+(4)$millions, June figure(Friedman andSchwartz, 1963,Appendix Al)
+(5)$millions, June figure(Friedman andSchwartz, 1963,Appendix Al)
+(6)suspended banks(BoardofGovernors, 1943,p.283)
+(7) deposits insuspended banks(BoardofGovernors, 1943,p.283)
+(8)yearlyaverageyieldon3-6monthTreasurynotesandcertificates (1919-33) andbills(1934-41)
+(BoardofGovernors, 1943, p.460)
+(9)short-term Government yieldless CPIinflationrateinsameyear
+%changereferstoyear-to-year differences inthelogsoftheseriestotheleft
+
+
+Table2
+Monetary Policy DuringThree Recessions
+Monthfl~Q~12R~ j~J~/2j~ji.n’cj
+Jul1929 124 147 5.0 6.00 1096 319
+Oct1929 118 154 6.0 6.25 885 74
+Jan1930 106 485 4.5 4.88 501 39
+Apr1930 104 530 3.5 3.88 231 17
+Jul1930 93 583 2.5 3.25 226 0
+Oct1930 88 602 2.5 3.00 196 6
+Jan1931 83 647 2.0 2.88 253 5
+Apr1931 88 600 2.0 2.38155 0
+Jul1931 82 6741.5 2.00 169 0
+Oct191 73 733 3.5 3.13 614 74
+Apr1923 106 229 4.5 5.38 658 123
+Jul1923 104 97 4.5 5.13 834 143
+Oct1923 99 91 4.5 5.38 873 121
+Jan1924 100 118 4.5 4.88 574 85
+Apr1924 95 274 4.5 4.63 489 45
+Jul1924 84 467 3.5 3.50 315 13
+Oct1924 95 585 3.0 3.13 240 28
+Jan1925 105 464 3.0 3.63 275 32
+Oct1926 111 306 4.0 4.63 663 84
+Jan1927 107 310 4.0 4.25 481 76
+Apr1927 108 341 4.0 4.13 447 78
+Jul1927 106 381 4.0 4.25 454 59
+Oct1927 102 506 3.5 4.00 424 75
+Jan1928 107 512 3.5 4.00 465 94
+Definitions:
+IP:Index ofIndustrial Production (seasonally adjusted);
+GS: Federal Reserve System’s holdings ofgovernment securities (in$millions);
+DR: discount rateoftheFederal Reserve Bank ofNew York (in%);
+i:commercial paper interest rate (in%);
+DL: borrowed reserves ofFedmember banks;
+DL(NYC): borrowed reserves ofNew York CityFedmember banks.
+Data sources: Board ofGovernors (1937) pp.175-77 forIP,and Board ofGovernors
+(1943) pp.370-7 1forGSandDL,pp.440-41 forDR,pp.450-5 1fori,andp.400for
+DL(NYC).
+
+
+Table3
+KeyInstitutional Changes in Monetary Policyin the Early1930s
+1932 Glass-SteagallAct (February 27): temporarily made U.S.Government
+securities eligiblecollateral forFederalReservenote issues, therebyexpanding theFed’s
+ability tomake open-market purchases (made permanent in1933); alsotemporarily
+relaxed rules ondiscount-window lending (extended in1933,madepermanent in1935).
+1933Emergency BankingAct(March 9):ratified suspension ofthegold standard.
+ThomasAmendment toAgriculturalAdjustment Act(May 12): authorized theFedto set
+reserverequirements; gavethepresidentauthority to require open-market purchases by
+theFederalReserve,andto fix theweights ofthegoldandsilverdollars.
+Banking Actof1933 (June 16): enhanced Federal Reserve Board control ofdiscount-
+window lending;technical adjustmentsto FederalReserve System organization.
+1934GoldReserveAct(January 30):authorized transferofmonetary goldstockto theU.S.
+Treasury; amended thepresident’s authority to fix thedollar prices of gold andsilver;
+andestablished theExchange Stabilization Fund.
+SilverPurchase Act(June 19): authorized thepresident topurchase andnationalize
+monetary silver; authorized limited Federal Reserve lending toindustrial and
+commercial firms.
+1935BankingActof1935 (August 23): reorganized Federal Reserve’s Open Market
+Committee andotherwise enhanced theauthority oftheBoardofGovernors ofthe
+Federal Reserve System relative totheFederalReserve Banks; extended Federal Reserve
+authority toadjust member bank reserve requirements.
+
+
+FIgure 1
+Monetary GoldandDollarHoldings
+UnitedStates and theRestoftheWorld, 1945-1971
+BillionsofUSDollars
+ExternalDollar
+Liabilities
+External Dollar
+Liabilities Heldby
+MonetaryAuthorities
+RestoftheWorld
+Monetary GoldStock
+USMonetary
+GoldStock70
+60
+50
+40
+30
+20
+10
+0
+45 47 49 515355575961 63 65 6769 71
+
+
+Figure 2
+MoneySupply Growth andInflation
+8
+4
+0
+-4Ml(Annualized PercentChange) CPI(Annualized PercentChange)8
+4
+0
+-4
+1951 1953 1955 1957 1959 1961 1963 1965 1967 1969 1971
+
+
+Figure 3
+FreeReserves andInflation
+8CPI(Annualized PercentChange)
+4,
+0
+—4
+—8FreeReserves (millions of$)
+1951 1953 1955 1957 1959 1961 1963 1965 1967 1969 1971
+
+
+Figure 4
+FreeReserves andMoneySupply Growth
+8
+4
+0
+—4
+—8Free Reserves (millions of$) Ml(Annualized PercentChange)
+01500
+750
+750
+1500
+1951 1953 1955 1957 1959 1961 1963 1965 1967 1969 1971
+
+

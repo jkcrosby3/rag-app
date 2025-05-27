@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG System Interface</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .query-container {
+            margin-bottom: 20px;
+        }
+        .response-container {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+        .document-container {
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+        .metrics-container {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .query-text {
+            font-weight: bold;
+        }
+        .response-text {
+            white-space: pre-wrap;
+        }
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .history-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="mb-4">RAG System Interface</h1>
+                
+                {% if system_error %}
+                <div class="alert alert-danger" role="alert">
+                    <h4 class="alert-heading">System Error</h4>
+                    <p>{{ system_error }}</p>
+                    <hr>
+                    <p class="mb-0">Please check your API keys and configuration.</p>
+                </div>
+                {% endif %}
+                
+                <div class="query-container">
+                    <h3>Ask a Question</h3>
+                    <div class="mb-3">
+                        <textarea id="query-input" class="form-control" rows="3" placeholder="Enter your question here..."></textarea>
+                    </div>
+                    <button id="submit-btn" class="btn btn-primary">Submit</button>
+                    <div id="loading" class="mt-2 d-none">
+                        <div class="spinner-border text-primary" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <span class="ms-2">Processing your query...</span>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div id="response-area">
+                    <h3>Conversation History</h3>
+                    {% if not chat_history %}
+                    <div class="alert alert-info">
+                        No conversation history yet. Ask a question to get started!
+                    </div>
+                    {% else %}
+                    {% for item in chat_history %}
+                    <div class="history-item">
+                        <div class="query-text mb-2">Question: {{ item.query }}</div>
+                        <div class="response-text mb-3">{{ item.result.response }}</div>
+                        
+                        <button class="btn btn-sm btn-outline-secondary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#documents-{{ loop.index }}">
+                            View Supporting Documents
+                        </button>
+                        
+                        <div class="collapse" id="documents-{{ loop.index }}">
+                            <div class="document-container">
+                                {% for doc in item.result.retrieved_documents %}
+                                <div class="mb-3">
+                                    <h6>Document {{ loop.index }} (Similarity: {{ "%.4f"|format(doc.similarity) }})</h6>
+                                    <div><strong>Topic:</strong> {{ doc.metadata.topic if doc.metadata and doc.metadata.topic else "unknown" }}</div>
+                                    <div><strong>Source:</strong> {{ doc.metadata.file_name if doc.metadata and doc.metadata.file_name else "unknown" }}</div>
+                                    <div class="mt-2">{{ doc.text[:500] }}...</div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-sm btn-outline-secondary mb-2 ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#metrics-{{ loop.index }}">
+                            View Performance Metrics
+                        </button>
+                        
+                        <div class="collapse" id="metrics-{{ loop.index }}">
+                            <div class="metrics-container">
+                                <div><strong>Total Time:</strong> {{ "%.2f"|format(item.result.processing_time) }} seconds</div>
+                                <div><strong>Embedding Time:</strong> {{ "%.2f"|format(item.result.embedding_time) }} seconds</div>
+                                <div><strong>Retrieval Time:</strong> {{ "%.2f"|format(item.result.retrieval_time) }} seconds</div>
+                                <div><strong>Generation Time:</strong> {{ "%.2f"|format(item.result.generation_time) }} seconds</div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn btn-sm btn-outline-primary mb-2 ms-2 save-response-btn" data-index="{{ loop.index0 }}">
+                            Save Response
+                        </button>
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <h3>Settings</h3>
+                    
+                    <div class="mb-3">
+                        <label for="api-key" class="form-label">Anthropic API Key</label>
+                        <input type="password" class="form-control" id="api-key" placeholder="Enter your API key">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label">Filter by Topics</label>
+                        <div id="topics-container">
+                            {% for topic in topics %}
+                            <div class="form-check">
+                                <input class="form-check-input topic-checkbox" type="checkbox" value="{{ topic }}" id="topic-{{ topic }}">
+                                <label class="form-check-label" for="topic-{{ topic }}">
+                                    {{ topic }}
+                                </label>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="top-k" class="form-label">Number of documents to retrieve</label>
+                        <input type="range" class="form-range" id="top-k" min="1" max="10" value="5">
+                        <div class="d-flex justify-content-between">
+                            <span>1</span>
+                            <span id="top-k-value">5</span>
+                            <span>10</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="temperature" class="form-label">Temperature</label>
+                        <input type="range" class="form-range" id="temperature" min="0" max="1" step="0.1" value="0.7">
+                        <div class="d-flex justify-content-between">
+                            <span>0.0</span>
+                            <span id="temperature-value">0.7</span>
+                            <span>1.0</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="max-tokens" class="form-label">Max response tokens</label>
+                        <input type="range" class="form-range" id="max-tokens" min="100" max="2000" step="100" value="1000">
+                        <div class="d-flex justify-content-between">
+                            <span>100</span>
+                            <span id="max-tokens-value">1000</span>
+                            <span>2000</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="use-cache" checked>
+                        <label class="form-check-label" for="use-cache">Use response cache</label>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Session Management</h3>
+                    
+                    <div class="d-grid gap-2">
+                        <button id="save-session-btn" class="btn btn-outline-primary">Save Current Session</button>
+                        <button id="new-session-btn" class="btn btn-outline-secondary">Start New Session</button>
+                    </div>
+                    
+                    <hr>
+                    
+                    <h3>Cache Statistics</h3>
+                    <button id="refresh-stats-btn" class="btn btn-sm btn-outline-secondary mb-2">Refresh Stats</button>
+                    
+                    <div id="cache-stats-container">
+                        <div class="mb-2">
+                            <h6>Semantic Cache</h6>
+                            <div id="semantic-cache-stats">Loading...</div>
+                        </div>
+                        
+                        <div>
+                            <h6>Embedding Cache</h6>
+                            <div id="embedding-cache-stats">Loading...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Update range slider values
+        document.getElementById('top-k').addEventListener('input', function() {
+            document.getElementById('top-k-value').textContent = this.value;
+        });
+        
+        document.getElementById('temperature').addEventListener('input', function() {
+            document.getElementById('temperature-value').textContent = this.value;
+        });
+        
+        document.getElementById('max-tokens').addEventListener('input', function() {
+            document.getElementById('max-tokens-value').textContent = this.value;
+        });
+        
+        // Submit query
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const query = document.getElementById('query-input').value.trim();
+            if (!query) {
+                alert('Please enter a question');
+                return;
+            }
+            
+            // Show loading indicator
+            document.getElementById('loading').classList.remove('d-none');
+            document.getElementById('submit-btn').disabled = true;
+            
+            // Get selected topics
+            const selectedTopics = [];
+            document.querySelectorAll('.topic-checkbox:checked').forEach(function(checkbox) {
+                selectedTopics.push(checkbox.value);
+            });
+            
+            // Get other parameters
+            const topK = parseInt(document.getElementById('top-k').value);
+            const temperature = parseFloat(document.getElementById('temperature').value);
+            const maxTokens = parseInt(document.getElementById('max-tokens').value);
+            const useCache = document.getElementById('use-cache').checked;
+            
+            // Get API key if provided
+            const apiKey = document.getElementById('api-key').value.trim();
+            
+            // Send request
+            fetch('/query', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    query: query,
+                    topics: selectedTopics,
+                    top_k: topK,
+                    temperature: temperature,
+                    max_tokens: maxTokens,
+                    use_cache: useCache,
+                    api_key: apiKey
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Hide loading indicator
+                document.getElementById('loading').classList.add('d-none');
+                document.getElementById('submit-btn').disabled = false;
+                
+                if (data.success) {
+                    // Reload the page to show updated history
+                    window.location.reload();
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            })
+            .catch(error => {
+                document.getElementById('loading').classList.add('d-none');
+                document.getElementById('submit-btn').disabled = false;
+                alert('Error: ' + error);
+            });
+        });
+        
+        // Save response
+        document.querySelectorAll('.save-response-btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                const index = parseInt(this.getAttribute('data-index'));
+                const result = {{ chat_history|tojson }}[index].result;
+                
+                fetch('/save_response', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        result: result
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Response saved to ' + data.filepath);
+                    } else {
+                        alert('Error: ' + data.error);
+                    }
+                })
+                .catch(error => {
+                    alert('Error: ' + error);
+                });
+            });
+        });
+        
+        // Save session
+        document.getElementById('save-session-btn').addEventListener('click', function() {
+            fetch('/save_session', {
+                method: 'POST'
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Session saved to ' + data.filepath);
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            })
+            .catch(error => {
+                alert('Error: ' + error);
+            });
+        });
+        
+        // New session
+        document.getElementById('new-session-btn').addEventListener('click', function() {
+            if (confirm('Are you sure you want to start a new session? This will clear your current conversation history.')) {
+                fetch('/new_session', {
+                    method: 'POST'
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        window.location.reload();
+                    } else {
+                        alert('Error: ' + data.error);
+                    }
+                })
+                .catch(error => {
+                    alert('Error: ' + error);
+                });
+            }
+        });
+        
+        // Refresh cache stats
+        function refreshCacheStats() {
+            fetch('/cache_stats')
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    const semanticCache = data.semantic_cache;
+                    const embeddingCache = data.embedding_cache;
+                    
+                    let semanticHtml = `
+                        <div>Size: ${semanticCache.size}/${semanticCache.max_size}</div>
+                        <div>Hit rate: ${(semanticCache.hit_rate * 100).toFixed(2)}%</div>
+                        <div>Exact hits: ${semanticCache.hits}</div>
+                        <div>Semantic hits: ${semanticCache.semantic_hits}</div>
+                    `;
+                    
+                    let embeddingHtml = `
+                        <div>Size: ${embeddingCache.size}/${embeddingCache.max_size}</div>
+                        <div>Hit rate: ${(embeddingCache.hit_rate * 100).toFixed(2)}%</div>
+                        <div>Memory usage: ${embeddingCache.estimated_memory_kb.toFixed(2)} KB</div>
+                    `;
+                    
+                    document.getElementById('semantic-cache-stats').innerHTML = semanticHtml;
+                    document.getElementById('embedding-cache-stats').innerHTML = embeddingHtml;
+                } else {
+                    document.getElementById('semantic-cache-stats').textContent = 'Error: ' + data.error;
+                    document.getElementById('embedding-cache-stats').textContent = 'Error: ' + data.error;
+                }
+            })
+            .catch(error => {
+                document.getElementById('semantic-cache-stats').textContent = 'Error: ' + error;
+                document.getElementById('embedding-cache-stats').textContent = 'Error: ' + error;
+            });
+        }
+        
+        document.getElementById('refresh-stats-btn').addEventListener('click', refreshCacheStats);
+        
+        // Initial load of cache stats
+        refreshCacheStats();
+    </script>
+</body>
+</html>
+            

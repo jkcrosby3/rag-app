@@ -1,0 +1,10 @@
+{
+  "text": "without explicit permission provided that full credit, including \u00a9 notice, is given to\nthe source.\n\nCorrespondent Clearing and the Banking Panics of the Great Depression\nGary Richardson\nNBER Working Paper No. 12716\nDecember 2006\nJEL No. E42,E44,E65,N1,N12,N2\n ABSTRACT \nBetween the founding of the Federal Reserve System in 1913 and the depression of the 1930s, three\ncheck-clearing systems operated in the United States. The Federal Reserve cleared checks for members\nof the system. Clearing houses cleared checks for members of their organizations. Correspondents\ncleared checks for all other institutions. The correspondent-clearing system was vulnerable to counter-party\ncascades, particularly because accounting conventions overstated reserves available to individual institutions\nand the system as a whole. In November 1930, a correspondent system in the center of the United\nStates collapsed, causing the closure of more than one hundred institutions.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 1,
+    "total_chunks": 105
+  }
+}

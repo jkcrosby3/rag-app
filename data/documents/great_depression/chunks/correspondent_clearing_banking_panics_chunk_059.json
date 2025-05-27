@@ -1,0 +1,10 @@
+{
+  "text": "which typically (but not \nuniversally) referred to the sum of temporary and terminal suspensions. \n\n 20 term slow paper meant an asset likely to yield full value in time, but whose repayment lagged or \nwhich could not be converted to full cash value at short notice. The second common cause of \nsuspension was heavy withdrawals, the typical example being a bank run. The third was failure a \nbanking correspondent. Correspondents were banks with ongoing relationships facilitated by \ndeposits of funds. A typical example is a county bank (the client) which kept its reserve deposits \nwithin and cleared its checks through a national bank in a reserve city (the correspondent). The \nfourth common cause was mismanagement. The fifth was defalcation, a monetary deficiency in \nthe accounts of a bank due to fraud or breach of trust. \nTable 4 summarizes the data by presenting numbers of banks failing for different reasons \nduring each year.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 58,
+    "total_chunks": 105
+  }
+}

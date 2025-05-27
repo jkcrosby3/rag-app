@@ -1,0 +1,70 @@
+# The Glass-Steagall Act: Banking Reform of 1933
+
+## Historical Context
+The Glass-Steagall Act, officially known as the Banking Act of 1933, was enacted during the Great Depression as a response to the financial crisis that contributed to the economic collapse. Following the stock market crash of 1929, approximately 9,000 banks failed between 1930 and 1933, wiping out the savings of millions of Americans.
+
+## Key Provisions
+1. **Separation of Commercial and Investment Banking**: The most significant provision prohibited commercial banks from engaging in investment activities, effectively separating commercial banking from investment banking.
+
+2. **Federal Deposit Insurance Corporation (FDIC)**: Established the FDIC to provide deposit insurance, guaranteeing bank deposits up to a specified amount.
+
+3. **Regulation Q**: Prohibited banks from paying interest on demand deposits and authorized the Federal Reserve to set interest rate ceilings on time deposits.
+
+4. **Bank Holding Company Restrictions**: Limited the activities of bank holding companies to banking and closely related activities.
+
+## Economic Rationale
+The separation of commercial and investment banking was designed to:
+- Prevent conflicts of interest when banks acted as both lenders and underwriters
+- Reduce speculative risk-taking by commercial banks
+- Protect depositors' funds from being used in risky securities activities
+- Restore public confidence in the banking system
+
+## Implementation and Enforcement
+The Act was enforced by multiple regulatory agencies:
+- The Federal Reserve Board
+- The Office of the Comptroller of the Currency
+- The FDIC
+- The Securities and Exchange Commission (established in 1934)
+
+## Long-term Impact
+For over six decades, Glass-Steagall maintained a firewall between commercial and investment banking, contributing to a period of relative financial stability. The banking industry gradually lobbied for deregulation, arguing that the separation put American banks at a competitive disadvantage internationally.
+
+## Erosion and Repeal
+- 1980s-1990s: Regulatory interpretations gradually weakened Glass-Steagall restrictions
+- 1999: The Gramm-Leach-Bliley Act (Financial Services Modernization Act) formally repealed the key provisions of Glass-Steagall
+
+## Debates Following the 2008 Financial Crisis
+After the 2008 financial crisis, many economists, policymakers, and financial experts debated whether the repeal of Glass-Steagall contributed to the crisis:
+
+**Arguments that repeal contributed to the crisis:**
+- Allowed the creation of "too big to fail" financial institutions
+- Encouraged excessive risk-taking by commercial banks
+- Permitted conflicts of interest in financial services
+
+**Arguments that repeal did not significantly contribute:**
+- The crisis primarily involved institutions not affected by Glass-Steagall
+- Many failed institutions were pure investment banks or mortgage lenders
+- International banks with universal banking models were similarly affected
+
+## Lessons for Financial Regulation
+The Glass-Steagall experience offers several lessons:
+- Financial regulation must adapt to changing market conditions
+- Systemic risk requires comprehensive oversight
+- Conflicts of interest in financial services require structural or behavioral remedies
+- Public confidence is essential to financial stability
+
+## References
+
+1. Barth, J. R., Brumbaugh, R. D., & Wilcox, J. A. (2000). The repeal of Glass-Steagall and the advent of broad banking. *Journal of Economic Perspectives*, 14(2), 191-204.
+
+2. Benston, G. J. (1990). The separation of commercial and investment banking: The Glass-Steagall Act revisited and reconsidered. Oxford University Press.
+
+3. Federal Deposit Insurance Corporation. (1997). *History of the Eighties—Lessons for the Future: An Examination of the Banking Crises of the 1980s and Early 1990s*. Washington, DC: FDIC.
+
+4. Kroszner, R. S., & Rajan, R. G. (1994). Is the Glass-Steagall Act justified? A study of the U.S. experience with universal banking before 1933. *American Economic Review*, 84(4), 810-832.
+
+5. Mester, L. J. (1996). Repealing Glass-Steagall: The past points the way to the future. *Federal Reserve Bank of Philadelphia Business Review*, July/August, 3-18.
+
+6. Stiglitz, J. E. (2009). Capitalist fools. *Vanity Fair*, January.
+
+7. U.S. Senate Committee on Banking, Housing, and Urban Affairs. (1999). *Gramm-Leach-Bliley Act: Report to accompany S. 900*. Washington, DC: U.S. Government Printing Office.

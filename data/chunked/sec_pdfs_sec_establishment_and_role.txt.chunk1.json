@@ -1,0 +1,14 @@
+{
+  "text": "## Lessons for Financial Regulation\n- The importance of independent regulatory authority\n- The value of disclosure-based regulation\n- The need for adaptability to market evolution\n- The balance between principles-based and rules-based approaches\n- The role of enforcement in maintaining market integrity\n## References\n1. Choi, S. J., & Pritchard, A. C. (2016). *Securities Regulation: Cases and Analysis* (4th ed.). Foundation Press.\n2. Coffee, J. C., & Sale, H. A. (2012). *Securities Regulation: Cases and Materials* (12th ed.). Foundation Press.\n3. Cox, J. D., Hillman, R. W., & Langevoort, D. C. (2013). *Securities Regulation: Cases and Materials* (7th ed.). Aspen Publishers.\n4. Loss, L., Seligman, J., & Paredes, T. (2011). *Securities Regulation* (4th ed.). Aspen Publishers.\n5. Mahoney, P. G. (2003). The origins of the Blue-Sky laws: A test of competing hypotheses. *Journal of Law and Economics*, 46(1), 229-251.\n6. Palmiter, A. R. (2017). *Securities Regulation: Examples & Explanations* (7th ed.). Wolters Kluwer.\n7. Seligman, J. (2003). *The Transformation of Wall Street: A History of the Securities and Exchange Commission and Modern Corporate Finance* (3rd ed.). Aspen Publishers.\n8. U.S. Securities and Exchange Commission. (2013). *The Investor's Advocate: How the SEC Protects Investors, Maintains Market Integrity, and Facilitates Capital Formation*. Washington, DC: SEC.\n9. U.S. Securities and Exchange Commission Historical Society. (2004). *The SEC and the Regulation of the Securities Markets*. Washington, DC: SEC Historical Society.",
+  "chunk_index": 1,
+  "token_count": 227,
+  "metadata": {
+    "file_path": "D:\\Development\\rag-app\\data\\great_depression\\sec\\pdfs\\sec_establishment_and_role.txt",
+    "file_size": 5389,
+    "file_name": "sec_establishment_and_role.txt",
+    "relative_path": "sec\\pdfs\\sec_establishment_and_role.txt",
+    "topic": "sec",
+    "chunk_index": 1,
+    "total_chunks": 2
+  }
+}

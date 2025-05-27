@@ -1,0 +1,10 @@
+{
+  "text": "hold's problem is given by:\nmax1X\nt=0\ftfln(ct) +eat\u0016ln(1\u0000hat) +emt\u0016ln(1\u0000hmt)\u0000v(eat+emt)g(1 +n)t\n30\n\nsubject to\n1X\nt=0Qt[wateat+wmtemt\u0000ct] + \u0005 0= 0; (6)\nwhereQtis the date t price of goods, eais the number of household mem-\nbers who work in the agricultural sector, emis the number who work in\nthe manufacturing sector, hais the workweek length in agriculture, hmis\nthe workweek length in manufacturing, and \u0005 0are date-zero pro\fts. Note\nthat the opportunity cost of working includes not only hours worked for each\nhousehold member who works, but also includes a cost of sending household\nmembers to work, which is governed by the function v(ea+em):To specify\nthis function, I assume that the cost of entering the workforce di\u000bers across\nindividuals in the family.",
+  "metadata": {
+    "title": "what_started_great_depression",
+    "source": "data\\documents\\great_depression\\processed\\what_started_great_depression.txt",
+    "topic": "great_depression",
+    "chunk_index": 61,
+    "total_chunks": 114
+  }
+}

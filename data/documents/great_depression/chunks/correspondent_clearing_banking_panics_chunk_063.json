@@ -1,0 +1,10 @@
+{
+  "text": "oorly-managed institutions lacked the \nresources needed to weather the initial states of the storm. The share of suspensions due to the \nclosure of correspondents peaked during 1930. \n Figure 2 examines the data from a different perspective. It indicates the share of \nsuspensions due to correspondents, withdrawals, and assets for the depression as a whole. The \nleft-hand pie chart presents data for banks which suspended operations temporarily. The right-\nhand pie chart presents data for banks which suspended operations permanently. The shades of \ngray indicate the percentage of banks suspending for different reasons. The color black denotes \nbanks which suspended solely due to heavy withdrawals (in key, WITHDRAWALS) but which \nwere in fine financial shape before depositors\u2019 demanded repayment of deposits. Most of these \nbanks experienced sudden and severe runs.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 62,
+    "total_chunks": 105
+  }
+}

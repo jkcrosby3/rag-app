@@ -1,0 +1,10 @@
+{
+  "text": "nd \nadditional correspondent networks succumbed to the situation. The second banking crisis began \n\n 29 when depositors simultaneously withdrew large sums from several banking groups in northern \nIllinois. These banking groups were correspondent networks whose leading institutions had \ngradually taken control of their client banks during the 1920s. For the entire contraction, banks \nthat relied upon correspondents to clear checks failed at much higher rates than banks which \ncleared via clearing houses or the Federal Reserve. \n Correspondent networks were always vulnerable to counter-party cascades. The \ninstitutions formed a line like dominoes. One bank held deposits for another bank, which in turn, \nheld deposits for a third. These deposits comprised the preponderance of the dominoes\u2019 reserves \n(both required and excess). When one domino toppled, the reserves of the next domino \ndisappeared, and it suspended operations also, which forced additional dominoes to fall.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 83,
+    "total_chunks": 105
+  }
+}

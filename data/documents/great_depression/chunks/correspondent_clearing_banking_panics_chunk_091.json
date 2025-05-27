@@ -1,0 +1,10 @@
+{
+  "text": "of banks in Mississippi which \nreported 0, 1, 2, 3, 4, or 5 correspondents in the designated area. Column \n(a), for example, indicates that 199 banks in Mississippi possessed no \ncorrespondents in the state and 2 banks in Mississippi possessed 3 \ncorrespondents in the state. Column (b) indicates the number of \ncorrespondent located in states other than Mississippi. Column (c) \nindicates the number of correspondents in St. Louis, which contained the \nheadquarters of the 8th Federal Reserve District, possessed by banks \nlocated in the 6th Federal Reserve District portion of Mississippi. Column \n(d) indicates the same number for banks located in the 8th District portion \nof Mississippi. Column (e) and (f) indicate the number of correspondents \nin Atlanta, which contained the headquarters of the 6th Federal Reserve \nDistrict, possessed by banks in the 6th and 8th District respectively. \nColumn (g) indicates the number of correspondents in New Orleans.",
+  "metadata": {
+    "title": "correspondent_clearing_banking_panics",
+    "source": "data\\documents\\great_depression\\processed\\correspondent_clearing_banking_panics.txt",
+    "topic": "great_depression",
+    "chunk_index": 90,
+    "total_chunks": 105
+  }
+}
