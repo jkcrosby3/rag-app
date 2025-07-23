@@ -1,0 +1,14 @@
+{
+  "plan_number": "789012",
+  "document_type": "annexT",
+  "hierarchy_level": 2,
+  "date": "2025-06-13",
+  "status": "EXECUTED",
+  "keywords": [
+    "it implementation",
+    "requirements"
+  ],
+  "author": "IT Director",
+  "department": "IT",
+  "revision": "1.0"
+}

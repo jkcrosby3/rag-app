@@ -1,0 +1,109 @@
+{
+  "plan_id": "567890",
+  "main_document": "plan_567890-main-APPROVED.txt",
+  "status": "APPROVED",
+  "annexes": [
+    {
+      "id": "A",
+      "file": "plan_567890-annexA-APPROVED.txt",
+      "department": "Finance",
+      "appendices": [
+        {
+          "id": "A",
+          "file": "plan_567890-annexA-appendixA-APPROVED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "B",
+          "file": "plan_567890-annexA-appendixB-APPROVED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "C",
+          "file": "plan_567890-annexA-appendixC-APPROVED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "file": "plan_567890-annexB-APPROVED.txt",
+      "department": "Operations",
+      "appendices": [
+        {
+          "id": "D",
+          "file": "plan_567890-annexB-appendixD-APPROVED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "E",
+          "file": "plan_567890-annexB-appendixE-APPROVED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "F",
+          "file": "plan_567890-annexB-appendixF-APPROVED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "file": "plan_567890-annexT-APPROVED.txt",
+      "department": "IT",
+      "appendices": [
+        {
+          "id": "G",
+          "file": "plan_567890-annexT-appendixG-APPROVED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "H",
+          "file": "plan_567890-annexT-appendixH-APPROVED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "I",
+          "file": "plan_567890-annexT-appendixI-APPROVED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "site_url": "https://your-organization.sharepoint.com/sites/your-site",
+  "username": "your-username@your-organization.com",
+  "password": "your-password",
+  "auth_type": "credentials",
+  "client_id": "",
+  "client_secret": ""
+}

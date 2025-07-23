@@ -1,0 +1,14 @@
+{
+  "plan_number": "567890",
+  "document_type": "annexA",
+  "hierarchy_level": 2,
+  "date": "2025-06-13",
+  "status": "APPROVED",
+  "keywords": [
+    "finance implementation",
+    "requirements"
+  ],
+  "author": "Finance Director",
+  "department": "Finance",
+  "revision": "1.0"
+}

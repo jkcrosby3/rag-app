@@ -12,6 +12,10 @@ import argparse
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 import re
+from .metadata_validator import MetadataManager
+from .security_config import SecurityConfig
+from .document_tracker import DocumentTracker
+from .notification_handler import DocumentNotificationHandler
 
 # Configure logging
 logging.basicConfig(
@@ -104,8 +108,103 @@ def process_document(
     output_dir: str, 
     topic: str = "great_depression",
     max_chunk_size: int = 1000,
-    overlap: int = 100
+    overlap: int = 100,
+    metadata: Optional[Dict[str, Any]] = None
 ) -> List[str]:
+    """
+    Process a document and prepare it for embedding generation.
+    
+    Args:
+        file_path: Path to the document file
+        output_dir: Directory to save the processed document
+        topic: Topic to assign to the document
+        max_chunk_size: Maximum size of each chunk in characters
+        overlap: Number of characters to overlap between chunks
+        metadata: Custom metadata to merge with base metadata
+        
+    Returns:
+        List of paths to the processed document chunks
+    
+    Raises:
+        ValueError: If metadata validation fails
+    """
+    file_path = Path(file_path)
+    if not file_path.exists():
+        logger.error(f"Document file not found: {file_path}")
+        return []
+    
+    # Create metadata manager for validation
+    metadata_manager = MetadataManager()
+    
+    # Create document tracker
+    tracker = DocumentTracker()
+    
+    # Create notification handler
+    notification_handler = DocumentNotificationHandler()
+    
+    # Register notification handlers
+    tracker.add_notification_handler(notification_handler.create_log_handler())
+    
+    # Check if document has changed
+    if not tracker.check_for_changes(file_path):
+        logger.info(f"Document {file_path} has not changed since last tracking")
+        return []
+    """
+    Process a document and prepare it for embedding generation.
+    
+    Args:
+        file_path: Path to the document file
+        output_dir: Directory to save the processed document
+        topic: Topic to assign to the document
+        max_chunk_size: Maximum size of each chunk in characters
+        overlap: Number of characters to overlap between chunks
+        metadata: Custom metadata to merge with base metadata
+        
+    Returns:
+        List of paths to the processed document chunks
+    
+    Raises:
+        ValueError: If metadata validation fails
+    """
+    file_path = Path(file_path)
+    if not file_path.exists():
+        logger.error(f"Document file not found: {file_path}")
+        return []
+    
+    # Create metadata manager for validation
+    metadata_manager = MetadataManager()
+    
+    # Create document tracker
+    tracker = DocumentTracker()
+    
+    # Check if document has changed
+    if not tracker.check_for_changes(file_path):
+        logger.info(f"Document {file_path} has not changed since last tracking")
+        return []
+    """
+    Process a document and prepare it for embedding generation.
+    
+    Args:
+        file_path: Path to the document file
+        output_dir: Directory to save the processed document
+        topic: Topic to assign to the document
+        max_chunk_size: Maximum size of each chunk in characters
+        overlap: Number of characters to overlap between chunks
+        metadata: Custom metadata to merge with base metadata
+        
+    Returns:
+        List of paths to the processed document chunks
+    
+    Raises:
+        ValueError: If metadata validation fails
+    """
+    file_path = Path(file_path)
+    if not file_path.exists():
+        logger.error(f"Document file not found: {file_path}")
+        return []
+    
+    # Create metadata manager for validation
+    metadata_manager = MetadataManager()
     """
     Process a document and prepare it for embedding generation.
     
@@ -145,15 +244,55 @@ def process_document(
     
     # Save chunks
     output_paths = []
+    
+    # After processing all chunks, update document tracking
+    if output_paths:  # Only update tracking if processing was successful
+        try:
+            # Get the metadata from the first processed chunk
+            with open(output_paths[0], 'r', encoding='utf-8') as f:
+                processed_data = json.load(f)
+                metadata = processed_data.get('metadata', {})
+            
+            # Update document tracking
+            tracker.update_document_tracking(file_path, metadata)
+            
+            # Generate version history report
+            version_report = tracker.generate_version_history(file_path)
+            logger.info(f"\n{version_report}")
+            
+            logger.info(f"Updated tracking for {file_path}")
+        except Exception as e:
+            logger.error(f"Error updating document tracking: {str(e)}")
     for i, chunk in enumerate(chunks):
-        # Create metadata
-        metadata = {
-            "title": file_path.stem,
-            "source": str(file_path),
-            "topic": topic,
-            "chunk_index": i,
-            "total_chunks": len(chunks)
-        }
+        # Create default metadata
+        base_metadata = MetadataSchema.generate_default_metadata(file_path)
+        base_metadata["topic"] = topic
+        
+        # Load external metadata from JSON file if it exists
+        metadata_file = file_path.with_suffix('.metadata.json')
+        if metadata_file.exists():
+            try:
+                with open(metadata_file, 'r', encoding='utf-8') as f:
+                    external_metadata = json.load(f)
+                    # Validate external metadata first
+                    if not metadata_manager.schema.validate(external_metadata):
+                        logger.warning(f"External metadata file {metadata_file} contains invalid data")
+            except Exception as e:
+                logger.warning(f"Error loading metadata file {metadata_file}: {str(e)}")
+                external_metadata = {}
+        else:
+            external_metadata = {}
+        
+        # Combine and validate all metadata
+        try:
+            metadata = metadata_manager.validate_and_merge_metadata(
+                base_metadata,
+                external_metadata,
+                metadata
+            )
+        except ValueError as e:
+            logger.error(f"Metadata validation failed: {str(e)}")
+            return []
         
         # Create output filename
         output_filename = f"{file_path.stem}_chunk_{i+1:03d}.json"

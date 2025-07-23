@@ -1,0 +1,19 @@
+{
+  "plan_number": "567890",
+  "document_type": "annexA-appendixA",
+  "hierarchy_level": 3,
+  "date": "2025-06-13",
+  "status": "APPROVED",
+  "keywords": [
+    "implementation details",
+    "answers for annex A"
+  ],
+  "author": "Finance Team Lead",
+  "department": "Finance",
+  "revision": "1.0",
+  "answers_questions": [
+    "Q1",
+    "Q2",
+    "Q3"
+  ]
+}

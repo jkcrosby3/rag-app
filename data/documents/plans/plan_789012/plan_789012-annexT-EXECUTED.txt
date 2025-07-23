@@ -1,0 +1,17 @@
+
+# Annex T: IT Implementation Plan
+
+## Purpose
+This annex details how the IT department will implement Plan 789012.
+
+## Requirements
+1. Requirement AT1
+2. Requirement AT2
+3. Requirement AT3
+
+## Questions to Address
+Q1: How will we implement requirement AT1?, Q2: How will we implement requirement AT2?, Q3: How will we implement requirement AT3?
+
+## Appendices
+This annex includes the following appendices:
+Appendix G, Appendix H, Appendix I

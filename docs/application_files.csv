@@ -1,0 +1,39 @@
+Document Name,Document Path,Date Created,Date Edited,Last Modified By,Version,File Size (bytes),File Format,Classification,Pipeline Step,Depends On,Related Files,Description,Access Level,License
+
+# Document Processing
+batch_processor.py,src/document_processing/batch_processor.py,2025-05-14,2025-07-22,Development Team,1.2,12345,Python,Code,Document Ingestion,document_processor.py,chunker.py,Core document batch processing component,Internal,Proprietary
+chunker.py,src/document_processing/chunker.py,2025-05-14,2025-07-22,Development Team,1.3,8765,Python,Code,Text Chunking,batch_processor.py,document_processor.py,Text chunking utility for RAG system,Internal,Proprietary
+document_processor.py,src/document_processing/document_processor.py,2025-05-14,2025-07-22,Development Team,1.1,15432,Python,Code,Document Ingestion,batch_processor.py,chunker.py,Base document processing functionality,Internal,Proprietary
+
+# Embedding Generation
+generator.py,src/document_processing/generator.py,2025-05-25,2025-07-22,Development Team,1.0,9876,Python,Code,Embedding Generation,chunker.py,embed_documents.py,Embedding generation using sentence-transformers,Internal,Proprietary
+embed_documents.py,src/document_processing/embed_documents.py,2025-05-25,2025-07-22,Development Team,1.1,4321,Python,Code,Embedding Generation,generator.py,,Script for embedding generation process,Internal,Proprietary
+
+# Vector Database
+faiss_db.py,src/vector_db/faiss_db.py,2025-05-25,2025-07-22,Development Team,1.2,12345,Python,Code,Vector Database Integration,embed_documents.py,elasticsearch_db.py,FAISS vector database implementation,Internal,Proprietary
+elasticsearch_db.py,src/vector_db/elasticsearch_db.py,2025-05-25,2025-07-22,Development Team,1.0,15678,Python,Code,Vector Database Integration,embed_documents.py,faiss_db.py,Elasticsearch vector database implementation,Internal,Proprietary
+build_vector_db.py,scripts/build_vector_db.py,2025-05-25,2025-07-22,Development Team,1.3,7654,Python,Code,Vector Database Integration,faiss_db.py,elasticsearch_db.py,Vector database build script,Internal,Proprietary
+
+# Query Processing
+retriever.py,src/retrieval/retriever.py,2025-05-25,2025-07-22,Development Team,1.1,12345,Python,Code,Query Processing,faiss_db.py,claude_client.py,Document retrieval component,Internal,Proprietary
+claude_client.py,src/llm/claude_client.py,2025-05-25,2025-07-22,Development Team,1.2,8765,Python,Code,Query Processing,retriever.py,rag_system.py,Claude LLM integration,Internal,Proprietary
+rag_system.py,src/rag_system.py,2025-05-25,2025-07-22,Development Team,1.3,15432,Python,Code,Query Processing,claude_client.py,retriever.py,Complete RAG system implementation,Internal,Proprietary
+
+# Performance Optimization
+caching.py,src/tools/caching.py,2025-05-25,2025-07-22,Development Team,1.1,9876,Python,Code,Performance Optimization,generator.py,quantized_model.py,Embedding caching mechanism,Internal,Proprietary
+quantized_model.py,src/tools/quantized_model.py,2025-05-25,2025-07-22,Development Team,1.0,4321,Python,Code,Performance Optimization,caching.py,,Quantized model implementation,Internal,Proprietary
+performance_monitor.py,src/tools/performance_monitor.py,2025-05-25,2025-07-22,Development Team,1.2,6789,Python,Code,Performance Optimization,caching.py,quantized_model.py,Performance monitoring utilities,Internal,Proprietary
+
+# Tag Management
+models.py,src/web/models.py,2025-07-22,2025-07-22,Development Team,1.0,12345,Python,Code,Tag Management,tag_validator.py,tracking_app.py,Database models for tags,Internal,Proprietary
+tag_validator.py,src/tools/tag_validator.py,2025-07-22,2025-07-22,Development Team,1.1,8765,Python,Code,Tag Management,models.py,,Tag validation utilities,Internal,Proprietary
+tracking_app.py,src/web/tracking_app.py,2025-07-22,2025-07-22,Development Team,1.2,15432,Python,Code,Tag Management,models.py,tag_validator.py,Web application for tag management,Internal,Proprietary
+
+# Environment Configuration
+.env.template,,2025-05-14,2025-07-22,Development Team,1.0,,Text,Configuration,Environment Configuration,,config.py,Template for environment variables,Internal,Proprietary
+config.py,src/config/config.py,2025-05-14,2025-07-22,Development Team,1.1,9876,Python,Code,Environment Configuration,.env.template,,Configuration management,Internal,Proprietary
+setup.py,setup.py,2025-05-14,2025-07-22,Development Team,1.2,4321,Python,Configuration,Environment Configuration,.env.template,config.py,Project setup and dependencies,Internal,Proprietary
+
+# Documentation
+pipeline_documentation.md,docs/pipeline_documentation.md,2025-07-22,2025-07-22,Development Team,1.0,23456,Markdown,Documentation,System Overview,,README.md,System pipeline documentation,Public,MIT
+README.md,README.md,2025-05-14,2025-07-22,Development Team,1.3,12345,Markdown,Documentation,System Overview,pipeline_documentation.md,,Project overview and setup guide,Public,MIT

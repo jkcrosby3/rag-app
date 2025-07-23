@@ -1,0 +1,14 @@
+{
+  "plan_number": "234456",
+  "document_type": "supporting",
+  "supporting_type": "risk_assessment",
+  "hierarchy_level": 0,
+  "date": "2025-06-13",
+  "status": "DRAFT",
+  "keywords": [
+    "risk assessment"
+  ],
+  "author": "Research Team",
+  "department": "Research",
+  "revision": "1.0"
+}

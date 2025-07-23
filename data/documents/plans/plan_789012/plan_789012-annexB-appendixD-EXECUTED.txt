@@ -1,0 +1,18 @@
+
+# Appendix D for Annex B
+
+## Purpose
+This appendix answers questions raised in Annex B.
+
+## Answer to Q1
+Detailed answer to how we will implement requirement AB1.
+
+## Answer to Q2
+Detailed answer to how we will implement requirement AB2.
+
+## Answer to Q3
+Detailed answer to how we will implement requirement AB3.
+
+## Supporting Documents
+- Market Analysis
+- Financial Projections

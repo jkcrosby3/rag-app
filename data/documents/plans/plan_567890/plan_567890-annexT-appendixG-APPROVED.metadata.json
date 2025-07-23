@@ -1,0 +1,19 @@
+{
+  "plan_number": "567890",
+  "document_type": "annexT-appendixG",
+  "hierarchy_level": 3,
+  "date": "2025-06-13",
+  "status": "APPROVED",
+  "keywords": [
+    "implementation details",
+    "answers for annex T"
+  ],
+  "author": "IT Team Lead",
+  "department": "IT",
+  "revision": "1.0",
+  "answers_questions": [
+    "Q1",
+    "Q2",
+    "Q3"
+  ]
+}

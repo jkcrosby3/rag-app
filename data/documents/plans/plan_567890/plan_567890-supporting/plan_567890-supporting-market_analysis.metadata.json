@@ -1,0 +1,14 @@
+{
+  "plan_number": "567890",
+  "document_type": "supporting",
+  "supporting_type": "market_analysis",
+  "hierarchy_level": 0,
+  "date": "2025-06-13",
+  "status": "APPROVED",
+  "keywords": [
+    "market analysis"
+  ],
+  "author": "Research Team",
+  "department": "Research",
+  "revision": "1.0"
+}

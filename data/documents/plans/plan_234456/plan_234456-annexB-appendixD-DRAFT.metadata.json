@@ -1,0 +1,19 @@
+{
+  "plan_number": "234456",
+  "document_type": "annexB-appendixD",
+  "hierarchy_level": 3,
+  "date": "2025-06-13",
+  "status": "DRAFT",
+  "keywords": [
+    "implementation details",
+    "answers for annex B"
+  ],
+  "author": "Operations Team Lead",
+  "department": "Operations",
+  "revision": "1.0",
+  "answers_questions": [
+    "Q1",
+    "Q2",
+    "Q3"
+  ]
+}

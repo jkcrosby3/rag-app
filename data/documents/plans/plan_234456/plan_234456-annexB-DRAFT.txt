@@ -1,0 +1,17 @@
+
+# Annex B: Operations Implementation Plan
+
+## Purpose
+This annex details how the Operations department will implement Plan 234456.
+
+## Requirements
+1. Requirement AB1
+2. Requirement AB2
+3. Requirement AB3
+
+## Questions to Address
+Q1: How will we implement requirement AB1?, Q2: How will we implement requirement AB2?, Q3: How will we implement requirement AB3?
+
+## Appendices
+This annex includes the following appendices:
+Appendix D, Appendix E, Appendix F

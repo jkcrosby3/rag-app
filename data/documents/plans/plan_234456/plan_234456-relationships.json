@@ -1,0 +1,109 @@
+{
+  "plan_id": "234456",
+  "main_document": "plan_234456-main-DRAFT.txt",
+  "status": "DRAFT",
+  "annexes": [
+    {
+      "id": "A",
+      "file": "plan_234456-annexA-DRAFT.txt",
+      "department": "Finance",
+      "appendices": [
+        {
+          "id": "A",
+          "file": "plan_234456-annexA-appendixA-DRAFT.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "B",
+          "file": "plan_234456-annexA-appendixB-DRAFT.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "C",
+          "file": "plan_234456-annexA-appendixC-DRAFT.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "file": "plan_234456-annexB-DRAFT.txt",
+      "department": "Operations",
+      "appendices": [
+        {
+          "id": "D",
+          "file": "plan_234456-annexB-appendixD-DRAFT.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "E",
+          "file": "plan_234456-annexB-appendixE-DRAFT.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "F",
+          "file": "plan_234456-annexB-appendixF-DRAFT.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "file": "plan_234456-annexT-DRAFT.txt",
+      "department": "IT",
+      "appendices": [
+        {
+          "id": "G",
+          "file": "plan_234456-annexT-appendixG-DRAFT.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "H",
+          "file": "plan_234456-annexT-appendixH-DRAFT.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "I",
+          "file": "plan_234456-annexT-appendixI-DRAFT.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        }
+      ]
+    }
+  ]
+}

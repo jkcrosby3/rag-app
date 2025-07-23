@@ -1,0 +1,17 @@
+
+# Annex A: Finance Implementation Plan
+
+## Purpose
+This annex details how the Finance department will implement Plan 567890.
+
+## Requirements
+1. Requirement AA1
+2. Requirement AA2
+3. Requirement AA3
+
+## Questions to Address
+Q1: How will we implement requirement AA1?, Q2: How will we implement requirement AA2?, Q3: How will we implement requirement AA3?
+
+## Appendices
+This annex includes the following appendices:
+Appendix A, Appendix B, Appendix C

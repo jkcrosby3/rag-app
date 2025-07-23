@@ -1,0 +1,14 @@
+{
+  "question_id": "Q2",
+  "question_text": "How will we implement requirement B2?",
+  "answered_in": [
+    {
+      "plan": "234456",
+      "document": "plan_234456-annexB-appendixE-DRAFT.txt"
+    },
+    {
+      "plan": "567890",
+      "document": "plan_567890-annexB-appendixE-DRAFT.txt"
+    }
+  ]
+}

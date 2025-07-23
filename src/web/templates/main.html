@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Processing and Query System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .main-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+        .feature-card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            margin-bottom: 2rem;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .stats-card {
+            border: none;
+            box-shadow: none;
+        }
+        .stats-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/">Document Processing System</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card feature-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-cloud-upload-fill feature-icon text-primary"></i>
+                        <h3 class="card-title">Upload Documents</h3>
+                        <p class="card-text">
+                            Upload and process new documents with automatic metadata extraction and version control.
+                        </p>
+                        <a href="/upload" class="btn btn-primary btn-lg">
+                            <i class="bi bi-arrow-right"></i> Upload Documents
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card feature-card h-100">
+                    <div class="card-body text-center">
+                        <i class="bi bi-chat-left-text-fill feature-icon text-success"></i>
+                        <h3 class="card-title">Query Documents</h3>
+                        <p class="card-text">
+                            Ask questions about your documents using our advanced LLM query system.
+                        </p>
+                        <a href="/query" class="btn btn-success btn-lg">
+                            <i class="bi bi-arrow-right"></i> Start Querying
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card stats-card">
+                    <div class="card-body text-center">
+                        <div class="stats-number" id="total-docs">0</div>
+                        <p class="card-text mb-0">Total Documents</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card stats-card">
+                    <div class="card-body text-center">
+                        <div class="stats-number" id="total-versions">0</div>
+                        <p class="card-text mb-0">Total Versions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card stats-card">
+                    <div class="card-body text-center">
+                        <div class="stats-number" id="last-updated">-</div>
+                        <p class="card-text mb-0">Last Update</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Load statistics on page load
+        fetch('/api/stats')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('total-docs').textContent = data.total_docs;
+                document.getElementById('total-versions').textContent = data.total_versions;
+                document.getElementById('last-updated').textContent = new Date().toLocaleString();
+            });
+    </script>
+</body>
+</html>

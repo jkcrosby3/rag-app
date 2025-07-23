@@ -1,0 +1,11 @@
+
+# Market Analysis for Plan 789012
+
+## Purpose
+This document provides supporting information for Plan 789012.
+
+## Content
+Detailed market analysis information.
+
+## Related Plan Components
+This document supports various annexes and appendices in Plan 789012.

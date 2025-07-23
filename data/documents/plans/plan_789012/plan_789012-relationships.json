@@ -1,0 +1,109 @@
+{
+  "plan_id": "789012",
+  "main_document": "plan_789012-main-EXECUTED.txt",
+  "status": "EXECUTED",
+  "annexes": [
+    {
+      "id": "A",
+      "file": "plan_789012-annexA-EXECUTED.txt",
+      "department": "Finance",
+      "appendices": [
+        {
+          "id": "A",
+          "file": "plan_789012-annexA-appendixA-EXECUTED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "B",
+          "file": "plan_789012-annexA-appendixB-EXECUTED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "C",
+          "file": "plan_789012-annexA-appendixC-EXECUTED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "file": "plan_789012-annexB-EXECUTED.txt",
+      "department": "Operations",
+      "appendices": [
+        {
+          "id": "D",
+          "file": "plan_789012-annexB-appendixD-EXECUTED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "E",
+          "file": "plan_789012-annexB-appendixE-EXECUTED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "F",
+          "file": "plan_789012-annexB-appendixF-EXECUTED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T",
+      "file": "plan_789012-annexT-EXECUTED.txt",
+      "department": "IT",
+      "appendices": [
+        {
+          "id": "G",
+          "file": "plan_789012-annexT-appendixG-EXECUTED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "H",
+          "file": "plan_789012-annexT-appendixH-EXECUTED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        },
+        {
+          "id": "I",
+          "file": "plan_789012-annexT-appendixI-EXECUTED.txt",
+          "answers_questions": [
+            "Q1",
+            "Q2",
+            "Q3"
+          ]
+        }
+      ]
+    }
+  ]
+}
