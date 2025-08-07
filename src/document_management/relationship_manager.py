@@ -9,6 +9,11 @@ import json
 from pathlib import Path
 from typing import Dict, List, Optional, Union, Any, Set
 from datetime import datetime
+import threading
+import time
+import os
+import shutil
+import tempfile
 
 logger = logging.getLogger(__name__)
 
@@ -44,7 +49,18 @@ class RelationshipManager:
             self.relationship_path = self.metadata_dir / "document_relationships.json"
             self.tags_path = self.metadata_dir / "document_tags.json"
             
-            self.relationships = self._load_relationships()
+            # Initialize relationships
+            self.relationships = {
+                "documents": {},
+                "last_updated": datetime.now().isoformat()
+            }
+            
+            # Load existing relationships
+            existing = self._load_relationships()
+            if existing:
+                self.relationships.update(existing)
+            
+            # Load tags
             self.tags = self._load_tags()
             self.auto_save = auto_save
             
@@ -55,121 +71,285 @@ class RelationshipManager:
             raise
     
     def _load_relationships(self) -> Dict[str, Any]:
-        """Load the relationship registry from disk.
+        """Load the relationship registry from disk with error handling.
         
         Returns:
             Relationship registry dictionary
         """
-        if self.relationship_path.exists():
-            try:
-                with open(self.relationship_path, "r", encoding="utf-8") as f:
-                    return json.load(f)
-            except Exception as e:
-                logger.error(f"Error loading relationship registry: {e}")
-                
+        try:
+            if self.relationship_path.exists():
+                try:
+                    # Read file with error handling
+                    with open(self.relationship_path, "r", encoding="utf-8", errors='replace') as f:
+                        content = f.read()
+                    
+                    # Try to parse JSON with error handling
+                    try:
+                        registry = json.loads(content)
+                        if not isinstance(registry, dict):
+                            raise ValueError("Registry is not a dictionary")
+                        return registry
+                    except json.JSONDecodeError as e:
+                        logger.error(f"JSON decode error in relationship registry: {e}\nContent: {content[:200]}...")
+                        # If JSON is invalid, try to recover
+                        try:
+                            # Try to fix common JSON issues
+                            content = content.strip()
+                            if content.startswith("{") and content.endswith("}"):
+                                # Try to fix common JSON issues
+                                content = content.replace("\\", "")  # Remove escaped backslashes
+                                content = content.replace("\n", "")   # Remove newlines
+                                content = content.replace("\t", "")   # Remove tabs
+                                try:
+                                    registry = json.loads(content)
+                                    if isinstance(registry, dict):
+                                        return registry
+                                except:
+                                    pass
+                        except:
+                            pass
+                        
+                        # If recovery fails, create new registry
+                        logger.warning("Creating new relationship registry due to JSON error")
+                        os.remove(self.relationship_path)
+                        logger.info(f"Removed corrupted registry file: {self.relationship_path}")
+                except Exception as e:
+                    logger.error(f"File read error in relationship registry: {e}")
+                    # If file read fails, create new registry
+                    try:
+                        os.remove(self.relationship_path)
+                        logger.info(f"Removed corrupted registry file: {self.relationship_path}")
+                    except:
+                        pass
+        except Exception as e:
+            logger.error(f"Unexpected error loading relationship registry: {e}")
+            
         # Initialize empty registry
-        return {
+        registry = {
             "documents": {},
             "last_updated": datetime.now().isoformat()
         }
+        
+        # Try to save the new registry
+        try:
+            self._save_relationships(registry)
+        except Exception as e:
+            logger.error(f"Error saving new relationship registry: {e}")
+            
+        return registry
     
     def _load_tags(self) -> Dict[str, Any]:
-        """Load the tags registry from disk.
+        """Load the tags registry from disk with error handling.
         
         Returns:
             Tags registry dictionary
         """
-        if self.tags_path.exists():
-            try:
-                with open(self.tags_path, "r", encoding="utf-8") as f:
-                    return json.load(f)
-            except Exception as e:
-                logger.error(f"Error loading tags registry: {e}")
-                
+        try:
+            if self.tags_path.exists():
+                try:
+                    # Read file with error handling
+                    with open(self.tags_path, "r", encoding="utf-8", errors='replace') as f:
+                        content = f.read()
+                    
+                    # Try to parse JSON with error handling
+                    try:
+                        registry = json.loads(content)
+                        if not isinstance(registry, dict):
+                            raise ValueError("Registry is not a dictionary")
+                        return registry
+                    except json.JSONDecodeError as e:
+                        logger.error(f"JSON decode error in tags registry: {e}\nContent: {content[:200]}...")
+                        # Try to fix common JSON issues
+                        try:
+                            # Try to fix common JSON issues
+                            content = content.strip()
+                            if content.startswith("{") and content.endswith("}"):
+                                # Try to fix common JSON issues
+                                content = content.replace("\\", "")  # Remove escaped backslashes
+                                content = content.replace("\n", "")   # Remove newlines
+                                content = content.replace("\t", "")   # Remove tabs
+                                try:
+                                    registry = json.loads(content)
+                                    if isinstance(registry, dict):
+                                        return registry
+                                except:
+                                    pass
+                        except:
+                            pass
+                        
+                        # If recovery fails, create new registry
+                        logger.warning("Creating new tags registry due to JSON error")
+                        if self.tags_path.exists():
+                            try:
+                                os.remove(self.tags_path)
+                                logger.info(f"Removed corrupted tags registry file: {self.tags_path}")
+                            except:
+                                pass
+                except Exception as e:
+                    logger.error(f"File read error in tags registry: {e}")
+                    # If file read fails, create new registry
+                    try:
+                        if self.tags_path.exists():
+                            os.remove(self.tags_path)
+                            logger.info(f"Removed corrupted tags registry file: {self.tags_path}")
+                    except:
+                        pass
+        except Exception as e:
+            logger.error(f"Unexpected error loading tags registry: {e}")
+            
         # Initialize empty registry
-        return {
+        registry = {
             "tags": {},
             "documents": {},
             "last_updated": datetime.now().isoformat()
         }
-    
-    def _save_relationships(self):
-        """Save the relationship registry to disk."""
-        timestamp = datetime.now()
-        self.relationships["last_updated"] = timestamp.isoformat()
         
+        # Try to save the new registry
         try:
-            # Save current version
-            with open(self.relationship_path, "w", encoding="utf-8") as f:
-                json.dump(self.relationships, f, indent=2, default=str)
-            
-            # Save versioned copy if enabled
-            if self.enable_versioning:
-                version_filename = f"relationships_{timestamp.strftime('%Y%m%d_%H%M%S')}.json"
-                version_path = self.versions_dir / version_filename
-                with open(version_path, "w", encoding="utf-8") as f:
-                    json.dump(self.relationships, f, indent=2, default=str)
-                logger.debug(f"Saved relationship version: {version_filename}")
+            self._save_tags(registry)
         except Exception as e:
-            logger.error(f"Error saving relationship registry: {e}")
-    
-    def _save_tags(self):
-        """Save the tags registry to disk."""
-        timestamp = datetime.now()
-        self.tags["last_updated"] = timestamp.isoformat()
-        
-        try:
-            # Save current version
-            with open(self.tags_path, "w", encoding="utf-8") as f:
-                json.dump(self.tags, f, indent=2, default=str)
+            logger.error(f"Error saving new tags registry: {e}")
             
-            # Save versioned copy if enabled
-            if self.enable_versioning:
-                version_filename = f"tags_{timestamp.strftime('%Y%m%d_%H%M%S')}.json"
-                version_path = self.versions_dir / version_filename
-                with open(version_path, "w", encoding="utf-8") as f:
-                    json.dump(self.tags, f, indent=2, default=str)
-                logger.debug(f"Saved tags version: {version_filename}")
+        return registry
+    
+
+
+    def _save_relationships(self):
+        """Save the relationships registry to disk."""
+        try:
+            # Create backup first
+            backup_path = self.relationship_path.with_suffix('.bak')
+            if self.relationship_path.exists():
+                shutil.copy2(self.relationship_path, backup_path)
+            
+            # Update timestamp
+            registry = self.relationships
+            registry["last_updated"] = datetime.now().isoformat()
+            
+            # Write to temporary file first
+            temp_path = self.relationship_path.with_suffix('.tmp')
+            with open(temp_path, "w", encoding="utf-8", errors='replace') as f:
+                json.dump(registry, f, indent=2, default=str)
+            
+            # Replace original file with temporary file
+            try:
+                os.replace(temp_path, self.relationship_path)
+            except Exception as e:
+                logger.error(f"Failed to replace registry file: {e}")
+                raise
+            
+            # Clean up backup if successful
+            if backup_path.exists():
+                try:
+                    backup_path.unlink()
+                    logger.info("Removed old backup")
+                except Exception as e:
+                    logger.error(f"Failed to remove backup: {e}")
+                    
+        except Exception as e:
+            logger.error(f"Error saving relationships registry: {e}")
+            # Restore from backup if available
+            if backup_path.exists():
+                try:
+                    shutil.copy2(backup_path, self.relationship_path)
+                    logger.info("Restored relationships registry from backup")
+                except Exception as e:
+                    logger.error(f"Failed to restore from backup: {e}")
+            raise
+    
+    def _save_tags(self, registry: Dict[str, Any]):
+        """Save the tags registry to disk.
+        
+        Args:
+            registry: Tags registry dictionary to save
+        """
+        try:
+            # Create backup first
+            backup_path = self.tags_path.with_suffix('.bak')
+            if self.tags_path.exists():
+                shutil.copy2(self.tags_path, backup_path)
+            
+            # Update timestamp
+            registry["last_updated"] = datetime.now().isoformat()
+            
+            # Write to temporary file first
+            temp_path = self.tags_path.with_suffix('.tmp')
+            with open(temp_path, "w", encoding="utf-8", errors='replace') as f:
+                json.dump(registry, f, indent=2, default=str)
+            
+            # Replace original file with temporary file
+            try:
+                os.replace(temp_path, self.tags_path)
+            except Exception as e:
+                logger.error(f"Failed to replace registry file: {e}")
+                raise
+            
+            # Clean up backup if successful
+            if backup_path.exists():
+                try:
+                    backup_path.unlink()
+                    logger.info("Removed old backup")
+                except Exception as e:
+                    logger.error(f"Failed to remove backup: {e}")
+                    
         except Exception as e:
             logger.error(f"Error saving tags registry: {e}")
+            # Restore from backup if available
+            if backup_path.exists():
+                try:
+                    shutil.copy2(backup_path, self.tags_path)
+                    logger.info("Restored tags registry from backup")
+                except Exception as e:
+                    logger.error(f"Failed to restore from backup: {e}")
+            raise
     
     def save(self):
         """Save all registries to disk."""
         self._save_relationships()
         self._save_tags()
-    
-    def register_document(
-        self,
-        doc_id: str,
-        original_name: str,
-        source_path: str,
-        metadata: Optional[Dict[str, Any]] = None
-    ):
-        """Register a document in the relationship registry.
+
+    def register_document(self, doc_id: str, original_name: str, source_path: str, metadata: Optional[Dict[str, Any]] = None) -> bool:
+        """Register a new document in the relationship manager.
         
         Args:
             doc_id: Document ID
-            original_name: Original document name
-            source_path: Path to document in source system
-            metadata: Additional metadata
+            original_name: Original name of the document
+            source_path: Path where the document was sourced from
+            metadata: Document metadata (optional)
+            
+        Returns:
+            True if successful, False otherwise
         """
-        # Initialize document in relationship registry if not exists
-        if doc_id not in self.relationships["documents"]:
+        try:
+            if doc_id in self.relationships["documents"]:
+                logger.warning(f"Document {doc_id} already registered")
+                return False
+
+            # Initialize document entry
             self.relationships["documents"][doc_id] = {
-                "original_name": original_name,
-                "source_path": source_path,
+                "metadata": {
+                    "original_name": original_name,
+                    "source_path": source_path,
+                    **(metadata or {})
+                },
                 "relationships": {},
-                "metadata": metadata or {}
+                "last_updated": datetime.now().isoformat()
             }
-        
-        # Initialize document in tags registry if not exists
-        if doc_id not in self.tags["documents"]:
-            self.tags["documents"][doc_id] = {
-                "tags": []
-            }
-        
-        if self.auto_save:
-            self.save()
+
+            # Update relationships registry timestamp
+            self.relationships["last_updated"] = datetime.now().isoformat()
+
+            if self.auto_save:
+                self._save_relationships()
+            
+            logger.info(f"Registered document {doc_id} with name {original_name}")
+            return True
+            
+        except Exception as e:
+            logger.error(f"Error registering document {doc_id}: {e}")
+            return False
+
+
     
     def add_relationship(
         self,
@@ -189,35 +369,40 @@ class RelationshipManager:
         Returns:
             True if successful, False otherwise
         """
-        # Check if documents exist
-        if source_doc_id not in self.relationships["documents"]:
-            logger.warning(f"Source document {source_doc_id} not found in registry")
-            return False
+        try:
+            # Check if documents exist
+            if source_doc_id not in self.relationships["documents"]:
+                logger.warning(f"Source document {source_doc_id} not found in registry")
+                return False
+
+            if target_doc_id not in self.relationships["documents"]:
+                logger.warning(f"Target document {target_doc_id} not found in registry")
+                return False
+
+            # Initialize relationship type if not exists
+            if relationship_type not in self.relationships["documents"][source_doc_id]["relationships"]:
+                self.relationships["documents"][source_doc_id]["relationships"][relationship_type] = []
+
+            # Add relationship if not exists
+            if target_doc_id not in self.relationships["documents"][source_doc_id]["relationships"][relationship_type]:
+                self.relationships["documents"][source_doc_id]["relationships"][relationship_type].append(target_doc_id)
             
-        if target_doc_id not in self.relationships["documents"]:
-            logger.warning(f"Target document {target_doc_id} not found in registry")
-            return False
-        
-        # Initialize relationship type if not exists
-        if relationship_type not in self.relationships["documents"][source_doc_id]["relationships"]:
-            self.relationships["documents"][source_doc_id]["relationships"][relationship_type] = []
-        
-        # Add relationship if not exists
-        if target_doc_id not in self.relationships["documents"][source_doc_id]["relationships"][relationship_type]:
-            self.relationships["documents"][source_doc_id]["relationships"][relationship_type].append(target_doc_id)
-        
-        # Add bidirectional relationship if requested
-        if bidirectional:
-            if relationship_type not in self.relationships["documents"][target_doc_id]["relationships"]:
-                self.relationships["documents"][target_doc_id]["relationships"][relationship_type] = []
+            # Add bidirectional relationship if requested
+            if bidirectional:
+                if relationship_type not in self.relationships["documents"][target_doc_id]["relationships"]:
+                    self.relationships["documents"][target_doc_id]["relationships"][relationship_type] = []
+                
+                if source_doc_id not in self.relationships["documents"][target_doc_id]["relationships"][relationship_type]:
+                    self.relationships["documents"][target_doc_id]["relationships"][relationship_type].append(source_doc_id)
             
-            if source_doc_id not in self.relationships["documents"][target_doc_id]["relationships"][relationship_type]:
-                self.relationships["documents"][target_doc_id]["relationships"][relationship_type].append(source_doc_id)
-        
-        if self.auto_save:
-            self._save_relationships()
+            if self.auto_save:
+                self._save_relationships()
+                logger.info(f"Added relationship between {source_doc_id} and {target_doc_id}")
             
-        return True
+            return True
+        except Exception as e:
+            logger.error(f"Error adding relationship: {e}")
+            raise
     
     def remove_relationship(
         self,
@@ -266,12 +451,12 @@ class RelationshipManager:
             
         return True
     
-    def get_related_documents(
+    def get_document_relationships(
         self,
         doc_id: str,
         relationship_type: Optional[str] = None
     ) -> Dict[str, List[str]]:
-        """Get documents related to the specified document.
+        """Get relationships for a document.
         
         Args:
             doc_id: Document ID
@@ -290,6 +475,22 @@ class RelationshipManager:
             return {relationship_type: relationships.get(relationship_type, [])}
         
         return relationships
+
+    def get_related_documents(
+        self,
+        doc_id: str,
+        relationship_type: Optional[str] = None
+    ) -> Dict[str, List[str]]:
+        """Get documents related to the specified document.
+        
+        Args:
+            doc_id: Document ID
+            relationship_type: Type of relationship to filter by
+        
+        Returns:
+            Dictionary of relationship types and related document IDs
+        """
+        return self.get_document_relationships(doc_id, relationship_type)
     
     def add_tag(self, doc_id: str, tag: str, category: Optional[str] = None):
         """Add a tag to a document.

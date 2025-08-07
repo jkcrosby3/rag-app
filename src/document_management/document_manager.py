@@ -9,9 +9,10 @@ import os
 import shutil
 import json
 from pathlib import Path
-from typing import Dict, List, Optional, Union, Any, Tuple
+from typing import Dict, List, Optional, Union, Callable, Set, Any, Tuple
 from datetime import datetime
 import threading
+import time
 
 # Import internal modules
 from src.document_processing.batch_processor import BatchProcessor
@@ -68,63 +69,249 @@ class DocumentManager:
                         logger.info(f"Loaded configuration from {config_path}")
                     except json.JSONDecodeError as e:
                         logger.error(f"Error parsing configuration file {config_path}: {e}")
+                    except Exception as e:
+                        logger.error(f"Error loading configuration file {config_path}: {e}")
                 else:
                     logger.warning(f"Configuration file not found: {config_path}")
             
-            # Initialize document registry
-            self.registry_path = self.data_dir / "document_registry.json"
-            self.registry = self._load_registry()
-            logger.info(f"Loaded document registry with {len(self.registry.get('documents', {}))} documents")
-            
-            # Initialize batch processor and chunker
+            # Initialize batch processor, chunker, and relationship manager
             try:
-                from src.document_processing.batch_processor import BatchProcessor
-                from src.document_processing.chunker import Chunker
-                
                 self.batch_processor = BatchProcessor()
                 self.chunker = Chunker()
-                logger.info("Successfully initialized batch processor and chunker")
-                
-                # Initialize relationship manager
                 self.relationship_manager = RelationshipManager(data_dir=self.data_dir)
-                logger.info("Successfully initialized relationship manager")
+                
+                logger.info("Successfully initialized batch processor, chunker, and relationship manager")
+                
+                # Initialize document registry
+                self.registry_path = self.data_dir / "document_registry.json"
+                self.registry = self._load_registry()
+                logger.info(f"Loaded document registry with {len(self.registry.get('documents', {}))} documents")
+                
+                # Log about existing documents
+                if self.registry_path.exists():
+                    existing_docs = self.registry.get('documents', {})
+                    logger.info(f"Found {len(existing_docs)} existing documents in registry")
+                else:
+                    logger.info("No document registry found")
+                
             except ImportError as e:
                 logger.error(f"Failed to initialize document processing components: {e}")
                 raise ImportError(f"Required document processing components not available: {e}") from e
-                
+            
+            except Exception as e:
+                logger.error(f"Error initializing document manager: {e}")
+                raise
         except Exception as e:
-            logger.error(f"Error initializing DocumentManager: {e}")
+            logger.error(f"Fatal error in document manager initialization: {e}")
             raise
         
+    def search_documents(self, query: str) -> str:
+        """Search through documents using the vector database.
+        
+        Args:
+            query: Search query
+            
+        Returns:
+            str: Search results
+        """
+        try:
+            # Import and initialize retriever
+            from src.retrieval.retriever import DocumentRetriever
+            retriever = DocumentRetriever()
+            
+            # Perform search
+            results = retriever.search(query)
+            
+            # Format results
+            formatted_results = "\n".join([
+                f"{doc['score']:.2f}: {doc['text']}" 
+                for doc in results
+            ])
+            
+            return formatted_results
+        except ImportError as e:
+            logger.error(f"Failed to import DocumentRetriever: {e}")
+            return f"Error: Failed to import DocumentRetriever"
+        except Exception as e:
+            logger.error(f"Error searching documents: {e}")
+            return f"Error searching documents: {str(e)}"
+
     def _load_registry(self) -> Dict[str, Any]:
         """Load the document registry from disk.
         
         Returns:
             Document registry dictionary
         """
-        if self.registry_path.exists():
-            try:
-                with open(self.registry_path, "r", encoding="utf-8") as f:
-                    return json.load(f)
-            except Exception as e:
-                logger.error(f"Error loading document registry: {e}")
-                
-        # Initialize empty registry
-        return {
-            "documents": {},
-            "last_updated": datetime.now().isoformat()
-        }
-        
-    def _save_registry(self):
-        """Save the document registry to disk."""
-        self.registry["last_updated"] = datetime.now().isoformat()
-        
         try:
-            with open(self.registry_path, "w", encoding="utf-8") as f:
-                json.dump(self.registry, f, indent=2, default=str)
+            registry = {
+                "documents": {},
+                "last_updated": datetime.now().isoformat()
+            }
+            
+            if self.registry_path.exists():
+                try:
+                    with open(self.registry_path, "r", encoding="utf-8") as f:
+                        registry = json.load(f)
+                    logger.info(f"Loaded document registry from {self.registry_path}")
+                except json.JSONDecodeError as e:
+                    logger.error(f"Error loading document registry: {e}")
+                    logger.warning("Creating new registry due to JSON error")
+                    # Remove the corrupted file
+                    os.remove(self.registry_path)
+                    logger.info(f"Removed corrupted registry file: {self.registry_path}")
         except Exception as e:
-            logger.error(f"Error saving document registry: {e}")
+            logger.error(f"Unexpected error loading registry: {e}")
+            registry = {
+                "documents": {},
+                "last_updated": datetime.now().isoformat()
+            }
+            logger.warning("Creating new registry due to unexpected error")
+        
+        return registry
     
+    def _save_registry(self) -> None:
+        """Save the document registry to disk with proper error handling."""
+        try:
+            # Ensure data directory exists and is writable
+            if not os.access(self.data_dir, os.W_OK):
+                raise PermissionError(f"Write access denied to data directory: {self.data_dir}")
+            
+            # Create a temporary file in the same directory
+            temp_path = self.registry_path.with_suffix('.tmp')
+            
+            # Use atomic file operations with retry logic
+            max_retries = 5
+            retry_delay = 0.5  # seconds
+            
+            for attempt in range(max_retries):
+                try:
+                    # Write to temporary file
+                    with open(temp_path, "w", encoding="utf-8", errors='replace') as f:
+                        json.dump(self.registry, f, indent=2, default=str)
+                    
+                    # Try to replace the file
+                    if self.registry_path.exists():
+                        try:
+                            # Try to remove the old file with retry
+                            for _ in range(3):
+                                try:
+                                    os.remove(self.registry_path)
+                                    break
+                                except PermissionError:
+                                    # Wait a bit and try again
+                                    time.sleep(retry_delay)
+                            else:
+                                raise PermissionError(f"Could not remove old registry file after multiple attempts")
+                        except PermissionError:
+                            # If we can't remove, try to rename
+                            try:
+                                os.rename(temp_path, self.registry_path)
+                                break
+                            except PermissionError:
+                                # Wait and try again
+                                time.sleep(retry_delay)
+                                continue
+                    else:
+                        # If no old file exists, just rename
+                        os.rename(temp_path, self.registry_path)
+                        break
+                    
+                    logger.info(f"Successfully saved document registry to {self.registry_path}")
+                    break
+                
+                except PermissionError as e:
+                    if attempt == max_retries - 1:
+                        logger.error(f"Permission error saving document registry after {max_retries} attempts: {e}")
+                        raise
+                    logger.warning(f"Permission error, retrying ({attempt + 1}/{max_retries}): {e}")
+                    time.sleep(retry_delay)
+                
+                except Exception as e:
+                    logger.error(f"Error saving document registry: {e}")
+                    if temp_path.exists():
+                        try:
+                            os.remove(temp_path)
+                        except:
+                            pass
+                    raise
+        
+        except Exception as e:
+            logger.error(f"Final error saving document registry: {e}")
+            if temp_path.exists():
+                try:
+                    os.remove(temp_path)
+                except:
+                    pass
+            raise
+        
+    def import_document(
+        self,
+        file_path: Union[str, Path],
+        source: str = "upload"
+    ) -> str:
+        """Import a single document with retry logic.
+        
+        Args:
+            file_path: Path to the document file
+            source: Source of the document (default: 'upload')
+            
+        Returns:
+            Document ID
+        
+        Raises:
+            ValueError: If the file is not a supported document type
+        """
+        try:
+            file_path = Path(file_path)
+            
+            # Check if file exists
+            if not file_path.exists():
+                raise ValueError(f"File not found: {file_path}")
+                
+            # Check if it's a supported document type
+            supported_extensions = {".txt", ".pdf", ".docx", ".md"}
+            if file_path.suffix.lower() not in supported_extensions:
+                raise ValueError(f"Unsupported file type: {file_path.suffix}")
+                
+            # Copy file to documents directory with retry logic
+            target_path = self.documents_dir / file_path.name
+            max_retries = 3
+            retry_delay = 0.5
+            
+            for attempt in range(max_retries):
+                try:
+                    # Ensure target directory exists and is writable
+                    if not os.access(self.documents_dir, os.W_OK):
+                        raise PermissionError(f"Write access denied to documents directory: {self.documents_dir}")
+                    
+                    # Copy file with proper error handling
+                    shutil.copy2(file_path, target_path)
+                    logger.info(f"Successfully copied document to: {target_path}")
+                    break
+                
+                except PermissionError as e:
+                    if attempt == max_retries - 1:
+                        logger.error(f"Permission error after {max_retries} attempts: {e}")
+                        raise
+                    logger.warning(f"Permission error, retrying ({attempt + 1}/{max_retries}): {e}")
+                    time.sleep(retry_delay)
+                    continue
+                
+                except Exception as e:
+                    logger.error(f"Error copying document: {e}")
+                    raise
+            
+            # Register the document
+            return self.register_document(
+                file_path=target_path,
+                source=source,
+                metadata={"original_path": str(file_path)}
+            )
+            
+        except Exception as e:
+            logger.error(f"Error importing document {file_path}: {e}")
+            raise
+
     def register_document(
         self,
         file_path: Union[str, Path],
@@ -453,30 +640,29 @@ class DocumentManager:
             except Exception as e:
                 logger.error(f"Error chunking document {doc_id}: {e}")
                 
-        # Save registry
-        self._save_registry()
-        
-        return {"chunked": chunked_count}
-    
-    def get_document_list(self) -> List[Dict[str, Any]]:
-        """Get a list of all documents in the registry.
         
         Returns:
             List of document metadata dictionaries
         """
-        return list(self.registry["documents"].values())
-    
-    def get_document(self, doc_id: str) -> Optional[Dict[str, Any]]:
-        """Get document metadata by ID.
-        
-        Args:
-            doc_id: Document ID
+        documents = []
+        for doc_id, doc in self.registry.get('documents', {}).items():
+            # Skip documents that have a parent relationship (chunks)
+            relationships = self.relationship_manager.get_document_relationships(doc_id)
+            if 'parent' in relationships and relationships['parent']:
+                continue
             
-        Returns:
-            Document metadata dictionary or None if not found
-        """
-        return self.registry["documents"].get(doc_id)
-        
+            documents.append({
+                'id': doc_id,
+                'file_name': Path(doc['file_path']).name,
+                'source': doc['source'],
+                'size_bytes': Path(doc['file_path']).stat().st_size if Path(doc['file_path']).exists() else 0,
+                'imported_at': doc['imported_at'],
+                'processed': doc.get('processed', False),
+                'chunked': doc.get('chunked', False),
+                'embedded': doc.get('embedded', False)
+            })
+        return documents
+
     # Relationship management methods
     
     def add_document_relationship(self, source_doc_id: str, target_doc_id: str, relationship_type: str, bidirectional: bool = False) -> bool:

@@ -13,11 +13,40 @@ from typing import Dict, List, Optional, Union, Any
 import gradio as gr
 import pandas as pd
 
-from src.document_management.document_manager import DocumentManager
+from ..document_management.document_manager import DocumentManager
 
 # Initialize document manager
 document_manager = DocumentManager()
 
+# Run document initialization in a separate thread
+def initialize_documents():
+    """Initialize documents in the background"""
+    try:
+        # Wait a bit to ensure UI is fully initialized
+        import time
+        time.sleep(1)
+        
+        # Get existing documents
+        existing_docs = set(document_manager.registry.get('documents', {}).keys())
+        
+        # Register new documents
+        for file_path in Path('data/documents').glob("**/*.*"):
+            if file_path.name not in existing_docs:
+                try:
+                    document_manager.register_document(
+                        file_path=str(file_path),
+                        source="existing",
+                        metadata={"original_path": str(file_path)}
+                    )
+                    print(f"Registered existing document: {file_path}")
+                except Exception as e:
+                    print(f"Failed to register {file_path}: {e}")
+    except Exception as e:
+        print(f"Error during document registration: {e}")
+
+# Start document initialization in background thread
+import threading
+threading.Thread(target=initialize_documents, daemon=True, name="document_initializer").start()
 
 def list_documents():
     """List all documents in the system.
@@ -29,8 +58,6 @@ def list_documents():
     
     if not documents:
         return pd.DataFrame(columns=["ID", "Name", "Source", "Size", "Processed", "Chunked"])
-        
-    # Convert to DataFrame
     df = pd.DataFrame([
         {
             "ID": doc["id"],
@@ -60,20 +87,26 @@ def upload_files(files):
     if not files:
         return "No files uploaded", list_documents()
         
-    # Create temporary directory for uploaded files
-    with tempfile.TemporaryDirectory() as temp_dir:
-        temp_path = Path(temp_dir)
-        
-        # Save uploaded files to temp directory
-        for file in files:
-            file_path = temp_path / os.path.basename(file.name)
-            with open(file_path, "wb") as f:
-                f.write(file.read())
+    results = []
+    for file in files:
+        try:
+            # Create temporary file
+            with tempfile.NamedTemporaryFile(delete=False) as temp_file:
+                temp_file.write(file.read())
+                temp_path = Path(temp_file.name)
                 
-        # Import files
-        doc_ids = document_manager.import_from_local(temp_path)
-        
-    return f"Uploaded {len(doc_ids)} files", list_documents()
+            # Import the document
+            doc_id = document_manager.import_document(str(temp_path))
+            results.append(f"Successfully imported {file.name} with ID {doc_id}")
+            
+            # Clean up temporary file
+            temp_path.unlink()
+            
+        except Exception as e:
+            results.append(f"Failed to import {file.name}: {str(e)}")
+                
+    status = "\n".join(results)
+    return status, list_documents()
 
 
 def import_from_directory(directory_path):
@@ -87,6 +120,28 @@ def import_from_directory(directory_path):
     """
     if not directory_path:
         return "No directory specified", list_documents()
+    
+    try:
+        # Convert to Path object
+        dir_path = Path(directory_path)
+        if not dir_path.exists() or not dir_path.is_dir():
+            return f"Directory does not exist: {directory_path}", list_documents()
+            
+        # Import all files
+        results = []
+        for file_path in dir_path.glob("**/*.*"):
+            if file_path.is_file():
+                try:
+                    doc_id = document_manager.import_document(str(file_path))
+                    results.append(f"Successfully imported {file_path.name} with ID {doc_id}")
+                except Exception as e:
+                    results.append(f"Failed to import {file_path.name}: {str(e)}")
+        
+        status = "\n".join(results)
+        return status, list_documents()
+        
+    except Exception as e:
+        return f"Error importing from directory: {str(e)}", list_documents()
         
     try:
         doc_ids = document_manager.import_from_local(directory_path)
@@ -143,6 +198,114 @@ def process_selected_documents(document_ids):
     
     # Process documents
     stats = document_manager.process_documents(doc_ids)
+
+
+def create_ui():
+    """Create and launch the Gradio UI interface."""
+    with gr.Blocks() as demo:
+        # Document Management Column
+        with gr.Column():
+            # Document List
+            gr.Markdown("### Document List")
+            doc_list = gr.Dataframe(
+                headers=["ID", "Name", "Source", "Size", "Imported", "Processed", "Chunked", "Embedded"],
+                value=list_documents,
+                interactive=False
+            )
+            
+            # Document Selection
+            gr.Markdown("### Document Operations")
+            doc_ids = gr.Textbox(
+                label="Document IDs",
+                placeholder="Enter comma-separated document IDs"
+            )
+            process_btn = gr.Button("Process Selected Documents")
+            process_btn.click(
+                fn=process_selected_documents,
+                inputs=[doc_ids],
+                outputs=[gr.Textbox(label="Status"), doc_list]
+            )
+            
+            # File Upload
+            gr.Markdown("### Upload Documents")
+            upload_input = gr.File(
+                label="Upload Files",
+                file_types=["file"],
+                file_count="multiple"
+            )
+            upload_btn = gr.Button("Upload")
+            status_output = gr.Textbox(label="Status")
+            
+            upload_btn.click(
+                fn=upload_files,
+                inputs=[upload_input],
+                outputs=[status_output, doc_list]
+            )
+            
+            # Directory Import
+            gr.Markdown("### Import from Directory")
+            dir_path = gr.Textbox(
+                label="Directory Path",
+                placeholder="Enter directory path"
+            )
+            dir_import_btn = gr.Button("Import from Directory")
+            dir_import_btn.click(
+                fn=import_from_directory,
+                inputs=[dir_path],
+                outputs=[gr.Textbox(label="Status"), doc_list]
+            )
+            
+            # SharePoint Import
+            gr.Markdown("### Import from SharePoint")
+            with gr.Row():
+                sp_library = gr.Textbox(
+                    label="Library Name",
+                    placeholder="Enter SharePoint library name"
+                )
+                sp_folder = gr.Textbox(
+                    label="Folder Path",
+                    placeholder="Enter folder path"
+                )
+                sp_extensions = gr.Textbox(
+                    label="File Extensions",
+                    placeholder="Enter file extensions (e.g., .pdf,.docx)"
+                )
+            sp_import_btn = gr.Button("Import from SharePoint")
+            sp_import_btn.click(
+                fn=import_from_sharepoint,
+                inputs=[sp_library, sp_folder, sp_extensions],
+                outputs=[gr.Textbox(label="Status"), doc_list]
+            )
+        
+        # Query Interface Column
+        with gr.Column():
+            gr.Markdown("### Document Query Interface")
+            query_input = gr.Textbox(
+                label="Enter your query",
+                placeholder="Ask questions about the documents"
+            )
+            query_btn = gr.Button("Search")
+            results = gr.Textbox(
+                label="Search Results",
+                lines=10
+            )
+            
+            # Connect query interface
+            query_btn.click(
+                fn=document_manager.search_documents,
+                inputs=[query_input],
+                outputs=[results]
+            )
+    
+    return demo
+
+def launch_ui(share=False):
+    """Launch the UI interface."""
+    ui = create_ui()
+    ui.launch(
+        share=share,
+        inbrowser=True
+    )
     
     return f"Processed {stats.get('processed', 0)} documents", list_documents()
 
@@ -197,152 +360,86 @@ def run_full_pipeline():
         Status message and updated document list
     """
     stats = document_manager.run_full_pipeline()
-    
-    return (
-        f"Processed {stats.get('processed', 0)} documents, "
-        f"chunked {stats.get('chunked', 0)} documents",
-        list_documents()
-    )
-
-
-def create_ui():
     """Create the document management UI.
     
     Returns:
         Gradio interface
     """
-    with gr.Blocks(title="RAG Document Management") as interface:
-        gr.Markdown("# Document Management")
+    with gr.Blocks(title="Document Management System") as demo:
+        with gr.Row():
+            with gr.Column():
+                gr.Markdown("# Document Management")
+                
+                # Document list
+                with gr.Row():
+                    gr.Markdown("## Document List")
+                    doc_list = gr.DataFrame()
+                    
+                # File upload section with enhanced file explorer
+                with gr.Row():
+                    gr.Markdown("## Upload Documents")
+                    with gr.Column():
+                        # File explorer button
+                        file_explorer = gr.Button("Open File Explorer")
+                        # File upload with file explorer
+                        upload_button = gr.File(
+                            file_types=[".pdf", ".txt", ".docx", ".xlsx"],
+                            file_count="multiple",
+                            label="Select files to upload"
+                        )
+                        
+                # Directory import
+                with gr.Row():
+                    gr.Markdown("## Import from Directory")
+                    dir_path = gr.Textbox(
+                        placeholder="Enter directory path",
+                        label="Directory Path"
+                    )
+                    import_button = gr.Button("Import Directory")
+                    
+                # Status output
+                status = gr.Textbox(label="Status")
+                
+            # Query interface
+            with gr.Column():
+                gr.Markdown("# Query Interface")
+                query_input = gr.Textbox(
+                    placeholder="Enter your query here...",
+                    label="Query"
+                )
+                query_button = gr.Button("Ask Question")
+                response = gr.Textbox(label="Response")
+                
+        # Event handlers
+        # Add file explorer click handler
+        file_explorer.click(
+            fn=lambda: None,  # This will trigger the native file explorer
+            inputs=[file_explorer],
+            outputs=[upload_button]
+        )
         
-        with gr.Tab("Document List"):
-            documents_df = gr.DataFrame(
-                value=list_documents(),
-                label="Documents",
-                interactive=False
-            )
-            refresh_btn = gr.Button("Refresh")
-            refresh_btn.click(
-                fn=lambda: list_documents(),
-                outputs=[documents_df]
-            )
-            
-        with gr.Tab("Import Documents"):
-            gr.Markdown("## Upload Files")
-            with gr.Row():
-                upload_input = gr.File(
-                    label="Upload Files",
-                    file_count="multiple"
-                )
-                upload_btn = gr.Button("Upload")
-                
-            gr.Markdown("## Import from Directory")
-            with gr.Row():
-                dir_input = gr.Textbox(
-                    label="Directory Path",
-                    placeholder="Enter directory path"
-                )
-                dir_btn = gr.Button("Import")
-                
-            gr.Markdown("## Import from SharePoint")
-            with gr.Row():
-                sp_library = gr.Textbox(
-                    label="Library Name",
-                    placeholder="Enter SharePoint library name"
-                )
-                sp_folder = gr.Textbox(
-                    label="Folder Path (optional)",
-                    placeholder="Enter folder path within library"
-                )
-                sp_extensions = gr.Textbox(
-                    label="File Extensions (optional)",
-                    placeholder="pdf,docx,txt"
-                )
-                sp_btn = gr.Button("Import")
-                
-            import_status = gr.Textbox(
-                label="Import Status",
-                interactive=False
-            )
-            
-            # Connect buttons
-            upload_btn.click(
-                fn=upload_files,
-                inputs=[upload_input],
-                outputs=[import_status, documents_df]
-            )
-            
-            dir_btn.click(
-                fn=import_from_directory,
-                inputs=[dir_input],
-                outputs=[import_status, documents_df]
-            )
-            
-            sp_btn.click(
-                fn=import_from_sharepoint,
-                inputs=[sp_library, sp_folder, sp_extensions],
-                outputs=[import_status, documents_df]
-            )
-            
-        with gr.Tab("Process Documents"):
-            gr.Markdown("## Process Selected Documents")
-            with gr.Row():
-                process_ids = gr.Textbox(
-                    label="Document IDs (comma-separated)",
-                    placeholder="Enter document IDs to process"
-                )
-                process_btn = gr.Button("Process Selected")
-                
-            gr.Markdown("## Process All Documents")
-            process_all_btn = gr.Button("Process All Unprocessed")
-            
-            gr.Markdown("## Chunk Selected Documents")
-            with gr.Row():
-                chunk_ids = gr.Textbox(
-                    label="Document IDs (comma-separated)",
-                    placeholder="Enter document IDs to chunk"
-                )
-                chunk_btn = gr.Button("Chunk Selected")
-                
-            gr.Markdown("## Chunk All Documents")
-            chunk_all_btn = gr.Button("Chunk All Processed")
-            
-            gr.Markdown("## Run Full Pipeline")
-            pipeline_btn = gr.Button("Run Full Pipeline")
-            
-            process_status = gr.Textbox(
-                label="Processing Status",
-                interactive=False
-            )
-            
-            # Connect buttons
-            process_btn.click(
-                fn=process_selected_documents,
-                inputs=[process_ids],
-                outputs=[process_status, documents_df]
-            )
-            
-            process_all_btn.click(
-                fn=process_all_documents,
-                outputs=[process_status, documents_df]
-            )
-            
-            chunk_btn.click(
-                fn=chunk_selected_documents,
-                inputs=[chunk_ids],
-                outputs=[process_status, documents_df]
-            )
-            
-            chunk_all_btn.click(
-                fn=chunk_all_documents,
-                outputs=[process_status, documents_df]
-            )
-            
-            pipeline_btn.click(
-                fn=run_full_pipeline,
-                outputs=[process_status, documents_df]
-            )
-            
-    return interface
+        upload_button.change(
+            fn=upload_files,
+            inputs=[upload_button],
+            outputs=[status, doc_list]
+        )
+        
+        import_button.click(
+            fn=import_from_directory,
+            inputs=[dir_path],
+            outputs=[status, doc_list]
+        )
+        
+        query_button.click(
+            fn=query_documents,
+            inputs=[query_input],
+            outputs=[response]
+        )
+        
+        # Initial document list
+        doc_list.update(list_documents())
+        
+    demo.launch()
 
 
 def launch_ui(share=False):
@@ -350,9 +447,14 @@ def launch_ui(share=False):
     
     Args:
         share: Whether to create a public link
+        
+    Returns:
+        Gradio interface
     """
     interface = create_ui()
-    interface.launch(share=share)
+    # Launch with in-browser=True to automatically open the browser
+    interface.launch(share=share, inbrowser=True)
+    return interface
 
 
 if __name__ == "__main__":
