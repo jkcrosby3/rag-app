@@ -12,6 +12,9 @@ import argparse
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 import re
+import datetime
+import hashlib
+import uuid
 from .metadata_validator import MetadataManager
 from .security_config import SecurityConfig
 from .document_tracker import DocumentTracker
@@ -101,6 +104,39 @@ def chunk_text(text: str, max_chunk_size: int = 1000, overlap: int = 100) -> Lis
             break
     
     return chunks
+
+
+def generate_document_id(file_path: str, organization_code: str = "ACME") -> str:
+    """Generate a unique document ID that includes classification information.
+    
+    Args:
+        file_path: Path to the document file
+        organization_code: Organization code prefix
+        
+    Returns:
+        Generated document ID
+    """
+    # Extract document type from file path
+    doc_type = os.path.splitext(os.path.basename(file_path))[0].upper()
+    
+    # Extract classification from file name or header
+    classification = "U"  # Default to Unclassified
+    try:
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            first_line = f.readline().strip()
+            if first_line.startswith('(') and ')' in first_line:
+                # Extract just the classification code (e.g., TS, C, U)
+                classification = first_line.split(')')[0].split('(')[1]
+    except Exception as e:
+        logger.warning(f"Could not read classification from {file_path}: {str(e)}")
+    
+    # Get current timestamp
+    timestamp = datetime.datetime.now().strftime('%Y%m%d')
+    # Generate a UUID
+    uuid_part = str(uuid.uuid4())
+    
+    # Combine all parts
+    return f"{organization_code}-{doc_type[:6]}-{classification}-{timestamp}-{uuid_part}"
 
 
 def process_document(
@@ -264,9 +300,35 @@ def process_document(
         except Exception as e:
             logger.error(f"Error updating document tracking: {str(e)}")
     for i, chunk in enumerate(chunks):
-        # Create default metadata
-        base_metadata = MetadataSchema.generate_default_metadata(file_path)
-        base_metadata["topic"] = topic
+        # Create base metadata
+        base_metadata = {
+            'title': os.path.basename(file_path),
+            'source': str(file_path),
+            'topic': topic,
+            'chunk_index': i,
+            'total_chunks': len(chunks),
+            'created_at': datetime.datetime.now().isoformat(),
+            'modified_at': datetime.datetime.now().isoformat(),
+            'version': '1.0',
+            'language': 'en',
+            'file_size': os.path.getsize(file_path),
+            'checksum': hashlib.md5(open(file_path, 'rb').read()).hexdigest(),
+            'encoding': 'utf-8',
+            'document_id': generate_document_id(file_path),
+            'classification': 'U'  # Default classification if not specified
+        }
+        
+        # Merge metadata
+        if metadata:
+            base_metadata.update(metadata)
+        
+        # Ensure classification is present and valid
+        if 'classification' not in base_metadata:
+            base_metadata['classification'] = 'U'
+        else:
+            # Validate classification format
+            if not re.match(r'^\([A-Z]+(?://\w+)*\)$', base_metadata['classification']):
+                logger.warning(f"Invalid classification format in {file_path}")
         
         # Load external metadata from JSON file if it exists
         metadata_file = file_path.with_suffix('.metadata.json')

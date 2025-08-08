@@ -51,7 +51,8 @@ def init_session_state():
                 embedding_model_name=DEFAULT_EMBEDDING_MODEL,
                 llm_api_key=api_key,
                 llm_model_name=DEFAULT_MODEL_NAME,
-                use_quantized_embeddings=True
+                use_quantized_embeddings=True,
+                user_id=st.session_state.get("user_id", "anonymous")
             )
             st.session_state.system_ready = True
         except Exception as e:
@@ -129,6 +130,28 @@ def main():
     # Sidebar
     with st.sidebar:
         st.title("RAG System")
+        
+        # User clearance section
+        st.subheader("User Clearance")
+        user_id = st.text_input(
+            "User ID",
+            value=st.session_state.get("user_id", "anonymous"),
+            help="Enter your user ID for clearance verification"
+        )
+        if user_id != st.session_state.get("user_id"):
+            st.session_state.user_id = user_id
+            st.session_state.rag_system = None  # Reset RAG system to reinitialize with new user
+            init_session_state()
+        
+        # Show current clearance level
+        clearance = st.session_state.rag_system.clearance_manager.get_user_clearance(user_id)
+        if clearance:
+            st.markdown(f"**Current Clearance:** {clearance['level']}")
+            if clearance.get('expires'):
+                st.markdown(f"**Expires:** {clearance['expires']}")
+        else:
+            st.markdown("**No clearance level set**")
+        
         st.markdown("---")
         
         # API Key input if not already set
@@ -143,6 +166,19 @@ def main():
             "Select topics to include",
             options=DEFAULT_TOPICS,
             default=[]
+        )
+        
+        # Classification filter
+        st.subheader("Classification Level")
+        classification = st.selectbox(
+            "Maximum classification level to show",
+            options=["U", "C", "S", "TS"],
+            format_func=lambda x: {
+                "U": "Unclassified",
+                "C": "Confidential",
+                "S": "Secret",
+                "TS": "Top Secret"
+            }[x]
         )
         
         # Advanced settings
@@ -217,6 +253,7 @@ def main():
                     query=query,
                     top_k=top_k,
                     filter_topics=topics if topics else None,
+                    max_classification=classification,
                     temperature=temperature,
                     max_tokens=max_tokens,
                     use_cache=use_cache

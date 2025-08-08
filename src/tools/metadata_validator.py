@@ -10,9 +10,208 @@ import json
 import logging
 import argparse
 from pathlib import Path
+from typing import List, Dict, Any, Optional, Literal, Mapping, Union
+import re
+from .security_config import SecurityConfig
+
+logger = logging.getLogger(__name__)
+
+class ClassificationHierarchy:
+    """Manages classification hierarchy and validation."""
+    
+    # Base classification levels
+    BASE_CLASSIFICATIONS = {
+        "U": 0,  # Unclassified
+        "C": 1,  # Confidential
+        "S": 2,  # Secret
+        "TS": 3  # Top Secret
+    }
+    
+    # Additional classification components
+    COMPONENTS = {
+        "SI": 1,  # Special Intelligence
+        "NOFORN": 2,  # No Foreign Dissemination
+        "REL": 3  # Releasable To
+    }
+
+    @staticmethod
+    def create_classification(
+        base: str,
+        components: Optional[List[str]] = None,
+        timestamp: Optional[str] = None,
+        originator: Optional[str] = None,
+        declassification: Optional[str] = None
+    ) -> Dict[str, Any]:
+        """Create a classification dictionary.
+        
+        Args:
+            base: Base classification level (U, C, S, TS)
+            components: List of classification components
+            timestamp: Classification timestamp
+            originator: Originating agency
+            declassification: Declassification date or instructions
+            
+        Returns:
+            Classification dictionary
+        """
+        return {
+            "classification": base,
+            "components": components or [],
+            "timestamp": timestamp,
+            "originator": originator,
+            "declassification": declassification
+        }
+
+    @staticmethod
+    def parse_classification(classification: Union[str, Dict[str, Any]]) -> Dict[str, Any]:
+        """Parse a classification string or dict into its components.
+        
+        Args:
+            classification: Classification string (e.g., "TS//SI//NOFORN") or dict with classification info
+            
+        Returns:
+            Dict with classification components
+        """
+        if isinstance(classification, dict):
+            # If already a dict, validate it
+            if not classification.get("classification"):
+                raise ValueError("Classification dictionary must have 'classification' field")
+            if not isinstance(classification.get("components", []), list):
+                raise ValueError("Classification components must be a list")
+            return classification
+            
+        # If string, parse it
+        classification = str(classification).strip('()[]').upper()
+        parts = classification.split('//')
+        main_class = parts[0]
+        components = parts[1:] if len(parts) > 1 else []
+        
+        # Validate main classification
+        if main_class not in ClassificationHierarchy.BASE_CLASSIFICATIONS:
+            raise ValueError(f"Invalid classification: {main_class}")
+            
+        return ClassificationHierarchy.create_classification(
+            base=main_class,
+            components=components
+        )
+    
+    @staticmethod
+    def get_classification_level(classification: Dict[str, Any]) -> int:
+        """Get the numeric level of a classification.
+        
+        Args:
+            classification: Classification dictionary
+            
+        Returns:
+            Numeric level (0=U, 1=C, 2=S, 3=TS)
+        """
+        base_level = classification.get('classification', 'U')
+        if base_level not in ClassificationHierarchy.BASE_CLASSIFICATIONS:
+            return 0  # Default to Unclassified if invalid level
+        return ClassificationHierarchy.BASE_CLASSIFICATIONS[base_level]
+    
+    @staticmethod
+    def is_valid_classification(classification: Dict[str, Any]) -> bool:
+        """Check if a classification dictionary is valid."""
+        if not isinstance(classification, dict):
+            raise TypeError("Classification must be a dictionary")
+            
+        return (
+            classification['classification'] in ClassificationHierarchy.BASE_CLASSIFICATIONS and
+            all(comp in ClassificationHierarchy.COMPONENTS for comp in classification['components'])
+        )
+    
+    @staticmethod
+    def is_accessible_by(
+        user_clearance: Dict[str, Any],
+        document_classification: Dict[str, Any]
+    ) -> bool:
+        """Check if a user's clearance can access a document's classification.
+        
+        Args:
+            user_clearance: User's clearance dictionary
+            document_classification: Document's classification dictionary
+            
+        Returns:
+            True if user can access the document, False otherwise
+        """
+        if not isinstance(user_clearance, dict):
+            raise TypeError("User clearance must be a dictionary")
+        if not isinstance(document_classification, dict):
+            raise TypeError("Document classification must be a dictionary")
+            
+        # Get base classification levels
+        user_base = user_clearance.get('classification', 'U')
+        doc_base = document_classification.get('classification', 'U')
+        
+        # Convert to numeric levels
+        user_level = ClassificationHierarchy.BASE_CLASSIFICATIONS.get(user_base, 0)
+        doc_level = ClassificationHierarchy.BASE_CLASSIFICATIONS.get(doc_base, 0)
+        
+        # Check if user has need-to-know access
+        if document_classification.get("components"):
+            for component in document_classification["components"]:
+                if component not in user_clearance.get("components", []):
+                    return False
+        
+        return user_level >= doc_level
+    
+    @staticmethod
+    def filter_content_by_clearance(
+        content: List[Dict[str, Any]],
+        user_clearance: Dict[str, Any]
+    ) -> List[Dict[str, Any]]:
+        """Filter content based on user's clearance level."""
+        user_level = ClassificationHierarchy.get_classification_level(user_clearance)
+        
+        return [
+            item for item in content
+            if ClassificationHierarchy.get_classification_level(
+                item.get('classification', {
+                    "classification": "U",
+                    "components": []
+                })
+            ) <= user_level
+        ]
+    
+    @staticmethod
+    def redact_content(
+        content: List[Dict[str, Any]],
+        user_clearance: Dict[str, Any]
+    ) -> List[Dict[str, Any]]:
+        """Redact content that's above user's clearance level."""
+        user_level = ClassificationHierarchy.get_classification_level(user_clearance)
+        
+        redacted_content = []
+        for item in content:
+            item_level = ClassificationHierarchy.get_classification_level(
+                item.get('classification', {
+                    "classification": "U",
+                    "components": []
+                })
+            )
+            
+            if item_level > user_level:
+                # Redact content above user's clearance
+                redacted_content.append({
+                    'text': '[REDACTED - ACCESS DENIED]',
+                    'metadata': {
+                        'classification': item['metadata'].get('classification', 'U'),
+                        'redacted': True
+                    }
+                })
+            else:
+                redacted_content.append(item)
+        
+        return redacted_content
+import os
+import sys
+import json
+import logging
+import argparse
+from pathlib import Path
 from typing import List, Dict, Any, Optional
 import re
-from .metadata_validator import MetadataManager
 from .security_config import SecurityConfig
 
 logger = logging.getLogger(__name__)
@@ -23,8 +222,8 @@ class MetadataSchema:
         "title": str,
         "source": str,
         "topic": str,
-        "created_date": str,
-        "modified_date": str,
+        "created_at": str,
+        "modified_at": str,
         "version": str,
         "language": str,
         "file_size": int,
@@ -33,6 +232,14 @@ class MetadataSchema:
         "document_id": str,
         "classification": str
     }
+    
+    # Valid classification formats
+    VALID_CLASSIFICATIONS = [
+        "U",  # Unclassified
+        "C",  # Confidential
+        "S",  # Secret
+        "TS"  # Top Secret
+    ]
     
     OPTIONAL_FIELDS = {
         "author": str,
@@ -50,9 +257,8 @@ class MetadataSchema:
     DATE_FORMAT = "%Y-%m-%dT%H:%M:%S"
 
     @staticmethod
-    def validate(metadata: Dict[str, Any]) -> bool:
-        """
-        Validate metadata against the schema, including security and classification rules.
+    def validate_metadata(metadata: Dict[str, Any]) -> bool:
+        """Validate metadata against the schema.
         
         Args:
             metadata: Dictionary containing metadata to validate
@@ -62,33 +268,25 @@ class MetadataSchema:
         """
         errors = []
         
-        # Validate required fields
+        # Check required fields
         for field, expected_type in MetadataSchema.REQUIRED_FIELDS.items():
             if field not in metadata:
                 errors.append(f"Missing required field: {field}")
                 continue
-            
-            if not isinstance(metadata[field], expected_type):
-                errors.append(f"Field {field} must be of type {expected_type.__name__}")
+                
+            value = metadata[field]
+            if not isinstance(value, expected_type):
+                errors.append(f"Invalid type for {field}: expected {expected_type.__name__}, got {type(value).__name__}")
         
-        # Validate dates
-        for field in ["created_date", "modified_date"]:
-            if field in metadata:
-                try:
-                    datetime.strptime(metadata[field], MetadataSchema.DATE_FORMAT)
-                except ValueError:
-                    errors.append(f"Invalid date format for {field}. Expected: {MetadataSchema.DATE_FORMAT}")
+        # Check classification format
+        classification = metadata.get('classification', 'U')
+        if classification not in MetadataSchema.VALID_CLASSIFICATIONS:
+            errors.append(f"Invalid classification: {classification}")
         
-        # Validate classification and access
-        if "classification" in metadata:
-            if not SecurityConfig.validate_classification(metadata["classification"]):
-                errors.append(f"Invalid classification: {metadata['classification']}")
-        
-        if "access_groups" in metadata:
-            if not SecurityConfig.validate_access_groups(metadata["access_groups"]):
-                errors.append(f"Invalid access groups format")
-        
-        # Validate optional fields
+        # Check optional fields
+        for field, expected_type in MetadataSchema.OPTIONAL_FIELDS.items():
+            if field in metadata and not isinstance(metadata[field], expected_type):
+                errors.append(f"Invalid type for {field}: expected {expected_type.__name__}, got {type(metadata[field]).__name__}")
         for field, expected_type in MetadataSchema.OPTIONAL_FIELDS.items():
             if field in metadata and not isinstance(metadata[field], expected_type):
                 errors.append(f"Field {field} must be of type {expected_type.__name__}")
@@ -214,7 +412,7 @@ class MetadataManager:
             merged_metadata.update(custom_metadata)
         
         # Validate the result
-        if not self.schema.validate(merged_metadata):
+        if not self.schema.validate_metadata(merged_metadata):
             raise ValueError("Invalid metadata")
             
         return merged_metadata

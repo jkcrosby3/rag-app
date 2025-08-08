@@ -4,7 +4,9 @@ A Retrieval Augmented Generation (RAG) system that enables users to efficiently 
 
 ## Features
 
-- Document processing and text extraction
+- Smart document processing with automatic processor selection
+- Multiple PDF processing libraries support (PyMuPDF, pdfplumber, PyPDF2)
+- Advanced text extraction with table and image handling
 - Semantic chunking of documents
 - Vector embeddings generation
 - Vector database storage (FAISS for development, Elasticsearch for production)
@@ -48,7 +50,12 @@ rag-app/
    .\venv\Scripts\activate
    ```
 
-2. Install dependencies:
+2. Install document processing dependencies:
+   ```
+   pip install PyMuPDF PyPDF2 pdfplumber pdfminer.six pdfbox-python
+   ```
+
+3. Install core dependencies:
    ```
    pip install -r requirements.txt
    ```
@@ -63,9 +70,61 @@ rag-app/
 
 ### Document Processing Pipeline
 
-1. Process documents:
+1. Process documents with smart processor:
    ```
-   python scripts/process_documents.py
+   python examples/document_processing_example.py
+   ```
+   
+   The smart processor automatically handles all document processing needs. You don't need to worry about which specific processor to use - the system will automatically choose the best one based on your requirements.
+
+   **Usage Examples**
+
+   1. Basic text extraction:
+   ```python
+   from tools.smart_document_processor import SmartDocumentProcessor
+
+   processor = SmartDocumentProcessor()
+   result = processor.process_document(
+       "example.pdf",
+       requirements={
+           'text': True,        # Extract text
+           'tables': False,     # No tables needed
+           'images': False,     # No images needed
+           'metadata': False,   # No metadata needed
+           'complexity': 'low'  # Simple document
+       }
+   )
+   print(f"Extracted text length: {len(result['text'])}")
+   ```
+
+   2. Complex document with tables:
+   ```python
+   result = processor.process_document(
+       "government_form.pdf",
+       requirements={
+           'text': True,        # Extract text
+           'tables': True,      # Extract tables
+           'images': False,     # No images
+           'metadata': True,    # Extract metadata
+           'complexity': 'medium'  # Medium complexity document
+       }
+   )
+   print(f"Tables found: {len(result['tables'])}")
+   ```
+
+   3. Image-heavy document:
+   ```python
+   result = processor.process_document(
+       "image_heavy.pdf",
+       requirements={
+           'text': True,        # Extract text
+           'tables': False,     # No tables
+           'images': True,      # Extract images
+           'metadata': True,    # Extract metadata
+           'complexity': 'high'  # Complex document with images
+       }
+   )
+   print(f"Images found: {len(result['images'])}")
    ```
 
 2. Chunk documents:

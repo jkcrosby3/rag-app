@@ -28,6 +28,7 @@ import threading
 from pathlib import Path
 from typing import Dict, List, Optional, Union, Any, Literal
 from dotenv import load_dotenv
+from src.security.clearance_manager import ClearanceManager
 
 # Apply huggingface_hub compatibility patch before importing sentence-transformers
 # This ensures compatibility between different versions of huggingface_hub
@@ -91,8 +92,10 @@ class RAGSystem:
         use_preloader: bool = True,
         use_quantized_embeddings: bool = True,  # Default to quantized for better performance
         quantization_type: str = "int8",
-        semantic_similarity_threshold: float = 0.75  # Lower threshold for better semantic cache hits
-    ):
+        semantic_similarity_threshold: float = 0.75,  # Lower threshold for better semantic cache hits
+        user_id: Optional[str] = None,  # User identifier for clearance verification
+        clearance_manager: Optional[ClearanceManager] = None  # Clearance manager instance
+    ):  # Add user_id parameter for clearance verification
         """Initialize the RAG system.
 
         Args:
@@ -166,6 +169,10 @@ class RAGSystem:
             # Initialize conversation manager
             self.conversation_manager = ConversationManager(self.llm_client)
         
+        # Initialize clearance manager
+        self.clearance_manager = clearance_manager or ClearanceManager()
+        self.user_id = user_id
+        
         # Initialize vector database
         if vector_db_type == "faiss":
             if not vector_db_path:
@@ -202,8 +209,9 @@ class RAGSystem:
         max_tokens: int = 1000,
         use_cache: bool = True,
         return_cache_stats: bool = True,
-        custom_filter: Optional[callable] = None
-    ) -> Dict[str, Any]:
+        custom_filter: Optional[callable] = None,
+        test_mode: bool = False
+    ):  # Add test_mode parameter to skip LLM generation  # Removed max_classification parameter as it's now handled by clearance manager -> Dict[str, Any]:
         """Process a query through the complete RAG pipeline.
         
         This method implements the core RAG functionality by:
@@ -250,14 +258,24 @@ class RAGSystem:
         # Retrieve relevant documents
         retrieval_start = time.time()
         
-        # Handle different vector database implementations
-        if self.vector_db_type == "faiss":
-            # FAISS uses 'k' parameter
-            retrieved_documents = self.vector_db.search(
-                query_embedding, 
-                k=top_k
-            )
-            
+        # Get user's clearance level
+        user_clearance = self.clearance_manager.get_user_clearance(self.user_id)
+        if not user_clearance:
+            raise ValueError(f"User {self.user_id} does not have valid clearance")
+
+        # Search vector database with classification filtering
+        retrieved_documents = self.vector_db.search(
+            query_embedding, 
+            k=top_k,
+            max_classification=user_clearance
+        )
+        
+        # Apply clearance-based filtering and redaction
+        if self.user_id:
+            retrieved_documents = self.clearance_manager.redact_content(
+                retrieved_documents,
+                self.user_id
+            )    
             # Filter by topics if specified
             if filter_topics:
                 filtered_docs = []
@@ -274,22 +292,17 @@ class RAGSystem:
                     if custom_filter(doc):
                         filtered_docs.append(doc)
                 retrieved_documents = filtered_docs[:top_k]
-        else:
-            # Elasticsearch implementation
-            filter_query = None
-            if filter_topics:
-                filter_query = {
-                    "terms": {
-                        "metadata.topic": filter_topics
-                    }
-                }
-            retrieved_documents = self.vector_db.search(
-                query_embedding, 
-                k=top_k,
-                filter_query=filter_query
-            )
         retrieval_time = time.time() - retrieval_start
         
+        # If in test mode, skip LLM generation and return documents directly
+        if test_mode:
+            logger.info("Test mode: Skipping LLM generation")
+            response = {
+                "query": query,
+                "documents": retrieved_documents
+            }
+            return response
+
         # Check if we have a semantic cache hit before generating a response
         cache_hit = False
         if use_cache:
@@ -516,12 +529,13 @@ class RAGSystem:
         
         logger.info(f"Retrieved {len(retrieved_documents)} relevant documents for conversational query")
         logger.info(f"Total processing time for conversational query: {processing_time:.2f} seconds")
-        
-        return result
 
 
 def main():
     """Run the RAG system from the command line."""
+    from dotenv import load_dotenv
+    from src.security.clearance_manager import ClearanceManager
+
     # Load environment variables from .env file
     load_dotenv()
     

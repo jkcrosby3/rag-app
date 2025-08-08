@@ -6,7 +6,7 @@ semantically meaningful chunks for embedding and retrieval.
 import logging
 import re
 from pathlib import Path
-from typing import Dict, List, Optional, Union, Callable
+from typing import List, Dict, Optional, Any, Union, Callable
 
 logger = logging.getLogger(__name__)
 
@@ -46,21 +46,47 @@ class Chunker:
         # Simple approximation: split on whitespace
         return len(text.split())
     
-    def _split_text_by_separator(self, text: str) -> List[str]:
-        """Split text into smaller units using the separator.
+    def _split_text_by_separator(self, text: str) -> List[Dict[str, Union[str, int]]]:
+        """Split text into paragraphs with classification.
         
         Args:
             text: Text to split
             
         Returns:
-            List of text units
+            List of dictionaries containing paragraph text and classification
         """
-        # Handle case where separator isn't found
-        if self.separator not in text:
-            return [text]
+        # Split text into paragraphs and extract classification
+        paragraphs = []
+        current_paragraph = []
+        current_classification = None
+        
+        # Split by lines and process each line
+        lines = text.split(self.separator)
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
+                
+            # Check if line starts with classification
+            if line.startswith('(') and ')' in line:
+                current_classification = line.split(')')[0] + ')'
+                if current_paragraph:  # Save previous paragraph
+                    paragraphs.append({
+                        'text': self.separator.join(current_paragraph),
+                        'classification': current_classification
+                    })
+                    current_paragraph = []
+            else:
+                current_paragraph.append(line)
+        
+        # Add last paragraph if exists
+        if current_paragraph:
+            paragraphs.append({
+                'text': self.separator.join(current_paragraph),
+                'classification': current_classification or 'U'
+            })
             
-        # Split by separator and filter out empty strings
-        return [unit for unit in text.split(self.separator) if unit.strip()]
+        return paragraphs
     
     def _merge_small_chunks(self, chunks: List[str]) -> List[str]:
         """Merge chunks that are too small.
@@ -89,99 +115,115 @@ class Chunker:
         merged_chunks.append(current_chunk)
         return merged_chunks
         
-    def chunk_text(self, text: str) -> List[Dict[str, Union[str, int]]]:
-        """Split text into chunks with metadata.
+    def process_document(self, doc: Dict[str, Union[str, Dict]]) -> List[Dict[str, Union[str, int]]]:
+        """Process a single document and create chunks with classification.
         
         Args:
-            text: Text to split into chunks
+            doc: Dictionary containing document text and metadata
             
         Returns:
-            List of dicts containing chunk text and metadata
+            List of chunk dictionaries with text, metadata, and classification
         """
-        if not text or not text.strip():
-            return []
-            
-        # Split text into smaller units
-        text_units = self._split_text_by_separator(text)
+        text = doc['text']
+        metadata = doc.get('metadata', {})
+        
+        # Split text into paragraphs with classification
+        paragraphs = self._split_text_by_separator(text)
         
         chunks = []
-        current_chunk = ""
-        current_size = 0
+        current_chunk = []
+        current_token_count = 0
+        current_classification = None
         
-        for i, unit in enumerate(text_units):
-            unit_size = self._estimate_token_count(unit)
+        for paragraph in paragraphs:
+            paragraph_text = paragraph['text']
+            paragraph_classification = paragraph['classification']
+            unit_token_count = self._estimate_token_count(paragraph_text)
             
-            # If a single unit is larger than chunk_size, we need to split it further
-            if unit_size > self.chunk_size:
-                # If we have accumulated text, add it as a chunk first
+            # If adding this paragraph would exceed chunk size, create new chunk
+            if current_token_count + unit_token_count > self.chunk_size:
                 if current_chunk:
-                    chunks.append(current_chunk)
-                    current_chunk = ""
-                    current_size = 0
-                
-                # Split large unit into smaller pieces
-                words = unit.split()
-                sub_chunk = ""
-                sub_size = 0
-                
-                for word in words:
-                    word_size = 1  # Approximate a word as one token
-                    if sub_size + word_size <= self.chunk_size:
-                        sub_chunk += " " + word if sub_chunk else word
-                        sub_size += word_size
-                    else:
-                        chunks.append(sub_chunk)
-                        sub_chunk = word
-                        sub_size = word_size
-                
-                # Add the last sub-chunk if it exists
-                if sub_chunk:
-                    chunks.append(sub_chunk)
-                
-            # Normal case: unit fits in a chunk
-            elif current_size + unit_size <= self.chunk_size:
-                separator = self.separator if current_chunk else ""
-                current_chunk += separator + unit
-                current_size += unit_size
+                    chunks.append({
+                        'text': self.separator.join(current_chunk),
+                        'metadata': {
+                            **metadata,
+                            'classification': current_classification
+                        },
+                        'token_count': current_token_count
+                    })
+                current_chunk = []
+                current_token_count = 0
             
-            # Unit doesn't fit in current chunk
-            else:
-                # Add current chunk to the list
-                if current_chunk:
-                    chunks.append(current_chunk)
-                
-                # Start a new chunk with this unit
-                current_chunk = unit
-                current_size = unit_size
+            current_chunk.append(paragraph_text)
+            current_token_count += unit_token_count
+            current_classification = paragraph_classification
         
-        # Add the last chunk if it exists
+        # Add last chunk if exists
         if current_chunk:
-            chunks.append(current_chunk)
+            chunks.append({
+                'text': self.separator.join(current_chunk),
+                'metadata': {
+                    **metadata,
+                    'classification': current_classification
+                },
+                'token_count': current_token_count
+            })
         
-        # Create chunks with overlap
-        overlapped_chunks = []
+        return chunks
+    
+    def chunk_text(self, text: str, metadata: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
+        """Split text into chunks with metadata."""
+        if not text:
+            return []
+
+        # Split text into paragraphs
+        paragraphs = text.split('\n\n')
         
-        for i in range(len(chunks)):
-            chunk_text = chunks[i]
-            
-            # If not the last chunk and overlap is specified, add overlap
-            if i < len(chunks) - 1 and self.chunk_overlap > 0:
-                next_chunk = chunks[i + 1]
-                next_words = next_chunk.split()
-                overlap_word_count = min(self.chunk_overlap, len(next_words))
-                
-                if overlap_word_count > 0:
-                    overlap_text = " ".join(next_words[:overlap_word_count])
-                    chunk_text += self.separator + overlap_text
-            
-            # Create chunk with metadata
-            chunk_dict = {
-                "text": chunk_text,
-                "chunk_index": i,
-                "token_count": self._estimate_token_count(chunk_text)
-            }
-            
-            overlapped_chunks.append(chunk_dict)
+        # Initialize chunks
+        chunks = []
+        current_chunk = ""
+        current_metadata = metadata or {}
+        
+        # Process each paragraph
+        for paragraph in paragraphs:
+            # Skip empty paragraphs
+            if not paragraph.strip():
+                continue
+
+            # Extract classification if present
+            if "unclassified" in paragraph.lower():
+                current_metadata["classification"] = "U"
+            elif "confidential" in paragraph.lower():
+                current_metadata["classification"] = "C"
+            elif "secret" in paragraph.lower():
+                current_metadata["classification"] = "S"
+            elif "top secret" in paragraph.lower():
+                current_metadata["classification"] = "TS"
+
+            # Add paragraph to current chunk
+            if current_chunk:
+                current_chunk += '\n\n' + paragraph
+            else:
+                current_chunk = paragraph
+
+            # Add chunk immediately if it contains classification information
+            if 'classification' in current_metadata:
+                chunks.append({
+                    'text': current_chunk,
+                    'metadata': current_metadata.copy()  # Copy metadata to avoid overwriting
+                })
+                current_chunk = ""
+                current_metadata = metadata or {}  # Reset metadata
+
+        # Add final chunk if not empty
+        if current_chunk.strip():
+            chunks.append({
+                'text': current_chunk,
+                'metadata': current_metadata.copy()  # Copy metadata to avoid overwriting
+            })
+
+        return chunks
+        overlapped_chunks.append(chunk_dict)
         
         return overlapped_chunks
     

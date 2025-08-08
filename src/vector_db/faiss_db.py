@@ -12,6 +12,8 @@ from typing import Dict, List, Optional, Union, Any, Tuple
 
 import numpy as np
 import faiss
+from typing import Literal
+from src.tools.metadata_validator import ClassificationHierarchy
 
 logger = logging.getLogger(__name__)
 
@@ -155,6 +157,27 @@ class FAISSVectorDB:
         # Store document data without the embedding to save memory
         doc_data = {k: v for k, v in document.items() if k != 'embedding'}
         doc_data['id'] = doc_id
+        
+        # Get classification from top level
+        classification = document.get('classification', {
+            "classification": "U",
+            "components": []
+        })
+        
+        # Validate classification
+        if not ClassificationHierarchy.is_valid_classification(classification):
+            logger.warning(f"Invalid classification {classification} for document {doc_id}, defaulting to U")
+            classification = {
+                "classification": "U",
+                "components": []
+            }
+        
+        # Store classification only in top level
+        doc_data['classification'] = classification
+        doc_data['metadata'] = {
+            **doc_data.get('metadata', {})
+        }
+        
         self.document_lookup[doc_id] = doc_data
         
         return doc_id
@@ -238,88 +261,56 @@ class FAISSVectorDB:
             doc_data['id'] = doc_id
             self.document_lookup[doc_id] = doc_data
             doc_ids.append(doc_id)
-        
         return doc_ids
     
-    def search(
-        self,
-        query_embedding: List[float],
-        k: int = 5
-    ) -> List[Dict[str, Any]]:
-        """Search for similar documents using a query embedding.
+    def search(self, query_embedding: List[float], k: int = 5, max_classification: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
+        """Search the vector database for similar documents.
         
         Args:
             query_embedding: Query embedding vector
             k: Number of results to return
+            max_classification: Maximum classification dictionary to return
             
         Returns:
-            List of document dicts with similarity scores
+            List of similar documents with metadata
         """
-        if not self.index:
-            raise ValueError("Index not initialized")
-            
-        if len(self.document_lookup) == 0:
-            logger.warning("Search called on empty index")
-            return []
-        
-        # Skip search if index is not trained and is an IVF index
-        if not getattr(self, 'trained', True) and isinstance(self.index, faiss.IndexIVF):
-            logger.warning("IVF index not trained, returning random documents")
-            # Return random documents as fallback
-            indices = np.random.choice(len(self.document_lookup), min(k, len(self.document_lookup)), replace=False)
-            results = []
-            for idx in indices:
-                doc_data = self.document_lookup[idx].copy()
-                doc_data['similarity'] = 0.0  # No meaningful similarity score
-                results.append(doc_data)
-            return results
-            
         # Convert to numpy array and ensure correct shape
         query_array = np.array(query_embedding, dtype=np.float32).reshape(1, -1)
         
-        # Normalize if using cosine similarity
         if self.index_type == "Cosine":
             faiss.normalize_L2(query_array)
         
-        # Adjust nprobe based on index size for better recall
-        if isinstance(self.index, faiss.IndexIVF):
-            # Increase nprobe for small indices to improve recall
-            if len(self.document_lookup) < 100:
-                self.index.nprobe = min(16, self.index.nlist)  # More exhaustive search for small indices
-            else:
-                self.index.nprobe = 4  # Default for larger indices
-            
-        # Perform the search
-        distances, indices = self.index.search(query_array, min(k, len(self.document_lookup)))
+        distances, indices = self.index.search(query_array, k)
         
-        # Flatten results
-        distances = distances[0]
-        indices = indices[0]
-        
-        # Convert to similarity score if needed
-        if self.index_type == "L2":
-            # Convert L2 distance to similarity score (smaller distance = higher similarity)
-            # Add small epsilon to avoid division by zero
-            similarities = 1.0 / (distances + 1e-10)
-        else:
-            # For IP and Cosine, higher is already more similar
-            similarities = distances
-            
-        # Build result list
         results = []
-        for i, (idx, similarity) in enumerate(zip(indices, similarities)):
-            # Skip invalid indices (can happen with small indices)
-            if idx == -1 or idx >= len(self.document_lookup):
-                continue
+        for i, idx in enumerate(indices[0]):
+            if idx == -1:  # No more matches
+                break
                 
-            # Get document data
-            doc_data = self.document_lookup[idx].copy()
+            doc_data = self.document_lookup[idx]
+            if max_classification:
+                # Check if document classification is within user's clearance
+                doc_classification = doc_data.get("classification", {
+                    "classification": "U",
+                    "components": []
+                })
+                # Use the clearance level from the clearance dictionary
+                user_clearance_level = max_classification.get("classification", "U")
+                if not ClassificationHierarchy.is_accessible_by(
+                    {
+                        "classification": user_clearance_level,
+                        "components": max_classification.get("components", [])
+                    },
+                    doc_classification
+                ):
+                    continue
             
             # Add similarity score
-            doc_data['similarity'] = float(similarity)
-            
+            doc_data["similarity"] = float(distances[0][i])
+            # Add classification to results for redaction
+            doc_data["classification"] = doc_classification
             results.append(doc_data)
-            
+        
         return results
     
     def save(self, path: Union[str, Path]):

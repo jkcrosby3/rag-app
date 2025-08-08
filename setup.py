@@ -9,9 +9,10 @@ setup(
     packages=find_packages(),
     python_requires=">=3.9",
     install_requires=[
-        "PyMuPDF>=1.25.0",
-        "PyPDF2>=3.0.0",
         "python-dotenv>=1.0.0",
         "pydantic>=2.0.0",
     ],
+    extras_require={
+        "pdf": ["PyMuPDF>=1.25.0", "PyPDF2>=3.0.0"],
+    },
 )
