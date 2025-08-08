@@ -1,0 +1,29 @@
+{
+  "documents": {
+    "existing_classified_strategic_plan.pdf_1754548596": {
+      "original_name": "classified_strategic_plan.pdf",
+      "source_path": "data\\documents\\classified_strategic_plan.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\classified_strategic_plan.pdf"
+      }
+    },
+    "existing_test_classification.txt_1754548596": {
+      "original_name": "test_classification.txt",
+      "source_path": "data\\documents\\test_classification.txt",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\test_classification.txt"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression.pdf_1754548596": {
+      "original_name": "bernanke_money_gold_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\bernanke_money_gold_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\bernanke_money_gold_great_depression.pdf"
+      }
+    }
+  },
+  "last_updated": "2025-08-07T02:36:36.968280"
+}

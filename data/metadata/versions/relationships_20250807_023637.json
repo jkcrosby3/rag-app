@@ -1,0 +1,109 @@
+{
+  "documents": {
+    "existing_classified_strategic_plan.pdf_1754548596": {
+      "original_name": "classified_strategic_plan.pdf",
+      "source_path": "data\\documents\\classified_strategic_plan.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\classified_strategic_plan.pdf"
+      }
+    },
+    "existing_test_classification.txt_1754548596": {
+      "original_name": "test_classification.txt",
+      "source_path": "data\\documents\\test_classification.txt",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\test_classification.txt"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression.pdf_1754548596": {
+      "original_name": "bernanke_money_gold_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\bernanke_money_gold_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\bernanke_money_gold_great_depression.pdf"
+      }
+    },
+    "existing_correspondent_clearing_banking_panics.pdf_1754548597": {
+      "original_name": "correspondent_clearing_banking_panics.pdf",
+      "source_path": "data\\documents\\great_depression\\correspondent_clearing_banking_panics.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\correspondent_clearing_banking_panics.pdf"
+      }
+    },
+    "existing_crash_and_depression.pdf_1754548597": {
+      "original_name": "crash_and_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\crash_and_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\crash_and_depression.pdf"
+      }
+    },
+    "existing_great_depression_completed_notes.pdf_1754548597": {
+      "original_name": "great_depression_completed_notes.pdf",
+      "source_path": "data\\documents\\great_depression\\great_depression_completed_notes.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\great_depression_completed_notes.pdf"
+      }
+    },
+    "existing_great_depression_overview.pdf_1754548597": {
+      "original_name": "great_depression_overview.pdf",
+      "source_path": "data\\documents\\great_depression\\great_depression_overview.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\great_depression_overview.pdf"
+      }
+    },
+    "existing_great_depression_romer.pdf_1754548597": {
+      "original_name": "great_depression_romer.pdf",
+      "source_path": "data\\documents\\great_depression\\great_depression_romer.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\great_depression_romer.pdf"
+      }
+    },
+    "existing_monetary_policy_beyond_great_depression.pdf_1754548597": {
+      "original_name": "monetary_policy_beyond_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\monetary_policy_beyond_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\monetary_policy_beyond_great_depression.pdf"
+      }
+    },
+    "existing_monetary_policy_great_depression.pdf_1754548597": {
+      "original_name": "monetary_policy_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\monetary_policy_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\monetary_policy_great_depression.pdf"
+      }
+    },
+    "existing_what_ended_great_depression.pdf_1754548597": {
+      "original_name": "what_ended_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\what_ended_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\what_ended_great_depression.pdf"
+      }
+    },
+    "existing_what_started_great_depression.pdf_1754548597": {
+      "original_name": "what_started_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\what_started_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\what_started_great_depression.pdf"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_001.json_1754548597": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_001.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_001.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_001.json"
+      }
+    }
+  },
+  "last_updated": "2025-08-07T02:36:37.978245"
+}

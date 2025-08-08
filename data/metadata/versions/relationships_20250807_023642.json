@@ -1,0 +1,509 @@
+{
+  "documents": {
+    "existing_classified_strategic_plan.pdf_1754548596": {
+      "original_name": "classified_strategic_plan.pdf",
+      "source_path": "data\\documents\\classified_strategic_plan.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\classified_strategic_plan.pdf"
+      }
+    },
+    "existing_test_classification.txt_1754548596": {
+      "original_name": "test_classification.txt",
+      "source_path": "data\\documents\\test_classification.txt",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\test_classification.txt"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression.pdf_1754548596": {
+      "original_name": "bernanke_money_gold_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\bernanke_money_gold_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\bernanke_money_gold_great_depression.pdf"
+      }
+    },
+    "existing_correspondent_clearing_banking_panics.pdf_1754548597": {
+      "original_name": "correspondent_clearing_banking_panics.pdf",
+      "source_path": "data\\documents\\great_depression\\correspondent_clearing_banking_panics.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\correspondent_clearing_banking_panics.pdf"
+      }
+    },
+    "existing_crash_and_depression.pdf_1754548597": {
+      "original_name": "crash_and_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\crash_and_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\crash_and_depression.pdf"
+      }
+    },
+    "existing_great_depression_completed_notes.pdf_1754548597": {
+      "original_name": "great_depression_completed_notes.pdf",
+      "source_path": "data\\documents\\great_depression\\great_depression_completed_notes.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\great_depression_completed_notes.pdf"
+      }
+    },
+    "existing_great_depression_overview.pdf_1754548597": {
+      "original_name": "great_depression_overview.pdf",
+      "source_path": "data\\documents\\great_depression\\great_depression_overview.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\great_depression_overview.pdf"
+      }
+    },
+    "existing_great_depression_romer.pdf_1754548597": {
+      "original_name": "great_depression_romer.pdf",
+      "source_path": "data\\documents\\great_depression\\great_depression_romer.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\great_depression_romer.pdf"
+      }
+    },
+    "existing_monetary_policy_beyond_great_depression.pdf_1754548597": {
+      "original_name": "monetary_policy_beyond_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\monetary_policy_beyond_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\monetary_policy_beyond_great_depression.pdf"
+      }
+    },
+    "existing_monetary_policy_great_depression.pdf_1754548597": {
+      "original_name": "monetary_policy_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\monetary_policy_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\monetary_policy_great_depression.pdf"
+      }
+    },
+    "existing_what_ended_great_depression.pdf_1754548597": {
+      "original_name": "what_ended_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\what_ended_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\what_ended_great_depression.pdf"
+      }
+    },
+    "existing_what_started_great_depression.pdf_1754548597": {
+      "original_name": "what_started_great_depression.pdf",
+      "source_path": "data\\documents\\great_depression\\what_started_great_depression.pdf",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\what_started_great_depression.pdf"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_001.json_1754548597": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_001.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_001.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_001.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_002.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_002.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_002.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_002.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_003.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_003.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_003.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_003.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_004.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_004.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_004.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_004.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_005.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_005.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_005.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_005.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_006.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_006.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_006.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_006.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_007.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_007.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_007.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_007.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_008.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_008.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_008.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_008.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_009.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_009.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_009.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_009.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_010.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_010.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_010.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_010.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_011.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_011.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_011.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_011.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_012.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_012.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_012.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_012.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_013.json_1754548598": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_013.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_013.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_013.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_014.json_1754548599": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_014.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_014.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_014.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_015.json_1754548599": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_015.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_015.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_015.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_016.json_1754548599": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_016.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_016.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_016.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_017.json_1754548599": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_017.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_017.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_017.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_018.json_1754548599": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_018.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_018.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_018.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_019.json_1754548599": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_019.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_019.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_019.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_020.json_1754548599": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_020.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_020.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_020.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_021.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_021.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_021.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_021.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_022.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_022.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_022.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_022.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_023.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_023.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_023.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_023.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_024.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_024.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_024.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_024.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_025.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_025.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_025.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_025.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_026.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_026.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_026.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_026.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_027.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_027.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_027.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_027.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_028.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_028.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_028.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_028.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_029.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_029.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_029.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_029.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_030.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_030.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_030.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_030.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_031.json_1754548600": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_031.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_031.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_031.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_032.json_1754548601": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_032.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_032.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_032.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_033.json_1754548601": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_033.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_033.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_033.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_034.json_1754548601": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_034.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_034.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_034.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_035.json_1754548601": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_035.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_035.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_035.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_036.json_1754548601": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_036.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_036.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_036.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_037.json_1754548601": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_037.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_037.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_037.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_038.json_1754548601": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_038.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_038.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_038.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_039.json_1754548601": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_039.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_039.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_039.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_040.json_1754548601": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_040.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_040.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_040.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_041.json_1754548601": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_041.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_041.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_041.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_042.json_1754548602": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_042.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_042.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_042.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_043.json_1754548602": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_043.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_043.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_043.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_044.json_1754548602": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_044.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_044.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_044.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_045.json_1754548602": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_045.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_045.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_045.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_046.json_1754548602": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_046.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_046.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_046.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_047.json_1754548602": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_047.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_047.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_047.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_048.json_1754548602": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_048.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_048.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_048.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_049.json_1754548602": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_049.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_049.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_049.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_050.json_1754548602": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_050.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_050.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_050.json"
+      }
+    },
+    "existing_bernanke_money_gold_great_depression_chunk_051.json_1754548602": {
+      "original_name": "bernanke_money_gold_great_depression_chunk_051.json",
+      "source_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_051.json",
+      "relationships": {},
+      "metadata": {
+        "original_path": "data\\documents\\great_depression\\chunks\\bernanke_money_gold_great_depression_chunk_051.json"
+      }
+    }
+  },
+  "last_updated": "2025-08-07T02:36:42.913818"
+}

@@ -1,0 +1,58 @@
+{
+  "user123": {
+    "level": "U",
+    "expires": "2026-07-30T00:00:00",
+    "need_to_know": []
+  },
+  "user456": {
+    "level": "C",
+    "expires": "2026-07-30T00:00:00",
+    "need_to_know": []
+  },
+  "user789": {
+    "level": "S",
+    "expires": "2026-07-30T00:00:00",
+    "need_to_know": []
+  },
+  "user1000": {
+    "level": "TS",
+    "expires": "2026-07-30T00:00:00",
+    "need_to_know": []
+  },
+  "user1": {
+    "level": {
+      "classification": "U",
+      "components": []
+    },
+    "expires": null,
+    "need_to_know": [],
+    "last_updated": "2025-07-30T03:11:09.434357"
+  },
+  "user2": {
+    "level": {
+      "classification": "C",
+      "components": []
+    },
+    "expires": null,
+    "need_to_know": [],
+    "last_updated": "2025-07-30T03:11:09.435366"
+  },
+  "user3": {
+    "level": {
+      "classification": "S",
+      "components": []
+    },
+    "expires": null,
+    "need_to_know": [],
+    "last_updated": "2025-07-30T03:11:09.435366"
+  },
+  "user4": {
+    "level": {
+      "classification": "TS",
+      "components": []
+    },
+    "expires": null,
+    "need_to_know": [],
+    "last_updated": "2025-07-30T03:11:09.436578"
+  }
+}

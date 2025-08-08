@@ -1,0 +1,9 @@
+This is an unclassified section (U).
+
+This is a confidential section (C) that should only be visible to users with C clearance or higher.
+
+This is a secret section (S) that should only be visible to users with S clearance or higher.
+
+This is a top secret section (TS) that should only be visible to users with TS clearance.
+
+This is another unclassified section (U) that should be visible to all users.
