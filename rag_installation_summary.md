@@ -22,7 +22,7 @@
   - build-essential
 
 ### Python Packages
-- PyMuPDF (1.25.0+)
+
 - PyPDF2 (3.0.0+)
 - FastAPI (0.100.0+)
 - Uvicorn (0.22.0+)
@@ -42,16 +42,6 @@
    cd /opt/mupdf_build/mupdf_source
    make HAVE_X11=no HAVE_GLFW=no HAVE_FREETYPE=yes
    make
-   make install
-   ```
-
-3. **PyMuPDF**
-   ```bash
-   cd /opt/mupdf_build/pymupdf_source
-   python3 setup.py install --mupdf-include=/opt/mupdf_build/mupdf_source/include --mupdf-lib=/opt/mupdf_build/mupdf_source/build/release
-   ```
-
-4. **Python Packages**
    ```bash
    pip install -r requirements.txt
    ```
@@ -59,17 +49,12 @@
 ## 4. Environment Variables
 
 ```bash
-export MUPDF_INCLUDE=/opt/mupdf_build/mupdf_source/include
-export MUPDF_LIB=/opt/mupdf_build/mupdf_source/build/release
 export LD_LIBRARY_PATH=/opt/mupdf_build/mupdf_source/build/release:$LD_LIBRARY_PATH
 ```
 
 ## 5. Verification Steps
 
 ```bash
-# Verify MuPDF
-mutool -v
-
 # Verify PyMuPDF
 python3 -c "import fitz; print('PyMuPDF installed successfully')"
 
@@ -110,8 +95,7 @@ cp -r /opt/mupdf_build /opt/mupdf_backup/
 ### Version Management
 ```bash
 # Check versions
-mutool -v
-python3 -c "import fitz; print('PyMuPDF:', fitz.__version__)"
+
 ```
 
 ## 8. Notes

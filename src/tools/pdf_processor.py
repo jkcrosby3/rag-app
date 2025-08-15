@@ -26,30 +26,30 @@ except ImportError:
     sys.exit(1)
 
 
-def extract_text_from_pdf(pdf_path: str) -> str:
-    """
-    Extract text from a PDF file using PyMuPDF.
-    
-    Args:
-        pdf_path: Path to the PDF file
+class PDFProcessor:
+    def extract_text_from_pdf(self, pdf_path: str) -> str:
+        """
+        Extract text from a PDF file using PyMuPDF.
         
-    Returns:
-        Extracted text
-    """
-    try:
-        doc = fitz.open(pdf_path)
-        text = ""
-        
-        # Extract text from each page
-        for page_num in range(len(doc)):
-            page = doc.load_page(page_num)
-            text += page.get_text() + "\n\n"
-        
-        doc.close()
-        return text
-    except Exception as e:
-        logger.error(f"Error extracting text from {pdf_path}: {str(e)}")
-        return ""
+        Args:
+            pdf_path: Path to the PDF file
+            
+        Returns:
+            Extracted text
+        """
+        try:
+            doc = fitz.open(pdf_path)
+            text = ""
+            
+            # Extract text from each page
+            for page_num in range(len(doc)):
+                page = doc.load_page(page_num)
+                text += page.get_text() + "\n\n"
+            
+            return text
+        except Exception as e:
+            logger.error(f"Error extracting text from PDF: {str(e)}")
+            return ""
 
 
 def process_pdf(pdf_path: str, output_dir: str, metadata: Optional[Dict[str, Any]] = None) -> Optional[str]:

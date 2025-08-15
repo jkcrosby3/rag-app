@@ -7,7 +7,8 @@ import logging
 from pathlib import Path
 from typing import Dict, Optional, Union
 
-import fitz  # PyMuPDF
+from PyPDF2 import PdfReader
+import fitz
 
 logger = logging.getLogger(__name__)
 
@@ -65,14 +66,14 @@ class PDFReader:
             raise PDFCorruptError(f"File is empty or too small: {file_path}")
 
         try:
-            with fitz.open(file_path) as doc:
+            with PdfReader(file_path) as pdf_reader:
                 if doc.needs_pass:
                     raise PDFEncryptedError(
                         f"PDF is password-protected: {file_path}"
                     )
                 # Try to access first page to verify PDF is valid
                 _ = doc[0]
-        except fitz.FileDataError as e:
+        except Exception as e:
             raise PDFCorruptError(
                 f"Invalid or corrupt PDF: {file_path}"
             ) from e
@@ -105,7 +106,7 @@ class PDFReader:
         self.validate_file(path)
 
         try:
-            with fitz.open(file_path) as doc:
+            with PdfReader(file_path) as pdf_reader:
                 if doc.needs_pass:
                     if not password:
                         raise PDFEncryptedError(
@@ -137,5 +138,5 @@ class PDFReader:
 
                 return {"text": text, "metadata": metadata}
 
-        except fitz.FileDataError as e:
+        except Exception as e:
             raise PDFCorruptError(f"Error reading PDF: {file_path}") from e

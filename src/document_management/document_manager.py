@@ -640,7 +640,7 @@ class DocumentManager:
             except Exception as e:
                 logger.error(f"Error chunking document {doc_id}: {e}")
                 
-        
+        """
         Returns:
             List of document metadata dictionaries
         """
@@ -675,6 +675,7 @@ class DocumentManager:
             bidirectional: Whether to add the reverse relationship
             
         Returns:
+       
             True if successful, False otherwise
         """
         return self.relationship_manager.add_relationship(
@@ -694,6 +695,7 @@ class DocumentManager:
             bidirectional: Whether to remove the reverse relationship
             
         Returns:
+
             True if successful, False otherwise
         """
         return self.relationship_manager.remove_relationship(
@@ -804,6 +806,14 @@ class DocumentManager:
         """
         return self.relationship_manager.get_all_tags(category)
     
+    def get_all_documents(self) -> List[Dict[str, Any]]:
+        """Get list of all documents.
+        
+        Returns:
+            List of document dictionaries
+        """
+        return list(self.registry.get('documents', {}).values())
+    
     def get_tag_categories(self) -> Set[str]:
         """Get all tag categories in the registry.
         
@@ -812,11 +822,19 @@ class DocumentManager:
         """
         return self.relationship_manager.get_tag_categories()
     
+    def get_notifications(self) -> List[Dict[str, Any]]:
+        """Get system notifications.
+        
+        Returns:
+            List of notification dictionaries
+        """
+        return []
+    
     # Relationship versioning methods
     
     def get_relationship_versions(self) -> Dict[str, List[str]]:
         """Get available versions of relationship and tag registries.
-        
+{{ ... }}
         Returns:
             Dictionary with 'relationships' and 'tags' keys, each containing a list of version filenames
         """

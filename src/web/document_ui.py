@@ -54,7 +54,7 @@ def list_documents():
     Returns:
         DataFrame with document information
     """
-    documents = document_manager.get_document_list()
+    documents = document_manager.get_all_documents()
     
     if not documents:
         return pd.DataFrame(columns=["ID", "Name", "Source", "Size", "Processed", "Chunked"])
@@ -200,46 +200,169 @@ def process_selected_documents(document_ids):
     stats = document_manager.process_documents(doc_ids)
 
 
+def search_documents(query: str) -> pd.DataFrame:
+    """Search documents based on query."""
+    results = document_manager.search_documents(query)
+    return pd.DataFrame(results)
+
+
+def get_notifications() -> pd.DataFrame:
+    """Get system notifications."""
+    return pd.DataFrame(document_manager.get_notifications())
+
+
+def edit_metadata(doc_ids: str) -> tuple[str, pd.DataFrame]:
+    """Edit document metadata."""
+    status = document_manager.edit_metadata(doc_ids.split(','))
+    return status, list_documents()
+
+
+def manage_tags(doc_ids: str) -> str:
+    """Manage document tags."""
+    return ', '.join(document_manager.get_document_tags(doc_ids.split(',')))
+
+
+def add_tag(tag_name: str, doc_ids: str) -> str:
+    """Add a new tag to documents."""
+    return document_manager.add_tag(tag_name, doc_ids.split(','))
+
+
+def view_document_detail(doc_ids: str) -> str:
+    """View document details."""
+    return document_manager.get_document_detail(doc_ids.split(',')[0])
+
+
 def create_ui():
     """Create and launch the Gradio UI interface."""
     with gr.Blocks() as demo:
+        # Navigation Bar
+        with gr.Row():
+            gr.Markdown("# Document Tracking System")
+            with gr.Row():
+                search_input = gr.Textbox(
+                    label="Search",
+                    placeholder="Search documents...",
+                    scale=2
+                )
+                search_btn = gr.Button("Search", scale=1)
+                stats_btn = gr.Button("System Stats", scale=1)
+        
+        # Filter Section
+        with gr.Row():
+            with gr.Column():
+                classification_filter = gr.Dropdown(
+                    choices=["All", "Public", "Internal", "Confidential"],
+                    label="Classification",
+                    value="All"
+                )
+            with gr.Column():
+                version_filter = gr.Dropdown(
+                    choices=["All Versions", "Latest Only"],
+                    label="Version",
+                    value="All Versions"
+                )
+            with gr.Column():
+                size_filter = gr.Dropdown(
+                    choices=["All Sizes", "< 1MB", "1MB - 10MB", "> 10MB"],
+                    label="Size",
+                    value="All Sizes"
+                )
+            with gr.Column():
+                date_filter = gr.Dropdown(
+                    choices=["All Dates", "Last 7 Days", "Last 30 Days", "Custom"],
+                    label="Upload Date",
+                    value="All Dates"
+                )
+        
         # Document Management Column
         with gr.Column():
-            # Document List
-            gr.Markdown("### Document List")
+            # Document List with Actions
+            gr.Markdown("### Document Management")
+            with gr.Row():
+                upload_btn = gr.Button("Upload New Document")
+                export_btn = gr.Button("Export Selected")
+                
             doc_list = gr.Dataframe(
-                headers=["ID", "Name", "Source", "Size", "Imported", "Processed", "Chunked", "Embedded"],
+                headers=["ID", "Name", "Source", "Size", "Processed", "Chunked"],
                 value=list_documents,
                 interactive=False
             )
             
-            # Document Selection
-            gr.Markdown("### Document Operations")
-            doc_ids = gr.Textbox(
-                label="Document IDs",
-                placeholder="Enter comma-separated document IDs"
-            )
-            process_btn = gr.Button("Process Selected Documents")
-            process_btn.click(
-                fn=process_selected_documents,
-                inputs=[doc_ids],
-                outputs=[gr.Textbox(label="Status"), doc_list]
-            )
-            
             # File Upload
-            gr.Markdown("### Upload Documents")
             upload_input = gr.File(
                 label="Upload Files",
                 file_types=["file"],
                 file_count="multiple"
             )
-            upload_btn = gr.Button("Upload")
             status_output = gr.Textbox(label="Status")
             
+            # Document Operations
+            gr.Markdown("### Batch Operations")
+            with gr.Row():
+                doc_ids = gr.Textbox(
+                    label="Document IDs",
+                    placeholder="Enter comma-separated document IDs"
+                )
+                process_btn = gr.Button("Process Selected")
+                metadata_btn = gr.Button("Edit Metadata")
+                tag_btn = gr.Button("Manage Tags")
+                
+            # Tag Management
+            gr.Markdown("### Tag Management")
+            with gr.Row():
+                tag_input = gr.Textbox(
+                    label="Add New Tag",
+                    placeholder="Enter tag name"
+                )
+                add_tag_btn = gr.Button("Add Tag")
+                
+            # Selected Tags Display
+            selected_tags = gr.Textbox(
+                label="Selected Tags",
+                interactive=False
+            )
+            
+            # Document Detail Button
+            doc_detail_btn = gr.Button("View Document Details")
+            
+            # Notifications
+            gr.Markdown("### Notifications")
+            notifications = gr.Dataframe(
+                headers=["Type", "Message", "Timestamp"],
+                value=get_notifications,
+                interactive=False
+            )
+            
+            # Connect all buttons
             upload_btn.click(
                 fn=upload_files,
                 inputs=[upload_input],
                 outputs=[status_output, doc_list]
+            )
+            process_btn.click(
+                fn=process_selected_documents,
+                inputs=[doc_ids],
+                outputs=[status_output, doc_list]
+            )
+            metadata_btn.click(
+                fn=edit_metadata,
+                inputs=[doc_ids],
+                outputs=[status_output, doc_list]
+            )
+            tag_btn.click(
+                fn=manage_tags,
+                inputs=[doc_ids],
+                outputs=[selected_tags]
+            )
+            add_tag_btn.click(
+                fn=add_tag,
+                inputs=[tag_input, doc_ids],
+                outputs=[selected_tags]
+            )
+            doc_detail_btn.click(
+                fn=view_document_detail,
+                inputs=[doc_ids],
+                outputs=[status_output]
             )
             
             # Directory Import
@@ -252,7 +375,7 @@ def create_ui():
             dir_import_btn.click(
                 fn=import_from_directory,
                 inputs=[dir_path],
-                outputs=[gr.Textbox(label="Status"), doc_list]
+                outputs=[status_output, doc_list]
             )
             
             # SharePoint Import
@@ -274,7 +397,7 @@ def create_ui():
             sp_import_btn.click(
                 fn=import_from_sharepoint,
                 inputs=[sp_library, sp_folder, sp_extensions],
-                outputs=[gr.Textbox(label="Status"), doc_list]
+                outputs=[status_output, doc_list]
             )
         
         # Query Interface Column
@@ -296,18 +419,51 @@ def create_ui():
                 inputs=[query_input],
                 outputs=[results]
             )
+        
+        # System Stats
+        with gr.Column(visible=False) as stats_box:
+            gr.Markdown("### System Statistics")
+            stats_content = gr.Markdown("""
+                Total Documents: 0
+                Total Versions: 0
+            """)
+            
+            # Visualizations
+            with gr.Row():
+                version_plot = gr.Plot()
+                class_plot = gr.Plot()
+        
+        # Search functionality
+        search_btn.click(
+            fn=search_documents,
+            inputs=[search_input],
+            outputs=[doc_list]
+        )
+        
+        # Stats toggle
+        stats_btn.click(
+            fn=lambda: stats_box.update(visible=True),
+            outputs=[stats_box]
+        )
     
     return demo
 
 def launch_ui(share=False):
-    """Launch the UI interface."""
+    """Launch the document management UI.
+    
+    Args:
+        share: Whether to create a public link
+        
+    Returns:
+        Gradio interface
+    """
     ui = create_ui()
     ui.launch(
         share=share,
-        inbrowser=True
+        inbrowser=True,
+        show_error=True  # Show error messages in the browser
     )
-    
-    return f"Processed {stats.get('processed', 0)} documents", list_documents()
+    return ui
 
 
 def process_all_documents():
@@ -451,11 +607,13 @@ def launch_ui(share=False):
     Returns:
         Gradio interface
     """
-    interface = create_ui()
-    # Launch with in-browser=True to automatically open the browser
-    interface.launch(share=share, inbrowser=True)
-    return interface
-
+    ui = create_ui()
+    ui.launch(
+        share=share,
+        inbrowser=True,
+        show_error=True
+    )
+    return ui
 
 if __name__ == "__main__":
     launch_ui()

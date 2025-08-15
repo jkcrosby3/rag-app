@@ -45,10 +45,10 @@ if importlib.util.find_spec("huggingface_hub"):
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from src.embeddings.generator import EmbeddingGenerator
-from src.embeddings.quantized_generator import QuantizedEmbeddingGenerator
-from src.vector_db.faiss_db import FAISSVectorDB
-from src.llm.claude_client import ClaudeClient
+from .embeddings.generator import EmbeddingGenerator
+from .embeddings.quantized_generator import QuantizedEmbeddingGenerator
+from .vector_db.faiss_db import FAISSVectorDB
+from src.llm.llm_factory import get_llm_client, get_available_llm_types
 from src.preloader import preloader, preload_models
 
 # Import advanced caching modules
@@ -88,6 +88,8 @@ class RAGSystem:
         embedding_model_name: str = "all-MiniLM-L6-v2",
         llm_api_key: Optional[str] = None,
         llm_model_name: str = "claude-3-5-sonnet-20241022",
+        llm_type: str = "claude",  # Default to Claude
+        llm_config: Optional[Dict[str, Any]] = None,  # Additional LLM-specific config
         es_config: Optional[Dict[str, Any]] = None,
         use_preloader: bool = True,
         use_quantized_embeddings: bool = True,  # Default to quantized for better performance
@@ -137,7 +139,17 @@ class RAGSystem:
                 )
             else:
                 self.embedding_generator = preloader.get_embedding_generator()
-            self.llm_client = preloader.get_llm_client()
+            # Get LLM client from preloader or create new one
+            try:
+                self.llm_client = preloader.get_llm_client()
+            except (AttributeError, NotImplementedError):
+                # Fallback to creating a new client if preloader doesn't support it
+                llm_config = llm_config or {}
+                llm_config.update({
+                    'api_key': llm_api_key,
+                    'model_name': llm_model_name
+                })
+                self.llm_client = get_llm_client(llm_type, **llm_config)
         elif use_preloader:
             # Start preloading in background if not already done
             logger.info("Starting model preloading in background")
@@ -152,7 +164,15 @@ class RAGSystem:
                 )
             else:
                 self.embedding_generator = EmbeddingGenerator(model_name=embedding_model_name)
-            self.llm_client = ClaudeClient(api_key=llm_api_key, model_name=llm_model_name)
+            
+            # Initialize LLM client using factory
+            llm_config = llm_config or {}
+            llm_config.update({
+                'api_key': llm_api_key,
+                'model_name': llm_model_name
+            })
+            self.llm_client = get_llm_client(llm_type, **llm_config)
+            
             # Initialize conversation manager
             self.conversation_manager = ConversationManager(self.llm_client)
         else:
@@ -165,7 +185,15 @@ class RAGSystem:
                 )
             else:
                 self.embedding_generator = EmbeddingGenerator(model_name=embedding_model_name)
-            self.llm_client = ClaudeClient(api_key=llm_api_key, model_name=llm_model_name)
+            
+            # Initialize LLM client using factory
+            llm_config = llm_config or {}
+            llm_config.update({
+                'api_key': llm_api_key,
+                'model_name': llm_model_name
+            })
+            self.llm_client = get_llm_client(llm_type, **llm_config)
+            
             # Initialize conversation manager
             self.conversation_manager = ConversationManager(self.llm_client)
         

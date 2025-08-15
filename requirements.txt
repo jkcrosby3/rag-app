@@ -1,49 +1,48 @@
+# Core dependencies
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+numpy>=1.24.0
+pandas>=1.3.3
+requests>=2.31.0
+tqdm>=4.65.0
+
+# Web framework
+streamlit>=1.24.0
+fastapi>=0.10.0
+uvicorn>=0.22.0
+python-multipart>=0.0.6
+
+# Document processing
+PyMuPDF>=1.25.0
+PyPDF2>=3.0.0
+pdfplumber>=0.10.2
+pdfminer.six>=20221105
+
+# Machine learning and embeddings
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4  # Use faiss-gpu if CUDA is available
+scikit-learn>=1.3.0
+torch>=2.0.0
+transformers>=4.30.0
+
+# LLM integration
+anthropic>=0.9.0
+openai>=1.0.0
+
+# Database and caching
+SQLAlchemy>=2.0.0
+elasticsearch>=8.0.0  # Only needed for production
+diskcache>=5.6.1
+
+# Utilities
+pillow>=10.0.0
+python-magic>=0.4.27
+python-magic-bin>=0.4.14; sys_platform == 'win32'  # Windows specific
+
 # Development tools
 jupyter>=1.0.0
 notebook>=7.0.0
-
-# Web framework
-fastapi>=0.10.0
-uvicorn>=0.22.0
-
-# UI components
-plotly>=5.3.1
-pandas>=1.3.3
-gradio>=4.17.0  # Web interface framework
-
-# CLI
-typer>=0.9.0
-
-# Document processing
-PyMuPDF>=1.25.0  # Primary PDF processing library
-PyPDF2>=3.0.0    # Backup PDF processing
-pdfplumber>=0.10.2  # Table extraction and structured data
-pdfminer.six>=20221105  # Pure Python PDF processing
-
-# Machine learning
-sentence-transformers>=2.2.2  # Text embeddings
-faiss-cpu>=1.7.4  # Vector similarity search
-numpy>=1.24.0     # Numerical operations
-scikit-learn>=1.3.0  # Machine learning utilities
-
-# Database
-SQLAlchemy>=2.0.0  # SQL toolkit and ORM
-elasticsearch>=8.0.0  # Elasticsearch client
-
-# LLM integration
-anthropic>=0.9.0  # Claude API client
-
-# Caching
-diskcache>=5.6.1  # Persistent caching
-
-# Utilities
-python-dotenv>=1.0.0  # Environment variables
-requests>=2.31.0  # HTTP requests
-pillow>=10.0.0    # Image processing
-
-# Logging and monitoring
-structlog>=23.2.0  # Structured logging
-prometheus-client>=0.19.0  # Metrics collection
-
-# Core dependencies
-pydantic>=2.0.0
+pytest>=7.4.0
+black>=23.7.0
+isort>=5.12.0
+mypy>=1.4.1

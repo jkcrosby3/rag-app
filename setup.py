@@ -13,6 +13,6 @@ setup(
         "pydantic>=2.0.0",
     ],
     extras_require={
-        "pdf": ["PyMuPDF>=1.25.0", "PyPDF2>=3.0.0"],
+        "pdf": ["PyPDF2>=3.0.0"],
     },
 )

@@ -1,9 +1,9 @@
 from typing import List, Dict, Any, Optional, Type
 from pathlib import Path
 from .abstract_document_processor import AbstractDocumentProcessor
-from .pdf_processor import PyMuPDFProcessor
-from .pdf_processor_alt import PyPDF2Processor
-from .pdf_processor_example import PDFPlumberProcessor
+from .pdf_processor import PyPDF2Processor
+from .pdf_processor_alt import CamelotProcessor
+from .pdf_processor_alt import TesseractProcessor
 import logging
 
 logger = logging.getLogger(__name__)
@@ -19,12 +19,10 @@ class SmartDocumentProcessor:
     4. Available system resources
     5. Processing requirements
     
-    Available processors and their strengths:
-    - PyMuPDF: Best for complex PDFs with images and tables
-    - PyPDF2: Good for basic PDF processing in restricted environments
-    - pdfplumber: Excellent for documents with tables and structured data
-    - pdfminer.six: Ideal for pure Python solutions
-    - pdfbox-python: Best for PDF creation and modification
+    Available processors:
+    - PyPDF2: Primary PDF processing library
+    - Camelot-py: Specialized for table extraction
+    - pytesseract: Best for OCR and image-based PDFs
     """
     
     def __init__(self):
@@ -40,19 +38,19 @@ class SmartDocumentProcessor:
     def _initialize_processors(self):
         """Initialize available processors based on installed libraries."""
         try:
-            self.processors.append(PyMuPDFProcessor())
-        except ImportError:
-            logger.warning("PyMuPDF not available")
-        
-        try:
             self.processors.append(PyPDF2Processor())
         except ImportError:
             logger.warning("PyPDF2 not available")
         
         try:
-            self.processors.append(PDFPlumberProcessor())
+            self.processors.append(CamelotProcessor())
         except ImportError:
-            logger.warning("pdfplumber not available")
+            logger.warning("Camelot-py not available")
+        
+        try:
+            self.processors.append(TesseractProcessor())
+        except ImportError:
+            logger.warning("pytesseract not available")
     
     def _get_best_processor(self, file_path: str, requirements: Dict[str, Any]) -> Optional[AbstractDocumentProcessor]:
         """
@@ -93,12 +91,16 @@ class SmartDocumentProcessor:
             if requirements.get('metadata', False) and hasattr(processor, 'extract_metadata'):
                 score += 1
             
-            # Adjust score based on document complexity
-            if requirements.get('complexity', 'low') == 'high':
-                if isinstance(processor, PyMuPDFProcessor):
-                    score += 2
-                elif isinstance(processor, PDFPlumberProcessor):
-                    score += 1
+            # Adjust score based on requirements
+            if requirements.get('tables', False) and isinstance(processor, CamelotProcessor):
+                score += 3  # Camelot-py is specialized for tables
+            
+            if requirements.get('images', False) and isinstance(processor, TesseractProcessor):
+                score += 3  # pytesseract is specialized for OCR
+            
+            # Base score for PyPDF2
+            if isinstance(processor, PyPDF2Processor):
+                score += 2  # PyPDF2 is good for general PDF processing
             
             # Update best processor if this one is better
             if score > best_score:

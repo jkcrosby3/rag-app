@@ -13,23 +13,14 @@ import anthropic
 
 # Import the semantic cache
 from src.llm.semantic_cache import get_response, set_response, get_stats as get_cache_stats
+from .base_llm_client import BaseLLMClient
+from .llm_factory import register_llm_client
 
 logger = logging.getLogger(__name__)
 
 
-class SingletonMeta(type):
-    """Metaclass for implementing the Singleton pattern."""
-    
-    _instances = {}
-    _lock = Lock()
-    
-    def __call__(cls, *args, **kwargs):
-        """Ensure only one instance of a class exists."""
-        with cls._lock:
-            if cls not in cls._instances:
-                instance = super().__call__(*args, **kwargs)
-                cls._instances[cls] = instance
-            return cls._instances[cls]
+_instance = None
+_instance_lock = Lock()
 
 
 # Constants for default values
@@ -47,12 +38,21 @@ Your answers should:
 5. Never make up information or use knowledge outside the provided context"""
 
 
-class ClaudeClient(metaclass=SingletonMeta):
+@register_llm_client("claude")
+class ClaudeClient(BaseLLMClient):
     """Client for interacting with Anthropic's Claude models.
     
-    This class uses the Singleton pattern to ensure only one instance exists,
+    This class implements the BaseLLMClient interface for Claude models.
+    It uses the Singleton pattern to ensure only one instance exists,
     keeping the API client loaded in memory between queries.
     """
+    
+    def __new__(cls, *args, **kwargs):
+        global _instance, _instance_lock
+        with _instance_lock:
+            if _instance is None:
+                _instance = super(ClaudeClient, cls).__new__(cls)
+            return _instance
 
     def __init__(
         self,

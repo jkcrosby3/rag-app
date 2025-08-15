@@ -6,11 +6,11 @@ to reduce cold start times for the first query.
 import logging
 import threading
 import time
-from typing import Optional, Union, Literal
+from typing import Optional, Union, Literal, Dict, Any
 
 from src.embeddings.generator import EmbeddingGenerator
 from src.embeddings.quantized_generator import QuantizedEmbeddingGenerator
-from src.llm.claude_client import ClaudeClient
+from src.llm.llm_factory import get_llm_client, get_available_llm_types
 
 logger = logging.getLogger(__name__)
 
@@ -73,7 +73,9 @@ class ModelPreloader:
         embedding_model_name: str,
         llm_model_name: str,
         use_quantized_embeddings: bool,
-        quantization_type: str
+        quantization_type: str,
+        llm_type: str = "claude",
+        llm_config: Optional[Dict[str, Any]] = None
     ) -> None:
         """Thread function to preload models.
         
@@ -82,35 +84,39 @@ class ModelPreloader:
             llm_model_name: Name of the LLM model to preload
             use_quantized_embeddings: Whether to preload a quantized embedding model
             quantization_type: Type of quantization to use
+            llm_type: Type of LLM to use (e.g., 'claude')
+            llm_config: Additional LLM configuration
         """
         try:
             start_time = time.time()
             
             # Preload embedding model
-            logger.info(f"Preloading embedding model: {embedding_model_name}")
-            self.embedding_generator = EmbeddingGenerator(model_name=embedding_model_name)
-            # Force model loading
-            self.embedding_generator.generate_embedding("Preload test")
-            
-            # Preload quantized embedding model if requested
             if use_quantized_embeddings:
-                logger.info(f"Preloading quantized embedding model with {quantization_type} quantization")
+                logger.info(f"Preloading quantized embedding model: {embedding_model_name} ({quantization_type})")
                 self.quantized_embedding_generator = QuantizedEmbeddingGenerator(
                     model_name=embedding_model_name,
                     quantization_type=quantization_type
                 )
                 # Force model loading
                 self.quantized_embedding_generator.generate_embedding("Preload test")
+            else:
+                logger.info(f"Preloading standard embedding model: {embedding_model_name}")
+                self.embedding_generator = EmbeddingGenerator(model_name=embedding_model_name)
+                # Force model loading
+                self.embedding_generator.generate_embedding("Preload test")
             
-            # Preload LLM client
-            logger.info(f"Preloading LLM client: {llm_model_name}")
-            self.llm_client = ClaudeClient(model_name=llm_model_name)
+            # Preload LLM client using factory
+            logger.info(f"Preloading LLM client: {llm_type} ({llm_model_name})")
+            llm_config = llm_config or {}
+            llm_config['model_name'] = llm_model_name
+            self.llm_client = get_llm_client(llm_type, **llm_config)
             
             preload_time = time.time() - start_time
             logger.info(f"Models preloaded successfully in {preload_time:.2f} seconds")
             
         except Exception as e:
             logger.error(f"Error preloading models: {str(e)}")
+            raise
     
     def get_embedding_generator(self) -> Optional[EmbeddingGenerator]:
         """Get the preloaded embedding generator.
@@ -128,7 +134,7 @@ class ModelPreloader:
         """
         return self.quantized_embedding_generator
     
-    def get_llm_client(self) -> Optional[ClaudeClient]:
+    def get_llm_client(self) -> Optional:
         """Get the preloaded LLM client.
         
         Returns:
@@ -183,8 +189,10 @@ preloader = ModelPreloader()
 def preload_models(
     embedding_model_name: str = "all-MiniLM-L6-v2",
     llm_model_name: str = "claude-3-5-sonnet-20241022",
-    use_quantized_embeddings: bool = False,
-    quantization_type: str = "int8"
+    use_quantized_embeddings: bool = True,
+    quantization_type: str = "int8",
+    llm_type: str = "claude",
+    llm_config: Optional[Dict[str, Any]] = None
 ) -> None:
     """Preload models to reduce cold start times.
     
@@ -198,7 +206,9 @@ def preload_models(
         embedding_model_name=embedding_model_name,
         llm_model_name=llm_model_name,
         use_quantized_embeddings=use_quantized_embeddings,
-        quantization_type=quantization_type
+        quantization_type=quantization_type,
+        llm_type=llm_type,
+        llm_config=llm_config
     )
 
 
