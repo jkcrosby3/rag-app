@@ -1,0 +1,70 @@
+# ============================================================================
+# RAG Application Requirements
+# Python 3.10+ required
+# ============================================================================
+
+# Core Dependencies
+# ----------------------------------------------------------------------------
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+requests>=2.31.0
+tqdm>=4.65.0
+
+# Web Framework & API
+# ----------------------------------------------------------------------------
+streamlit>=1.24.0
+fastapi>=0.10.0
+uvicorn>=0.22.0
+python-multipart>=0.0.6
+gradio>=4.0.0  # Document management UI
+
+# Document Processing
+# ----------------------------------------------------------------------------
+PyMuPDF>=1.25.0  # fitz - PDF processing
+PyPDF2>=3.0.0
+pdfplumber>=0.10.2
+pdfminer.six>=20221105
+
+# Machine Learning & Embeddings
+# ----------------------------------------------------------------------------
+sentence-transformers>=2.2.2
+faiss-cpu>=1.7.4  # Use this for CPU-only systems (Hackathon requirement)
+# faiss-gpu>=1.7.4  # Uncomment only if CUDA GPU is available
+scikit-learn>=1.3.0
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.30.0
+
+# LLM Integration
+# ----------------------------------------------------------------------------
+anthropic>=0.9.0
+openai>=1.0.0
+
+# Data Storage & Caching
+# ----------------------------------------------------------------------------
+SQLAlchemy>=2.0.0
+diskcache>=5.6.1
+# elasticsearch>=8.0.0  # Optional - only for production deployments
+
+# HuggingFace & Model Management
+# ----------------------------------------------------------------------------
+huggingface_hub>=0.10.0
+httpx>=0.24.0  # Required for HuggingFace Hub SSL patching
+
+# Utilities
+# ----------------------------------------------------------------------------
+pillow>=10.0.0
+python-magic>=0.4.27
+python-magic-bin>=0.4.14; sys_platform == 'win32'  # Windows-specific binary
+urllib3>=2.0.0
+
+# Development & Testing Tools
+# ----------------------------------------------------------------------------
+jupyter>=1.0.0
+notebook>=7.0.0
+pytest>=7.4.0
+black>=23.7.0
+isort>=5.12.0
+mypy>=1.4.1
