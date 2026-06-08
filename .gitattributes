@@ -1,5 +1,7 @@
-# Track large Smithsonian newspaper database files with LFS
-# These are the enriched newspapers (hardest to regenerate)
-# Pension/collection raw files can be re-downloaded from Smithsonian API
+# Track large Smithsonian database files with LFS
+# Enriched newspapers (hardest to regenerate - 99.9% accuracy)
 data/documents/smithsonian/newspapers/newspapers_data.json filter=lfs diff=lfs merge=lfs -text
 data/documents/smithsonian/newspapers/newspapers_data.parquet filter=lfs diff=lfs merge=lfs -text
+# Compressed archives of raw Smithsonian data
+data/documents/smithsonian/pension_files_archive.zip filter=lfs diff=lfs merge=lfs -text
+data/documents/smithsonian/revolutionary_era_archive.zip filter=lfs diff=lfs merge=lfs -text
