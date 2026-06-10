@@ -202,12 +202,6 @@ sequenceDiagram
     Q->>Q: Build rich context
     
     Note over Q: Context = chunks + metadata<br/>+ relevance scores
-    
-    style U fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    style I fill:#fff9c4,stroke:#f57f17,stroke-width:2px
-    style Q fill:#fff3e0,stroke:#e65100,stroke-width:3px
-    style V fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    style M fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
 ```
 
 **Talking Points:**
