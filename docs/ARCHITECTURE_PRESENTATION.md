@@ -17,6 +17,7 @@ graph LR
 ```
 
 **Key Metrics:**
+
 - **12,607** pension files processed
 - **99.9%** metadata extraction accuracy
 - **<100ms** query response time
@@ -80,13 +81,13 @@ flowchart LR
     
     C -.->|Veterans: 12,606<br/>Newspapers: 65| G[Enriched<br/>Metadata<br/>Store]
     
-    style A fill:#e1f5ff,stroke:#0277bd
-    style B fill:#fff3e0,stroke:#e65100
-    style C fill:#f3e5f5,stroke:#6a1b9a
-    style D fill:#e8f5e9,stroke:#2e7d32
-    style E fill:#fce4ec,stroke:#c2185b
-    style F fill:#fff9c4,stroke:#f57f17
-    style G fill:#f3e5f5,stroke:#6a1b9a
+    style A fill:#e1f5ff,stroke:#0277bd,stroke-width:2px
+    style B fill:#fff3e0,stroke:#e65100,stroke-width:3px
+    style C fill:#f3e5f5,stroke:#6a1b9a,stroke-width:3px
+    style D fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style E fill:#fce4ec,stroke:#c2185b,stroke-width:3px
+    style F fill:#fff9c4,stroke:#f57f17,stroke-width:3px
+    style G fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
 ```
 
 ---
@@ -136,15 +137,15 @@ graph TB
         C3[OCR Quality Assessment<br/>✓ 18th-century docs]
     end
     
-    style A1 fill:#c8e6c9,stroke:#388e3c
-    style A2 fill:#c8e6c9,stroke:#388e3c
-    style A3 fill:#c8e6c9,stroke:#388e3c
-    style B1 fill:#b3e5fc,stroke:#0277bd
-    style B2 fill:#b3e5fc,stroke:#0277bd
-    style B3 fill:#b3e5fc,stroke:#0277bd
-    style C1 fill:#f8bbd0,stroke:#c2185b
-    style C2 fill:#f8bbd0,stroke:#c2185b
-    style C3 fill:#f8bbd0,stroke:#c2185b
+    style A1 fill:#c8e6c9,stroke:#388e3c,stroke-width:3px
+    style A2 fill:#c8e6c9,stroke:#388e3c,stroke-width:3px
+    style A3 fill:#c8e6c9,stroke:#388e3c,stroke-width:3px
+    style B1 fill:#b3e5fc,stroke:#0277bd,stroke-width:3px
+    style B2 fill:#b3e5fc,stroke:#0277bd,stroke-width:3px
+    style B3 fill:#b3e5fc,stroke:#0277bd,stroke-width:3px
+    style C1 fill:#f8bbd0,stroke:#c2185b,stroke-width:3px
+    style C2 fill:#f8bbd0,stroke:#c2185b,stroke-width:3px
+    style C3 fill:#f8bbd0,stroke:#c2185b,stroke-width:3px
 ```
 
 ---
@@ -183,18 +184,18 @@ graph TB
     P2 & P3 --> S1 & S2 & S3
     A3 --> S1 & S2
     
-    style F1 fill:#fff9c4,stroke:#f57f17
-    style F2 fill:#fff9c4,stroke:#f57f17
-    style F3 fill:#fff9c4,stroke:#f57f17
-    style A1 fill:#fce4ec,stroke:#c2185b
-    style A2 fill:#fce4ec,stroke:#c2185b
-    style A3 fill:#fce4ec,stroke:#c2185b
-    style S1 fill:#e8f5e9,stroke:#2e7d32
-    style S2 fill:#e8f5e9,stroke:#2e7d32
-    style S3 fill:#e8f5e9,stroke:#2e7d32
-    style P1 fill:#e3f2fd,stroke:#1565c0
-    style P2 fill:#e3f2fd,stroke:#1565c0
-    style P3 fill:#e3f2fd,stroke:#1565c0
+    style F1 fill:#fff9c4,stroke:#f57f17,stroke-width:3px
+    style F2 fill:#fff9c4,stroke:#f57f17,stroke-width:3px
+    style F3 fill:#fff9c4,stroke:#f57f17,stroke-width:3px
+    style A1 fill:#fce4ec,stroke:#c2185b,stroke-width:3px
+    style A2 fill:#fce4ec,stroke:#c2185b,stroke-width:3px
+    style A3 fill:#fce4ec,stroke:#c2185b,stroke-width:3px
+    style S1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
+    style S2 fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
+    style S3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:3px
+    style P1 fill:#e3f2fd,stroke:#1565c0,stroke-width:3px
+    style P2 fill:#e3f2fd,stroke:#1565c0,stroke-width:3px
+    style P3 fill:#e3f2fd,stroke:#1565c0,stroke-width:3px
 ```
 
 ---
@@ -202,21 +203,25 @@ graph TB
 ## Slide 7: Value Proposition
 
 ### **For Researchers**
+
 - Natural language queries of 12,600+ historical documents
 - Instant cross-referencing between pension files and newspapers
 - Metadata-enriched search (ranks, units, dates, locations)
 
 ### **For Educators**
+
 - Interactive exploration of Revolutionary War history
 - Source citations for academic integrity
 - Timeline and relationship mapping
 
 ### **For Organizations**
+
 - Scalable RAG architecture (12,600 docs → millions possible)
 - Production-ready with 99.9% accuracy
 - Multi-provider LLM support (vendor flexibility)
 
 ### **Technical Excellence**
+
 - Industry-standard metadata enrichment best practices
 - Sub-100ms query performance
 - 40% cost optimization via semantic caching
@@ -242,7 +247,7 @@ graph TB
 
 ## Speaker Notes
 
-### Key Talking Points:
+### Key Talking Points
 
 1. **Metadata Enrichment Achievement**
    - 99.9% accuracy (12,606/12,607 files)

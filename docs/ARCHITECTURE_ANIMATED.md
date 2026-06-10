@@ -23,6 +23,7 @@ graph TB
 ```
 
 **Talking Points:**
+
 - 12,600+ historical documents locked away
 - Traditional search requires exact keyword matches
 - No way to ask "Which generals served under Washington?"
@@ -48,6 +49,7 @@ graph LR
 ```
 
 **Talking Points:**
+
 - Automated data collection from multiple sources
 - Smithsonian's digitized Revolutionary War records
 - Historical newspapers from Library of Congress
@@ -78,6 +80,7 @@ graph TB
 ```
 
 **Talking Points:**
+
 - Challenge: 18th-century documents with poor OCR quality
 - Multi-library approach for reliability
 - Text normalization handles historical spelling (ſ → s, fhould → should)
@@ -109,6 +112,7 @@ graph TB
 ```
 
 **Talking Points:**
+
 - **Industry best practice:** Enrich BEFORE vectorization
 - Pension files: Extract structured data (names, ranks, units, dates)
 - Newspapers: NER + classification + relevance scoring
@@ -137,6 +141,7 @@ graph LR
 ```
 
 **Talking Points:**
+
 - Semantic chunking preserves meaning
 - sentence-transformers creates vector embeddings
 - Dual database strategy: FAISS for fast local dev, Elasticsearch for production scale
@@ -169,6 +174,7 @@ graph TB
 ```
 
 **Talking Points:**
+
 - Two complementary storage systems
 - Vector DB: Semantic similarity search
 - Metadata store: Structured filtering and context
@@ -197,14 +203,15 @@ sequenceDiagram
     
     Note over Q: Context = chunks + metadata<br/>+ relevance scores
     
-    style U fill:#e3f2fd,stroke:#1565c0
-    style I fill:#fff9c4,stroke:#f57f17
-    style Q fill:#fff3e0,stroke:#e65100
-    style V fill:#e8f5e9,stroke:#2e7d32
-    style M fill:#f3e5f5,stroke:#6a1b9a
+    style U fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    style I fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    style Q fill:#fff3e0,stroke:#e65100,stroke-width:3px
+    style V fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style M fill:#f3e5f5,stroke:#6a1b9a,stroke-width:2px
 ```
 
 **Talking Points:**
+
 1. User asks natural language question
 2. System converts to vector embedding
 3. Semantic search finds relevant chunks (<100ms)
@@ -236,6 +243,7 @@ graph TB
 ```
 
 **Talking Points:**
+
 - Multi-provider support (Claude, OpenAI, easily extensible)
 - Semantic caching: **40% cost reduction** by reusing similar responses
 - Context-aware prompts inject metadata
@@ -279,6 +287,7 @@ graph TB
 ```
 
 **Talking Points:**
+
 - Three interfaces for different user needs
 - Streamlit: Researchers and end users
 - Gradio: Document managers and archivists
@@ -339,6 +348,7 @@ graph TB
 ```
 
 **Talking Points:**
+
 - 5 layers working together seamlessly
 - Each layer optimized for its specific purpose
 - Production-ready, scalable architecture
@@ -375,6 +385,7 @@ graph TB
 ```
 
 **Talking Points:**
+
 - 12,607 documents processed successfully
 - 99.9% metadata extraction accuracy
 - Sub-100ms query response times
@@ -412,6 +423,7 @@ graph TB
 ```
 
 **Talking Points:**
+
 - Most RAG systems: Just vectorize raw text
 - Our innovation: Enrich FIRST, then vectorize
 - Metadata provides structure that vectors alone cannot
@@ -449,6 +461,7 @@ mindmap
 ```
 
 **Talking Points:**
+
 - **Researchers:** Instant access to 12,600+ documents
 - **Educators:** Interactive historical exploration
 - **Technical teams:** Proven RAG methodology
@@ -470,6 +483,7 @@ graph LR
 ```
 
 **Talking Points:**
+
 - Current: 12,607 documents (Revolutionary War era)
 - Designed for scale: Architecture supports millions
 - Elasticsearch enables distributed search
@@ -509,6 +523,7 @@ graph TB
 ```
 
 **Stack Summary:**
+
 - **Frontend:** Modern Python web frameworks
 - **AI/ML:** State-of-the-art LLMs and embeddings
 - **Storage:** Dual strategy (dev + production)
@@ -519,18 +534,21 @@ graph TB
 ## Final Slide: Key Takeaways 🎯
 
 ### **Technical Achievements**
+
 ✅ **12,607 documents** processed with **99.9% metadata accuracy**  
 ✅ **<100ms** query response times  
 ✅ **40% cost reduction** via semantic caching  
 ✅ **Production-ready** architecture with multiple UI options
 
 ### **Innovation Highlights**
+
 ✅ **Industry best practice:** Metadata enrichment before vectorization  
 ✅ **18th-century OCR:** Specialized text normalization pipeline  
 ✅ **Multi-provider LLM:** Vendor flexibility with factory pattern  
 ✅ **Cross-referencing:** Link veterans across pension files and newspapers
 
 ### **Business Value**
+
 ✅ **Scalable framework** for document-intensive applications  
 ✅ **Proven methodology** for RAG system development  
 ✅ **Reusable architecture** applicable to other domains  
@@ -540,7 +558,8 @@ graph TB
 
 ## Presentation Tips 💡
 
-### Timing Recommendations:
+### Timing Recommendations
+
 - **Steps 1-3:** Foundation (5 minutes)
 - **Steps 4-6:** Core Innovation (10 minutes) ⭐ *Spend time here*
 - **Steps 7-9:** User Experience (5 minutes)
@@ -548,18 +567,21 @@ graph TB
 - **Steps 13-15:** Impact & Future (7 minutes)
 - **Total:** ~35-40 minutes with Q&A
 
-### Key Emphasis Points:
+### Key Emphasis Points
+
 1. **99.9% accuracy** - Highlight multiple times
 2. **Metadata enrichment as best practice** - Core innovation
 3. **Production-ready** - Not just a prototype
 4. **Scalable architecture** - Designed for growth
 
-### Demo Suggestions:
+### Demo Suggestions
+
 - Show actual UI between Steps 9 and 10
 - Live query example after Step 11
 - Compare traditional vs enriched search in Step 12
 
-### Q&A Preparation:
+### Q&A Preparation
+
 - Have example queries ready
 - Know token costs and cache statistics
 - Prepare scalability numbers
